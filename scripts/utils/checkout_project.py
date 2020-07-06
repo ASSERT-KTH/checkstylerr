@@ -35,7 +35,7 @@ cmd = "mkdir %s" % PROJECT_FOLDER_PATH
 subprocess.call(cmd, shell=True)
 
 # copy all files to the project folder
-cmd = "cd %s; cp -r . %s;" % (CHECKSTYLERR_REPO_PATH, PROJECT_FOLDER_PATH)
+cmd = "rsync -a --exclude 'scripts/' %s/ %s/" % (CHECKSTYLERR_REPO_PATH, PROJECT_FOLDER_PATH)
 subprocess.call(cmd, shell=True)
 
 # check out master
