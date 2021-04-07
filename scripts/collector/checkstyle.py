@@ -14,6 +14,17 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 _CHECKSTYLE_JARS_DIR = os.path.join(dir_path, "checkstyle_jars")
 _CHECKSTYLE_JARS = [
+    'checkstyle-8.41.1-all.jar',
+    'checkstyle-8.41-all.jar',
+    'checkstyle-8.40-all.jar',
+    'checkstyle-8.39-all.jar',
+    'checkstyle-8.38-all.jar',
+    'checkstyle-8.37-all.jar',
+    'checkstyle-8.36.2-all.jar',
+    'checkstyle-8.36.1-all.jar',
+    'checkstyle-8.36-all.jar',
+    'checkstyle-8.35-all.jar',
+    'checkstyle-8.34-all.jar',
     'checkstyle-8.33-all.jar',
     'checkstyle-8.32-all.jar',
     'checkstyle-8.31-all.jar',
