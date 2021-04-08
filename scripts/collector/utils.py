@@ -32,6 +32,18 @@ def delete_dir(dir):
     if os.path.exists(dir):
         shutil.rmtree(dir)
 
+def save_file_in_path(file_path, content):
+    """
+    Writes the content in a file
+    """
+    try:
+        with open(file_path, 'w', encoding="utf-8") as f:
+            f.write(content)
+    except Exception as err:
+        print(err)
+        return None
+    return file_path
+
 def save_json(dir, file_name, content, sort=False):
     """
     Saves a given dict to the specified location as a json file

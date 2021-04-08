@@ -7,6 +7,7 @@
 import os
 import xml.etree.ElementTree as ET
 import subprocess
+import re
 
 from utils import *
 
@@ -64,9 +65,8 @@ _CHECKSTYLE_JARS = [
 _CHECKSTYLE_JAR = os.path.join(_CHECKSTYLE_JARS_DIR, _CHECKSTYLE_JARS[0])
 
 def test_checkstyle_execution_with_different_checkstyle_versions(checkstyle_file_path, file_to_checkstyle_path):
-    found = False
     index = 0
-    while (not found and index < len(_CHECKSTYLE_JARS)):
+    while (index < len(_CHECKSTYLE_JARS)):
         try:
             my_print(f'Trying {_CHECKSTYLE_JARS[index]}')
             checkstyle_jar = os.path.join(_CHECKSTYLE_JARS_DIR, _CHECKSTYLE_JARS[index])
@@ -81,6 +81,7 @@ def check(checkstyle_file_path, file_to_checkstyle_path, checkstyle_jar=_CHECKST
     """
     Runs Checkstyle on the file_to_checkstyle_path
     """
+    insert_property_haltOnException_set_to_false_in_checkstyle_file(checkstyle_file_path)
     cmd = "java -jar {} -f xml -c {} {} --exclude-regexp .*/test/.* --exclude-regexp .*/resources/.*".format(
         checkstyle_jar, checkstyle_file_path, file_to_checkstyle_path)
     process = subprocess.Popen(cmd.split(" "), stdout=subprocess.PIPE)
@@ -92,6 +93,20 @@ def check(checkstyle_file_path, file_to_checkstyle_path, checkstyle_jar=_CHECKST
     output = parse_output(output)
     return output, process.returncode
 
+def insert_property_haltOnException_set_to_false_in_checkstyle_file(checkstyle_file_path):
+    original_checkstyle_file_content = open_file(checkstyle_file_path)
+    
+    clean_checkstyle_file_content = re.sub(r'<property name\s*=\s*"haltOnException"[\s|\n]+value\s*=\s*"true"\s*/>', '', original_checkstyle_file_content, flags=re.DOTALL)
+    
+    if not re.search('<property name\s*=\s*"haltOnException"[\s|\n]+value\s*=\s*"false"\s*/>', clean_checkstyle_file_content):
+        lines = clean_checkstyle_file_content.split('\n')
+        new_checkstyle_file_content = ''
+        for line in lines:
+            new_checkstyle_file_content += line + '\n'
+            if 'module' in line and '"Checker"' in line:
+                new_checkstyle_file_content += '    <property name="haltOnException" value="false"/>' + '\n'
+        save_file_in_path(checkstyle_file_path, new_checkstyle_file_content)
+        
 def parse_output(output):
     """
     Parses the results from XML to a dict
