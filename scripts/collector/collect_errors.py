@@ -136,6 +136,9 @@ def test_checkstyle_execution(repo, repo_info, checkstyle_last_modification_comm
     return checkstyle_jar
 
 def check_checkstyle_results(checkstyle_results):
+    if None in checkstyle_results:
+        return None
+
     reports_with_errors = {}
     for id, results in enumerate(checkstyle_results):
         files_with_errors = {file: result['errors'] for file, result in results.items() if len(result['errors']) and file.endswith('.java')}
@@ -197,16 +200,17 @@ def find_errored_files(repo, commit, checkstyle_file_path, checkstyle_jar, use_m
 
     repo_name = dir.split('/')[-1]
     error_count = 0
-    commit_dir = get_workspace_storage_dir_for_repo_and_commit(repo_name, commit)
-    for report_dir, results in reports_with_errors.items():
-        for file, errors in results.items():
-            my_print(f'{file} has {len(errors)} error(s).')
-            commit_and_file_dir = os.path.join(commit_dir, str(error_count))
-            create_dir(commit_and_file_dir)
-            file_name = file.split('/')[-1]
-            shutil.copyfile(file, os.path.join(commit_and_file_dir, file_name))
-            save_json(commit_and_file_dir, 'errors.json', errors)
-            error_count += 1
+    if reports_with_errors is not None:
+        commit_dir = get_workspace_storage_dir_for_repo_and_commit(repo_name, commit)
+        for report_dir, results in reports_with_errors.items():
+            for file, errors in results.items():
+                my_print(f'{file} has {len(errors)} error(s).')
+                commit_and_file_dir = os.path.join(commit_dir, str(error_count))
+                create_dir(commit_and_file_dir)
+                file_name = file.split('/')[-1]
+                shutil.copyfile(file, os.path.join(commit_and_file_dir, file_name))
+                save_json(commit_and_file_dir, 'errors.json', errors)
+                error_count += 1
 
     my_print(f'# Files with at least one error: {error_count}')
     return error_count
