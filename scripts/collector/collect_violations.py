@@ -247,6 +247,10 @@ def create_new_branch_and_push_results(repo_info, collection_info):
 
         cmd = "cd %s; git push https://%s:%s@github.com/%s %s;" % (repo_to_push_dir, config['DEFAULT']['github_user_name'], config['DEFAULT']['github_user_token'], config['DEFAULT']['github_repo_slug'], branch_name)
         subprocess.call(cmd, shell=True)
+        
+        my_print(f'[PROCESS FINISHED] New branch created.')
+    else:
+        my_print(f'[PROCESS FINISHED] No violation was found in the project.')
 
 def cleanup(repo_info):
     delete_dir(git_helper.get_repo_dir(repo_info['user'], repo_info['repo_name'])) # workspace_analyses_dir
@@ -274,14 +278,16 @@ for repo_slug in repo_slugs:
         if repo is None:
             my_print(f'Something wrong happened when cloning the repo {repo_slug}.')
             cleanup(repo_info)
+            my_print(f'[PROCESS FINISHED] Repository not cloned.')
             continue
         
         repo_info = get_repo_info(repo_slug, repo)
         if 'checkstyle_ok' in repo_info and not repo_info['checkstyle_ok']:
-            my_print(f'Repo {repo_slug} did not pass in the first sanity checks.')
+            my_print(f'Repo {repo_slug} did not pass the first sanity checks.')
             cleanup(repo_info)
+            my_print(f'[PROCESS FINISHED] Checkstyle.xml contains variables.')
             continue
-        my_print(f'Repo {repo_slug} has passed in the first sanity checks.')
+        my_print(f'Repo {repo_slug} has passed the first sanity checks.')
         
         checkstyle_file_path = repo_info['checkstyle_absolute_path']
         default_branch, commits, checkstyle_last_modification_commit = get_commit_until_last_modification(repo, checkstyle_file_path)
@@ -289,21 +295,24 @@ for repo_slug in repo_slugs:
         if len(commits) == 0:
             my_print(f'There is no commit to be analyzed.')
             cleanup(repo_info)
+            my_print(f'[PROCESS FINISHED] No commit to be analyzed.')
             continue
         my_print(f'There is/are {len(commits)} commit(s) since the last modification in the Checkstyle configuration file.')
 
         my_print('')
-        my_print('Testing the execution of Checkstyle in the project...')
+        my_print('Testing the execution of Checkstyle on the project...')
         checkstyle_jar = test_checkstyle_execution(repo, repo_info, checkstyle_last_modification_commit)
         if checkstyle_jar is None:
             my_print(f'The test failed.')
             cleanup(repo_info)
+            my_print(f'[PROCESS FINISHED] Failure in executing Checkstyle on the project.')
             continue
         checkstyle_jar_simple_name = checkstyle_jar.split('/')[-1]
         my_print(f'The test passed.')
     except Exception as err:
         my_print(f'[ERROR] The violation collection of {repo_slug} did not complete. The error happened before starting to reproduce Checkstyle violations. Detail: {err}')
         cleanup(repo_info)
+        my_print(f'[PROCESS FINISHED] Error before starting to reproduce Checkstyle violations.')
         continue
     
     my_print('')
