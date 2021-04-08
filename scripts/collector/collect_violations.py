@@ -139,12 +139,12 @@ def check_checkstyle_results(checkstyle_results):
     if None in checkstyle_results:
         return None
 
-    reports_with_errors = {}
+    reports_with_violations = {}
     for id, results in enumerate(checkstyle_results):
-        files_with_errors = {file: result['errors'] for file, result in results.items() if len(result['errors']) and file.endswith('.java')}
-        if len(files_with_errors):
-            reports_with_errors[id] = files_with_errors
-    return reports_with_errors
+        files_with_violations = {file: result['violations'] for file, result in results.items() if len(result['violations']) and file.endswith('.java')}
+        if len(files_with_violations):
+            reports_with_violations[id] = files_with_violations
+    return reports_with_violations
 
 def clean_checkstyle_results(dir):
     checkstyle_result_xml = find_all_files(dir, 'checkstyle-result.xml')
@@ -172,7 +172,7 @@ def get_changed_files_in_commit(repo, commit):
         return None
     return ' '.join(files_to_checkstyle)
 
-def find_errored_files(repo, commit, checkstyle_file_path, checkstyle_jar, use_maven=False, check_only_changed_files=True):
+def find_files_with_violations(repo, commit, checkstyle_file_path, checkstyle_jar, use_maven=False, check_only_changed_files=True):
     dir = repo.working_dir
 
     clean_checkstyle_results(dir)
@@ -196,24 +196,24 @@ def find_errored_files(repo, commit, checkstyle_file_path, checkstyle_jar, use_m
                 checkstyle_file_path=checkstyle_file_path, file_to_checkstyle_path=files_to_checkstyle_str, checkstyle_jar=checkstyle_jar)
             checkstyle_results = [output]
 
-    reports_with_errors = check_checkstyle_results(checkstyle_results)
+    reports_with_violations = check_checkstyle_results(checkstyle_results)
 
     repo_name = dir.split('/')[-1]
-    error_count = 0
-    if reports_with_errors is not None:
+    violation_count = 0
+    if reports_with_violations is not None:
         commit_dir = get_workspace_storage_dir_for_repo_and_commit(repo_name, commit)
-        for report_dir, results in reports_with_errors.items():
-            for file, errors in results.items():
-                my_print(f'{file} has {len(errors)} error(s).')
-                commit_and_file_dir = os.path.join(commit_dir, str(error_count))
+        for report_dir, results in reports_with_violations.items():
+            for file, violations in results.items():
+                my_print(f'{file} has {len(violations)} violation(s).')
+                commit_and_file_dir = os.path.join(commit_dir, str(violation_count))
                 create_dir(commit_and_file_dir)
                 file_name = file.split('/')[-1]
                 shutil.copyfile(file, os.path.join(commit_and_file_dir, file_name))
-                save_json(commit_and_file_dir, 'errors.json', errors)
-                error_count += 1
+                save_json(commit_and_file_dir, 'violations.json', violations)
+                violation_count += 1
 
-    my_print(f'# Files with at least one error: {error_count}')
-    return error_count
+    my_print(f'# Files with at least one violation: {violation_count}')
+    return violation_count
 
 def create_new_branch_and_push_results(repo_info, collection_info):
     repo = repo_info['repo']
@@ -242,7 +242,7 @@ def create_new_branch_and_push_results(repo_info, collection_info):
         cmd = "cd %s; git add .;" % repo_to_push_dir
         subprocess.call(cmd, shell=True)
 
-        cmd = "cd %s; git commit -m '[Automatic commit] Errors from %s';" % (repo_to_push_dir, repo_slug)
+        cmd = "cd %s; git commit -m '[Automatic commit] Checkstyle violations from %s';" % (repo_to_push_dir, repo_slug)
         subprocess.call(cmd, shell=True)
 
         cmd = "cd %s; git push https://%s:%s@github.com/%s %s;" % (repo_to_push_dir, config['DEFAULT']['github_user_name'], config['DEFAULT']['github_user_token'], config['DEFAULT']['github_repo_slug'], branch_name)
@@ -302,17 +302,17 @@ for repo_slug in repo_slugs:
         checkstyle_jar_simple_name = checkstyle_jar.split('/')[-1]
         my_print(f'The test passed.')
     except Exception as err:
-        my_print(f'[ERROR] The error collection of {repo_slug} did not complete. The error happened before starting to reproduce Checkstyle errors. Detail: {err}')
+        my_print(f'[ERROR] The violation collection of {repo_slug} did not complete. The error happened before starting to reproduce Checkstyle violations. Detail: {err}')
         cleanup(repo_info)
         continue
     
     my_print('')
-    my_print('The reproduction of Checkstyle errors is starting...')
+    my_print('The reproduction of Checkstyle violations is starting...')
     
     repo = repo_info['repo']
     number_of_commits_found = len(commits)
     number_of_commits_analyzed = 0
-    number_of_commits_with_errors = 0
+    number_of_commits_with_violations = 0
 
     commit_index = 0
     for commit in commits[::-1]:
@@ -330,16 +330,16 @@ for repo_slug in repo_slugs:
                     check_only_changed_files = False
                 else:
                     check_only_changed_files = True
-                error_count = find_errored_files(
+                violation_count = find_files_with_violations(
                     repo, commit, repo_info['checkstyle_absolute_path'], checkstyle_jar, use_maven=False, check_only_changed_files=check_only_changed_files)
                 number_of_commits_analyzed += 1
-                if error_count > 0:
-                    number_of_commits_with_errors += 1
+                if violation_count > 0:
+                    number_of_commits_with_violations += 1
             else:
                 my_print('The pom.xml file contains \'suppressionsLocation\'. Skip commit.')
 
         except Exception as err:
-            my_print(f'[ERROR] The error collection of {repo_slug} failed in commit {commit}. Detail: {err}')
+            my_print(f'[ERROR] The violation collection of {repo_slug} failed in commit {commit}. Detail: {err}')
             delete_dir(get_workspace_storage_dir_for_repo_and_commit(user + "-" + repo_name, commit))
 
     analysis_finished_at = datetime.now(pytz.utc).strftime("%Y-%m-%d %H:%M:%S %z")
@@ -353,7 +353,7 @@ for repo_slug in repo_slugs:
         'checkstyle_last_modification_commit': checkstyle_last_modification_commit,
         'number_of_commits_found': number_of_commits_found,
         'number_of_commits_analyzed': number_of_commits_analyzed,
-        'number_of_commits_with_errors': number_of_commits_with_errors,
+        'number_of_commits_with_violations': number_of_commits_with_violations,
         'commits': commits,
         'checkstyle_jar': checkstyle_jar.split('/')[-1]
     }

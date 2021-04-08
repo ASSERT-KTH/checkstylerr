@@ -16,5 +16,5 @@ while IFS= read -r repo_line || [ -n "$repo_line" ]; do
 
     log_file="logs/$repo_slug_for_file_name.log"
 
-    echo "python $dir/../collect_errors.py $repo_slug > $log_file 2>&1" >> "run.sh"
+    echo "python $dir/../collect_violations.py $repo_slug > $log_file 2>&1" >> "run.sh"
 done < $input_file

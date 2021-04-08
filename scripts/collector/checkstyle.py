@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""A basic python wrapper for checkstyle
-    """
+"""
+A basic python wrapper for Checkstyle
+"""
 
 import os
 import xml.etree.ElementTree as ET
@@ -116,8 +117,8 @@ def parse_output(output):
     for elem_file in xml_output.getchildren():
         if elem_file.attrib['name'].endswith('.java'):
             output_parsed[elem_file.attrib['name']] = dict()
-            output_parsed[elem_file.attrib['name']]['errors'] = list()
-            for elem_error in elem_file.getchildren():
-                if elem_error.tag == 'error':
-                    output_parsed[elem_file.attrib['name']]['errors'].append(elem_error.attrib)
+            output_parsed[elem_file.attrib['name']]['violations'] = list()
+            for elem_violation in elem_file.getchildren():
+                if elem_violation.tag == 'error':
+                    output_parsed[elem_file.attrib['name']]['violations'].append(elem_violation.attrib)
     return output_parsed
