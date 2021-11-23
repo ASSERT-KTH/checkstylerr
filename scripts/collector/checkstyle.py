@@ -85,11 +85,24 @@ def check(checkstyle_file_path, file_to_checkstyle_path, checkstyle_jar=_CHECKST
     Runs Checkstyle on the file_to_checkstyle_path
     """
     insert_property_haltOnException_set_to_false_in_checkstyle_file(checkstyle_file_path)
-    cmd = "java -jar {} -f xml -c {} {} --exclude-regexp .*/test/.* --exclude-regexp .*/resources/.*".format(
-        checkstyle_jar, checkstyle_file_path, file_to_checkstyle_path)
+
+    if os.path.isdir(file_to_checkstyle_path):
+        cmd = "java -jar {} -f xml -c {} {} --exclude-regexp .*/test/.* --exclude-regexp .*/resources/.*".format(
+            checkstyle_jar, checkstyle_file_path, file_to_checkstyle_path)
+    else:
+        files_to_checkstyle = []
+        for file_path in file_to_checkstyle_path.split(' '):
+            if '/test/' in file_path or '/resources/' in file_path:
+                continue
+            files_to_checkstyle.append(file_path)
+        if len(files_to_checkstyle) == 0:
+            return None, None
+        cmd = "java -jar {} -f xml -c {} {}".format(
+            checkstyle_jar, checkstyle_file_path, ' '.join(files_to_checkstyle))
+
     process = subprocess.Popen(cmd.split(" "), stdout=subprocess.PIPE)
     output = process.communicate()[0]
-    # deletion of non xml strings
+    # deletion of non-xml strings
     if process.returncode > 0:
         output = b''.join(output.split(b'</checkstyle>')[0:-1]) + b'</checkstyle>'
     # parsing
@@ -106,7 +119,7 @@ def insert_property_haltOnException_set_to_false_in_checkstyle_file(checkstyle_f
         new_checkstyle_file_content = ''
         for line in lines:
             new_checkstyle_file_content += line + '\n'
-            if 'module' in line and '"Checker"' in line:
+            if 'module' in line and ('"Checker"' in line or "'Checker'" in line):
                 new_checkstyle_file_content += '    <property name="haltOnException" value="false"/>' + '\n'
         save_file_in_path(checkstyle_file_path, new_checkstyle_file_content)
         
@@ -114,8 +127,8 @@ def parse_output(output):
     """
     Parses the results from XML to a dict
     """
-    xml_output = ET.fromstring(output)
     output_parsed = dict()
+    xml_output = ET.fromstring(output)
     for elem_file in xml_output.getchildren():
         if elem_file.attrib['name'].endswith('.java'):
             output_parsed[elem_file.attrib['name']] = dict()

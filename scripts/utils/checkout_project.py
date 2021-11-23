@@ -25,6 +25,10 @@ print("Checking out the project %s..." % BRANCH_NAME)
 cmd = "cd %s; git reset .; git checkout -- .; git clean -f; git checkout %s;" % (CHECKSTYLERR_REPO_PATH, BRANCH_NAME)
 subprocess.call(cmd, shell=True)
 
+# pull branch
+cmd = "cd %s; git pull;" % CHECKSTYLERR_REPO_PATH
+subprocess.call(cmd, shell=True)
+
 # create a folder for the workspace
 if not os.path.isdir(WORKSPACE):
     cmd = "mkdir %s" % WORKSPACE
@@ -35,7 +39,7 @@ cmd = "mkdir %s" % PROJECT_FOLDER_PATH
 subprocess.call(cmd, shell=True)
 
 # copy all files to the project folder
-cmd = "rsync -a --exclude 'scripts/' %s/ %s/" % (CHECKSTYLERR_REPO_PATH, PROJECT_FOLDER_PATH)
+cmd = "rsync -a --exclude='scripts/' --exclude='.git/' %s/ %s/" % (CHECKSTYLERR_REPO_PATH, PROJECT_FOLDER_PATH)
 subprocess.call(cmd, shell=True)
 
 # check out master

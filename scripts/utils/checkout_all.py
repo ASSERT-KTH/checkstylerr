@@ -18,14 +18,17 @@ WORKSPACE = args.workspace
 cmd = "cd %s; git fetch;" % CHECKSTYLERR_REPO_PATH
 subprocess.call(cmd, shell=True)
 
+# get branches
 cmd = "git branch -r"
 result = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
 branches = result.communicate()[0].decode("utf-8")
-branch_list = branches.split('\n')
+branch_list = branches.strip().split('\n')
 
 if branch_list:
+    branch_index = 0
     for branch in branch_list:
-        branch = re.sub(r'origin/', '', branch)
-        print(branch)
-        if not branch == 'master':
-            os.system("python %s/checkout_project.py --branchName %s --workspace %s" % (CHECKSTYLERR_REPO_PATH, branch, WORKSPACE))
+        branch_index += 1
+        branch_name = branch.replace('*', '').replace('origin/', '').strip()
+        print('%s/%s branch: %s' % (branch_index, len(branch_list), branch_name))
+        if not branch_name == 'master' and not branch_name == 'HEAD -> master':
+            os.system("python %s/checkout_project.py --branchName %s --workspace %s" % (CHECKSTYLERR_REPO_PATH, branch_name, WORKSPACE))

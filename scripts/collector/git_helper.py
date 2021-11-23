@@ -23,10 +23,14 @@ def clone_repo(user, repo_name, https=False):
     """
     my_print(f'Cloning {user}/{repo_name}...')
     dir = get_repo_dir(user, repo_name)
-    if https:
-        return (Repo.clone_from(f'https://github.com/{user}/{repo_name}.git', dir), dir)
-    else:
-        return (Repo.clone_from(f'git@github.com:{user}/{repo_name}.git', dir), dir)
+    try:
+        if https:
+            return Repo.clone_from(f'https://github.com/{user}/{repo_name}.git', dir)
+        else:
+            return Repo.clone_from(f'git@github.com:{user}/{repo_name}.git', dir)
+    except Exception as err:
+        my_print(f'[Exception] {err}')
+        return None
 
 def open_repo(user, repo_name):
     """
@@ -40,5 +44,4 @@ def open_repo(user, repo_name):
             my_print(f'Repo {dir} not found.')
             return None
     else:
-        repo, repo_dir = clone_repo(user, repo_name, https=True)
-        return repo
+        return clone_repo(user, repo_name)
