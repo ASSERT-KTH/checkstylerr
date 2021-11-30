@@ -1,0 +1,103 @@
+package org.radargun.stages.lifecycle;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.radargun.DistStageAck;
+import org.radargun.config.Property;
+import org.radargun.config.Stage;
+import org.radargun.stages.helpers.RoleHelper;
+import org.radargun.utils.TimeConverter;
+
+/**
+ * The stage start and kills some nodes concurrently (without waiting for each other).
+ *
+ * @author Radim Vansa &lt;rvansa@redhat.com&gt;
+ */
+@Stage(doc = "The stage start and stops some nodes concurrently (without waiting for each other).")
+public class ParallelStartStopStage extends AbstractServiceStartStage {
+
+   @Property(doc = "Set of workers which should be stopped in this stage. Default is empty.")
+   public Collection<Integer> stop = new ArrayList<Integer>();
+
+   @Property(converter = TimeConverter.class, doc = "Delay before the workers are stopped. Default is 0.")
+   public long stopDelay = 0;
+
+   @Property(doc = "If set to false, the node crash should be simulated. By default node should be shutdown gracefully.")
+   public boolean graceful = true;
+
+   @Property(doc = "Set of workers which should be started in this stage. Default is empty.")
+   public Collection<Integer> start = new ArrayList<Integer>();
+
+   @Property(doc = "Set of roles which should be stopped in this stage. Default is empty.")
+   public Set<RoleHelper.Role> stopRoles = new HashSet<>();
+
+   @Property(converter = TimeConverter.class, doc = "Delay before the workers are started. Default is 0.")
+   public long startDelay = 0;
+
+   @Property(doc = "Applicable only for cache wrappers with Partitionable feature. Set of workers that should be " +
+      "reachable from the new node. Default is all workers.")
+   public Set<Integer> reachable = null;
+
+   @Override
+   public DistStageAck executeOnWorker() {
+      if (lifecycle == null) {
+         log.warn("No lifecycle for service " + workerState.getServiceName());
+         return successfulResponse();
+      }
+      boolean stopMe = stop.contains(workerState.getWorkerIndex()) || RoleHelper.hasAnyRole(workerState, stopRoles);
+      boolean startMe = start.contains(workerState.getWorkerIndex());
+      if (!(stopMe || startMe)) {
+         log.info("Nothing to kill or start...");
+      }
+      while (stopMe || startMe) {
+         if (startMe) {
+            if (lifecycle.isRunning()) {
+               if (!stopMe) {
+                  log.info("Wrapper already set on this worker, not starting it again.");
+                  startMe = false;
+                  return successfulResponse();
+               }
+            } else {
+               if (startDelay > 0) {
+                  try {
+                     Thread.sleep(startDelay);
+                  } catch (InterruptedException e) {
+                     log.error("Starting delay was interrupted.", e);
+                  }
+               }
+               try {
+                  LifecycleHelper.start(workerState, false, null, 0, reachable);
+               } catch (RuntimeException e) {
+                  return errorResponse("Issues while instantiating/starting cache wrapper", e);
+               }
+               startMe = false;
+            }
+         }
+         if (stopMe) {
+            if (!lifecycle.isRunning()) {
+               if (!startMe) {
+                  log.info("Wrapper is dead, nothing to kill");
+                  stopMe = false;
+                  return successfulResponse();
+               }
+            } else {
+               try {
+                  Thread.sleep(stopDelay);
+               } catch (InterruptedException e) {
+                  log.error("Killing delay was interrupted.", e);
+               }
+               try {
+                  LifecycleHelper.stop(workerState, graceful, false);
+               } catch (RuntimeException e) {
+                  return errorResponse("Failed to kill the service", e);
+               }
+               stopMe = false;
+            }
+         }
+      }
+      return successfulResponse();
+   }
+}
