@@ -1,0 +1,29 @@
+[
+    {
+        "line": "7",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.springframework.data.redis.core.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "8",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.springframework.data.redis.serializer.JdkSerializationRedisSerializer.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "9",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.springframework.data.redis.serializer.StringRedisSerializer.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "23",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'redisConnectionFactory' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    }
+]
