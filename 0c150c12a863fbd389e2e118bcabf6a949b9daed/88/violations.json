@@ -1,0 +1,15 @@
+[
+    {
+        "line": "21",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'RuntimeType' looks like designed for extension (can be subclassed), but the method 'getValues' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RuntimeType' final or making the method 'getValues' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

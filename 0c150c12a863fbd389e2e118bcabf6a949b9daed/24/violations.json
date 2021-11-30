@@ -1,0 +1,37 @@
+[
+    {
+        "line": "195",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "195",
+        "column": "19",
+        "severity": "error",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "195",
+        "column": "47",
+        "severity": "error",
+        "message": "Name 'compilers' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "255",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CompilerEnum' looks like designed for extension (can be subclassed), but the method 'getCompiler' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CompilerEnum' final or making the method 'getCompiler' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "259",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CompilerEnum' looks like designed for extension (can be subclassed), but the method 'getValues' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CompilerEnum' final or making the method 'getValues' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

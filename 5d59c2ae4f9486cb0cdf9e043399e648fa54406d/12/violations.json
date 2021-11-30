@@ -1,0 +1,37 @@
+[
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "26",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter parser should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "26",
+        "column": "52",
+        "severity": "error",
+        "message": "Parameter terminators should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CfgFilenameState' looks like designed for extension (can be subclassed), but the method 'consume' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CfgFilenameState' final or making the method 'consume' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "31",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter ch should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]
