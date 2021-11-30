@@ -1,0 +1,80 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Got an exception - java.lang.StringIndexOutOfBoundsException: String index out of range: -3\n#x9;at java.lang.String.substring(String.java:1931)\n#x9;at com.puppycrawl.tools.checkstyle.api.FileContents.reportSingleLineComment(FileContents.java:106)\n#x9;at com.puppycrawl.tools.checkstyle.api.FileContents.reportSingleLineComment(FileContents.java:96)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaLexer.mSINGLE_LINE_COMMENT(GeneratedJavaLexer.java:1116)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaLexer.nextToken(GeneratedJavaLexer.java:331)\n#x9;at antlr.TokenStreamHiddenTokenFilter.consume(TokenStreamHiddenTokenFilter.java:38)\n#x9;at antlr.TokenStreamHiddenTokenFilter.nextToken(TokenStreamHiddenTokenFilter.java:134)\n#x9;at antlr.TokenBuffer.fill(TokenBuffer.java:69)\n#x9;at antlr.TokenBuffer.LA(TokenBuffer.java:80)\n#x9;at antlr.LLkParser.LA(LLkParser.java:52)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classOrInterfaceType(GeneratedJavaRecognizer.java:961)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classTypeSpec(GeneratedJavaRecognizer.java:818)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeSpec(GeneratedJavaRecognizer.java:780)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.primaryExpression(GeneratedJavaRecognizer.java:4420)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.postfixExpression(GeneratedJavaRecognizer.java:7410)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpressionNotPlusMinus(GeneratedJavaRecognizer.java:7339)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpression(GeneratedJavaRecognizer.java:7154)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.multiplicativeExpression(GeneratedJavaRecognizer.java:7019)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.additiveExpression(GeneratedJavaRecognizer.java:6970)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.shiftExpression(GeneratedJavaRecognizer.java:6913)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.relationalExpression(GeneratedJavaRecognizer.java:6830)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.equalityExpression(GeneratedJavaRecognizer.java:6781)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.andExpression(GeneratedJavaRecognizer.java:6752)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.exclusiveOrExpression(GeneratedJavaRecognizer.java:6723)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.inclusiveOrExpression(GeneratedJavaRecognizer.java:6694)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalAndExpression(GeneratedJavaRecognizer.java:6665)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalOrExpression(GeneratedJavaRecognizer.java:6636)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.conditionalExpression(GeneratedJavaRecognizer.java:2136)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.assignmentExpression(GeneratedJavaRecognizer.java:6388)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expression(GeneratedJavaRecognizer.java:4789)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expressionList(GeneratedJavaRecognizer.java:6148)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.argList(GeneratedJavaRecognizer.java:3448)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.newExpression(GeneratedJavaRecognizer.java:7772)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.primaryExpression(GeneratedJavaRecognizer.java:4355)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.postfixExpression(GeneratedJavaRecognizer.java:7410)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpressionNotPlusMinus(GeneratedJavaRecognizer.java:7339)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.unaryExpression(GeneratedJavaRecognizer.java:7154)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.multiplicativeExpression(GeneratedJavaRecognizer.java:7019)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.additiveExpression(GeneratedJavaRecognizer.java:6970)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.shiftExpression(GeneratedJavaRecognizer.java:6913)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.relationalExpression(GeneratedJavaRecognizer.java:6830)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.equalityExpression(GeneratedJavaRecognizer.java:6781)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.andExpression(GeneratedJavaRecognizer.java:6752)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.exclusiveOrExpression(GeneratedJavaRecognizer.java:6723)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.inclusiveOrExpression(GeneratedJavaRecognizer.java:6694)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalAndExpression(GeneratedJavaRecognizer.java:6665)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.logicalOrExpression(GeneratedJavaRecognizer.java:6636)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.conditionalExpression(GeneratedJavaRecognizer.java:2136)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.assignmentExpression(GeneratedJavaRecognizer.java:6388)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.expression(GeneratedJavaRecognizer.java:4789)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.initializer(GeneratedJavaRecognizer.java:4632)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.varInitializer(GeneratedJavaRecognizer.java:4546)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.variableDeclarator(GeneratedJavaRecognizer.java:4519)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.variableDefinitions(GeneratedJavaRecognizer.java:1555)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.declaration(GeneratedJavaRecognizer.java:1534)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5399)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4276)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compoundStatement(GeneratedJavaRecognizer.java:3942)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.tryBlock(GeneratedJavaRecognizer.java:5700)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5359)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4276)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compoundStatement(GeneratedJavaRecognizer.java:3942)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5093)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4276)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.elseStatement(GeneratedJavaRecognizer.java:5564)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.traditionalStatement(GeneratedJavaRecognizer.java:5118)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.statement(GeneratedJavaRecognizer.java:4276)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compoundStatement(GeneratedJavaRecognizer.java:3942)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.field(GeneratedJavaRecognizer.java:3332)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classBlock(GeneratedJavaRecognizer.java:2542)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.classDefinition(GeneratedJavaRecognizer.java:634)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinitionInternal(GeneratedJavaRecognizer.java:556)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.typeDefinition(GeneratedJavaRecognizer.java:389)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:202)\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:99)\n#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:160)\n#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:85)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:332)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:294)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:220)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:392)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:315)\n#x9;at com.puppycrawl.tools.checkstyle.Main.execute(Main.java:180)\n#x9;at com.puppycrawl.tools.checkstyle.Main.main(Main.java:119)\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    },
+    {
+        "line": "14",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "17",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "31",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "38",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "40",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "41",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "Space needed before opening parenthesis.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "88",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "103",
+        "severity": "error",
+        "message": "Space needed before opening parenthesis.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    }
+]
