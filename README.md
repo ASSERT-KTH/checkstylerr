@@ -1,0 +1,1 @@
+# wakaleo/maven-schemaspy-plugin
