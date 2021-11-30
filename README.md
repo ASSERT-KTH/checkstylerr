@@ -1,0 +1,1 @@
+# pkozelka/contentcheck-maven-plugin
