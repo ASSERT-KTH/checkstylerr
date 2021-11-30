@@ -1,0 +1,33 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: TokenStreamRecognitionException occurred while parsing file /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/HealerJean-HealerJean.github.io/_posts/sch/java/Java/\u603b\u7ed3\u6027Java\u7a0b\u5e8f/4.1\u5236\u4f5ca+b\u7684\u548c/ZhizuoAPI.java.\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:105)\n#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:160)\n#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:85)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:332)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:294)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:220)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:392)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:315)\n#x9;at com.puppycrawl.tools.checkstyle.Main.execute(Main.java:180)\n#x9;at com.puppycrawl.tools.checkstyle.Main.main(Main.java:119)\nCaused by: line 1:9: Unexpected character 0xfffd in identifier\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaLexer.nextToken(GeneratedJavaLexer.java:405)\n#x9;at antlr.TokenStreamHiddenTokenFilter.consume(TokenStreamHiddenTokenFilter.java:38)\n#x9;at antlr.TokenStreamHiddenTokenFilter.nextToken(TokenStreamHiddenTokenFilter.java:134)\n#x9;at antlr.TokenBuffer.fill(TokenBuffer.java:69)\n#x9;at antlr.TokenBuffer.LA(TokenBuffer.java:80)\n#x9;at antlr.LLkParser.LA(LLkParser.java:52)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:158)\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:99)\n#x9;... 9 more\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    },
+    {
+        "line": "11",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "17",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "20",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "21",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    }
+]
