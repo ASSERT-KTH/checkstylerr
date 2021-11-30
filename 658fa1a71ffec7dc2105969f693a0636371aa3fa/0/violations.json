@@ -1,0 +1,8 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred while parsing file /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/robvanderleek-JLifx/src/main/java/jlifx/bulb/Bulb.java.\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:98)\n#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:187)\n#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:81)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:329)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:291)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:217)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:392)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:315)\n#x9;at com.puppycrawl.tools.checkstyle.Main.execute(Main.java:180)\n#x9;at com.puppycrawl.tools.checkstyle.Main.main(Main.java:119)\nCaused by: /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/robvanderleek-JLifx/src/main/java/jlifx/bulb/Bulb.java:17:9: expecting EOF, found 'this'\n#x9;at antlr.Parser.match(Parser.java:211)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:92)\n#x9;... 9 more\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    }
+]
