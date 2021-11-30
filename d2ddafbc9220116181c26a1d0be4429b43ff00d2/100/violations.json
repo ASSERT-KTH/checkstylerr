@@ -1,0 +1,170 @@
+[
+    {
+        "line": "7",
+        "column": "36",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - ru.curs.celesta.dbutils.meta.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "10",
+        "column": "29",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - ru.curs.celesta.score.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "15",
+        "column": "17",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "30",
+        "column": "31",
+        "severity": "error",
+        "message": "Variable 'dbAdaptor' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "31",
+        "column": "35",
+        "severity": "error",
+        "message": "Variable 'score' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "32",
+        "column": "36",
+        "severity": "error",
+        "message": "Variable 'connectionPool' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "33",
+        "column": "29",
+        "severity": "error",
+        "message": "Variable 'schemaCursor' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "96",
+        "column": "80",
+        "severity": "error",
+        "message": "'16' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "145",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateSysGrain' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateSysGrain' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "159",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'createSysObjects' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'createSysObjects' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "177",
+        "column": "75",
+        "severity": "error",
+        "message": "'connectionPool' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "222",
+        "column": "49",
+        "severity": "error",
+        "message": "'connectionPool' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "321",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'createViews' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'createViews' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "328",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'dropAllViews' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'dropAllViews' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "335",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'createParameterizedViews' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'createParameterizedViews' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "342",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateSequences' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateSequences' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "358",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'dropAllParameterizedViews' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'dropAllParameterizedViews' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "365",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateGrainFKeys' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateGrainFKeys' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "390",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'dropOrphanedGrainFKeys' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'dropOrphanedGrainFKeys' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "411",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'dropOrphanedGrainIndices' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'dropOrphanedGrainIndices' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "450",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateGrainIndices' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateGrainIndices' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "473",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateTable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateTable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "497",
+        "column": "21",
+        "severity": "error",
+        "message": "Nested if-else depth is 3 (max allowed is 2).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"
+    },
+    {
+        "line": "520",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DbUpdater' looks like designed for extension (can be subclassed), but the method 'updateMaterializedView' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUpdater' final or making the method 'updateMaterializedView' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

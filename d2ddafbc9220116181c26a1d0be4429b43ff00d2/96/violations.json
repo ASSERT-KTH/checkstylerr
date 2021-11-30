@@ -1,0 +1,36 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "4",
+        "column": "31",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - ru.curs.celesta.dbutils.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Constructor definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ParameterSetter' looks like designed for extension (can be subclassed), but the method 'setParam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ParameterSetter' final or making the method 'setParam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "47",
+        "severity": "error",
+        "message": "'.' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    }
+]

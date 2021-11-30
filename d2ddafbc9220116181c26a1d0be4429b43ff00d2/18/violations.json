@@ -1,0 +1,30 @@
+[
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicDataAccessor' looks like designed for extension (can be subclassed), but the method 'validateInitContext' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicDataAccessor' final or making the method 'validateInitContext' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "37",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicDataAccessor' looks like designed for extension (can be subclassed), but the method 'closeInternal' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicDataAccessor' final or making the method 'closeInternal' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "78",
+        "column": "31",
+        "severity": "error",
+        "message": "Name '_grainName' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "80",
+        "column": "31",
+        "severity": "error",
+        "message": "Name '_objectName' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

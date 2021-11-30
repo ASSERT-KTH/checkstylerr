@@ -1,0 +1,23 @@
+[
+    {
+        "line": "3",
+        "column": "15",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'View' looks like designed for extension (can be subclassed), but the method 'viewType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'View' final or making the method 'viewType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'View' looks like designed for extension (can be subclassed), but the method 'newSelectStatement' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'View' final or making the method 'newSelectStatement' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
