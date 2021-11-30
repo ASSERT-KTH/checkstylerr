@@ -1,0 +1,448 @@
+[
+    {
+        "line": "88",
+        "column": "14",
+        "severity": "warning",
+        "message": "Name 'Media' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "88",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'Media' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "89",
+        "column": "16",
+        "severity": "warning",
+        "message": "Name 'Trace' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "89",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'Trace' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "90",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'dlms' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "91",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'iec' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "92",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'replyBuff' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "93",
+        "column": "9",
+        "severity": "warning",
+        "message": "Variable 'waitTime' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "94",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'logFile' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "96",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'invocationCounter' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "98",
+        "column": "25",
+        "severity": "warning",
+        "message": "Parameter client should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "98",
+        "column": "52",
+        "severity": "warning",
+        "message": "Parameter media should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "99",
+        "column": "13",
+        "severity": "warning",
+        "message": "Parameter trace should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "124",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'disconnect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'disconnect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'release' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'release' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "152",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'close' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'close' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "175",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'now' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'now' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "180",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'writeTrace' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'writeTrace' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "180",
+        "column": "21",
+        "severity": "warning",
+        "message": "Parameter line should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "180",
+        "column": "34",
+        "severity": "warning",
+        "message": "Parameter level should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "184",
+        "column": "21",
+        "severity": "warning",
+        "message": "'logFile' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "198",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'readDLMSPacket' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'readDLMSPacket' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "198",
+        "column": "32",
+        "severity": "warning",
+        "message": "Parameter data should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "225",
+        "column": "9",
+        "severity": "warning",
+        "message": "'{' at column 9 should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "226",
+        "column": "39",
+        "severity": "warning",
+        "message": "'?' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "226",
+        "column": "40",
+        "severity": "warning",
+        "message": "'?' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "227",
+        "column": "40",
+        "severity": "warning",
+        "message": "'?' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "227",
+        "column": "41",
+        "severity": "warning",
+        "message": "'?' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "241",
+        "column": "32",
+        "severity": "warning",
+        "message": "Parameter data should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "241",
+        "column": "45",
+        "severity": "warning",
+        "message": "Parameter reply should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "285",
+        "severity": "warning",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "322",
+        "severity": "warning",
+        "message": "Line is longer than 80 characters (found 94).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "347",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'readDataBlock' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'readDataBlock' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "347",
+        "column": "24",
+        "severity": "warning",
+        "message": "Parameter data should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "347",
+        "column": "39",
+        "severity": "warning",
+        "message": "Parameter reply should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "363",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'readDataBlock' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'readDataBlock' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "363",
+        "column": "24",
+        "severity": "warning",
+        "message": "Parameter data should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "363",
+        "column": "37",
+        "severity": "warning",
+        "message": "Parameter reply should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "443",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'initializeOpticalHead' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'initializeOpticalHead' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "515",
+        "column": "48",
+        "severity": "warning",
+        "message": "';' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "519",
+        "column": "18",
+        "severity": "warning",
+        "message": "Name 'ModeControlCharacter' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "519",
+        "column": "52",
+        "severity": "warning",
+        "message": "';' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "560",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'initializeConnection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'initializeConnection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "620",
+        "column": "24",
+        "severity": "warning",
+        "message": "Parameter item should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "620",
+        "column": "43",
+        "severity": "warning",
+        "message": "Parameter attributeIndex should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "635",
+        "column": "26",
+        "severity": "warning",
+        "message": "Parameter list should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "645",
+        "column": "41",
+        "severity": "warning",
+        "message": "'?' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "645",
+        "column": "42",
+        "severity": "warning",
+        "message": "'?' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "664",
+        "column": "29",
+        "severity": "warning",
+        "message": "Parameter item should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "664",
+        "column": "48",
+        "severity": "warning",
+        "message": "Parameter attributeIndex should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "674",
+        "column": "13",
+        "severity": "warning",
+        "message": "Name 'GetColumns' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "674",
+        "column": "24",
+        "severity": "warning",
+        "message": "Parameter pg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "694",
+        "column": "37",
+        "severity": "warning",
+        "message": "Parameter pg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "694",
+        "column": "62",
+        "severity": "warning",
+        "message": "Parameter index should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "695",
+        "column": "13",
+        "severity": "warning",
+        "message": "Parameter count should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "741",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'readScalerAndUnits' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'readScalerAndUnits' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "787",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'getProfileGenericColumns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'getProfileGenericColumns' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "826",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'getReadOut' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'getReadOut' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "861",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'showValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'showValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "870",
+        "column": "37",
+        "severity": "warning",
+        "message": "'?' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "870",
+        "column": "38",
+        "severity": "warning",
+        "message": "'?' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "903",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'getProfileGenerics' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'getProfileGenerics' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1013",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSReader' looks like designed for extension (can be subclassed), but the method 'readAll' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSReader' final or making the method 'readAll' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1013",
+        "column": "18",
+        "severity": "warning",
+        "message": "Parameter outputFile should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

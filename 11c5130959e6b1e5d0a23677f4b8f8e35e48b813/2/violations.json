@@ -1,0 +1,43 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "File length is 2,625 lines (max allowed is 2,000).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck"
+    },
+    {
+        "line": "82",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'translator' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "93",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'settings' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "2568",
+        "column": "13",
+        "severity": "warning",
+        "message": "Name 'ParsePushObjects' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "2596",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSClient' looks like designed for extension (can be subclassed), but the method 'isThrowExceptions' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSClient' final or making the method 'isThrowExceptions' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "2605",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'GXDLMSClient' looks like designed for extension (can be subclassed), but the method 'setThrowExceptions' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'GXDLMSClient' final or making the method 'setThrowExceptions' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
