@@ -1,0 +1,42 @@
+[
+    {
+        "line": "2",
+        "column": "9",
+        "severity": "error",
+        "message": "Package name 'resourceManager' must match pattern '^[a-z]+(\\.[a-z][a-z0-9]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "17",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'commons.Action' import. Should be before 'java.util.Map.Entry'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "79",
+        "column": "17",
+        "severity": "error",
+        "message": "Local variable name 'found_ce1' must match pattern '^[a-z]([a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "80",
+        "column": "17",
+        "severity": "error",
+        "message": "Local variable name 'found_ce2' must match pattern '^[a-z]([a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "81",
+        "column": "17",
+        "severity": "error",
+        "message": "Local variable name 'found_ce3' must match pattern '^[a-z]([a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "129",
+        "severity": "error",
+        "message": "Distance between variable 'consumed2' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

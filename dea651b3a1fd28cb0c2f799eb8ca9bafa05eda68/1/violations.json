@@ -1,0 +1,29 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "error",
+        "message": "Package name 'deleteFile' must match pattern '^[a-z]+(\\.[a-z][a-z0-9]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "6",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'java.io.FileNotFoundException' import. Should be before 'java.io.IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter name 'counterFile_in' must match pattern '^[a-z]([a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "28",
+        "column": "65",
+        "severity": "error",
+        "message": "Parameter name 'counterFile_out' must match pattern '^[a-z]([a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    }
+]
