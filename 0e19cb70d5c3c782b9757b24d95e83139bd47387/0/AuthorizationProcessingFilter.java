@@ -1,0 +1,125 @@
+package org.gluu.casa.rest;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.gluu.casa.core.PersistenceService;
+import org.gluu.casa.misc.Utils;
+import org.gluu.oxauth.client.service.ClientFactory;
+import org.gluu.oxauth.client.service.IntrospectionService;
+import org.gluu.oxauth.model.common.IntrospectionResponse;
+import org.slf4j.Logger;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Inject;
+import javax.ws.rs.container.ContainerRequestContext;
+import javax.ws.rs.container.ContainerRequestFilter;
+import javax.ws.rs.container.ResourceInfo;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+import javax.ws.rs.ext.Provider;
+
+/**
+ * @author jgomer
+ */
+@ApplicationScoped
+@Provider
+@ProtectedApi
+public class AuthorizationProcessingFilter implements ContainerRequestFilter {
+
+    @Inject
+    private Logger logger;
+
+    @Context
+    private HttpHeaders httpHeaders;
+
+    @Context
+    private ResourceInfo resourceInfo;
+
+    @Inject
+    private PersistenceService persistenceService;
+
+    private IntrospectionService introspectionService;
+
+    /**
+     * This method performs the protection check of service invocations: it provokes returning an early error response if
+     * the underlying protection logic does not succeed, otherwise, makes the request flow to its destination service object
+     * @param requestContext The ContainerRequestContext associated to filter execution
+     * @throws IOException In practice no exception is thrown here. It's present to conform to interface implemented.
+     */
+    @Override
+    public void filter(ContainerRequestContext requestContext) throws IOException {
+
+        Response.ResponseBuilder failureResponse = null;
+        logger.trace("REST call to '{}' intercepted", RSInitializer.ROOT_PATH + requestContext.getUriInfo().getPath());
+
+        if (introspectionService == null) {
+            logger.warn("An error occurred when AuthorizationProcessingFilter was inited, returning 500");
+            failureResponse = Response.status(Status.INTERNAL_SERVER_ERROR);
+        } else {
+            String token = httpHeaders.getHeaderString("Authorization");
+
+            if (Utils.isEmpty(token)) {
+                logger.warn("No Authorization header found in this request, denying access");
+                failureResponse = Response.status(Status.FORBIDDEN).entity("Authorization header absent");
+            } else {
+                token = token.replaceFirst("Bearer\\s+", "");
+                logger.debug("Validating token {}", token);
+                
+                IntrospectionResponse response = introspectionService.introspectToken("Bearer " + token, token);
+                List<String> tokenScopes = Optional.ofNullable(response).map(IntrospectionResponse::getScope).orElse(null);
+
+                if (tokenScopes == null || !response.isActive() || !tokenScopes.containsAll(computeExpectedScopes(resourceInfo))) {
+                    logger.error("Invalid token. Token scopes are {}", tokenScopes);
+                    failureResponse = Response.status(Status.UNAUTHORIZED).entity("Invalid token");
+                }
+            }
+        }
+        if (failureResponse == null) {
+            logger.info("Authorization passed");   //If authorization passed, proceed with actual processing of request
+        } else {
+            requestContext.abortWith(failureResponse.build());
+        }
+
+    }
+
+    private Set<String> computeExpectedScopes(ResourceInfo resourceInfo) {
+    	
+    	String scopes[] = annotationScopes(resourceInfo.getResourceClass().getAnnotation(ProtectedApi.class));
+    	if (scopes == null) {
+    		scopes = annotationScopes(resourceInfo.getResourceMethod().getAnnotation(ProtectedApi.class));
+    		//scopes won't ever be null at this point...
+    		scopes = Optional.ofNullable(scopes).orElse(new String[0]);
+    	}
+    	return new HashSet(Arrays.asList(scopes));
+    	
+    }
+    
+    private String[] annotationScopes(ProtectedApi annotation) {
+    	//Null annotation means there was no annotation
+    	return annotation == null ? null : annotation.scopes();
+    }
+    
+    @PostConstruct
+    private void init() {
+
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            String introspectionEndpoint = mapper.readTree(new URL(persistenceService.getOIDCEndpoint())).get("introspection_endpoint").asText();            
+            introspectionService = ClientFactory.instance().createIntrospectionService(introspectionEndpoint);
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+
+    }
+
+}
