@@ -1,0 +1,44 @@
+[
+    {
+        "line": "6",
+        "column": "15",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "11",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ChallengerFileStorage' looks like designed for extension (can be subclassed), but the method 'saveChallengerStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ChallengerFileStorage' final or making the method 'saveChallengerStatus' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "14",
+        "column": "61",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "15",
+        "column": "9",
+        "severity": "error",
+        "message": "'try' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ChallengerFileStorage' looks like designed for extension (can be subclassed), but the method 'loadChallengerStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ChallengerFileStorage' final or making the method 'loadChallengerStatus' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "30",
+        "column": "61",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    }
+]

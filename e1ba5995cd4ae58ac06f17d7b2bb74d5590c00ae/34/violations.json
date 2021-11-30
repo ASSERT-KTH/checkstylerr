@@ -1,0 +1,23 @@
+[
+    {
+        "line": "17",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter thingifier should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "17",
+        "column": "37",
+        "severity": "error",
+        "message": "'thingifier' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ThingReporter' looks like designed for extension (can be subclassed), but the method 'basicReport' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ThingReporter' final or making the method 'basicReport' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
