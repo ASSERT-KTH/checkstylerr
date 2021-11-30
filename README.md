@@ -1,0 +1,1 @@
+# echebbi/eclipse-discord-integration
