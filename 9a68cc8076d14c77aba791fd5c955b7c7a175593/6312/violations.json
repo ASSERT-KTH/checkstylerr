@@ -1,0 +1,349 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "File length is 2,510 lines (max allowed is 2,000).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck"
+    },
+    {
+        "line": "89",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 27 (max allowed is 16) classes [AdHocContextValve, AuthorizationConstraintImpl, ByteArrayInputStream, ByteArrayOutputStream, DynamicWebServletRegistrationImpl, File, FilterMaps, GFBase64Decoder, GFBase64Encoder, Locale, LoginConfigDecorator, LoginConfigurationImpl, ObjectInputStream, ObjectOutputStream, PersistenceStrategyBuilderFactory, Role, SecurityConstraintImpl, SessionCookieConfig, SessionManagerConfigurationHelper, StandardPipeline, StandardWrapper, URL, UserDataConstraintImpl, V3WebappLoader, Vector, WebResourceCollectionImpl, WebServletRegistrationImpl].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "95",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "109",
+        "column": "27",
+        "severity": "info",
+        "message": "Variable 'iasBean' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "112",
+        "column": "32",
+        "severity": "info",
+        "message": "Variable '_lcMap' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "117",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'hasBeenXmlConfigured' explicitly initialized to 'false' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "141",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'hasStarted' explicitly initialized to 'false' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "142",
+        "column": "20",
+        "severity": "info",
+        "message": "Variable 'compEnvId' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "143",
+        "column": "27",
+        "severity": "info",
+        "message": "Variable 'serverContext' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "145",
+        "column": "34",
+        "severity": "info",
+        "message": "Variable 'servletProbeProvider' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "146",
+        "column": "34",
+        "severity": "info",
+        "message": "Variable 'sessionProbeProvider' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "147",
+        "column": "36",
+        "severity": "info",
+        "message": "Variable 'webModuleProbeProvider' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "187",
+        "column": "54",
+        "severity": "warning",
+        "message": "Expected @param tag for 'iasBean'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "188",
+        "column": "8",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 7, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "194",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "195",
+        "column": "8",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 7, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "211",
+        "column": "46",
+        "severity": "warning",
+        "message": "Expected @param tag for 'webContainer'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "269",
+        "column": "16",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 15, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "295",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "341",
+        "column": "45",
+        "severity": "warning",
+        "message": "The String \"\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "430",
+        "column": "42",
+        "severity": "warning",
+        "message": "Expected @param tag for 'hasBeenXmlConfigured'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "438",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "447",
+        "column": "49",
+        "severity": "warning",
+        "message": "Expected @param tag for 'cachedFinds'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "456",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "973",
+        "severity": "warning",
+        "message": "Incomplete HTML tag found:      * Configure the <code>WebModule</code< properties.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "992",
+        "column": "52",
+        "severity": "warning",
+        "message": "The String \"name\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "993",
+        "column": "53",
+        "severity": "warning",
+        "message": "The String \"value\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1000",
+        "severity": "warning",
+        "message": "Incomplete HTML tag found:      * Configure the <code>WebModule</code< properties.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "1013",
+        "column": "33",
+        "severity": "warning",
+        "message": "The String \"valve_\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1015",
+        "column": "40",
+        "severity": "warning",
+        "message": "The String \"listener_\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1145",
+        "column": "28",
+        "severity": "warning",
+        "message": "The String \"set\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1183",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "1190",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "1204",
+        "severity": "warning",
+        "message": "@return tag should be present and have description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "1237",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"alternatedocroot_\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1425",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"/\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1621",
+        "column": "65",
+        "severity": "warning",
+        "message": "Expected @param tag for 'wbd'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "1622",
+        "column": "61",
+        "severity": "warning",
+        "message": "Expected @param tag for 'wmInfo'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "1812",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"Missing WebBundleDescriptor for \" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1818",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"Missing WebComponentDescriptor for \" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1832",
+        "column": "30",
+        "severity": "info",
+        "message": "'1800' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "1832",
+        "column": "36",
+        "severity": "warning",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "1864",
+        "column": "81",
+        "severity": "info",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "1869",
+        "column": "67",
+        "severity": "info",
+        "message": "'1800' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "2134",
+        "column": "28",
+        "severity": "info",
+        "message": "Variable 'config' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "2189",
+        "column": "26",
+        "severity": "warning",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "2274",
+        "column": "5",
+        "severity": "info",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "2321",
+        "column": "20",
+        "severity": "info",
+        "message": "Variable 'runAsRoleName' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "2322",
+        "column": "36",
+        "severity": "info",
+        "message": "Variable 'servletSecurityElement' explicitly initialized to 'null' (default value for its type).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"
+    },
+    {
+        "line": "2324",
+        "column": "5",
+        "severity": "info",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "2468",
+        "column": "30",
+        "severity": "warning",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    }
+]
