@@ -1,0 +1,32 @@
+[
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.bukkit.event.entity.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.bukkit.event.player.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "221",
+        "severity": "warning",
+        "message": "'chatManager' has incorrect indentation level 8, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "348",
+        "severity": "warning",
+        "message": "'chatManager' has incorrect indentation level 10, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "432",
+        "severity": "warning",
+        "message": "Distance between variable 'user' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]
