@@ -1,0 +1,56 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "File length is 2,057 lines (max allowed is 2,000).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "Type Javadoc comment is missing null tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"
+    },
+    {
+        "line": "198",
+        "column": "9",
+        "severity": "warning",
+        "message": "Class 'StateReader' looks like designed for extension (can be subclassed), but the method 'CheckWitness' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'StateReader' final or making the method 'CheckWitness' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "198",
+        "column": "27",
+        "severity": "warning",
+        "message": "Name 'CheckWitness' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "200",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name '_hashes_for_verifying' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheck"
+    },
+    {
+        "line": "204",
+        "column": "9",
+        "severity": "warning",
+        "message": "Class 'StateReader' looks like designed for extension (can be subclassed), but the method 'Runtime_GetTrigger' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'StateReader' final or making the method 'Runtime_GetTrigger' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "204",
+        "column": "27",
+        "severity": "warning",
+        "message": "Name 'Runtime_GetTrigger' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "205",
+        "column": "41",
+        "severity": "warning",
+        "message": "Name 'app_engine' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalFinalVariableNameCheck"
+    }
+]
