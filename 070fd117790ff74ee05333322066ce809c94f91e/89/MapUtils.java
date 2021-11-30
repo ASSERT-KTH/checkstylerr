@@ -1,0 +1,34 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE file at the root of the source
+ * tree and available online at
+ *
+ * https://github.com/keeps/db-preservation-toolkit
+ */
+package com.databasepreservation.utils;
+
+import java.util.Iterator;
+import java.util.Map;
+
+public final class MapUtils {
+  private MapUtils() {
+  }
+
+  public static boolean mapEquals(Map<?, ?> fst, Map<?, ?> snd) {
+    if (fst != null && snd != null) {
+      Iterator<?> ifst = fst.keySet().iterator();
+      Iterator<?> isnd = fst.keySet().iterator();
+      while (ifst.hasNext() && isnd.hasNext()) {
+        if (!ifst.next().equals(isnd.next()))
+          return false;
+      }
+
+      if (!ifst.hasNext() && !isnd.hasNext()) {
+        return true;
+      }
+    } else if (fst == null && snd == null) {
+      return true;
+    }
+    return false;
+  }
+}
