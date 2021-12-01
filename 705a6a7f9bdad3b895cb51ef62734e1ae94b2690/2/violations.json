@@ -1,0 +1,190 @@
+[
+    {
+        "line": "1",
+        "column": "1",
+        "severity": "info",
+        "message": "Missing an import control file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheck"
+    },
+    {
+        "line": "5",
+        "column": "1",
+        "severity": "info",
+        "message": "Extra separation in import group before 'javax.net.ssl.SSLServerSocketFactory'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "5",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'javax.net.ssl.SSLServerSocketFactory' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'javax.net.ssl.SSLServerSocket' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "8",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'java.io.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "8",
+        "column": "15",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "9",
+        "column": "8",
+        "severity": "info",
+        "message": "Unused import - java.net.InetAddress.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "10",
+        "column": "21",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.security.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "info",
+        "message": "Type Javadoc comment is missing null tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"
+    },
+    {
+        "line": "16",
+        "column": "7",
+        "severity": "info",
+        "message": "Name 'TCP_TLS' must match pattern '^[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"
+    },
+    {
+        "line": "19",
+        "column": "5",
+        "severity": "info",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "5",
+        "severity": "info",
+        "message": "Variable access definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "19",
+        "column": "9",
+        "severity": "info",
+        "message": "Variable 'intSSLport' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "19",
+        "column": "22",
+        "severity": "info",
+        "message": "'853' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "21",
+        "column": "34",
+        "severity": "info",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "22",
+        "column": "13",
+        "severity": "info",
+        "message": "Variable 'backlog' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "23",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'address' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "24",
+        "column": "13",
+        "severity": "info",
+        "message": "Variable 'port' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "info",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "info",
+        "message": "Return count is 2 (max allowed for void methods/constructors/lambdas is 1).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"
+    },
+    {
+        "line": "33",
+        "column": "25",
+        "severity": "info",
+        "message": "Variable 'sslServerSocket' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "35",
+        "column": "36",
+        "severity": "info",
+        "message": "Variable 'sslServerSocketfactory' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "40",
+        "severity": "info",
+        "message": "'typecast' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "38",
+        "column": "77",
+        "severity": "info",
+        "message": "'853' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "45",
+        "column": "13",
+        "severity": "info",
+        "message": "Variable 'threadPoolSize' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "25",
+        "severity": "info",
+        "message": "Variable 'pool' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "60",
+        "column": "20",
+        "severity": "info",
+        "message": "Variable 'f' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

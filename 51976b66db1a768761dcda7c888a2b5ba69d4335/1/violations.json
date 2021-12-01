@@ -1,0 +1,370 @@
+[
+    {
+        "line": "1",
+        "column": "1",
+        "severity": "info",
+        "message": "Missing an import control file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheck"
+    },
+    {
+        "line": "10",
+        "column": "1",
+        "severity": "info",
+        "message": "Extra separation in import group before 'java.io.*'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "10",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'java.io.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "10",
+        "column": "15",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "14",
+        "column": "1",
+        "severity": "info",
+        "message": "Extra separation in import group before 'java.util.concurrent.ThreadLocalRandom'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "15",
+        "column": "8",
+        "severity": "info",
+        "message": "Unused import - java.util.prefs.BackingStoreException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "16",
+        "column": "8",
+        "severity": "info",
+        "message": "Unused import - java.util.prefs.InvalidPreferencesFormatException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "17",
+        "column": "8",
+        "severity": "info",
+        "message": "Unused import - java.util.prefs.Preferences.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "19",
+        "severity": "info",
+        "message": "Type Javadoc comment is missing null tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"
+    },
+    {
+        "line": "19",
+        "column": "1",
+        "severity": "info",
+        "message": "Class Data Abstraction Coupling is 13 (max allowed is 7) classes [BindZone, DBConnection, File, FileInputStream, HTTPS, JCLO, MC, ObjectMessage, Parser, TCP, UDP, Version, jdnssArgs].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "19",
+        "column": "1",
+        "severity": "info",
+        "message": "Class should define a constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingCtorCheck"
+    },
+    {
+        "line": "19",
+        "column": "1",
+        "severity": "info",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "19",
+        "column": "7",
+        "severity": "info",
+        "message": "Abbreviation in name 'JDNSS' must contain no more than '4' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "info",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "21",
+        "column": "28",
+        "severity": "info",
+        "message": "Name 'jargs' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "22",
+        "column": "5",
+        "severity": "info",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "22",
+        "column": "25",
+        "severity": "info",
+        "message": "Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "22",
+        "column": "55",
+        "severity": "info",
+        "message": "The String \"JDNSS\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "23",
+        "column": "33",
+        "severity": "info",
+        "message": "Name 'DBConnection' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "25",
+        "column": "44",
+        "severity": "info",
+        "message": "Name 'bindZones' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "27",
+        "severity": "info",
+        "message": "First sentence of Javadoc is missing an ending period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "27",
+        "severity": "info",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "info",
+        "message": "Block comment has incorrect indentation level 4, expected is 5, indentation should be the same level as line 34.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.CommentsIndentationCheck"
+    },
+    {
+        "line": "34",
+        "column": "6",
+        "severity": "info",
+        "message": "'method def modifier' has incorrect indentation level 5, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "34",
+        "column": "26",
+        "severity": "info",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "45",
+        "column": "24",
+        "severity": "info",
+        "message": "Variable 'd' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "62",
+        "column": "21",
+        "severity": "info",
+        "message": "Name 'IPAddress' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "63",
+        "column": "22",
+        "severity": "info",
+        "message": "Variable 'parts' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "65",
+        "column": "13",
+        "severity": "info",
+        "message": "'switch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "66",
+        "column": "58",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "67",
+        "column": "58",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "68",
+        "column": "56",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "69",
+        "column": "58",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "70",
+        "column": "54",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "83",
+        "column": "47",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "84",
+        "column": "51",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "85",
+        "column": "51",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "86",
+        "column": "49",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "87",
+        "column": "49",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "88",
+        "column": "51",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "89",
+        "column": "51",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "90",
+        "column": "47",
+        "severity": "info",
+        "message": "Only one statement per line allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck"
+    },
+    {
+        "line": "100",
+        "column": "5",
+        "severity": "info",
+        "message": "Cyclomatic Complexity is 12 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "100",
+        "column": "5",
+        "severity": "info",
+        "message": "NPath Complexity is 432 (max allowed is 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    },
+    {
+        "line": "117",
+        "column": "40",
+        "severity": "info",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "121",
+        "column": "73",
+        "severity": "info",
+        "message": "'16' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "126",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'additional' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "126",
+        "column": "26",
+        "severity": "info",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "145",
+        "column": "26",
+        "severity": "info",
+        "message": "Variable 'zone' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "161",
+        "column": "5",
+        "severity": "info",
+        "message": "Uncommented main method found.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheck"
+    },
+    {
+        "line": "161",
+        "column": "29",
+        "severity": "info",
+        "message": "Parameter args should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "161",
+        "column": "38",
+        "severity": "info",
+        "message": "Expected @param tag for 'args'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "170",
+        "column": "14",
+        "severity": "info",
+        "message": "Variable 'jclo' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

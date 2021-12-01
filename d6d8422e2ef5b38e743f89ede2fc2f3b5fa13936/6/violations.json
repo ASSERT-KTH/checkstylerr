@@ -1,0 +1,358 @@
+[
+    {
+        "line": "1",
+        "column": "1",
+        "severity": "info",
+        "message": "Missing an import control file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheck"
+    },
+    {
+        "line": "6",
+        "column": "1",
+        "severity": "info",
+        "message": "Extra separation in import group before 'java.sql.*'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'java.sql.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "column": "16",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.sql.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "11",
+        "severity": "info",
+        "message": "Type Javadoc comment is missing null tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"
+    },
+    {
+        "line": "11",
+        "column": "1",
+        "severity": "info",
+        "message": "Class Data Abstraction Coupling is 12 (max allowed is 7) classes [AAAARR, ARR, CNAMERR, DBZone, HINFORR, MXRR, NSRR, ObjectMessage, PTRRR, SOARR, TXTRR, Vector].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "14",
+        "column": "5",
+        "severity": "info",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "14",
+        "column": "33",
+        "severity": "info",
+        "message": "Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "20",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'user' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "20",
+        "column": "38",
+        "severity": "info",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "21",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'pass' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "21",
+        "column": "38",
+        "severity": "info",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "info",
+        "message": "Executable statement count is 31 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck"
+    },
+    {
+        "line": "53",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'v' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "36",
+        "severity": "info",
+        "message": "The String \"name\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "76",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 's' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "82",
+        "column": "21",
+        "severity": "info",
+        "message": "'(' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "105",
+        "column": "25",
+        "severity": "info",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "108",
+        "column": "5",
+        "severity": "info",
+        "message": "Cyclomatic Complexity is 12 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "108",
+        "column": "5",
+        "severity": "info",
+        "message": "Executable statement count is 40 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.ExecutableStatementCountCheck"
+    },
+    {
+        "line": "108",
+        "column": "5",
+        "severity": "info",
+        "message": "NCSS for this method is 53 (max allowed is 50).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.JavaNCSSCheck"
+    },
+    {
+        "line": "114",
+        "column": "20",
+        "severity": "info",
+        "message": "Variable 'stype' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "116",
+        "column": "24",
+        "severity": "info",
+        "message": "Variable 'ret' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "117",
+        "column": "23",
+        "severity": "info",
+        "message": "Variable 'rs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "118",
+        "column": "75",
+        "severity": "info",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "119",
+        "column": "55",
+        "severity": "info",
+        "message": "The String \"\\\"\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "119",
+        "column": "60",
+        "severity": "info",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "123",
+        "column": "24",
+        "severity": "info",
+        "message": "Variable 'dbname' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "124",
+        "column": "24",
+        "severity": "info",
+        "message": "Variable 'dbcontent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "125",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'dbttl' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "126",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'dbprio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "129",
+        "column": "31",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "130",
+        "column": "32",
+        "severity": "info",
+        "message": "Variable 's' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "130",
+        "column": "33",
+        "severity": "info",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "130",
+        "column": "54",
+        "severity": "info",
+        "message": "The String \"\\\\s+\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "132",
+        "column": "76",
+        "severity": "info",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "133",
+        "column": "52",
+        "severity": "info",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "133",
+        "column": "76",
+        "severity": "info",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "134",
+        "column": "52",
+        "severity": "info",
+        "message": "'6' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "137",
+        "column": "30",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "141",
+        "column": "29",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "145",
+        "column": "32",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "149",
+        "column": "30",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "153",
+        "column": "31",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "157",
+        "column": "33",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "161",
+        "column": "31",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "165",
+        "column": "33",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "166",
+        "column": "39",
+        "severity": "info",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "170",
+        "column": "30",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "171",
+        "column": "62",
+        "severity": "info",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "186",
+        "column": "25",
+        "severity": "info",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    }
+]

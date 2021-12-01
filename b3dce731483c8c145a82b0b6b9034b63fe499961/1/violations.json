@@ -1,0 +1,358 @@
+[
+    {
+        "line": "1",
+        "column": "1",
+        "severity": "info",
+        "message": "Missing an import control file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportControlCheck"
+    },
+    {
+        "line": "6",
+        "column": "1",
+        "severity": "info",
+        "message": "Extra separation in import group before 'java.sql.*'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "column": "1",
+        "severity": "info",
+        "message": "Wrong order for 'java.sql.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "column": "16",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.sql.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "7",
+        "column": "17",
+        "severity": "info",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "9",
+        "severity": "info",
+        "message": "Type Javadoc comment is missing null tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"
+    },
+    {
+        "line": "9",
+        "column": "1",
+        "severity": "info",
+        "message": "Class Data Abstraction Coupling is 12 (max allowed is 7) classes [AAAARR, ARR, CNAMERR, DBZone, EmptyRR, HINFORR, MXRR, NSRR, ObjectMessage, PTRRR, SOARR, TXTRR].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "12",
+        "column": "5",
+        "severity": "info",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "12",
+        "column": "33",
+        "severity": "info",
+        "message": "Name 'logger' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "18",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'user' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "18",
+        "column": "38",
+        "severity": "info",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "19",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 'pass' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "38",
+        "severity": "info",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "info",
+        "message": "Return count is 5 (max allowed for non-void methods/lambdas is 2).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"
+    },
+    {
+        "line": "51",
+        "column": "21",
+        "severity": "info",
+        "message": "Variable 'v' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "59",
+        "column": "36",
+        "severity": "info",
+        "message": "The String \"name\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "76",
+        "column": "16",
+        "severity": "info",
+        "message": "Variable 's' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "column": "36",
+        "severity": "info",
+        "message": "'(' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "111",
+        "column": "20",
+        "severity": "info",
+        "message": "Variable 'stype' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "113",
+        "column": "22",
+        "severity": "info",
+        "message": "Variable 'ret' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "114",
+        "column": "23",
+        "severity": "info",
+        "message": "Variable 'rs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "115",
+        "column": "75",
+        "severity": "info",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "116",
+        "column": "55",
+        "severity": "info",
+        "message": "The String \"\\\"\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "116",
+        "column": "60",
+        "severity": "info",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "131",
+        "column": "5",
+        "severity": "info",
+        "message": "Cyclomatic Complexity is 15 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "131",
+        "column": "5",
+        "severity": "info",
+        "message": "Return count is 11 (max allowed for non-void methods/lambdas is 2).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"
+    },
+    {
+        "line": "139",
+        "column": "23",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "140",
+        "column": "26",
+        "severity": "info",
+        "message": "Variable 's' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "140",
+        "column": "46",
+        "severity": "info",
+        "message": "The String \"\\\\s+\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "142",
+        "column": "68",
+        "severity": "info",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "143",
+        "column": "44",
+        "severity": "info",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "143",
+        "column": "68",
+        "severity": "info",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "144",
+        "column": "44",
+        "severity": "info",
+        "message": "'6' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "146",
+        "column": "22",
+        "severity": "info",
+        "message": "'{' at column 22 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "146",
+        "column": "22",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "147",
+        "column": "21",
+        "severity": "info",
+        "message": "'{' at column 21 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "147",
+        "column": "21",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "148",
+        "column": "24",
+        "severity": "info",
+        "message": "'{' at column 24 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "148",
+        "column": "24",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "149",
+        "column": "22",
+        "severity": "info",
+        "message": "'{' at column 22 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "149",
+        "column": "22",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "150",
+        "column": "23",
+        "severity": "info",
+        "message": "'{' at column 23 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "150",
+        "column": "23",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "151",
+        "column": "25",
+        "severity": "info",
+        "message": "'{' at column 25 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "151",
+        "column": "25",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "152",
+        "column": "23",
+        "severity": "info",
+        "message": "'{' at column 23 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "152",
+        "column": "23",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "153",
+        "column": "25",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "161",
+        "column": "30",
+        "severity": "info",
+        "message": "'{' at column 30 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "161",
+        "column": "30",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    },
+    {
+        "line": "162",
+        "column": "22",
+        "severity": "info",
+        "message": "Avoid nested blocks.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"
+    }
+]
