@@ -1,0 +1,38 @@
+[
+    {
+        "line": "16",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "223",
+        "severity": "error",
+        "message": "At-clause should have a non-empty description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    },
+    {
+        "line": "224",
+        "severity": "error",
+        "message": "At-clauses have to appear in the order '[@param, @return, @throws, @deprecated]'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"
+    },
+    {
+        "line": "344",
+        "severity": "error",
+        "message": "At-clauses have to appear in the order '[@param, @return, @throws, @deprecated]'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"
+    },
+    {
+        "line": "348",
+        "severity": "error",
+        "message": "Distance between variable 's' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "350",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    }
+]
