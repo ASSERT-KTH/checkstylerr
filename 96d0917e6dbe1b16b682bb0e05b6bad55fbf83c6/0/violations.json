@@ -1,0 +1,23 @@
+[
+    {
+        "line": "24",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "25",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.springframework.web.servlet.config.annotation.ViewControllerRegistry.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'WebMvcConfig' looks like designed for extension (can be subclassed), but the method 'configurePathMatch' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'WebMvcConfig' final or making the method 'configurePathMatch' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
