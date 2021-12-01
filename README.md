@@ -1,0 +1,1 @@
+# pbaranchikov/stash-eol-check
