@@ -1,0 +1,54 @@
+[
+    {
+        "line": "2",
+        "severity": "error",
+        "message": "Line does not match expected header line of ' \\* Licensed to the Apache Software Foundation \\(ASF\\) under one or more'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "27",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - com.google.common.util.concurrent.ExecutionError.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong order for 'org.apache.cassandra.db.marshal.BytesType' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong order for 'org.apache.usergrid.persistence.core.astyanax.ScopedRowKey' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.apache.usergrid.persistence.graph.serialization.impl.shard.NodeShardCache.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "'org.slf4j.Logger' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "67",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'logger' must match pattern '^([A-Z](_?[A-Z0-9]+)*)|(log)$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "232",
+        "column": "13",
+        "severity": "warning",
+        "message": "'}' at column 13 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    }
+]

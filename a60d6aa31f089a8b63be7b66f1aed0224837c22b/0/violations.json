@@ -1,0 +1,41 @@
+[
+    {
+        "line": "0",
+        "severity": "error",
+        "message": "Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred during the analysis of file /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/apache-usergrid/stack/core/src/main/java/org/apache/usergrid/corepersistence/CpEntityManager.java.\n at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:199)\n at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:78)\n at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:316)\n at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:286)\n at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:213)\n at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:430)\n at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:362)\n at com.puppycrawl.tools.checkstyle.Main.main(Main.java:177)\nCaused by: /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/apache-usergrid/stack/core/src/main/java/org/apache/usergrid/corepersistence/CpEntityManager.java:2163:9: expecting EOF, found 'FieldSet'\n at antlr.Parser.match(Parser.java:211)\n at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:211)\n at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:446)\n at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:179)\n ... 7 more\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    },
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "2",
+        "severity": "error",
+        "message": "Line does not match expected header line of ' \\* Licensed to the Apache Software Foundation \\(ASF\\) under one or more'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "714",
+        "column": "1",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "715",
+        "column": "1",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "716",
+        "column": "1",
+        "severity": "error",
+        "message": "Line contains a tab character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    }
+]

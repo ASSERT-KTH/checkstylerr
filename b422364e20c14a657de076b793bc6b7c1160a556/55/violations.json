@@ -1,0 +1,89 @@
+[
+    {
+        "line": "29",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.usergrid.rest.system.ApplicationsResource.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "30",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.usergrid.rest.system.DatabaseResource.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "31",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - org.apache.usergrid.rest.system.QueueSystemResource.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "'org.slf4j.Logger' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong order for 'org.apache.usergrid.rest.AbstractContextResource' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - javax.ws.rs.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Wrong order for 'javax.ws.rs.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "42",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 25 - javax.ws.rs.core.Context.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "43",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 26 - javax.ws.rs.core.MediaType.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "44",
+        "column": "1",
+        "severity": "warning",
+        "message": "Duplicate import to line 27 - javax.ws.rs.core.UriInfo.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "56",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'logger' must match pattern '^([A-Z](_?[A-Z0-9]+)*)|(log)$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "99",
+        "column": "34",
+        "severity": "warning",
+        "message": "'{' at column 34 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "119",
+        "column": "44",
+        "severity": "warning",
+        "message": "'{' at column 44 should have line break after.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    }
+]
