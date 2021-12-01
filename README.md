@@ -1,0 +1,1 @@
+# vojtechhabarta/typescript-generator
