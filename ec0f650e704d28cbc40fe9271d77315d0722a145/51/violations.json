@@ -1,0 +1,63 @@
+[
+    {
+        "line": "2",
+        "severity": "warning",
+        "message": "'sample.cluster.transformation.TransformationMessages.TransformationJob' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "4",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.actor.AbstractActor' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "5",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.cluster.Cluster' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.cluster.ClusterEvent.CurrentClusterState' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.cluster.ClusterEvent.MemberUp' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.cluster.Member' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "9",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'akka.cluster.MemberStatus' import. Should be before 'sample.cluster.transformation.TransformationMessages.TransformationResult'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "'self' has incorrect indentation level 10, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "41",
+        "column": "30",
+        "severity": "warning",
+        "message": "Lambda parameter name 'mUp' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LambdaParameterNameCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    }
+]
