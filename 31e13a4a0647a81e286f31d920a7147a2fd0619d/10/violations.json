@@ -1,0 +1,42 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LocalSystemTime' looks like designed for extension (can be subclassed), but the method 'milliseconds' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LocalSystemTime' final or making the method 'milliseconds' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LocalSystemTime' looks like designed for extension (can be subclassed), but the method 'nanoseconds' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LocalSystemTime' final or making the method 'nanoseconds' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LocalSystemTime' looks like designed for extension (can be subclassed), but the method 'sleep' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LocalSystemTime' final or making the method 'sleep' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "31",
+        "column": "23",
+        "severity": "error",
+        "message": "Parameter ms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]
