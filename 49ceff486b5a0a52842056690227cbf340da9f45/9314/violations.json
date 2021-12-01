@@ -1,0 +1,29 @@
+[
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ModifiedUtf8HashFunction' looks like designed for extension (can be subclassed), but the method 'hash' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ModifiedUtf8HashFunction' final or making the method 'hash' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "21",
+        "severity": "error",
+        "message": "Parameter k should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "29",
+        "column": "69",
+        "severity": "error",
+        "message": "'0x1ce79e5c' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    }
+]

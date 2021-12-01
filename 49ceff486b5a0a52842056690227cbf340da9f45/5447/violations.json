@@ -1,0 +1,63 @@
+[
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "67",
+        "column": "69",
+        "severity": "error",
+        "message": "'statusCode' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "68",
+        "column": "41",
+        "severity": "error",
+        "message": "'reasonPhrase' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "77",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicStatusLine' looks like designed for extension (can be subclassed), but the method 'getStatusCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicStatusLine' final or making the method 'getStatusCode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "82",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicStatusLine' looks like designed for extension (can be subclassed), but the method 'getProtocolVersion' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicStatusLine' final or making the method 'getProtocolVersion' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "87",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicStatusLine' looks like designed for extension (can be subclassed), but the method 'getReasonPhrase' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicStatusLine' final or making the method 'getReasonPhrase' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "92",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicStatusLine' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicStatusLine' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "95",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 83).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "98",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicStatusLine' looks like designed for extension (can be subclassed), but the method 'clone' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicStatusLine' final or making the method 'clone' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

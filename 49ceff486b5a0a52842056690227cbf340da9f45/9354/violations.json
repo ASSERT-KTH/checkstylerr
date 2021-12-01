@@ -1,0 +1,43 @@
+[
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "23",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter logger should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'InfoOutputStream' looks like designed for extension (can be subclassed), but the method 'log' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'InfoOutputStream' final or making the method 'log' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "24",
+        "severity": "error",
+        "message": "Parameter message should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "27",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter off should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "27",
+        "column": "49",
+        "severity": "error",
+        "message": "Parameter length should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

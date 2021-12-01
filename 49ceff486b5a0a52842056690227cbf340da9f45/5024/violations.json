@@ -1,0 +1,36 @@
+[
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 99).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainConnectionSocketFactory' looks like designed for extension (can be subclassed), but the method 'createSocket' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainConnectionSocketFactory' final or making the method 'createSocket' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainConnectionSocketFactory' looks like designed for extension (can be subclassed), but the method 'connectSocket' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainConnectionSocketFactory' final or making the method 'connectSocket' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "69",
+        "column": "44",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    }
+]

@@ -1,0 +1,164 @@
+[
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "40",
+        "column": "42",
+        "severity": "error",
+        "message": "Name 'DEFAULT_SSL_CONTEXT_IMPL' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "33",
+        "severity": "error",
+        "message": "Variable 'sslParameters' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "60",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter dummy should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "20",
+        "severity": "error",
+        "message": "Expected @throws tag for 'GeneralSecurityException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "61",
+        "column": "46",
+        "severity": "error",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "66",
+        "column": "66",
+        "severity": "error",
+        "message": "'typecast' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "68",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "71",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 92).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "72",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 94).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "90",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter kms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "90",
+        "column": "46",
+        "severity": "error",
+        "message": "Parameter tms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "91",
+        "column": "13",
+        "severity": "error",
+        "message": "Parameter sr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "93",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "96",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetSocketFactory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineGetSocketFactory' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "104",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetServerSocketFactory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineGetServerSocketFactory' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "112",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineCreateSSLEngine' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineCreateSSLEngine' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "113",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter host should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "113",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter port should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "122",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineCreateSSLEngine' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineCreateSSLEngine' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetServerSessionContext' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineGetServerSessionContext' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "137",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetClientSessionContext' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SSLContextImpl' final or making the method 'engineGetClientSessionContext' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

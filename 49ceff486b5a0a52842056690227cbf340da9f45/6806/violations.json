@@ -1,0 +1,56 @@
+[
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Type Javadoc comment is missing @param <T> tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "42",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "49",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter parentValue should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'InheritableThreadLocal' looks like designed for extension (can be subclassed), but the method 'values' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'InheritableThreadLocal' final or making the method 'values' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "19",
+        "severity": "error",
+        "message": "Parameter current should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'InheritableThreadLocal' looks like designed for extension (can be subclassed), but the method 'initializeValues' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'InheritableThreadLocal' final or making the method 'initializeValues' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "59",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter current should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "60",
+        "column": "42",
+        "severity": "error",
+        "message": "Inner assignments should be avoided.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"
+    }
+]

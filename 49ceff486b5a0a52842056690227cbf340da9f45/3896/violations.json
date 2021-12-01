@@ -1,0 +1,402 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "error",
+        "message": "Name 'SQLite.JDBC2z' must match pattern '^[a-z]+(\\.[a-zA-Z_][a-zA-Z0-9_]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.sql.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "7",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "8",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "8",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "9",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter r should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "9",
+        "column": "48",
+        "severity": "error",
+        "message": "'r' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "12",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getCatalogName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getCatalogName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "13",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnClassName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnClassName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "24",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    },
+    {
+        "line": "44",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnCount' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnCount' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "51",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnDisplaySize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnDisplaySize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "51",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnLabel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnLabel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "55",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "85",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "85",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "98",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getColumnTypeName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getColumnTypeName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "98",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "103",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    },
+    {
+        "line": "124",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getPrecision' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getPrecision' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "124",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "128",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getScale' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getScale' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "128",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getSchemaName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getSchemaName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "132",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "136",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'getTableName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'getTableName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "136",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "155",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isAutoIncrement' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isAutoIncrement' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "155",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "159",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isCaseSensitive' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isCaseSensitive' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "159",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "163",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isCurrency' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isCurrency' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "163",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "167",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "167",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isDefinitelyWritable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isDefinitelyWritable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "167",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "172",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isNullable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isNullable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "172",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "176",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isReadOnly' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isReadOnly' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "176",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "180",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isSearchable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isSearchable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "180",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "184",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isSigned' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isSigned' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "184",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "188",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isWritable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isWritable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "188",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter column should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "192",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'findColByName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'findColByName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "192",
+        "column": "23",
+        "severity": "error",
+        "message": "Parameter columnName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "215",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'unwrap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'unwrap' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "215",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter iface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "219",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCResultSetMetaData' looks like designed for extension (can be subclassed), but the method 'isWrapperFor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCResultSetMetaData' final or making the method 'isWrapperFor' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "219",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter iface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

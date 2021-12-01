@@ -1,0 +1,469 @@
+[
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "25",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "28",
+        "column": "32",
+        "severity": "error",
+        "message": "Variable 'ref' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "30",
+        "column": "19",
+        "severity": "error",
+        "message": "Parameter ref should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "30",
+        "column": "36",
+        "severity": "error",
+        "message": "'ref' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getPrintMachineCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getPrintMachineCode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setPrintMachineCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setPrintMachineCode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "38",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "42",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getNoFramePointerElim' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getNoFramePointerElim' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setNoFramePointerElim' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setNoFramePointerElim' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "46",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getLessPreciseFPMADOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getLessPreciseFPMADOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setLessPreciseFPMADOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setLessPreciseFPMADOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "43",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getUnsafeFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getUnsafeFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setUnsafeFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setUnsafeFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "62",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getNoInfsFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getNoInfsFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setNoInfsFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setNoInfsFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "74",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getNoNaNsFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getNoNaNsFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "78",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setNoNaNsFPMath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setNoNaNsFPMath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "78",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "82",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getHonorSignDependentRoundingFPMathOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getHonorSignDependentRoundingFPMathOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "86",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setHonorSignDependentRoundingFPMathOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setHonorSignDependentRoundingFPMathOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "86",
+        "column": "59",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "90",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getUseSoftFloat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getUseSoftFloat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "94",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setUseSoftFloat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setUseSoftFloat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "94",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "98",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getNoZerosInBSS' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getNoZerosInBSS' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "102",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setNoZerosInBSS' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setNoZerosInBSS' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "102",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "106",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getJITEmitDebugInfo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getJITEmitDebugInfo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "110",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setJITEmitDebugInfo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setJITEmitDebugInfo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "110",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "114",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getJITEmitDebugInfoToDisk' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getJITEmitDebugInfoToDisk' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "118",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setJITEmitDebugInfoToDisk' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setJITEmitDebugInfoToDisk' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "118",
+        "column": "43",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "122",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getGuaranteedTailCallOpt' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getGuaranteedTailCallOpt' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "126",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setGuaranteedTailCallOpt' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setGuaranteedTailCallOpt' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "126",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "130",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getDisableTailCalls' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getDisableTailCalls' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "134",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setDisableTailCalls' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setDisableTailCalls' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "134",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getStackAlignmentOverride' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getStackAlignmentOverride' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "142",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setStackAlignmentOverride' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setStackAlignmentOverride' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "142",
+        "column": "43",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "146",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getEnableFastISel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getEnableFastISel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "150",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setEnableFastISel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setEnableFastISel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "150",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "154",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getPositionIndependentExecutable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getPositionIndependentExecutable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "158",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setPositionIndependentExecutable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setPositionIndependentExecutable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "158",
+        "column": "50",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "162",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getUseInitArray' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getUseInitArray' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "166",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setUseInitArray' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setUseInitArray' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "166",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "170",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getFloatABIType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getFloatABIType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "174",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setFloatABIType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setFloatABIType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "174",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "178",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'getAllowFPOpFusion' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'getAllowFPOpFusion' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "182",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'setAllowFPOpFusion' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'setAllowFPOpFusion' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "182",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "186",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'hashCode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'hashCode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "190",
+        "column": "50",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "194",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TargetOptions' looks like designed for extension (can be subclassed), but the method 'equals' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TargetOptions' final or making the method 'equals' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "195",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter obj should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

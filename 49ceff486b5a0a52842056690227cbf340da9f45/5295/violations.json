@@ -1,0 +1,62 @@
+[
+    {
+        "line": "64",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "80",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 95).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "80",
+        "column": "64",
+        "severity": "error",
+        "message": "'out' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "80",
+        "column": "80",
+        "severity": "error",
+        "message": "'contentLength' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "99",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentLengthOutputStream' looks like designed for extension (can be subclassed), but the method 'flush' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentLengthOutputStream' final or making the method 'flush' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "104",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentLengthOutputStream' looks like designed for extension (can be subclassed), but the method 'write' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentLengthOutputStream' final or making the method 'write' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "105",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 88).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "120",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentLengthOutputStream' looks like designed for extension (can be subclassed), but the method 'write' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentLengthOutputStream' final or making the method 'write' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "125",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentLengthOutputStream' looks like designed for extension (can be subclassed), but the method 'write' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentLengthOutputStream' final or making the method 'write' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

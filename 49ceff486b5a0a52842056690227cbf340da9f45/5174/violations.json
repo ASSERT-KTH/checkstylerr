@@ -1,0 +1,29 @@
+[
+    {
+        "line": "43",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "49",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicSecureHandler' looks like designed for extension (can be subclassed), but the method 'parse' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicSecureHandler' final or making the method 'parse' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicSecureHandler' looks like designed for extension (can be subclassed), but the method 'match' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicSecureHandler' final or making the method 'match' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "63",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicSecureHandler' looks like designed for extension (can be subclassed), but the method 'getAttributeName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicSecureHandler' final or making the method 'getAttributeName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

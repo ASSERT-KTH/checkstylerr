@@ -1,0 +1,22 @@
+[
+    {
+        "line": "41",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicCommentHandler' looks like designed for extension (can be subclassed), but the method 'parse' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicCommentHandler' final or making the method 'parse' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicCommentHandler' looks like designed for extension (can be subclassed), but the method 'getAttributeName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicCommentHandler' final or making the method 'getAttributeName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

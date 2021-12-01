@@ -1,0 +1,117 @@
+[
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "15",
+        "severity": "error",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 93).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 93).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "column": "85",
+        "severity": "error",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ServerSessionContext' looks like designed for extension (can be subclassed), but the method 'setPersistentCache' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ServerSessionContext' final or making the method 'setPersistentCache' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "48",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter persistentCache should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "48",
+        "column": "58",
+        "severity": "error",
+        "message": "'persistentCache' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "52",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter session should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "52",
+        "column": "55",
+        "severity": "error",
+        "message": "'{' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "52",
+        "column": "56",
+        "severity": "error",
+        "message": "'}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ServerSessionContext' looks like designed for extension (can be subclassed), but the method 'getSession' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ServerSessionContext' final or making the method 'getSession' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "55",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter sessionId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "76",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ServerSessionContext' looks like designed for extension (can be subclassed), but the method 'putSession' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ServerSessionContext' final or making the method 'putSession' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "77",
+        "column": "21",
+        "severity": "error",
+        "message": "Parameter session should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "80",
+        "severity": "error",
+        "message": "Comment matches to-do format 'TODO:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "49",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntity' looks like designed for extension (can be subclassed), but the method 'getContentLength' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntity' final or making the method 'getContentLength' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "111",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntity' looks like designed for extension (can be subclassed), but the method 'writeTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntity' final or making the method 'writeTo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "126",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntity' looks like designed for extension (can be subclassed), but the method 'isStreaming' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntity' final or making the method 'isStreaming' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "128",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "line": "21",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MTAudioProcessingTapMutableFlags' looks like designed for extension (can be subclassed), but the method 'get' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MTAudioProcessingTapMutableFlags' final or making the method 'get' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MTAudioProcessingTapMutableFlags' looks like designed for extension (can be subclassed), but the method 'set' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MTAudioProcessingTapMutableFlags' final or making the method 'set' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "21",
+        "severity": "error",
+        "message": "Parameter flags should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

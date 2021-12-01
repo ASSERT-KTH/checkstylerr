@@ -1,0 +1,72 @@
+[
+    {
+        "line": "36",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "19",
+        "severity": "error",
+        "message": "Variable 'parent' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "39",
+        "column": "9",
+        "severity": "error",
+        "message": "Variable 'index' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "41",
+        "column": "18",
+        "severity": "error",
+        "message": "Parameter document should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LeafNodeImpl' looks like designed for extension (can be subclassed), but the method 'getNextSibling' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LeafNodeImpl' final or making the method 'getNextSibling' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LeafNodeImpl' looks like designed for extension (can be subclassed), but the method 'getParentNode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LeafNodeImpl' final or making the method 'getParentNode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "57",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LeafNodeImpl' looks like designed for extension (can be subclassed), but the method 'getPreviousSibling' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LeafNodeImpl' final or making the method 'getPreviousSibling' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "65",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'LeafNodeImpl' looks like designed for extension (can be subclassed), but the method 'isParentOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'LeafNodeImpl' final or making the method 'isParentOf' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "65",
+        "column": "24",
+        "severity": "error",
+        "message": "Parameter node should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

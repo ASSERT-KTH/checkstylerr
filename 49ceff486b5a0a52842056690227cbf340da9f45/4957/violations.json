@@ -1,0 +1,91 @@
+[
+    {
+        "line": "52",
+        "column": "26",
+        "severity": "error",
+        "message": "Variable 'wrappedEntity' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "57",
+        "column": "47",
+        "severity": "error",
+        "message": "'wrappedEntity' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "57",
+        "column": "47",
+        "severity": "error",
+        "message": "Expected @param tag for 'wrappedEntity'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'isRepeatable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'isRepeatable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'isChunked' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'isChunked' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "72",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'getContentLength' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'getContentLength' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "77",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'getContentType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'getContentType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "82",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'getContentEncoding' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'getContentEncoding' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "87",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'getContent' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'getContent' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "93",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'writeTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'writeTo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "99",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpEntityWrapper' looks like designed for extension (can be subclassed), but the method 'isStreaming' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpEntityWrapper' final or making the method 'isStreaming' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "105",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "106",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 93).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

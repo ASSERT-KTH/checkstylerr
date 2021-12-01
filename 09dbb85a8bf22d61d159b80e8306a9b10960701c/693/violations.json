@@ -1,0 +1,30 @@
+[
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "22",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter ctx should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLDigestContext' looks like designed for extension (can be subclassed), but the method 'finalize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLDigestContext' final or making the method 'finalize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLDigestContext' looks like designed for extension (can be subclassed), but the method 'getContext' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLDigestContext' final or making the method 'getContext' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

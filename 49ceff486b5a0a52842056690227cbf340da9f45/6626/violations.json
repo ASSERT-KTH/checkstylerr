@@ -1,0 +1,23 @@
+[
+    {
+        "line": "25",
+        "column": "50",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "27",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter ex should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PrivilegedActionException' looks like designed for extension (can be subclassed), but the method 'getException' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PrivilegedActionException' final or making the method 'getException' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

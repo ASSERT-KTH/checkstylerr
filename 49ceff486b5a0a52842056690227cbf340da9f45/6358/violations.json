@@ -1,0 +1,51 @@
+[
+    {
+        "line": "33",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter c should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "50",
+        "severity": "error",
+        "message": "'c' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter arg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "62",
+        "severity": "error",
+        "message": "'arg' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "72",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'IllegalFormatConversionException' looks like designed for extension (can be subclassed), but the method 'getMessage' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'IllegalFormatConversionException' final or making the method 'getMessage' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

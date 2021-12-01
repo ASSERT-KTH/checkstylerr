@@ -1,0 +1,83 @@
+[
+    {
+        "line": "30",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "40",
+        "column": "31",
+        "severity": "error",
+        "message": "'2048' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "42",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRSAKeyPairGenerator' looks like designed for extension (can be subclassed), but the method 'generateKeyPair' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRSAKeyPairGenerator' final or making the method 'generateKeyPair' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 91).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRSAKeyPairGenerator' looks like designed for extension (can be subclassed), but the method 'initialize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRSAKeyPairGenerator' final or making the method 'initialize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter keysize should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "54",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter random should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRSAKeyPairGenerator' looks like designed for extension (can be subclassed), but the method 'initialize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRSAKeyPairGenerator' final or making the method 'initialize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "59",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter params should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "59",
+        "column": "59",
+        "severity": "error",
+        "message": "Parameter random should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "62",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 98).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "67",
+        "column": "26",
+        "severity": "error",
+        "message": "'publicExponent' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

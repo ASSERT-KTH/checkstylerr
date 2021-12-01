@@ -1,0 +1,29 @@
+[
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "31",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter callingClass should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "43",
+        "severity": "error",
+        "message": "Parameter targetClass should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "36",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'Anewarray' looks like designed for extension (can be subclassed), but the method 'getFunctionType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Anewarray' final or making the method 'getFunctionType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

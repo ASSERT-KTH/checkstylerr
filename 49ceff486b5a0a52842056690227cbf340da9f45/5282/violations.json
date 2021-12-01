@@ -1,0 +1,56 @@
+[
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 83).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "49",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicNIOPoolEntry' looks like designed for extension (can be subclassed), but the method 'close' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicNIOPoolEntry' final or making the method 'close' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicNIOPoolEntry' looks like designed for extension (can be subclassed), but the method 'isClosed' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicNIOPoolEntry' final or making the method 'isClosed' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicNIOPoolEntry' looks like designed for extension (can be subclassed), but the method 'getSocketTimeout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicNIOPoolEntry' final or making the method 'getSocketTimeout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicNIOPoolEntry' looks like designed for extension (can be subclassed), but the method 'setSocketTimeout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicNIOPoolEntry' final or making the method 'setSocketTimeout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "37",
+        "severity": "error",
+        "message": "'socketTimeout' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

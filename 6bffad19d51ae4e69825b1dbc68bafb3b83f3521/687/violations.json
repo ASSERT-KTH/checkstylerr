@@ -1,0 +1,37 @@
+[
+    {
+        "line": "30",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "30",
+        "column": "34",
+        "severity": "error",
+        "message": "'}' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "32",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter dummy should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "37",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetSocketFactory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLContextImpl' final or making the method 'engineGetSocketFactory' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLContextImpl' looks like designed for extension (can be subclassed), but the method 'engineGetServerSocketFactory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLContextImpl' final or making the method 'engineGetServerSocketFactory' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

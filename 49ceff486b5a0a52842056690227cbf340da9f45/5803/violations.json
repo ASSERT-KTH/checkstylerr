@@ -1,0 +1,75 @@
+[
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "57",
+        "severity": "error",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ASN1OctetString' looks like designed for extension (can be subclassed), but the method 'decode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ASN1OctetString' final or making the method 'decode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter in should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "75",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "75",
+        "column": "46",
+        "severity": "error",
+        "message": "Parameter in should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "76",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 93).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "79",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ASN1OctetString' looks like designed for extension (can be subclassed), but the method 'encodeContent' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ASN1OctetString' final or making the method 'encodeContent' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "79",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter out should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "83",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ASN1OctetString' looks like designed for extension (can be subclassed), but the method 'setEncodingContent' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ASN1OctetString' final or making the method 'setEncodingContent' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "83",
+        "column": "46",
+        "severity": "error",
+        "message": "Parameter out should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

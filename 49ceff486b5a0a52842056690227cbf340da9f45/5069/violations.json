@@ -1,0 +1,30 @@
+[
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "52",
+        "column": "40",
+        "severity": "error",
+        "message": "'originServer' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "52",
+        "column": "40",
+        "severity": "error",
+        "message": "Expected @param tag for 'originServer'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ResponseServer' looks like designed for extension (can be subclassed), but the method 'process' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ResponseServer' final or making the method 'process' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

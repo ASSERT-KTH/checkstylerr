@@ -1,0 +1,43 @@
+[
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "54",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentBufferEntity' looks like designed for extension (can be subclassed), but the method 'isChunked' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentBufferEntity' final or making the method 'isChunked' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentBufferEntity' looks like designed for extension (can be subclassed), but the method 'getContentLength' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentBufferEntity' final or making the method 'getContentLength' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "71",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentBufferEntity' looks like designed for extension (can be subclassed), but the method 'getContentType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentBufferEntity' final or making the method 'getContentType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "76",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ContentBufferEntity' looks like designed for extension (can be subclassed), but the method 'getContentEncoding' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ContentBufferEntity' final or making the method 'getContentEncoding' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

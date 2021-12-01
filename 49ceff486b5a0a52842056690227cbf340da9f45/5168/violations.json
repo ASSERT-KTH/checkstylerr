@@ -1,0 +1,41 @@
+[
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "49",
+        "column": "47",
+        "severity": "error",
+        "message": "'datepatterns' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicExpiresHandler' looks like designed for extension (can be subclassed), but the method 'parse' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicExpiresHandler' final or making the method 'parse' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "59",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 88).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "69",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicExpiresHandler' looks like designed for extension (can be subclassed), but the method 'getAttributeName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicExpiresHandler' final or making the method 'getAttributeName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

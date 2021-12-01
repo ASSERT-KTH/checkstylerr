@@ -1,0 +1,44 @@
+[
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRandom' looks like designed for extension (can be subclassed), but the method 'engineSetSeed' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRandom' final or making the method 'engineSetSeed' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "26",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter seed should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRandom' looks like designed for extension (can be subclassed), but the method 'engineNextBytes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRandom' final or making the method 'engineNextBytes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "31",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter bytes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OpenSSLRandom' looks like designed for extension (can be subclassed), but the method 'engineGenerateSeed' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OpenSSLRandom' final or making the method 'engineGenerateSeed' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "36",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter numBytes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

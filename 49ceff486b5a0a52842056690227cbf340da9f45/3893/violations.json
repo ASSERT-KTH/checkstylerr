@@ -1,0 +1,761 @@
+[
+    {
+        "line": "1",
+        "column": "9",
+        "severity": "error",
+        "message": "Name 'SQLite.JDBC2z' must match pattern '^[a-z]+(\\.[a-zA-Z_][a-zA-Z0-9_]*)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"
+    },
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.sql.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "4",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "8",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "8",
+        "column": "30",
+        "severity": "error",
+        "message": "Variable 'conn' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "9",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "9",
+        "column": "29",
+        "severity": "error",
+        "message": "Variable 'rs' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "10",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "10",
+        "column": "19",
+        "severity": "error",
+        "message": "Variable 'updcnt' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "11",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "11",
+        "column": "19",
+        "severity": "error",
+        "message": "Variable 'maxrows' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "12",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "14",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter conn should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "14",
+        "column": "41",
+        "severity": "error",
+        "message": "'conn' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "15",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setFetchSize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setFetchSize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "21",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter fetchSize should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getFetchSize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getFetchSize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getMaxRows' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getMaxRows' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setMaxRows' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setMaxRows' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "35",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter max should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "42",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setFetchDirection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setFetchDirection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "42",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter fetchDirection should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getFetchDirection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getFetchDirection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getResultSetConcurrency' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getResultSetConcurrency' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getResultSetType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getResultSetType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setQueryTimeout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setQueryTimeout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "58",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter seconds should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "60",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 97).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "62",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 95).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "64",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 86).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "66",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 87).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "68",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 100).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 94).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "70",
+        "column": "28",
+        "severity": "error",
+        "message": "'5000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "72",
+        "column": "38",
+        "severity": "error",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "77",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getQueryTimeout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getQueryTimeout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "78",
+        "column": "31",
+        "severity": "error",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "81",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getResultSet' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getResultSet' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "85",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeQuery' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeQuery' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "85",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "85",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter args should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "85",
+        "column": "51",
+        "severity": "error",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "85",
+        "column": "55",
+        "severity": "error",
+        "message": "Parameter updonly should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "119",
+        "column": "35",
+        "severity": "error",
+        "message": "'&&' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "120",
+        "column": "74",
+        "severity": "error",
+        "message": "'&&' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "130",
+        "column": "34",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "130",
+        "column": "46",
+        "severity": "error",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "131",
+        "column": "34",
+        "severity": "error",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "132",
+        "column": "34",
+        "severity": "error",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "154",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeQuery' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeQuery' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "154",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "158",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'execute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'execute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "158",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "162",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'cancel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'cancel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "172",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getConnection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getConnection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "176",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'addBatch' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'addBatch' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "176",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "183",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeBatch' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeBatch' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "206",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'clearBatch' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'clearBatch' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "213",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'close' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'close' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "218",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "218",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "223",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getMaxFieldSize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getMaxFieldSize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "227",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getMoreResults' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getMoreResults' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "235",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getUpdateCount' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getUpdateCount' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "239",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getWarnings' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getWarnings' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "243",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setCursorName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setCursorName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "243",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "247",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setEscapeProcessing' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setEscapeProcessing' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "247",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter enable should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "251",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setMaxFieldSize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setMaxFieldSize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "251",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter max should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "255",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getMoreResults' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getMoreResults' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "255",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter x should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "259",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getGeneratedKeys' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getGeneratedKeys' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "263",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "263",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "263",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter autokeys should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "266",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 86).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "271",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "271",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "271",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter colIndexes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "271",
+        "column": "56",
+        "severity": "error",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "276",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'executeUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'executeUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "276",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "276",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter colIndexes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "276",
+        "column": "59",
+        "severity": "error",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "281",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'execute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'execute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "281",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "281",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter autokeys should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "284",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "289",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'execute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'execute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "289",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "289",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter colIndexes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "289",
+        "column": "54",
+        "severity": "error",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "294",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'execute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'execute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "294",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter sql should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "294",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter colIndexes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "294",
+        "column": "57",
+        "severity": "error",
+        "message": "Array brackets at illegal position.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"
+    },
+    {
+        "line": "299",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'getResultSetHoldability' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'getResultSetHoldability' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "303",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'isClosed' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'isClosed' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "304",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "307",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'setPoolable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'setPoolable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "307",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter yes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "313",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'isPoolable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'isPoolable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "317",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'unwrap' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'unwrap' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "317",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter iface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "321",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'JDBCStatement' looks like designed for extension (can be subclassed), but the method 'isWrapperFor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JDBCStatement' final or making the method 'isWrapperFor' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "321",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter iface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

@@ -1,0 +1,41 @@
+[
+    {
+        "line": "51",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 92).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "56",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 91).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpParams' looks like designed for extension (can be subclassed), but the method 'getParameter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpParams' final or making the method 'getParameter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpParams' looks like designed for extension (can be subclassed), but the method 'setParameter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpParams' final or making the method 'setParameter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "80",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpParams' looks like designed for extension (can be subclassed), but the method 'removeParameter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpParams' final or making the method 'removeParameter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "91",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "18",
+        "severity": "error",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "75",
+        "column": "37",
+        "severity": "error",
+        "message": "Expected @param tag for 'uri'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "80",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpOptions' looks like designed for extension (can be subclassed), but the method 'getMethod' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpOptions' final or making the method 'getMethod' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "85",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpOptions' looks like designed for extension (can be subclassed), but the method 'getAllowedMethods' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpOptions' final or making the method 'getAllowedMethods' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

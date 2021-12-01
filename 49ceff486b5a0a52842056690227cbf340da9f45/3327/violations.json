@@ -1,0 +1,76 @@
+[
+    {
+        "line": "22",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter status should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "30",
+        "column": "39",
+        "severity": "error",
+        "message": "'status' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OSStatusException' looks like designed for extension (can be subclassed), but the method 'getMessage' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OSStatusException' final or making the method 'getMessage' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'OSStatusException' looks like designed for extension (can be subclassed), but the method 'getStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'OSStatusException' final or making the method 'getStatus' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "51",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 86).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "51",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter status should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "51",
+        "column": "53",
+        "severity": "error",
+        "message": "Expected @param tag for 'status'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "51",
+        "column": "68",
+        "severity": "error",
+        "message": "Expected @throws tag for 'OSStatusException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

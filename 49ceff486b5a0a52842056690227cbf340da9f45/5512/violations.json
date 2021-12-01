@@ -1,0 +1,42 @@
+[
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 87).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "52",
+        "column": "62",
+        "severity": "error",
+        "message": "'handler' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicAsyncRequestHandler' looks like designed for extension (can be subclassed), but the method 'processRequest' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicAsyncRequestHandler' final or making the method 'processRequest' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "59",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "64",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicAsyncRequestHandler' looks like designed for extension (can be subclassed), but the method 'handle' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicAsyncRequestHandler' final or making the method 'handle' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

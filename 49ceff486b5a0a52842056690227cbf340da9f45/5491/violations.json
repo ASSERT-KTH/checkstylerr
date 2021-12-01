@@ -1,0 +1,215 @@
+[
+    {
+        "line": "52",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 89).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'content' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "66",
+        "column": "32",
+        "severity": "error",
+        "message": "Variable 'buffer' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "71",
+        "column": "42",
+        "severity": "error",
+        "message": "'b' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "71",
+        "column": "42",
+        "severity": "error",
+        "message": "Expected @param tag for 'b'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "71",
+        "column": "63",
+        "severity": "error",
+        "message": "Expected @param tag for 'contentType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "88",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "88",
+        "column": "42",
+        "severity": "error",
+        "message": "'b' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "88",
+        "column": "42",
+        "severity": "error",
+        "message": "Expected @param tag for 'b'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "88",
+        "column": "55",
+        "severity": "error",
+        "message": "'off' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "88",
+        "column": "55",
+        "severity": "error",
+        "message": "Expected @param tag for 'off'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "88",
+        "column": "70",
+        "severity": "error",
+        "message": "'len' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "88",
+        "column": "70",
+        "severity": "error",
+        "message": "Expected @param tag for 'len'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "88",
+        "column": "93",
+        "severity": "error",
+        "message": "Expected @param tag for 'contentType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "91",
+        "column": "56",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "93",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "106",
+        "column": "42",
+        "severity": "error",
+        "message": "'b' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "110",
+        "column": "42",
+        "severity": "error",
+        "message": "'b' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "110",
+        "column": "55",
+        "severity": "error",
+        "message": "'off' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "110",
+        "column": "70",
+        "severity": "error",
+        "message": "'len' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "134",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'produceContent' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'produceContent' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "135",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "138",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "143",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'getContentLength' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'getContentLength' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "148",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'isRepeatable' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'isRepeatable' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "153",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'isStreaming' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'isStreaming' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "158",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'getContent' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'getContent' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "163",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'NByteArrayEntity' looks like designed for extension (can be subclassed), but the method 'writeTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NByteArrayEntity' final or making the method 'writeTo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

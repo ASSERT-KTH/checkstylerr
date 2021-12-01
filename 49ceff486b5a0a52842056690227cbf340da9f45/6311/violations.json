@@ -1,0 +1,540 @@
+[
+    {
+        "line": "23",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.DatagramPacket.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "24",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.DatagramSocketImpl.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "25",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.InetAddress.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "26",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.InetSocketAddress.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "27",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.NetworkInterface.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "28",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.SocketAddress.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "29",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.SocketException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "30",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - java.net.UnknownHostException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - libcore.io.OsConstants.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "39",
+        "column": "4",
+        "severity": "error",
+        "message": "Unknown tag 'hide'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "43",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "47",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "55",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter fd should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "55",
+        "column": "55",
+        "severity": "error",
+        "message": "Parameter localPort should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "67",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 86).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'bind' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'bind' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter port should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "67",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter address should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "80",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'close' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'close' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "89",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'create' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'create' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "94",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'finalize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'finalize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "105",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'getOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'getOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "105",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter option should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "109",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'getTimeToLive' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'getTimeToLive' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "114",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'getTTL' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'getTTL' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "119",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "119",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter gr_group should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "119",
+        "column": "60",
+        "severity": "error",
+        "message": "Name 'gr_group' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "119",
+        "column": "70",
+        "severity": "error",
+        "message": "Parameter networkInterface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "120",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 88).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "120",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'gr_interface' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "120",
+        "column": "55",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "124",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'join' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'join' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "125",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter addr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "129",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'joinGroup' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'joinGroup' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "130",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 97).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "130",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter addr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "130",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter netInterface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "133",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 93).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "137",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'leave' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'leave' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "138",
+        "column": "23",
+        "severity": "error",
+        "message": "Parameter addr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "142",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'leaveGroup' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'leaveGroup' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "143",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 98).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "143",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter addr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "143",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter netInterface should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "146",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 94).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "150",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'peek' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'peek' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "151",
+        "column": "24",
+        "severity": "error",
+        "message": "Parameter sender should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "152",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 96).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "155",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "160",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter pack should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "160",
+        "column": "46",
+        "severity": "error",
+        "message": "Parameter flags should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "161",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 121).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "167",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'receive' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'receive' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "168",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter pack should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "172",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'peekData' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'peekData' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "173",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter pack should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "178",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'send' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'send' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "179",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter packet should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "180",
+        "column": "38",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "181",
+        "column": "49",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    },
+    {
+        "line": "182",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "185",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'setOption' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'setOption' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "185",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter option should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "185",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "189",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'setTimeToLive' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'setTimeToLive' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "190",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter ttl should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "194",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'setTTL' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'setTTL' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "195",
+        "column": "24",
+        "severity": "error",
+        "message": "Parameter ttl should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "196",
+        "column": "35",
+        "severity": "error",
+        "message": "'0xff' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "199",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'connect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'connect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "200",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter inetAddr should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "200",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter port should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "207",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 87).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "213",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PlainDatagramSocketImpl' looks like designed for extension (can be subclassed), but the method 'disconnect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PlainDatagramSocketImpl' final or making the method 'disconnect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "220",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 98).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "236",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter packet should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "50",
+        "severity": "error",
+        "message": "'contentType' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "50",
+        "severity": "error",
+        "message": "Expected @param tag for 'contentType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "53",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 89).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "56",
+        "column": "45",
+        "severity": "error",
+        "message": "Expected @param tag for 'mimeType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "63",
+        "severity": "error",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractContentBody' looks like designed for extension (can be subclassed), but the method 'getMimeType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractContentBody' final or making the method 'getMimeType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "72",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractContentBody' looks like designed for extension (can be subclassed), but the method 'getMediaType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractContentBody' final or making the method 'getMediaType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "83",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractContentBody' looks like designed for extension (can be subclassed), but the method 'getSubType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractContentBody' final or making the method 'getSubType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "94",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractContentBody' looks like designed for extension (can be subclassed), but the method 'getCharset' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractContentBody' final or making the method 'getCharset' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "97",
+        "column": "32",
+        "severity": "error",
+        "message": "Avoid inline conditionals.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"
+    }
+]

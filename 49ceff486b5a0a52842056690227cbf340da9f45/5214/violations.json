@@ -1,0 +1,91 @@
+[
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 85).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "52",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 95).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "52",
+        "column": "48",
+        "severity": "error",
+        "message": "'stripPort' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "52",
+        "column": "48",
+        "severity": "error",
+        "message": "Expected @param tag for 'stripPort'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "52",
+        "column": "73",
+        "severity": "error",
+        "message": "'useCanonicalHostname' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "52",
+        "column": "73",
+        "severity": "error",
+        "message": "Expected @param tag for 'useCanonicalHostname'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "58",
+        "column": "48",
+        "severity": "error",
+        "message": "'stripPort' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "68",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosSchemeFactory' looks like designed for extension (can be subclassed), but the method 'isStripPort' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosSchemeFactory' final or making the method 'isStripPort' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "72",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosSchemeFactory' looks like designed for extension (can be subclassed), but the method 'isUseCanonicalHostname' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosSchemeFactory' final or making the method 'isUseCanonicalHostname' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "76",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosSchemeFactory' looks like designed for extension (can be subclassed), but the method 'newInstance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosSchemeFactory' final or making the method 'newInstance' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "81",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosSchemeFactory' looks like designed for extension (can be subclassed), but the method 'create' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosSchemeFactory' final or making the method 'create' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

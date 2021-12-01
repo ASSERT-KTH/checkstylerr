@@ -1,0 +1,75 @@
+[
+    {
+        "line": "21",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "29",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "31",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Type Javadoc comment is missing @param <E> tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "35",
+        "column": "4",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "35",
+        "column": "7",
+        "severity": "error",
+        "message": "Variable 'elements' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "37",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter elements should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "37",
+        "column": "32",
+        "severity": "error",
+        "message": "'elements' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "41",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'ArrayFlowUniverse' looks like designed for extension (can be subclassed), but the method 'size' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ArrayFlowUniverse' final or making the method 'size' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'ArrayFlowUniverse' looks like designed for extension (can be subclassed), but the method 'iterator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ArrayFlowUniverse' final or making the method 'iterator' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "49",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'ArrayFlowUniverse' looks like designed for extension (can be subclassed), but the method 'toArray' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ArrayFlowUniverse' final or making the method 'toArray' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

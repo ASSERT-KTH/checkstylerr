@@ -1,0 +1,55 @@
+[
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 89).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "53",
+        "column": "52",
+        "severity": "error",
+        "message": "'gssCredential' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "53",
+        "column": "52",
+        "severity": "error",
+        "message": "Expected @param tag for 'gssCredential'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "57",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosCredentials' looks like designed for extension (can be subclassed), but the method 'getGSSCredential' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosCredentials' final or making the method 'getGSSCredential' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosCredentials' looks like designed for extension (can be subclassed), but the method 'getUserPrincipal' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosCredentials' final or making the method 'getUserPrincipal' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'KerberosCredentials' looks like designed for extension (can be subclassed), but the method 'getPassword' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'KerberosCredentials' final or making the method 'getPassword' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

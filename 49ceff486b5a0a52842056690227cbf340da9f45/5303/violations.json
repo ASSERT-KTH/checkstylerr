@@ -1,0 +1,37 @@
+[
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpTransportMetricsImpl' looks like designed for extension (can be subclassed), but the method 'getBytesTransferred' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpTransportMetricsImpl' final or making the method 'getBytesTransferred' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "52",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpTransportMetricsImpl' looks like designed for extension (can be subclassed), but the method 'setBytesTransferred' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpTransportMetricsImpl' final or making the method 'setBytesTransferred' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpTransportMetricsImpl' looks like designed for extension (can be subclassed), but the method 'incrementBytesTransferred' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpTransportMetricsImpl' final or making the method 'incrementBytesTransferred' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "60",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HttpTransportMetricsImpl' looks like designed for extension (can be subclassed), but the method 'reset' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HttpTransportMetricsImpl' final or making the method 'reset' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "49",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 83).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "53",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 81).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntityEnclosingRequest' looks like designed for extension (can be subclassed), but the method 'getEntity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntityEnclosingRequest' final or making the method 'getEntity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntityEnclosingRequest' looks like designed for extension (can be subclassed), but the method 'setEntity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntityEnclosingRequest' final or making the method 'setEntity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "68",
+        "column": "44",
+        "severity": "error",
+        "message": "'entity' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "72",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BasicHttpEntityEnclosingRequest' looks like designed for extension (can be subclassed), but the method 'expectContinue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BasicHttpEntityEnclosingRequest' final or making the method 'expectContinue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "75",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 90).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

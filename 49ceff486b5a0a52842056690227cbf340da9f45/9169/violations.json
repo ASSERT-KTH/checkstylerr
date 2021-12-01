@@ -1,0 +1,50 @@
+[
+    {
+        "line": "15",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 84).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SootBaseType' looks like designed for extension (can be subclassed), but the method 'wrapType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SootBaseType' final or making the method 'wrapType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "30",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter t should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SootBaseType' looks like designed for extension (can be subclassed), but the method 'wrapTypes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SootBaseType' final or making the method 'wrapTypes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "38",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter types should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "47",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SootBaseType' looks like designed for extension (can be subclassed), but the method 'wrapClasses' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SootBaseType' final or making the method 'wrapClasses' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "47",
+        "column": "43",
+        "severity": "error",
+        "message": "Parameter classes should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "line": "24",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "37",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "40",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter algorithm should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "40",
+        "column": "33",
+        "severity": "error",
+        "message": "'algorithm' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PublicKeyImpl' looks like designed for extension (can be subclassed), but the method 'getAlgorithm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PublicKeyImpl' final or making the method 'getAlgorithm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PublicKeyImpl' looks like designed for extension (can be subclassed), but the method 'getFormat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PublicKeyImpl' final or making the method 'getFormat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PublicKeyImpl' looks like designed for extension (can be subclassed), but the method 'getEncoded' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PublicKeyImpl' final or making the method 'getEncoded' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PublicKeyImpl' looks like designed for extension (can be subclassed), but the method 'setAlgorithm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PublicKeyImpl' final or making the method 'setAlgorithm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "62",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter algorithm should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "62",
+        "column": "37",
+        "severity": "error",
+        "message": "'algorithm' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PublicKeyImpl' looks like designed for extension (can be subclassed), but the method 'setEncoding' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PublicKeyImpl' final or making the method 'setEncoding' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "67",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter encoding should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "67",
+        "column": "36",
+        "severity": "error",
+        "message": "'encoding' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]
