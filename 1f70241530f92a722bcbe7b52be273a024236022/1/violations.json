@@ -1,0 +1,37 @@
+[
+    {
+        "line": "41",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "9",
+        "severity": "warning",
+        "message": "Class 'MailService' looks like designed for extension (can be subclassed), but the method 'send' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MailService' final or making the method 'send' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "88",
+        "column": "55",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "89",
+        "column": "53",
+        "severity": "warning",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "90",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    }
+]
