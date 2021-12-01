@@ -1,0 +1,189 @@
+/* -*- Mode: java; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+package org.mozilla.javascript.typedarrays;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.IdScriptableObject;
+import org.mozilla.javascript.ScriptRuntime;
+import org.mozilla.javascript.Undefined;
+
+/**
+ * This class is the abstract parent for all views of the array. It shows a view of the underlying
+ * NativeArrayBuffer. Many views may simultaneously share the same buffer, and changes to one will affect all.
+ *
+ * @author utente
+ * @version $Id: $Id
+ */
+public abstract class NativeArrayBufferView
+    extends IdScriptableObject
+{
+    private static final long serialVersionUID = 6884475582973958419L;
+
+    private static Boolean useLittleEndian = null;
+
+    /** Many view objects can share the same backing array */
+    protected final NativeArrayBuffer arrayBuffer;
+    /** The offset, in bytes, from the start of the backing array */
+    protected final int offset;
+    /** The length, in bytes, of the portion of the backing array that we use */
+    protected final int byteLength;
+
+    /**
+     * <p>Constructor for NativeArrayBufferView.</p>
+     */
+    public NativeArrayBufferView()
+    {
+        arrayBuffer = NativeArrayBuffer.EMPTY_BUFFER;
+        offset = 0;
+        byteLength = 0;
+    }
+
+    /**
+     * <p>Constructor for NativeArrayBufferView.</p>
+     *
+     * @param ab a {@link org.mozilla.javascript.typedarrays.NativeArrayBuffer} object.
+     * @param offset a int.
+     * @param byteLength a int.
+     */
+    protected NativeArrayBufferView(NativeArrayBuffer ab, int offset, int byteLength)
+    {
+        this.offset = offset;
+        this.byteLength = byteLength;
+        this.arrayBuffer = ab;
+    }
+
+    /**
+     * Return the buffer that backs this view.
+     *
+     * @return a {@link org.mozilla.javascript.typedarrays.NativeArrayBuffer} object.
+     */
+    public NativeArrayBuffer getBuffer() {
+        return arrayBuffer;
+    }
+
+    /**
+     * Return the offset in bytes from the start of the buffer that this view represents.
+     *
+     * @return a int.
+     */
+    public int getByteOffset() {
+        return offset;
+    }
+
+    /**
+     * Return the length, in bytes, of the part of the buffer that this view represents.
+     *
+     * @return a int.
+     */
+    public int getByteLength() {
+        return byteLength;
+    }
+
+    /**
+     * <p>useLittleEndian.</p>
+     *
+     * @return a boolean.
+     */
+    protected static boolean useLittleEndian() {
+        if (useLittleEndian == null) {
+            Context ctx = Context.getCurrentContext();
+            // for some unit tests this might be null
+            if (ctx == null) {
+                return false;
+            }
+            useLittleEndian = ctx.hasFeature(Context.FEATURE_LITTLE_ENDIAN);
+        }
+        return useLittleEndian.booleanValue();
+    }
+
+    /**
+     * <p>isArg.</p>
+     *
+     * @param args an array of {@link java.lang.Object} objects.
+     * @param i a int.
+     * @return a boolean.
+     */
+    protected static boolean isArg(Object[] args, int i)
+    {
+        return ((args.length > i) && !Undefined.instance.equals(args[i]));
+    }
+
+    // Property dispatcher
+
+    /** {@inheritDoc} */
+    @Override
+    protected int getMaxInstanceId()
+    {
+        return MAX_INSTANCE_ID;
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected String getInstanceIdName(int id)
+    {
+        switch (id) {
+        case Id_buffer: return "buffer";
+        case Id_byteOffset: return "byteOffset";
+        case Id_byteLength: return "byteLength";
+        default: return super.getInstanceIdName(id);
+        }
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected Object getInstanceIdValue(int id)
+    {
+        switch (id) {
+        case Id_buffer:
+            return arrayBuffer;
+        case Id_byteOffset:
+            return ScriptRuntime.wrapInt(offset);
+        case Id_byteLength:
+            return ScriptRuntime.wrapInt(byteLength);
+        default:
+            return super.getInstanceIdValue(id);
+        }
+    }
+
+// #string_id_map#
+
+    /** {@inheritDoc} */
+    @Override
+    protected int findInstanceIdInfo(String s)
+    {
+        int id;
+// #generated# Last update: 2014-12-08 17:32:09 PST
+        L0: { id = 0; String X = null; int c;
+            int s_length = s.length();
+            if (s_length==6) { X="buffer";id=Id_buffer; }
+            else if (s_length==10) {
+                c=s.charAt(4);
+                if (c=='L') { X="byteLength";id=Id_byteLength; }
+                else if (c=='O') { X="byteOffset";id=Id_byteOffset; }
+            }
+            if (X!=null && X!=s && !X.equals(s)) id = 0;
+            break L0;
+        }
+// #/generated#
+        if (id == 0) {
+            return super.findInstanceIdInfo(s);
+        }
+        return instanceIdInfo(READONLY | PERMANENT, id);
+    }
+
+    private static final int
+        Id_buffer               = 1,
+        Id_byteOffset           = 2,
+        Id_byteLength           = 3;
+
+    // to be visible by subclasses
+    /** Constant MAX_INSTANCE_ID=Id_byteLength */
+    protected static final int
+        MAX_INSTANCE_ID         = Id_byteLength;
+
+// #/string_id_map#
+}

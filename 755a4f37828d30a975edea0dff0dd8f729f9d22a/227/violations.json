@@ -1,0 +1,65 @@
+[
+    {
+        "line": "16",
+        "column": "3",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "17",
+        "column": "3",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "23",
+        "severity": "error",
+        "message": "Parameter engine should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "41",
+        "severity": "error",
+        "message": "'engine' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "19",
+        "column": "49",
+        "severity": "error",
+        "message": "Parameter script should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "56",
+        "severity": "error",
+        "message": "'script' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "24",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RhinoCompiledScript' looks like designed for extension (can be subclassed), but the method 'eval' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RhinoCompiledScript' final or making the method 'eval' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter context should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "29",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RhinoCompiledScript' looks like designed for extension (can be subclassed), but the method 'getEngine' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RhinoCompiledScript' final or making the method 'getEngine' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

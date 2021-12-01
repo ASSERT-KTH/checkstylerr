@@ -1,0 +1,51 @@
+[
+    {
+        "line": "38",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "38",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "45",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter baseVal should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "45",
+        "column": "44",
+        "severity": "error",
+        "message": "'baseVal' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "55",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'SVGAnimatedRectImpl' looks like designed for extension (can be subclassed), but the method 'setBaseVal' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SVGAnimatedRectImpl' final or making the method 'setBaseVal' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "55",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter baseVal should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "55",
+        "column": "33",
+        "severity": "error",
+        "message": "'baseVal' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

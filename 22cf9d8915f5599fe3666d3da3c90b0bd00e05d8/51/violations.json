@@ -1,0 +1,23 @@
+[
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "26",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'specificity_' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractSelector' looks like designed for extension (can be subclassed), but the method 'getSelectorSpecificity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractSelector' final or making the method 'getSelectorSpecificity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

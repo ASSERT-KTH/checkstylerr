@@ -1,0 +1,30 @@
+[
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "24",
+        "column": "21",
+        "severity": "error",
+        "message": "Name 'locator_' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractLocatable' looks like designed for extension (can be subclassed), but the method 'getLocator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractLocatable' final or making the method 'getLocator' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AbstractLocatable' looks like designed for extension (can be subclassed), but the method 'setLocator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AbstractLocatable' final or making the method 'setLocator' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
