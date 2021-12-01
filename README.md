@@ -1,0 +1,1 @@
+# evernat/dead-code-detector
