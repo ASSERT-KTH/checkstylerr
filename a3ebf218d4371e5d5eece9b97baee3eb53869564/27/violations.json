@@ -1,0 +1,35 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "12",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SecurityConfig' looks like designed for extension (can be subclassed), but the method 'configure' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SecurityConfig' final or making the method 'configure' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "24",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter http should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SecurityConfig' looks like designed for extension (can be subclassed), but the method 'passwordEncoder' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SecurityConfig' final or making the method 'passwordEncoder' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "line": "11",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TimeCommand' looks like designed for extension (can be subclassed), but the method 'execute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TimeCommand' final or making the method 'execute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TimeCommand' looks like designed for extension (can be subclassed), but the method 'buildCommandInstance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TimeCommand' final or making the method 'buildCommandInstance' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "38",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter connection should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

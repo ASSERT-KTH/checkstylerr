@@ -1,0 +1,64 @@
+[
+    {
+        "line": "10",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "11",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "18",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BaseCommand' looks like designed for extension (can be subclassed), but the method 'verifyTokens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BaseCommand' final or making the method 'verifyTokens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BaseCommand' looks like designed for extension (can be subclassed), but the method 'getAvailableTokens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BaseCommand' final or making the method 'getAvailableTokens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "36",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BaseCommand' looks like designed for extension (can be subclassed), but the method 'getAllTokens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BaseCommand' final or making the method 'getAllTokens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BaseCommand' looks like designed for extension (can be subclassed), but the method 'putToken' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BaseCommand' final or making the method 'putToken' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "42",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "42",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]
