@@ -1,0 +1,1 @@
+# chexagon/redis-session-manager
