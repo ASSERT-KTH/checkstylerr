@@ -1,0 +1,47 @@
+package com.ctrip.framework.apollo.portal.auth;
+
+import com.ctrip.framework.apollo.portal.entity.po.UserInfo;
+
+import java.lang.reflect.Method;
+
+/**
+ * ctrip内部实现的获取用户信息
+ */
+public class CtripUserInfoHolder implements UserInfoHolder{
+
+  private Object assertionHolder;
+
+  private Method getAssertion;
+
+
+  public CtripUserInfoHolder() {
+    Class clazz = null;
+    try {
+      clazz = Class.forName("org.jasig.cas.client.util.AssertionHolder");
+      assertionHolder = clazz.newInstance();
+      getAssertion = assertionHolder.getClass().getMethod("getAssertion");
+    } catch (Exception e) {
+      throw new RuntimeException("instance listener fail", e);
+    }
+  }
+
+  @Override
+  public UserInfo getUser() {
+    try {
+
+      Object assertion = getAssertion.invoke(assertionHolder);
+      Method getPrincipal = assertion.getClass().getMethod("getPrincipal");
+      Object principal = getPrincipal.invoke(assertion);
+      Method getName = principal.getClass().getMethod("getName");
+      String name = (String) getName.invoke(principal);
+
+      UserInfo userInfo = new UserInfo();
+      userInfo.setUsername(name);
+
+      return userInfo;
+    } catch (Exception e) {
+      throw new RuntimeException("", e);
+    }
+  }
+
+}

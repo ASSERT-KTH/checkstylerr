@@ -1,0 +1,28 @@
+package com.ctrip.framework.apollo.core.enums;
+
+/**
+ * @author Jason Song(song_s@ctrip.com)
+ */
+public enum ConfigFileFormat {
+  Properties("properties"), XML("xml");
+
+  private String value;
+
+  ConfigFileFormat(String value) {
+    this.value = value;
+  }
+
+  public String getValue() {
+    return value;
+  }
+
+  public static ConfigFileFormat fromString(String value){
+    switch (value){
+      case "properties":
+        return Properties;
+      case "xml":
+        return XML;
+    }
+    throw new IllegalArgumentException(value + " can not map enum");
+  }
+}

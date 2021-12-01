@@ -1,0 +1,112 @@
+package com.ctrip.framework.apollo.portal.service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpStatusCodeException;
+
+import com.ctrip.framework.apollo.common.utils.ExceptionUtils;
+import com.ctrip.framework.apollo.core.dto.AppDTO;
+import com.ctrip.framework.apollo.core.enums.Env;
+import com.ctrip.framework.apollo.core.exception.BadRequestException;
+import com.ctrip.framework.apollo.core.exception.ServiceException;
+import com.ctrip.framework.apollo.portal.PortalSettings;
+import com.ctrip.framework.apollo.portal.api.AdminServiceAPI;
+import com.ctrip.framework.apollo.portal.auth.UserInfoHolder;
+import com.ctrip.framework.apollo.portal.entity.vo.EnvClusterInfo;
+
+@Service
+public class PortalAppService {
+
+  private Logger logger = LoggerFactory.getLogger(PortalAppService.class);
+
+  @Autowired
+  private UserInfoHolder userInfoHolder;
+
+  @Autowired
+  private PortalClusterService clusterService;
+
+  @Autowired
+  private PortalSettings portalSettings;
+
+  @Autowired
+  private AdminServiceAPI.AppAPI appAPI;
+
+  public List<AppDTO> findAll(Env env) {
+    return appAPI.findApps(env);
+  }
+
+  public AppDTO load(String appId) {
+    //轮询环境直到能找到此app的信息
+    AppDTO app = null;
+    boolean isCallAdminServiceError = false;
+    for (Env env : portalSettings.getActiveEnvs()) {
+      try {
+        app = appAPI.loadApp(env, appId);
+        break;
+      } catch (HttpClientErrorException e) {
+        //not exist maybe because create app fail.
+        if (e.getStatusCode() == HttpStatus.NOT_FOUND) {
+          logger.warn("app:{} in {} not exist", appId, env);
+        } else {
+          isCallAdminServiceError = true;
+          logger.error("load app info({}) from env:{} error.", appId, env);
+        }
+      }
+    }
+    if (app == null) {
+      if (isCallAdminServiceError){
+        throw new ServiceException("call admin service error");
+      }else {
+        throw new BadRequestException(String.format("invalid app id %s", appId));
+      }
+    }
+
+    return app;
+  }
+
+  public AppDTO load(Env env, String appId){
+    return appAPI.loadApp(env, appId);
+  }
+
+  public void createAppInAllEnvs(AppDTO app) {
+    enrichUserInfo(app);
+    List<Env> envs = portalSettings.getActiveEnvs();
+    for (Env env : envs) {
+      try {
+        appAPI.createApp(env, app);
+      } catch (HttpStatusCodeException e) {
+        logger.error(ExceptionUtils.toString(e));
+        throw e;
+      }
+    }
+  }
+
+  public void createApp(Env env, AppDTO app) {
+    enrichUserInfo(app);
+    try {
+      appAPI.createApp(env, app);
+    } catch (HttpStatusCodeException e) {
+      logger.error(ExceptionUtils.toString(e));
+      throw e;
+    }
+  }
+
+  private void enrichUserInfo(AppDTO app){
+    String username = userInfoHolder.getUser().getUsername();
+    app.setDataChangeCreatedBy(username);
+    app.setDataChangeLastModifiedBy(username);
+  }
+
+  public EnvClusterInfo createEnvNavNode(Env env, String appId){
+    EnvClusterInfo node = new EnvClusterInfo(env);
+    node.setClusters(clusterService.findClusters(env, appId));
+    return node;
+  }
+
+}
