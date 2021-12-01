@@ -1,0 +1,37 @@
+[
+    {
+        "line": "25",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "29",
+        "column": "9",
+        "severity": "warning",
+        "message": "Class 'SymbolNode' looks like designed for extension (can be subclassed), but the method 'dependsOn' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SymbolNode' final or making the method 'dependsOn' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "29",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "29",
+        "column": "34",
+        "severity": "warning",
+        "message": "Parameter variableName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "29",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'variableName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]
