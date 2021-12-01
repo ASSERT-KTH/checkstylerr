@@ -1,0 +1,1092 @@
+/**
+ * @author mchyzer
+ * $Id$
+ */
+package edu.internet2.middleware.grouperClient.jdbc.tableSync;
+
+import java.sql.Timestamp;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+
+import edu.internet2.middleware.grouperClient.collections.MultiKey;
+import edu.internet2.middleware.grouperClient.jdbc.GcDbAccess;
+import edu.internet2.middleware.grouperClient.jdbc.GcDbVersionable;
+import edu.internet2.middleware.grouperClient.jdbc.GcPersist;
+import edu.internet2.middleware.grouperClient.jdbc.GcPersistableClass;
+import edu.internet2.middleware.grouperClient.jdbc.GcPersistableField;
+import edu.internet2.middleware.grouperClient.jdbc.GcPersistableHelper;
+import edu.internet2.middleware.grouperClient.jdbc.GcSqlAssignPrimaryKey;
+import edu.internet2.middleware.grouperClient.util.GrouperClientConfig;
+import edu.internet2.middleware.grouperClient.util.GrouperClientUtils;
+import edu.internet2.middleware.grouperClientExt.org.apache.commons.lang3.builder.EqualsBuilder;
+import edu.internet2.middleware.grouperClientExt.org.apache.commons.logging.Log;
+
+
+/**
+ * one record for each provisioner.  even if full and incremental, only one record.
+ * retrieve all other sync objects from this object, and pass it around, and store all at once at end
+ */
+@GcPersistableClass(tableName="grouper_sync", defaultFieldPersist=GcPersist.doPersist)
+public class GcGrouperSync implements GcSqlAssignPrimaryKey, GcDbVersionable {
+
+  /**
+   * keep an internal cache of jobs by sync type
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<String, GcGrouperSyncJob> internalCacheSyncJobs = new HashMap<String, GcGrouperSyncJob>();
+  
+  /**
+   * keep an internal cache of jobs by uuid
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<String, GcGrouperSyncJob> internalCacheSyncJobsById = new HashMap<String, GcGrouperSyncJob>();
+
+  /**
+   * batch size for this provisioner
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Integer batchSize;
+      
+  /**
+   * 
+   * @return batch size if configured or 1000 be default
+   */
+  public int batchSize() {
+    if (this.batchSize == null) {
+      // batch these up
+      int defaultBatchSize = GrouperClientConfig.retrieveConfig().propertyValueInt("grouperClient.syncTableDefault.batchSize", 1000);
+      this.batchSize = GrouperClientConfig.retrieveConfig().propertyValueInt("grouperClient.syncTable." + this.provisionerName + ".batchSize", defaultBatchSize);
+    }
+    return batchSize;
+  }
+  
+  /**
+   * max bind vars
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Integer maxBindVarsInSelect;
+
+  /**
+   * 
+   * @return batch size if configured or 1000 be default
+   */
+  public int maxBindVarsInSelect() {
+    if (this.maxBindVarsInSelect == null) {
+      // batch these up
+      int defaultMaxBindVarsInSelect = GrouperClientConfig.retrieveConfig().propertyValueInt("grouperClient.syncTableDefault.maxBindVarsInSelect", 900);
+      this.maxBindVarsInSelect = GrouperClientConfig.retrieveConfig().propertyValueInt("grouperClient.syncTable." + this.provisionerName + ".maxBindVarsInSelect", defaultMaxBindVarsInSelect);
+    }
+    return maxBindVarsInSelect;
+  }
+
+  /**
+   * dao for group operations
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private GcGrouperSyncGroupDao gcGrouperSyncGroupDao = new GcGrouperSyncGroupDao();
+
+  /**
+   * dao for groups
+   * @return
+   */
+  public GcGrouperSyncGroupDao getGcGrouperSyncGroupDao() {
+    return this.gcGrouperSyncGroupDao;
+  }
+
+  /**
+   * keep an internal cache of members by member id
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<String, GcGrouperSyncMember> internalCacheSyncMembers = new HashMap<String, GcGrouperSyncMember>();
+  
+  /**
+   * keep an internal cache of members by uuid
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<String, GcGrouperSyncMember> internalCacheSyncMembersById = new HashMap<String, GcGrouperSyncMember>();
+  
+  /**
+   * keep an internal cache of memberships by sync_group_id and sync_member_id
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<MultiKey, GcGrouperSyncMembership> internalCacheSyncMemberships = new HashMap<MultiKey, GcGrouperSyncMembership>();
+  
+  /**
+   * keep an internal cache of memberships by uuid
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<MultiKey, GcGrouperSyncMembership> internalCacheSyncMembershipsById = new HashMap<MultiKey, GcGrouperSyncMembership>();
+  
+  /**
+   * keep an internal cache of logs by owner id
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private Map<String, GcGrouperSyncLog> internalCacheSyncLogs = new HashMap<String, GcGrouperSyncLog>();
+  
+  
+  
+  //########## START GENERATED BY GcDbVersionableGenerate.java ###########
+  /** save the state when retrieving from DB */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private GcGrouperSync dbVersion = null;
+
+  /**
+   * take a snapshot of the data since this is what is in the db
+   */
+  @Override
+  public void dbVersionReset() {
+    //lets get the state from the db so we know what has changed
+    this.dbVersion = this.clone();
+  }
+
+  /**
+   * if we need to update this object
+   * @return if needs to update this object
+   */
+  @Override
+  public boolean dbVersionDifferent() {
+    return !this.equalsDeep(this.dbVersion);
+  }
+
+  /**
+   * db version
+   */
+  @Override
+  public void dbVersionDelete() {
+    this.dbVersion = null;
+  }
+
+  /**
+   * deep clone the fields in this object
+   */
+  @Override
+  public GcGrouperSync clone() {
+
+    GcGrouperSync gcGrouperSync = new GcGrouperSync();
+  //connectionName  DONT CLONE
+
+  //dbVersion  DONT CLONE
+
+  gcGrouperSync.groupCount = this.groupCount;
+  gcGrouperSync.id = this.id;
+  gcGrouperSync.incrementalIndex = this.incrementalIndex;
+  gcGrouperSync.incrementalTimestamp = this.incrementalTimestamp;
+  gcGrouperSync.lastFullMetadataSyncRun = this.lastFullMetadataSyncRun;
+  gcGrouperSync.lastFullSyncRun = this.lastFullSyncRun;
+  gcGrouperSync.lastIncrementalSyncRun = this.lastIncrementalSyncRun;
+  //lastUpdated  DONT CLONE
+
+  gcGrouperSync.provisionerName = this.provisionerName;
+  gcGrouperSync.recordsCount = this.recordsCount;
+  gcGrouperSync.syncEngine = this.syncEngine;
+  gcGrouperSync.userCount = this.userCount;
+
+    return gcGrouperSync;
+  }
+
+  /**
+   *
+   */
+  public boolean equalsDeep(Object obj) {
+    if (this==obj) {
+      return true;
+    }
+    if (obj == null) {
+      return false;
+    }
+    if (!(obj instanceof GcGrouperSync)) {
+      return false;
+    }
+    GcGrouperSync other = (GcGrouperSync) obj;
+
+    return new EqualsBuilder()
+
+
+      //connectionName  DONT EQUALS
+
+      //dbVersion  DONT EQUALS
+
+      .append(this.groupCount, other.groupCount)
+      .append(this.id, other.id)
+      .append(this.incrementalIndex, other.incrementalIndex)
+      .append(this.incrementalTimestamp, other.incrementalTimestamp)
+      .append(this.lastFullMetadataSyncRun, other.lastFullMetadataSyncRun)
+      .append(this.lastFullSyncRun, other.lastFullSyncRun)
+      .append(this.lastIncrementalSyncRun, other.lastIncrementalSyncRun)
+      //lastUpdated  DONT EQUALS
+
+      .append(this.provisionerName, other.provisionerName)
+      .append(this.recordsCount, other.recordsCount)
+      .append(this.syncEngine, other.syncEngine)
+      .append(this.userCount, other.userCount)
+        .isEquals();
+
+  }
+  //########## END GENERATED BY GcDbVersionableGenerate.java ###########
+
+  /**
+   * delete all data if table is here
+   */
+  public static void reset() {
+    
+    try {
+      // if its not there forget about it... TODO remove this in 2.5+
+      new GcDbAccess().connectionName("grouper").sql("select * from " + GcPersistableHelper.tableName(GcGrouperSync.class) + " where 1 != 1").select(Integer.class);
+    } catch (Exception e) {
+      return;
+    }
+
+    new GcDbAccess().connectionName("grouper").sql("delete from " + GcPersistableHelper.tableName(GcGrouperSync.class)).executeSql();
+  }
+
+  /**
+   * use this for sql engine sync
+   */
+  public static final String SQL_SYNC_ENGINE = "sqlTableSync";
+
+  /**
+   * 
+   */
+  private static Log LOG = GrouperClientUtils.retrieveLog(GcGrouperSync.class);
+
+  /**
+   * use 'grouper' if not specified
+   * @param connectionName
+   * @return the connection name
+   */
+  public static String defaultConnectionName(String connectionName) {
+    return GrouperClientUtils.defaultIfBlank(connectionName, "grouper");
+  }
+  
+  /**
+   * select grouper sync by provisioner name
+   * @param theConnectionName
+   * @param provisionerName
+   * @return the sync
+   */
+  public static GcGrouperSync retrieveByProvisionerName(String theConnectionName, String provisionerName) {
+    theConnectionName = GcGrouperSync.defaultConnectionName(theConnectionName);
+    GcGrouperSync gcGrouperSync = new GcDbAccess().connectionName(theConnectionName)
+        .sql("select * from grouper_sync where provisioner_name = ?")
+         .addBindVar(provisionerName).select(GcGrouperSync.class);
+    if (gcGrouperSync != null) {
+      gcGrouperSync.connectionName = theConnectionName;
+    }
+    return gcGrouperSync;
+  }
+
+  /**
+   * wait for related jobs to finish running, then run
+   * @param provisionerName
+   * @param goToPendingFirstAkaLargeJob is if this is a  big job and needs to register as pending first so 
+   * it knows it should run now.  falso if quick job and doesnt matter
+   */
+  public GcGrouperSyncJob waitForRelatedJobsToFinishThenRun(String syncType, boolean goToPendingFirstAkaLargeJob) {
+    
+    List<GcGrouperSyncJob> allGcGrouperSyncJobs = this.jobRetrieveAll();
+
+    GcGrouperSyncJob gcGrouperSyncJob = GcGrouperSyncJob.retrieveJobBySyncType(allGcGrouperSyncJobs, syncType);
+    
+    // if doesnt exist, 
+    if (gcGrouperSyncJob == null) {
+      gcGrouperSyncJob = new GcGrouperSyncJob();
+      gcGrouperSyncJob.setGrouperSync(this);
+      gcGrouperSyncJob.setSyncType(syncType);
+      allGcGrouperSyncJobs.add(gcGrouperSyncJob);
+    }
+
+    waitForRelatedJobsToFinishThenRunHelper(allGcGrouperSyncJobs, gcGrouperSyncJob, goToPendingFirstAkaLargeJob);
+    
+    return gcGrouperSyncJob;
+  }
+
+  /**
+   * wait for related jobs to finish running, then run
+   * @param provisionerName
+   * @param goToPendingFirstAkaLargeJob is if this is a  big job and needs to register as pending first so 
+   * it knows it should run now.  falso if quick job and doesnt matter
+   */
+  public void waitForRelatedJobsToFinishThenRun(GcGrouperSyncJob gcGrouperSyncJob, boolean goToPendingFirstAkaLargeJob) {
+
+    List<GcGrouperSyncJob> allGcGrouperSyncJobs = this.jobRetrieveAll();
+
+    for (int i=0;i<allGcGrouperSyncJobs.size();i++) {
+      GcGrouperSyncJob current = allGcGrouperSyncJobs.get(i);
+      if (GrouperClientUtils.equals(gcGrouperSyncJob.getId(), current.getId())) {
+        allGcGrouperSyncJobs.set(i, gcGrouperSyncJob);
+      }
+    }
+    
+    waitForRelatedJobsToFinishThenRunHelper(allGcGrouperSyncJobs, gcGrouperSyncJob, goToPendingFirstAkaLargeJob);
+  }
+
+  /**
+   * wait for related jobs to finish running, then run
+   * @param provisionerName
+   * @param goToPendingFirstAkaLargeJob is if this is a  big job and needs to register as pending first so 
+   * it knows it should run now.  falso if quick job and doesnt matter
+   */
+  private void waitForRelatedJobsToFinishThenRunHelper(List<GcGrouperSyncJob> allGcGrouperSyncJobs, GcGrouperSyncJob gcGrouperSyncJob, boolean goToPendingFirstAkaLargeJob) {
+    
+    String syncType = gcGrouperSyncJob.getSyncType();
+    
+    // if we are already running then we good
+    if (gcGrouperSyncJob.getJobState() == GcGrouperSyncJobState.running) {
+
+      // if heartbeat is expired
+      if (gcGrouperSyncJob.isHeartBeatAlive()) {
+        return;
+      }
+    }
+
+    
+    //go to pending first?
+    if (goToPendingFirstAkaLargeJob) {
+      gcGrouperSyncJob.setJobState(GcGrouperSyncJobState.pending);
+      gcGrouperSyncJob.setHeartbeat(new Timestamp(System.currentTimeMillis()));
+      gcGrouperSyncJob.store();
+      
+      // sleep between half and full second
+      GrouperClientUtils.sleep(500 + new Random().nextInt(500));
+      
+      allGcGrouperSyncJobs = this.jobRetrieveAll();
+      gcGrouperSyncJob = GcGrouperSyncJob.retrieveJobBySyncType(allGcGrouperSyncJobs, syncType);
+      
+    }
+  
+    // back this off so we arent overchecking
+    int sleepSeconds = 15;
+    long started = System.currentTimeMillis();
+    
+    while(true) {
+
+      // see how many other jobs running
+      int runningOrPendingCount = 0;
+      for (GcGrouperSyncJob currentGrouperSyncJob : GrouperClientUtils.nonNull(allGcGrouperSyncJobs)) {
+        if (GrouperClientUtils.equals(currentGrouperSyncJob.getSyncType(), syncType)) {
+          continue;
+        }
+        
+        //if the heartbeat is bad dontw worry about it
+        if (currentGrouperSyncJob.getHeartbeat() == null || System.currentTimeMillis() - currentGrouperSyncJob.getHeartbeat().getTime() > 90000) {
+          // dont worry about it
+          continue;
+        }
+        
+        if (GcGrouperSyncJobState.running == currentGrouperSyncJob.getJobState()) {
+          runningOrPendingCount++;
+          continue;
+        }
+        
+        // dont run if we are a small job
+        if (GcGrouperSyncJobState.pending == currentGrouperSyncJob.getJobState() && !goToPendingFirstAkaLargeJob) {
+          runningOrPendingCount++;
+          continue;
+        }
+      }
+      
+      //if nothing there or only one there, we done
+      if (runningOrPendingCount == 0) {
+        gcGrouperSyncJob.setJobState(GcGrouperSyncJobState.running);
+        gcGrouperSyncJob.setHeartbeat(new Timestamp(System.currentTimeMillis()));
+        gcGrouperSyncJob.store();
+        return;
+      }
+
+      // lets go to pending and set the heartbeat
+      if (sleepSeconds > 60) {
+        gcGrouperSyncJob.setJobState(GcGrouperSyncJobState.notRunning);
+      }
+      gcGrouperSyncJob.setHeartbeat(new Timestamp(System.currentTimeMillis()));
+      gcGrouperSyncJob.store();
+      
+      // sleep a little at first then ramp it up
+      GrouperClientUtils.sleep((sleepSeconds*1000) + new Random().nextInt(5000));
+
+      if (sleepSeconds > 60 || goToPendingFirstAkaLargeJob) {
+        gcGrouperSyncJob.setJobState(GcGrouperSyncJobState.pending);
+        
+      }
+      gcGrouperSyncJob.setHeartbeat(new Timestamp(System.currentTimeMillis()));
+      gcGrouperSyncJob.store();
+
+      if (goToPendingFirstAkaLargeJob) {
+        
+        // sleep between half and full second
+        GrouperClientUtils.sleep(500 + new Random().nextInt(500));
+        
+      }
+      if (sleepSeconds < 120) {
+        sleepSeconds *= 2;
+      }
+      if (sleepSeconds > 120) {
+        sleepSeconds = 120;
+      }
+      
+      allGcGrouperSyncJobs = this.jobRetrieveAll();
+      gcGrouperSyncJob = GcGrouperSyncJob.retrieveJobBySyncType(allGcGrouperSyncJobs, syncType);
+
+      if (System.currentTimeMillis() - started > 1000 * 60 * 60 * 24) {
+        throw new RuntimeException("Job cannot start for a day! " + this.connectionName + ", " + this.syncEngine + ", " + this.provisionerName + ", " + syncType);
+      }
+    }    
+  }
+  
+  /**
+   * wait for related jobs to finish running, then run
+   */
+  public List<GcGrouperSyncJob> jobRetrieveAll() {
+    
+    List<GcGrouperSyncJob> gcGrouperSyncJobs = new GcDbAccess().connectionName(this.connectionName)
+        .sql("select * from grouper_sync_job where grouper_sync_id = ?").addBindVar(this.id).selectList(GcGrouperSyncJob.class);
+    for (GcGrouperSyncJob gcGrouperSyncJob : GrouperClientUtils.nonNull(gcGrouperSyncJobs)) {
+      gcGrouperSyncJob.setConnectionName(this.connectionName);
+    }
+    return gcGrouperSyncJobs;
+  }
+    
+  /**
+   * retrieve a sync provisioner or create
+   * @param theConnectionName
+   * @param syncEngine
+   * @param provisionerName
+   * @return the sync
+   */
+  public static GcGrouperSync retrieveOrCreateByProvisionerName(String theConnectionName, String provisionerName) {
+    GcGrouperSync gcGrouperSync = retrieveByProvisionerName(theConnectionName, provisionerName);
+    if (gcGrouperSync == null) {
+      try {
+        gcGrouperSync = new GcGrouperSync();
+        gcGrouperSync.setConnectionName(theConnectionName);
+        gcGrouperSync.setProvisionerName(provisionerName);
+        gcGrouperSync.store();
+      } catch (RuntimeException re) {
+        // maybe someone else just created it...
+        GrouperClientUtils.sleep(2000);
+        gcGrouperSync = retrieveByProvisionerName(theConnectionName, provisionerName);
+        if (gcGrouperSync == null) {
+          throw re;
+        }
+      }
+    }
+    return gcGrouperSync;
+  }
+  
+  /**
+   * when incremental sync ran
+   */
+  private Timestamp lastIncrementalSyncRun;
+  
+  
+  
+  /**
+   * when incremental sync ran
+   * @return
+   */
+  public Timestamp getLastIncrementalSyncRun() {
+    return this.lastIncrementalSyncRun;
+  }
+
+  /**
+   * when incremental sync ran
+   * @param lastIncrementalSyncRun1
+   */
+  public void setLastIncrementalSyncRun(Timestamp lastIncrementalSyncRun1) {
+    this.lastIncrementalSyncRun = lastIncrementalSyncRun1;
+  }
+
+  /**
+   * when last full sync ran
+   */
+  private Timestamp lastFullSyncRun;
+  
+  
+  
+  /**
+   * when last full sync ran
+   * @return when
+   */
+  public Timestamp getLastFullSyncRun() {
+    return this.lastFullSyncRun;
+  }
+
+  /**
+   * when last full sync ran
+   * @param lastFullSyncRun1
+   */
+  public void setLastFullSyncRun(Timestamp lastFullSyncRun1) {
+    this.lastFullSyncRun = lastFullSyncRun1;
+  }
+
+  /**
+   * when last full metadata sync ran.  this needs to run when groups get renamed
+   */
+  private Timestamp lastFullMetadataSyncRun;
+  
+  
+  /**
+   * when last full metadata sync ran.  this needs to run when groups get renamed
+   * @return when
+   */
+  public Timestamp getLastFullMetadataSyncRun() {
+    return this.lastFullMetadataSyncRun;
+  }
+
+  /**
+   * when last full metadata sync ran.  this needs to run when groups get renamed
+   * @param lastFullMetadataSyncRun1
+   */
+  public void setLastFullMetadataSyncRun(Timestamp lastFullMetadataSyncRun1) {
+    this.lastFullMetadataSyncRun = lastFullMetadataSyncRun1;
+  }
+
+  /**
+   * int of last record processed
+   */
+  private Long incrementalIndex;
+  
+  /**
+   * when last record processed if timestamp and not integer
+   */
+  private Timestamp incrementalTimestamp;
+
+  
+  
+  /**
+   * int of last record processed
+   * @return number
+   */
+  public Long getIncrementalIndex() {
+    return this.incrementalIndex;
+  }
+
+  /**
+   * int of last record processed
+   * @param incrementalIndexOrMillis1
+   */
+  public void setIncrementalIndex(Long incrementalIndexOrMillis1) {
+    this.incrementalIndex = incrementalIndexOrMillis1;
+  }
+
+  /**
+   * when last record processed if timestamp and not integer
+   * @return timestamp
+   */
+  public Timestamp getIncrementalTimestamp() {
+    return this.incrementalTimestamp;
+  }
+
+  /**
+   * when last record processed if timestamp and not integer
+   * @param incrementalTimestamp1
+   */
+  public void setIncrementalTimestamp(Timestamp incrementalTimestamp1) {
+    this.incrementalTimestamp = incrementalTimestamp1;
+  }
+
+  /**
+   * select grouper sync by id
+   * @param theConnectionName
+   * @param id
+   * @return the sync
+   */
+  public static GcGrouperSync retrieveById(String theConnectionName, String id) {
+    theConnectionName = GcGrouperSync.defaultConnectionName(theConnectionName);
+    GcGrouperSync gcGrouperSync = new GcDbAccess().connectionName(theConnectionName)
+        .sql("select * from grouper_sync where id = ?").addBindVar(id).select(GcGrouperSync.class);
+    if (gcGrouperSync != null) {
+      gcGrouperSync.connectionName = theConnectionName;
+    }
+    return gcGrouperSync;
+  }
+  
+  /**
+   * select grouper sync job by sync type
+   * @param connectionName
+   * @param syncType
+   * @return the job
+   */
+  public GcGrouperSyncJob jobRetrieveBySyncType(String syncType) {
+    GcGrouperSyncJob gcGrouperSyncJob = new GcDbAccess().connectionName(this.connectionName)
+        .sql("select * from grouper_sync_job where grouper_sync_id = ? and sync_type = ?")
+          .addBindVar(this.id).addBindVar(syncType).select(GcGrouperSyncJob.class);
+    if (gcGrouperSyncJob != null) {
+      gcGrouperSyncJob.setGrouperSync(this);
+    }
+    return gcGrouperSyncJob;
+  }
+  
+  /**
+   * retrieve a sync provisioner or create
+   * @param theConnectionName
+   * @param grouperSyncId
+   * @param syncType
+   * @return the sync job
+   */
+  public GcGrouperSyncJob jobRetrieveOrCreateBySyncType(String syncType) {
+    GcGrouperSyncJob gcGrouperSyncJob = jobRetrieveBySyncType(syncType);
+    if (gcGrouperSyncJob == null) {
+      try {
+        gcGrouperSyncJob = new GcGrouperSyncJob();
+        gcGrouperSyncJob.setGrouperSync(this);
+        gcGrouperSyncJob.setSyncType(syncType);
+        gcGrouperSyncJob.store();
+      } catch (RuntimeException re) {
+        // maybe someone else just created it...
+        GrouperClientUtils.sleep(2000);
+        gcGrouperSyncJob = jobRetrieveBySyncType(syncType);
+        if (gcGrouperSyncJob == null) {
+          throw re;
+        }
+      }
+    }
+    return gcGrouperSyncJob;
+  }
+
+  /**
+   * select grouper sync user by user id
+   * @param connectionName
+   * @param mcemberId
+   * @return the user
+   */
+  public GcGrouperSyncMember memberRetrieveFromDbByMemberId(String memberId) {
+    GcGrouperSyncMember gcGrouperSyncUser = new GcDbAccess().connectionName(this.connectionName)
+        .sql("select * from grouper_sync_member where grouper_sync_id = ? and member_id = ?")
+          .addBindVar(this.id).addBindVar(memberId).select(GcGrouperSyncMember.class);
+    if (gcGrouperSyncUser != null) {
+      gcGrouperSyncUser.setGrouperSync(this);
+      gcGrouperSyncUser.setConnectionName(this.connectionName);
+    }
+    return gcGrouperSyncUser;
+  }
+  
+  /**
+   * connection name or null for default
+   */
+  @GcPersistableField(persist=GcPersist.dontPersist)
+  private String connectionName;
+
+  /**
+   * connection name or null for default
+   * @return connection name
+   */
+  public String getConnectionName() {
+    return this.connectionName;
+  }
+
+  /**
+   * connection name or null for default
+   * @param connectionName1
+   */
+  public void setConnectionName(String connectionName1) {
+    this.connectionName = connectionName1;
+  }
+
+  /**
+   * 
+   * @param connectionName
+   * @return true if changed
+   */
+  public boolean store() {
+    this.lastUpdated = new Timestamp(System.currentTimeMillis());
+    this.connectionName = GcGrouperSync.defaultConnectionName(this.connectionName);
+    boolean changed = new GcDbAccess().connectionName(this.connectionName).storeToDatabase(this);
+    return changed;
+  }
+  
+  /**
+   * 
+   * @param batchSize or default to 900
+   */
+  public int storeAllObjects() {
+    
+    int changes = 0;
+    
+    changes += this.store() ? 1 : 0;
+    changes += this.getGcGrouperSyncGroupDao().internal_groupStore();
+    changes += this.getGcGrouperSyncJobDao().internal_jobStore();
+    changes += this.getGcGrouperSyncMemberDao().internal_memberStore();
+
+    
+    changes += this.getGcGrouperSyncLogDao().internal_logStore();
+    
+    // TODO add more object types
+    return changes;
+  }
+  
+  /**
+   * 
+   * @param connectionName
+   */
+  public void delete() {
+    this.connectionName = GcGrouperSync.defaultConnectionName(this.connectionName);
+    new GcDbAccess().connectionName(this.connectionName).deleteFromDatabase(this);
+  }
+  
+  /**
+   * 
+   * @param args
+   */
+  public static void main(String[] args) {
+    
+    System.out.println("none");
+    
+    // should get none
+    for (GcGrouperSync theGcGrouperSync : new GcDbAccess().connectionName("grouper").selectList(GcGrouperSync.class)) {
+      System.out.println(theGcGrouperSync.toString());
+    }
+
+    GcGrouperSync gcGrouperSync = new GcGrouperSync();
+    gcGrouperSync.setSyncEngine("temp");
+    gcGrouperSync.setProvisionerName("myJob");
+    gcGrouperSync.setLastUpdated(new Timestamp(System.currentTimeMillis()));
+    gcGrouperSync.setRecordsCount(10);
+    gcGrouperSync.setGroupCount(5);
+    gcGrouperSync.setUserCount(12);
+    gcGrouperSync.setConnectionName("grouper");
+    gcGrouperSync.store();
+    
+    System.out.println("stored");
+    
+    GcGrouperSync theGcGrouperSync = retrieveByProvisionerName(null, "myJob");
+    System.out.println(theGcGrouperSync.toString());
+
+    gcGrouperSync.setRecordsCount(12);
+    gcGrouperSync.store();
+
+    System.out.println("updated");
+
+    for (GcGrouperSync theGcGrouperSync2 : new GcDbAccess().connectionName("grouper").selectList(GcGrouperSync.class)) {
+      System.out.println(theGcGrouperSync2.toString());
+    }
+
+    gcGrouperSync.delete();
+
+    System.out.println("deleted");
+
+    for (GcGrouperSync theGcGrouperSync2 : new GcDbAccess().connectionName("grouper").selectList(GcGrouperSync.class)) {
+      System.out.println(theGcGrouperSync2.toString());
+    }
+    
+    System.out.println("retrieveOrCreate");
+    gcGrouperSync = retrieveOrCreateByProvisionerName(null, "myJob");
+    System.out.println(gcGrouperSync.toString());
+
+    System.out.println("retrieve");
+    theGcGrouperSync = retrieveByProvisionerName(null, "myJob");
+    System.out.println(gcGrouperSync.toString());
+
+    System.out.println("retrieveOrCreate");
+    gcGrouperSync = retrieveOrCreateByProvisionerName(null, "myJob");
+    System.out.println(gcGrouperSync.toString());
+    
+    System.out.println("deleted");
+    gcGrouperSync.delete();
+    for (GcGrouperSync theGcGrouperSync2 : new GcDbAccess().connectionName("grouper").selectList(GcGrouperSync.class)) {
+      System.out.println(theGcGrouperSync2.toString());
+    }
+    
+    int queryCount = GcDbAccess.threadLocalQueryCountRetrieve();
+    System.out.println("Query count orig: " + queryCount);
+    
+    gcGrouperSync = retrieveOrCreateByProvisionerName(null, "myJob");
+    System.out.println(gcGrouperSync.toString());
+    
+    queryCount = GcDbAccess.threadLocalQueryCountRetrieve();
+    System.out.println("Query count after insert: " + queryCount);
+    
+    gcGrouperSync.setLastIncrementalSyncRun(new Timestamp(System.currentTimeMillis()));
+    gcGrouperSync.store();
+
+    queryCount = GcDbAccess.threadLocalQueryCountRetrieve();
+    System.out.println("Query count after update with changes: " + queryCount);
+
+    gcGrouperSync = retrieveOrCreateByProvisionerName(null, "myJob");
+    System.out.println(gcGrouperSync.toString());
+    
+    queryCount = GcDbAccess.threadLocalQueryCountRetrieve();
+    System.out.println("Query count before update without changes: " + queryCount);
+
+    gcGrouperSync.store();
+
+    queryCount = GcDbAccess.threadLocalQueryCountRetrieve();
+    System.out.println("Query count after update with no changes: " + queryCount);
+
+  }
+
+  /**
+   * 
+   */
+  @Override
+  public String toString() {
+    return GrouperClientUtils.toStringReflection(this);
+  }
+
+
+
+  /**
+   * 
+   */
+  public GcGrouperSync() {
+    this.gcGrouperSyncGroupDao.setGcGrouperSync(this);
+    this.gcGrouperSyncLogDao.setGcGrouperSync(this);
+    this.gcGrouperSyncJobDao.setGcGrouperSync(this);
+    this.gcGrouperSyncMemberDao.setGcGrouperSync(this);
+  }
+
+  /**
+   * uuid of this record in this table
+   */
+  @GcPersistableField(primaryKey=true, primaryKeyManuallyAssigned=false)
+  private String id;
+
+  
+  /**
+   * uuid of this record in this table
+   * @return the id
+   */
+  public String getId() {
+    return this.id;
+  }
+
+  
+  /**
+   * uuid of this record in this table
+   * @param id1 the id to set
+   */
+  public void setId(String id1) {
+    this.id = id1;
+  }
+
+  /**
+   * e.g. for syncing sql, it sqlTableSync
+   */
+  private String syncEngine;
+
+  /**
+   * e.g. for syncing sql, it sqlTableSync
+   * @return sync engine
+   */
+  public String getSyncEngine() {
+    return this.syncEngine;
+  }
+
+  /**
+   * e.g. for syncing sql, it sqlTableSync
+   * @param syncEngine1
+   */
+  public void setSyncEngine(String syncEngine1) {
+    this.syncEngine = syncEngine1;
+  }
+
+  /**
+   * name of provisioner must be unique.  this is the config key generally
+   */
+  private String provisionerName;
+
+
+  /**
+   * name of provisioner must be unique.  this is the config key generally
+   * @return provisioner name
+   */
+  public String getProvisionerName() {
+    return this.provisionerName;
+  }
+
+  /**
+   * name of provisioner must be unique.  this is the config key generally
+   * @param provisionerName1
+   */
+  public void setProvisionerName(String provisionerName1) {
+    this.provisionerName = provisionerName1;
+  }
+
+  /**
+   * when this record was last updated
+   */
+  private Timestamp lastUpdated;
+
+
+  /**
+   * when this record was last updated
+   * @return when last updated
+   */
+  public Timestamp getLastUpdated() {
+    return this.lastUpdated;
+  }
+
+  /**
+   * when this record was last updated
+   * @param lastUpdated1
+   */
+  public void setLastUpdated(Timestamp lastUpdated1) {
+    this.lastUpdated = lastUpdated1;
+  }
+
+  /**
+   * if group this is the number of groups
+   */
+  private Integer groupCount;
+
+
+  /**
+   * if group this is the number of groups
+   * @return group count
+   */
+  public Integer getGroupCount() {
+    return this.groupCount;
+  }
+
+  /**
+   * if group this is the number of groups
+   * @param groupCount1
+   */
+  public void setGroupCount(Integer groupCount1) {
+    this.groupCount = groupCount1;
+  }
+
+  /**
+   * if has users, this is the number of users
+   */
+  private Integer userCount;
+
+
+  /**
+   * if has users, this is the number of users
+   * @return user count
+   */
+  public Integer getUserCount() {
+    return this.userCount;
+  }
+
+  /**
+   * if has users, this is the number of users
+   * @param userCount1
+   */
+  public void setUserCount(Integer userCount1) {
+    this.userCount = userCount1;
+  }
+  
+  /**
+   * number of records including users, groups, etc
+   */
+  private Integer recordsCount;
+
+  /**
+   * dao for log operations
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private GcGrouperSyncLogDao gcGrouperSyncLogDao = new GcGrouperSyncLogDao();
+
+  /**
+   * dao for job operations
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private GcGrouperSyncJobDao gcGrouperSyncJobDao = new GcGrouperSyncJobDao();
+
+  /**
+   * dao for member operations
+   */
+  @GcPersistableField(persist = GcPersist.dontPersist)
+  private GcGrouperSyncMemberDao gcGrouperSyncMemberDao = new GcGrouperSyncMemberDao();
+
+
+  /**
+   * dao for log operations
+   * @return
+   */
+  public GcGrouperSyncLogDao getGcGrouperSyncLogDao() {
+    return this.gcGrouperSyncLogDao;
+  }
+
+  /**
+   * number of records including users, groups, etc
+   * @return number of records
+   */
+  public Integer getRecordsCount() {
+    return this.recordsCount;
+  }
+
+  /**
+   * number of records including users, groups, etc
+   * @param recordsCount1
+   */
+  public void setRecordsCount(Integer recordsCount1) {
+    this.recordsCount = recordsCount1;
+  }
+
+  /**
+   * 
+   */
+  @Override
+  public boolean gcSqlAssignNewPrimaryKeyForInsert() {
+    if (this.id != null) {
+      return false;
+    }
+    this.id = GrouperClientUtils.uuid();
+    return true;
+  }
+
+
+  /**
+   * select grouper sync member by sync id and member id
+   * @param grouperSyncId
+   * @param grouperMemberIdsCollection
+   * @param provisionerName
+   * @return the memberId to syncMember map
+   */
+  public Map<String, GcGrouperSyncMember> internal_memberRetrieveFromDbByMemberIds(Collection<String> grouperMemberIdsCollection) {
+    
+    Map<String, GcGrouperSyncMember> result = new HashMap<String, GcGrouperSyncMember>();
+    
+//    if (GrouperClientUtils.length(grouperMemberIdsCollection) == 0) {
+//      return result;
+//    }
+//    
+//    List<String> memberIdsList = new ArrayList<String>(grouperMemberIdsCollection);
+//    
+//    int batchSize = this.getGcGrouperSync().maxBindVarsInSelect();
+//    int numberOfBatches = GrouperClientUtils.batchNumberOfBatches(memberIdsList, batchSize);
+//    
+//    for (int batchIndex = 0; batchIndex<numberOfBatches; batchIndex++) {
+//      
+//      List<String> batchOfMemberIds = GrouperClientUtils.batchList(memberIdsList, batchSize, batchIndex);
+//      
+//      String sql = "select * from grouper_sync_member where grouper_sync_id = ? and member_id in ( " 
+//          + GrouperClientUtils.appendQuestions(batchOfMemberIds.size()) + ")";
+//      GcDbAccess gcDbAccess = new GcDbAccess().connectionName(this.getGcGrouperSync().getConnectionName())
+//          .sql(sql).addBindVar(this.getGcGrouperSync().getId());
+//      for (String memberId : batchOfMemberIds) {
+//        gcDbAccess.addBindVar(memberId);
+//      }
+//      List<GcGrouperSyncMember> gcGrouperSyncMembers = gcDbAccess.selectList(GcGrouperSyncMember.class);
+//      
+//      for (GcGrouperSyncMember gcGrouperSyncMember : GrouperClientUtils.nonNull(gcGrouperSyncMembers)) {
+//        result.put(gcGrouperSyncMember.getMemberId(), gcGrouperSyncMember);
+//        gcGrouperSyncMember.setGrouperSync(this.getGcGrouperSync());
+//      }
+//      
+//    }
+    return result;
+  }
+
+  /**
+   * dao for jobs
+   * @return
+   */
+  public GcGrouperSyncJobDao getGcGrouperSyncJobDao() {
+    return this.gcGrouperSyncJobDao;
+  }
+  
+  /**
+   * dao for members
+   * @return
+   */
+  public GcGrouperSyncMemberDao getGcGrouperSyncMemberDao() {
+    return this.gcGrouperSyncMemberDao;
+  }
+  
+}
