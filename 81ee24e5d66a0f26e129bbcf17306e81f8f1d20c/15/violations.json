@@ -1,0 +1,57 @@
+[
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'RepoNameCheck' looks like designed for extension (can be subclassed), but the method 'perform' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RepoNameCheck' final or making the method 'perform' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "51",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter command should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "51",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter logger should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "53",
+        "severity": "error",
+        "message": "Line is longer than 80 characters (found 88).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "53",
+        "column": "17",
+        "severity": "error",
+        "message": "Variable 'owner' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "54",
+        "column": "16",
+        "severity": "error",
+        "message": "Variable 'expectedName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "56",
+        "column": "16",
+        "severity": "error",
+        "message": "Variable 'name' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "58",
+        "column": "11",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    }
+]
