@@ -1,0 +1,50 @@
+[
+    {
+        "line": "3",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - lombok.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'javax.sql.DataSource' import. Should be before 'org.springframework.web.bind.annotation.RestController'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.web.bind.annotation.RestController'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.notFound' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.ok' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "66",
+        "severity": "warning",
+        "message": "Top-level class PostController has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "86",
+        "severity": "warning",
+        "message": "Top-level class PostRepository has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "89",
+        "severity": "warning",
+        "message": "Top-level class Post has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    }
+]

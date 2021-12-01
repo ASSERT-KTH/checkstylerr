@@ -1,0 +1,38 @@
+[
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - javax.persistence.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'javax.persistence.*' import. Should be before 'org.springframework.data.jpa.repository.config.EnableJpaAuditing'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.data.jpa.repository.config.EnableJpaAuditing'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "56",
+        "severity": "warning",
+        "message": "Top-level class PostRepository has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "59",
+        "severity": "warning",
+        "message": "Top-level class Post has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    }
+]

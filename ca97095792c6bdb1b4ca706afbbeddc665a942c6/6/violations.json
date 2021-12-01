@@ -1,0 +1,39 @@
+[
+    {
+        "line": "6",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.springframework.web.bind.annotation.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.net.URI' import. Should be before 'org.springframework.web.bind.annotation.*'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "9",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.List' import. Should be before 'org.springframework.web.bind.annotation.*'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.created' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.ok' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    }
+]

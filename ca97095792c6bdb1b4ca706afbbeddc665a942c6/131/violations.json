@@ -1,0 +1,124 @@
+[
+    {
+        "line": "3",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - lombok.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'javax.sql.DataSource' import. Should be before 'org.springframework.web.servlet.function.ServerResponse'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.web.servlet.function.ServerResponse'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.springframework.web.servlet.function.ServerResponse'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.web.servlet.function.RouterFunctions.route' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.web.servlet.function.ServerResponse.accepted' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "'lambda arguments' has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "'lambda arguments' has incorrect indentation level 44, expected level should be one of the following: 24, 28, 40.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "48",
+        "column": "69",
+        "severity": "warning",
+        "message": "'.' should be on a new line.",
+        "source": "SeparatorWrapDot"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "53",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 24, expected level should be one of the following: 16, 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "74",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    },
+    {
+        "line": "89",
+        "severity": "warning",
+        "message": "Top-level class HelloTxListener has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "100",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "110",
+        "severity": "warning",
+        "message": "Top-level class LoggerHandler has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "120",
+        "severity": "warning",
+        "message": "Top-level class GreetingRequest has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "128",
+        "severity": "warning",
+        "message": "Top-level class GreetingResult has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    }
+]

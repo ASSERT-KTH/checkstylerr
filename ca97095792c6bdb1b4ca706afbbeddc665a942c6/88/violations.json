@@ -1,0 +1,113 @@
+[
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - lombok.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'reactor.core.publisher.Mono'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'reactor.core.publisher.Mono'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'reactor.core.publisher.Mono'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.UUID' import. Should be before 'reactor.core.publisher.Mono'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Import statement for 'io.r2dbc.postgresql.PostgresqlConnectionFactoryProvider.OPTIONS' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.notFound' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Import statement for 'org.springframework.http.ResponseEntity.ok' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "'lambda arguments' has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "56",
+        "severity": "warning",
+        "message": "'lambda arguments' has incorrect indentation level 28, expected level should be one of the following: 20, 24.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "57",
+        "severity": "warning",
+        "message": "'method call rparen' has incorrect indentation level 20, expected level should be 16.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "63",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    },
+    {
+        "line": "77",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    },
+    {
+        "line": "90",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    },
+    {
+        "line": "99",
+        "severity": "warning",
+        "message": "Top-level class PostController has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "119",
+        "severity": "warning",
+        "message": "Top-level class PostRepository has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "123",
+        "severity": "warning",
+        "message": "Top-level class PostSummary has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    },
+    {
+        "line": "129",
+        "severity": "warning",
+        "message": "Top-level class Post has to reside in its own source file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.OneTopLevelClassCheck"
+    }
+]

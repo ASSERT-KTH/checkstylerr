@@ -1,0 +1,20 @@
+[
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - javax.persistence.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'javax.persistence.*' import. Should be before 'org.springframework.data.jpa.domain.support.AuditingEntityListener'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.time.LocalDateTime' import. Should be before 'org.springframework.data.jpa.domain.support.AuditingEntityListener'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    }
+]
