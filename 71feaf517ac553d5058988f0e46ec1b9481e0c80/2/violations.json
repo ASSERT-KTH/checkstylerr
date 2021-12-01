@@ -1,0 +1,8 @@
+[
+    {
+        "line": "0",
+        "severity": "error",
+        "message": "Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: NoViableAltException occurred during the analysis of file /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/vscjavaci-java-debug-ci/testcase/19.java9-app/src/main/java/module-info.java.\n at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:226)\n at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:79)\n at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:316)\n at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:286)\n at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:213)\n at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:508)\n at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:431)\n at com.puppycrawl.tools.checkstyle.Main.main(Main.java:209)\nCaused by: /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/vscjavaci-java-debug-ci/testcase/19.java9-app/src/main/java/module-info.java:1:1: unexpected token: module\n at com.puppycrawl.tools.checkstyle.grammars.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:181)\n at com.puppycrawl.tools.checkstyle.TreeWalker.parse(TreeWalker.java:497)\n at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:202)\n ... 7 more\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    }
+]
