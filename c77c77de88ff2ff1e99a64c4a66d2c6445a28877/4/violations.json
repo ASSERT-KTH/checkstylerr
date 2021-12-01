@@ -1,0 +1,62 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "5",
+        "severity": "warning",
+        "message": "Wrong order for 'java.util.LinkedList' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "10",
+        "column": "15",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "10",
+        "column": "37",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "12",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "14",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "18",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "18",
+        "column": "85",
+        "severity": "warning",
+        "message": "Variable 'list' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

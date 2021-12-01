@@ -1,0 +1,378 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - com.alexeygrigorev.rseq.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "7",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Wrong order for 'java.util.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "9",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "10",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "11",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "13",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "13",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'sentence' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "13",
+        "column": "55",
+        "severity": "warning",
+        "message": "Variable 'identifierText' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "13",
+        "column": "78",
+        "severity": "warning",
+        "message": "Variable 'definiens' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "13",
+        "column": "93",
+        "severity": "warning",
+        "message": "Variable 'identifierPosition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "13",
+        "column": "117",
+        "severity": "warning",
+        "message": "Variable 'definiensPosition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "14",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'isOrAre' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "15",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'let' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "16",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'be' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "17",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'by' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "18",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'denotes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'denoted' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "21",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'the' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "23",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'identifier' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "24",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'definition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "25",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'otherMathExpression' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "27",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'patterns' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "65",
+        "column": "11",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "68",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'pattern' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "69",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'matches' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "70",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    },
+    {
+        "line": "82",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'matchedDefiniens' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "83",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "91",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "96",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "100",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "100",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'closingParentheses' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "101",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "104",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "112",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "117",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "117",
+        "column": "38",
+        "severity": "warning",
+        "message": "Expected @param tag for 'x'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "117",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'x' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "117",
+        "column": "45",
+        "severity": "warning",
+        "message": "Expected @param tag for 'y'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "117",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'y' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "117",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @param tag for 'z'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "117",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'z' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "118",
+        "column": "12",
+        "severity": "error",
+        "message": "Unnecessary parentheses around return value.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "121",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "121",
+        "column": "47",
+        "severity": "warning",
+        "message": "Variable 'word' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "125",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "125",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'pos' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "129",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "129",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'regexp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "133",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "133",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'regexp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

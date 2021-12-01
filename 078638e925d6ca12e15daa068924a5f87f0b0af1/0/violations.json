@@ -1,0 +1,757 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "'org.apache.commons.logging.Log' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Wrong order for 'javax.xml.parsers.ParserConfigurationException' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "20",
+        "severity": "warning",
+        "message": "Wrong order for 'java.io.IOException' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Type Javadoc comment is missing an @author tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "27",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "40",
+        "severity": "error",
+        "message": "Name 'decimalFormat' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "32",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "39",
+        "column": "80",
+        "severity": "warning",
+        "message": "Expected @param tag for 'h1'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "39",
+        "column": "80",
+        "severity": "warning",
+        "message": "Variable 'h1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "39",
+        "column": "104",
+        "severity": "warning",
+        "message": "Expected @param tag for 'h2'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "39",
+        "column": "104",
+        "severity": "warning",
+        "message": "Variable 'h2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "40",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 's1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "41",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 's2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "46",
+        "column": "70",
+        "severity": "warning",
+        "message": "Variable 'h1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "94",
+        "severity": "warning",
+        "message": "Variable 'h2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "64",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "71",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "71",
+        "column": "70",
+        "severity": "warning",
+        "message": "Expected @param tag for 'h1'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "71",
+        "column": "70",
+        "severity": "warning",
+        "message": "Variable 'h1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "71",
+        "column": "94",
+        "severity": "warning",
+        "message": "Expected @param tag for 'h2'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "71",
+        "column": "94",
+        "severity": "warning",
+        "message": "Variable 'h2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "94",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "95",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "100",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "100",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @param tag for 'nodes'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "100",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'nodes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "104",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'node' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "105",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'contentElementName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "113",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "118",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "118",
+        "column": "88",
+        "severity": "warning",
+        "message": "Expected @param tag for 'histograms'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "118",
+        "column": "88",
+        "severity": "warning",
+        "message": "Variable 'histograms' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "122",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "127",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "127",
+        "column": "85",
+        "severity": "warning",
+        "message": "Expected @param tag for 'histograms'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "127",
+        "column": "85",
+        "severity": "warning",
+        "message": "Variable 'histograms' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "128",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    },
+    {
+        "line": "155",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 234).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "column": "78",
+        "severity": "warning",
+        "message": "Expected @param tag for 'd'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "78",
+        "severity": "warning",
+        "message": "Variable 'd' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "165",
+        "column": "88",
+        "severity": "warning",
+        "message": "Expected @param tag for 'tagName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "88",
+        "severity": "warning",
+        "message": "Variable 'tagName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "165",
+        "column": "119",
+        "severity": "warning",
+        "message": "Expected @param tag for 'allMathTagsOfDOc'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "119",
+        "severity": "warning",
+        "message": "Variable 'allMathTagsOfDOc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "165",
+        "column": "144",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'XPathExpressionException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "170",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'ParserConfigurationException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "200",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'TransformerException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "222",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "172",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 201).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "191",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "198",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "198",
+        "column": "79",
+        "severity": "warning",
+        "message": "Expected @param tag for 'strictCmml'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "198",
+        "column": "79",
+        "severity": "warning",
+        "message": "Variable 'strictCmml' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "198",
+        "column": "98",
+        "severity": "warning",
+        "message": "Expected @param tag for 'tagName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "198",
+        "column": "98",
+        "severity": "warning",
+        "message": "Variable 'tagName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "203",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "210",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "210",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "210",
+        "column": "70",
+        "severity": "warning",
+        "message": "Expected @param tag for 'node'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "210",
+        "column": "70",
+        "severity": "warning",
+        "message": "Variable 'node' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "210",
+        "column": "83",
+        "severity": "warning",
+        "message": "Expected @param tag for 'tagName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "210",
+        "column": "83",
+        "severity": "warning",
+        "message": "Variable 'tagName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "210",
+        "column": "99",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'XPathExpressionException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "215",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "215",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "215",
+        "column": "110",
+        "severity": "warning",
+        "message": "Variable 'f0' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "215",
+        "column": "138",
+        "severity": "warning",
+        "message": "Variable 'f1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "217",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "218",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "219",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "227",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "230",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "230",
+        "column": "72",
+        "severity": "warning",
+        "message": "Variable 'h1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "230",
+        "column": "100",
+        "severity": "warning",
+        "message": "Variable 'h2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "236",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "247",
+        "column": "23",
+        "severity": "error",
+        "message": "Unnecessary parentheses around assignment right-hand side.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "252",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'value' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "253",
+        "column": "26",
+        "severity": "error",
+        "message": "Unnecessary parentheses around assignment right-hand side.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "259",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'value' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "260",
+        "column": "26",
+        "severity": "error",
+        "message": "Unnecessary parentheses around assignment right-hand side.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "267",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "267",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "267",
+        "column": "108",
+        "severity": "warning",
+        "message": "Variable 'f0' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "267",
+        "column": "136",
+        "severity": "warning",
+        "message": "Variable 'f1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "269",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "284",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "284",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "284",
+        "column": "110",
+        "severity": "warning",
+        "message": "Variable 'f0' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "284",
+        "column": "138",
+        "severity": "warning",
+        "message": "Variable 'f1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "286",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "287",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "288",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "301",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "301",
+        "column": "69",
+        "severity": "warning",
+        "message": "Variable 'f0' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "301",
+        "column": "97",
+        "severity": "warning",
+        "message": "Variable 'f1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "305",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "311",
+        "column": "49",
+        "severity": "warning",
+        "message": "Expected @param tag for 'tagName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "311",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'tagName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "311",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @param tag for 'histogram'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "311",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'histogram' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "312",
+        "severity": "error",
+        "message": "switch without \"default\" clause.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MissingSwitchDefaultCheck"
+    },
+    {
+        "line": "323",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'toberemovedKeys' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "337",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "337",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'str' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "338",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    }
+]

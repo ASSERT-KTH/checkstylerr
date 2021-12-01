@@ -1,0 +1,1208 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "'edu.stanford.nlp.parser.nndep.DependencyParser' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "9",
+        "severity": "warning",
+        "message": "'org.apache.commons.io.FileUtils' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "13",
+        "severity": "warning",
+        "message": "'weka.classifiers.Classifier' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong order for 'java.io.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Using a static member import should be avoided - com.formulasearchengine.mathosphere.mlp.ml.WekaUtils.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - com.formulasearchengine.mathosphere.mlp.ml.WekaUtils.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Using a static member import should be avoided - java.util.stream.Collectors.toList.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong order for 'java.util.stream.Collectors.toList' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "'weka.core.Range.indicesToRangeList' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Using a static member import should be avoided - weka.core.Range.indicesToRangeList.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Type Javadoc comment is missing an @author tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "44",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "44",
+        "column": "28",
+        "severity": "error",
+        "message": "Name 'folds' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "45",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "45",
+        "column": "28",
+        "severity": "error",
+        "message": "Name 'totalQids' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "46",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "34",
+        "severity": "error",
+        "message": "Name 'rand' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 242).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C_coarse' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "66",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 214).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "66",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'Y_coarse' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "71",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C_fine' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "73",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "74",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "75",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "76",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "77",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "78",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "79",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "80",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "81",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "86",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'Y_fine' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "88",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "89",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "90",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "91",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "92",
+        "column": "4",
+        "severity": "error",
+        "message": "',' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "99",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C_best_accuracy' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "105",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'Y_best_accuracy' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "109",
+        "column": "12",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "112",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C_best_recall' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "118",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'Y_best_recall' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "125",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C_best_F1' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "131",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'Y_best_F1' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "132",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "134",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "136",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "136",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "141",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "141",
+        "column": "56",
+        "severity": "error",
+        "message": "Variable 'config' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "144",
+        "column": "51",
+        "severity": "warning",
+        "message": "Variable 'values' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "144",
+        "column": "87",
+        "severity": "warning",
+        "message": "Variable 'out' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "145",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "146",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'parser' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "147",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'wekaUtils' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "150",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'instancesFile' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "154",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'arffSaver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "172",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "172",
+        "column": "70",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "173",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'stringToWordVector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "175",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'resampled' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "176",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'removeFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "177",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'svmForOut' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "180",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'filteredClassifierForOut' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "184",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 195).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "185",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 193).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "188",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "189",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'reader' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "191",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'arff' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "192",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "195",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'evaluationResults' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "197",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'c' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "209",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'out' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "209",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "209",
+        "column": "85",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "217",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'percentages' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "218",
+        "column": "18",
+        "severity": "error",
+        "message": "Name 'C_used' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "218",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'C_used' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "219",
+        "column": "18",
+        "severity": "error",
+        "message": "Name 'Y_used' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "219",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'Y_used' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "220",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'output' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "221",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'outputDetails' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "222",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'extractedDefiniens' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "224",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'stringToWordVector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "225",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "227",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'removeFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "233",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "233",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'oversample' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "233",
+        "column": "44",
+        "severity": "error",
+        "message": "';' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "234",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "238",
+        "severity": "error",
+        "message": "'for' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "243",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'forkJoinPool' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "244",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'a' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "245",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "246",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'task' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "247",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'evaluationResults' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "249",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 223).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "251",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "252",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'set' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "254",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'list' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "259",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'evaluator' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "260",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'reader' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "274",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "274",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "275",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'stringToWordVector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "277",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "278",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "279",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "283",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'nGramTokenizer' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "292",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "292",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'removeFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "304",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "304",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "80",
+        "severity": "warning",
+        "message": "Variable 'removeFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "101",
+        "severity": "warning",
+        "message": "Variable 'percent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "117",
+        "severity": "warning",
+        "message": "Variable 'cost' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "130",
+        "severity": "warning",
+        "message": "Variable 'gamma' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "144",
+        "severity": "warning",
+        "message": "Variable 'oversample' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "308",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "308",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "310",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'reduced' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "312",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "317",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'resampled' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "329",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "335",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "335",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'oversample' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "335",
+        "column": "59",
+        "severity": "warning",
+        "message": "Variable 'reduced' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "336",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'resampled' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "347",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "347",
+        "column": "42",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "347",
+        "column": "70",
+        "severity": "warning",
+        "message": "Variable 'percent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "348",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'reduced' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "349",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'sampler' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "359",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "359",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'reduced' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "360",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'resampleFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "367",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "367",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "367",
+        "column": "65",
+        "severity": "warning",
+        "message": "Variable 'oversample' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "368",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'resampled' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "369",
+        "column": "11",
+        "severity": "warning",
+        "message": "Variable 'smote' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "374",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "374",
+        "column": "42",
+        "severity": "warning",
+        "message": "Variable 'stringsReplacedData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "374",
+        "column": "70",
+        "severity": "warning",
+        "message": "Variable 'oversample' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "375",
+        "column": "11",
+        "severity": "warning",
+        "message": "Variable 'smote' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "393",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'n' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "43",
+        "severity": "warning",
+        "message": "Variable 'removeFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "64",
+        "severity": "warning",
+        "message": "Variable 'cost' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "77",
+        "severity": "warning",
+        "message": "Variable 'gamma' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "94",
+        "severity": "warning",
+        "message": "Variable 'beforeResampling' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "122",
+        "severity": "warning",
+        "message": "Variable 'resampled' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "394",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "395",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'svm' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "398",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'filteredClassifier' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "401",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'testIds' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "408",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'train' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "409",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'test' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "412",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'a' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "418",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'a' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "424",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'clsCopy' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "428",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'instance' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "429",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'match' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "430",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'predictedClass' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "432",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'extraction' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "434",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "440",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'eval' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "446",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'b' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "447",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,957 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "'org.apache.flink.api.common.functions.GroupReduceFunction' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.apache.flink.api.java.tuple.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Wrong order for 'java.text.DecimalFormat' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 161).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "27",
+        "severity": "error",
+        "message": "Name 'IS_MODE_PREPROCESSING' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "36",
+        "column": "27",
+        "severity": "error",
+        "message": "Variable 'IS_MODE_PREPROCESSING' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "37",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "39",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'args' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "40",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 189).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "51",
+        "column": "164",
+        "severity": "warning",
+        "message": "Expected @param tag for 'extractedMathPdSnippets'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "51",
+        "column": "164",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPdSnippets' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "56",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 179).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "56",
+        "column": "90",
+        "severity": "warning",
+        "message": "Variable 'iterable' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "56",
+        "column": "151",
+        "severity": "warning",
+        "message": "Variable 'collector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "62",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 124).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "64",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "64",
+        "column": "88",
+        "severity": "warning",
+        "message": "Variable 'o1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "64",
+        "column": "132",
+        "severity": "warning",
+        "message": "Variable 'o2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "69",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 167).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "70",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'partitionFirstEntrysTitle' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "77",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "82",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "84",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "86",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 166).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "87",
+        "column": "60",
+        "severity": "warning",
+        "message": "Variable 'firstOriginalEntry' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "102",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "102",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "102",
+        "column": "117",
+        "severity": "warning",
+        "message": "Variable 'list' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 177).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "132",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "132",
+        "column": "152",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPdSnippets' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "142",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "143",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "148",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "148",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 189).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "148",
+        "column": "164",
+        "severity": "warning",
+        "message": "Expected @param tag for 'extractedMathPdSnippets'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "148",
+        "column": "164",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPdSnippets' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "149",
+        "column": "58",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPdDocuments' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "153",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 180).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "column": "115",
+        "severity": "warning",
+        "message": "Variable 't0' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "153",
+        "column": "159",
+        "severity": "warning",
+        "message": "Variable 't1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "165",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "165",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "175",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'source' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "176",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'refs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "178",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "181",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "181",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPdDocumentsSources' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "188",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "188",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'stringExtractedMathPDDocumentTuple2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "189",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "194",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 158).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "197",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "204",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "204",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'stringExtractedMathPDDocumentTuple2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "205",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "209",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 210).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "210",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 204).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "212",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 190).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "212",
+        "column": "155",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPDDocsWithTFIDF' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "219",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 162).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "219",
+        "column": "108",
+        "severity": "warning",
+        "message": "Variable 'stringExtractedMathPDDocumentTuple2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "224",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 126).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "226",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 170).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "226",
+        "column": "116",
+        "severity": "warning",
+        "message": "Variable 'stringExtractedMathPDDocumentTuple2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "231",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 174).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "233",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 235).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "233",
+        "column": "164",
+        "severity": "warning",
+        "message": "Variable 'extractedMathPDDocumentExtractedMathPDDocumentTuple2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "234",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 173).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "238",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "240",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 137).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "245",
+        "column": "76",
+        "severity": "warning",
+        "message": "Variable 'distanceAllFeatures' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "247",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 210).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "250",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "253",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 182).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "267",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "268",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 172).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "270",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 229).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "270",
+        "column": "162",
+        "severity": "warning",
+        "message": "Variable 'stringStringDoubleDoubleDoubleDoubleDoubleTuple7' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "284",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 188).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "286",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 229).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "286",
+        "column": "117",
+        "severity": "warning",
+        "message": "Variable 'iterable' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "286",
+        "column": "201",
+        "severity": "warning",
+        "message": "Variable 'collector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "287",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "287",
+        "column": "29",
+        "severity": "error",
+        "message": "Each variable declaration must be in its own statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleVariableDeclarationsCheck"
+    },
+    {
+        "line": "288",
+        "column": "29",
+        "severity": "error",
+        "message": "Each variable declaration must be in its own statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleVariableDeclarationsCheck"
+    },
+    {
+        "line": "290",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "292",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "307",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "315",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 221).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "315",
+        "column": "125",
+        "severity": "warning",
+        "message": "Variable 'iterable' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "315",
+        "column": "193",
+        "severity": "warning",
+        "message": "Variable 'collector' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "316",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "318",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 155).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "319",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "321",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "327",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "327",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "327",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'distance' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "339",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "339",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'frequencyOfCurKey' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "343",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "346",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "347",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 222).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "359",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "359",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'value' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "359",
+        "column": "63",
+        "severity": "warning",
+        "message": "Variable 'binWidth' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "359",
+        "column": "81",
+        "severity": "warning",
+        "message": "Variable 'isLower' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "360",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'flooredDivision' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "363",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "365",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "371",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "371",
+        "column": "72",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "371",
+        "column": "101",
+        "severity": "warning",
+        "message": "Variable 'env' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "372",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'filePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "373",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'inp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "379",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "379",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "379",
+        "column": "97",
+        "severity": "warning",
+        "message": "Variable 'env' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "380",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'filePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "381",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'inp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "387",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "387",
+        "column": "66",
+        "severity": "warning",
+        "message": "Variable 'pathname' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "387",
+        "column": "97",
+        "severity": "warning",
+        "message": "Variable 'env' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "388",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'filePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "389",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'inp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "395",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "395",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "395",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'input' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "400",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "400",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "400",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'input' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "408",
+        "severity": "error",
+        "message": "Newline before closing brace",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    }
+]

@@ -1,0 +1,707 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "16",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "23",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "Expected an @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "48",
+        "column": "12",
+        "severity": "error",
+        "message": "'public' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "48",
+        "column": "45",
+        "severity": "warning",
+        "message": "Expected @param tag for 'signature1'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "48",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'signature1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "67",
+        "severity": "warning",
+        "message": "Expected @param tag for 'signature2'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "48",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'signature2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "86",
+        "severity": "warning",
+        "message": "Expected @param tag for 'extraMassPenalty'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "48",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'extraMassPenalty' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "50",
+        "column": "24",
+        "severity": "error",
+        "message": "Name 'P' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "50",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'P' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "51",
+        "column": "24",
+        "severity": "error",
+        "message": "Name 'Q' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "51",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'Q' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "63",
+        "column": "32",
+        "severity": "error",
+        "message": "Name 'C' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "63",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'C' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "65",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'vec' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "73",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'dist' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "75",
+        "column": "24",
+        "severity": "error",
+        "message": "Unnecessary parentheses around expression.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "85",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "85",
+        "column": "12",
+        "severity": "error",
+        "message": "'private' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "85",
+        "column": "60",
+        "severity": "error",
+        "message": "Name 'Pc' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "85",
+        "column": "60",
+        "severity": "warning",
+        "message": "Variable 'Pc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "85",
+        "column": "77",
+        "severity": "error",
+        "message": "Name 'Qc' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "85",
+        "column": "77",
+        "severity": "warning",
+        "message": "Variable 'Qc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "86",
+        "column": "68",
+        "severity": "error",
+        "message": "Name 'C' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'C' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "88",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "88",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'N' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "89",
+        "column": "16",
+        "severity": "error",
+        "message": "Unnecessary parentheses around expression.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "93",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'P' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "93",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'P' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "94",
+        "column": "22",
+        "severity": "error",
+        "message": "Name 'Q' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "94",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'Q' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "95",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'absDiffSumPSumQ' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "98",
+        "severity": "error",
+        "message": "'for' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "100",
+        "severity": "error",
+        "message": "'for' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "113",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'b' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "115",
+        "column": "20",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "117",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'THRESHOLD_NODE' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "117",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'THRESHOLD_NODE' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "118",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "118",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'ARTIFICIAL_NODE' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "118",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'ARTIFICIAL_NODE' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "135",
+        "column": "33",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "140",
+        "column": "24",
+        "severity": "error",
+        "message": "Unnecessary parentheses around expression.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "141",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "145",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "148",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'sourcesThatFlowNotOnlyToThresh' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "149",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'sinksThatGetFlowNotOnlyFromThresh' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "153",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'c' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "158",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "161",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "163",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "171",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "174",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "176",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "211",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'REMOVE_NODE_FLAG' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "211",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'REMOVE_NODE_FLAG' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "212",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'nodesNewNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "213",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'nodesOldNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "227",
+        "column": "37",
+        "severity": "error",
+        "message": "Unnecessary parentheses around assignment right-hand side.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.UnnecessaryParenthesesCheck"
+    },
+    {
+        "line": "229",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "240",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'bb' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "242",
+        "column": "21",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "252",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'cc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "257",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "267",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'mcf' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "269",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'myDist' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "271",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'flows' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "276",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'mcfDist' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "278",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "279",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "280",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "285",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "285",
+        "column": "12",
+        "severity": "error",
+        "message": "'private' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "285",
+        "column": "49",
+        "severity": "error",
+        "message": "Name 'P' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "285",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'P' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "285",
+        "column": "67",
+        "severity": "error",
+        "message": "Name 'Q' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "285",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'Q' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "285",
+        "column": "93",
+        "severity": "error",
+        "message": "Name 'C' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "285",
+        "column": "93",
+        "severity": "warning",
+        "message": "Variable 'C' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "16",
+        "severity": "error",
+        "message": "Name 'MULT_FACTOR' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "293",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'MULT_FACTOR' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "296",
+        "column": "13",
+        "severity": "error",
+        "message": "Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "296",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'N' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "297",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'iP' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "298",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'iQ' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "299",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'iC' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "301",
+        "column": "21",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "302",
+        "column": "21",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "303",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'vec' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "305",
+        "column": "26",
+        "severity": "error",
+        "message": "Should use uppercase 'L'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"
+    },
+    {
+        "line": "318",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "322",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'minSum' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "323",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'maxSum' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "324",
+        "column": "16",
+        "severity": "error",
+        "message": "Name 'PQnormFactor' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "324",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'PQnormFactor' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "325",
+        "column": "16",
+        "severity": "error",
+        "message": "Name 'CnormFactor' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "325",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'CnormFactor' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "344",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    }
+]

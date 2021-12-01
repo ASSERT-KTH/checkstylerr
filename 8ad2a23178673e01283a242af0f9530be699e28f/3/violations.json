@@ -1,0 +1,129 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "14",
+        "severity": "warning",
+        "message": "'org.apache.flink.api.java.DataSet' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Wrong order for 'java.io.File' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "22",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "30",
+        "column": "67",
+        "severity": "warning",
+        "message": "Expected @param tag for 'config'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "30",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "31",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'env' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "33",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'source' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "34",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'documents' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'gold' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "37",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'instances' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "39",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "46",
+        "column": "89",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "118",
+        "severity": "warning",
+        "message": "Variable 'env' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

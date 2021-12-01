@@ -1,0 +1,498 @@
+[
+    {
+        "line": "0",
+        "severity": "warning",
+        "message": "Header comment does not match file name",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"
+    },
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Line does not match expected header line of '^/\\*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "5",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.formulasearchengine.mathosphere.mlp.contracts.CreateCandidatesMapper.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "10",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - com.formulasearchengine.mathosphere.mlp.pojos.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "12",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.formulasearchengine.mathosphere.utils.GoldUtil.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "13",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.formulasearchengine.mlp.evaluation.Evaluator.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "14",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - com.formulasearchengine.mlp.evaluation.pojo.GoldEntry.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "'org.apache.commons.csv.CSVFormat' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "17",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.apache.commons.lang.StringUtils.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "19",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.apache.flink.api.common.functions.ReduceFunction.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong order for 'java.io.File' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.util.ArrayList.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "44",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "46",
+        "column": "60",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "46",
+        "column": "109",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "48",
+        "column": "30",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "48",
+        "column": "65",
+        "severity": "warning",
+        "message": "Variable 'config' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "71",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "48",
+        "column": "73",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "51",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'flinkEnv' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "52",
+        "column": "33",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "52",
+        "column": "57",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "55",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'dataSource' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "55",
+        "column": "77",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "55",
+        "column": "94",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "58",
+        "column": "50",
+        "severity": "warning",
+        "message": "Variable 'mapOperator' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "61",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'annotatorMapper' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "64",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'parsedDocuments' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "64",
+        "column": "71",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "64",
+        "column": "87",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "67",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'featureExtractorMapper' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "68",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'outputDocuments' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "72",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'learner' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "73",
+        "column": "39",
+        "severity": "warning",
+        "message": "Variable 'evaluationResults' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "73",
+        "column": "87",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "73",
+        "column": "95",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "77",
+        "column": "26",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "77",
+        "column": "55",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "85",
+        "column": "18",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "85",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "85",
+        "column": "30",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "85",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "90",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "90",
+        "column": "23",
+        "severity": "error",
+        "message": "Variable 'counter' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "92",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 151).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "92",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "92",
+        "column": "64",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "92",
+        "column": "134",
+        "severity": "warning",
+        "message": "Variable 'dataSetWikiOuts' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "92",
+        "column": "149",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "92",
+        "column": "151",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "94",
+        "column": "49",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "99",
+        "column": "40",
+        "severity": "warning",
+        "message": "Variable 'relations' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "100",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'printer' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "100",
+        "column": "84",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "100",
+        "column": "107",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "102",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'record' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "107",
+        "column": "30",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "107",
+        "column": "43",
+        "severity": "warning",
+        "message": "Variable 'ioe' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "107",
+        "column": "46",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "107",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "114",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "114",
+        "column": "72",
+        "severity": "warning",
+        "message": "Variable 'flinkConfig' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "115",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'outputDir' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "116",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "116",
+        "column": "37",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "119",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'outputF' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "120",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "120",
+        "column": "35",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "121",
+        "column": "30",
+        "severity": "error",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "121",
+        "column": "38",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    }
+]
