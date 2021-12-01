@@ -1,0 +1,2211 @@
+[
+    {
+        "line": "3",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "11",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "'org.apache.commons.io.IOUtils' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong order for 'com.databasepreservation.DatabaseMigration' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - com.databasepreservation.common.shared.ViewerStructure.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - com.databasepreservation.common.shared.models.wizardParameters.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "66",
+        "severity": "warning",
+        "message": "Extra separation in import group before 'com.databasepreservation.common.shared.ViewerConstants.SOLR_INDEX_ROW_COLLECTION_NAME_PREFIX'",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "72",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "73",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "75",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "75",
+        "column": "53",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "76",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reportPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "77",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "82",
+        "column": "37",
+        "severity": "warning",
+        "message": "The String \"The database does not have a conversion report.\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "90",
+        "column": "60",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "90",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "90",
+        "column": "81",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "90",
+        "column": "102",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "91",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter query should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "91",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'query' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "92",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reporter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "99",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'importModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "102",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'jdbcImportModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "105",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "113",
+        "column": "40",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "113",
+        "column": "47",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "113",
+        "column": "61",
+        "severity": "warning",
+        "message": "Parameter parametersJson should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "113",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'parametersJson' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "114",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reporter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "122",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'importModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "125",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'jdbcImportModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "128",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "131",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "138",
+        "column": "40",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "47",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "138",
+        "column": "61",
+        "severity": "warning",
+        "message": "Parameter siardVersion should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'siardVersion' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "138",
+        "column": "82",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "89",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "139",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter tableAndColumnsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "139",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'tableAndColumnsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "139",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter exportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "139",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'exportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "140",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter metadataExportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "140",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'metadataExportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "141",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reporter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "142",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'f' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "144",
+        "column": "19",
+        "severity": "warning",
+        "message": "The String \"starting to convert database\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "159",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "164",
+        "column": "36",
+        "severity": "warning",
+        "message": "The String \"Could not convert the database\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "166",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'duration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "167",
+        "column": "19",
+        "severity": "warning",
+        "message": "The String \"Conversion time {}m {}s\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "167",
+        "column": "57",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "167",
+        "column": "75",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "167",
+        "column": "83",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "174",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "174",
+        "column": "39",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "174",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "60",
+        "severity": "warning",
+        "message": "Parameter siardVersion should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "174",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'siardVersion' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "81",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "174",
+        "column": "88",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "99",
+        "severity": "warning",
+        "message": "Parameter connectionParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "174",
+        "column": "120",
+        "severity": "warning",
+        "message": "Variable 'connectionParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "176",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reporter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "177",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'f' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "194",
+        "column": "21",
+        "severity": "warning",
+        "message": "The String \"Connection Options - \" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "194",
+        "column": "64",
+        "severity": "warning",
+        "message": "The String \"->\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "202",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "208",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'duration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "209",
+        "column": "57",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "209",
+        "column": "75",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "209",
+        "column": "83",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "216",
+        "column": "37",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "216",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "216",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter connectionParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "216",
+        "column": "79",
+        "severity": "warning",
+        "message": "Variable 'connectionParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "217",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter tableAndColumnsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "217",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'tableAndColumnsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "217",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter customViewsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "217",
+        "column": "80",
+        "severity": "warning",
+        "message": "Variable 'customViewsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "218",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter exportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "218",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'exportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "218",
+        "column": "54",
+        "severity": "warning",
+        "message": "Parameter metadataExportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "218",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'metadataExportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "220",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reporter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "221",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"starting to convert database \" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "241",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"Could not load the driver\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "277",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "282",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "285",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'duration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "286",
+        "column": "55",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "286",
+        "column": "73",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "286",
+        "column": "81",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "290",
+        "column": "44",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "290",
+        "column": "51",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "290",
+        "column": "65",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "290",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "296",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'importModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "303",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'jdbcImportModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "313",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "320",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "328",
+        "column": "45",
+        "severity": "warning",
+        "message": "Parameter moduleName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "328",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'moduleName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "330",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'dbptkModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "342",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "348",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'dbptkModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "350",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "355",
+        "column": "50",
+        "severity": "warning",
+        "message": "The String \"siard\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "360",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "370",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "376",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'dbptkModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "377",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "380",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 145).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "389",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "395",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'dbptkModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "396",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "409",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "414",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter localPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "414",
+        "column": "53",
+        "severity": "warning",
+        "message": "Variable 'localPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "415",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "419",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "419",
+        "column": "53",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "419",
+        "column": "67",
+        "severity": "warning",
+        "message": "Parameter localPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "419",
+        "column": "74",
+        "severity": "warning",
+        "message": "Variable 'localPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "420",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'basePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "420",
+        "column": "96",
+        "severity": "warning",
+        "message": "The String \"/\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "422",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "428",
+        "column": "50",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "428",
+        "column": "55",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "428",
+        "column": "66",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "428",
+        "column": "73",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "431",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"File not found at path: \" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "434",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "436",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'siardEdition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "447",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'viewerDatabase' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "475",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"Could not initialize conversion modules\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "476",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "479",
+        "column": "34",
+        "severity": "warning",
+        "message": "The String \"Could not convert the database to the Solr instance.\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "483",
+        "column": "38",
+        "severity": "warning",
+        "message": "Parameter localPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "483",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'localPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "484",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "488",
+        "column": "38",
+        "severity": "warning",
+        "message": "Parameter localPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "488",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'localPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "488",
+        "column": "56",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "488",
+        "column": "63",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "490",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'basePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "493",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "496",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "503",
+        "column": "42",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "503",
+        "column": "47",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "503",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "503",
+        "column": "65",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "508",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "510",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'configuration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "512",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'databaseMigration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "528",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "532",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'duration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "533",
+        "column": "57",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "533",
+        "column": "75",
+        "severity": "warning",
+        "message": "'60000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "533",
+        "column": "83",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "534",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "541",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter metadata should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "541",
+        "column": "73",
+        "severity": "warning",
+        "message": "Variable 'metadata' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "541",
+        "column": "83",
+        "severity": "warning",
+        "message": "Parameter bundleSiard should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "541",
+        "column": "101",
+        "severity": "warning",
+        "message": "Variable 'bundleSiard' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "542",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "542",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "542",
+        "column": "26",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "542",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "544",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "549",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'siardEdition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "563",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "572",
+        "column": "39",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "572",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "572",
+        "column": "60",
+        "severity": "warning",
+        "message": "Parameter SIARDPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "572",
+        "column": "67",
+        "severity": "warning",
+        "message": "Name 'SIARDPath' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "572",
+        "column": "67",
+        "severity": "warning",
+        "message": "Variable 'SIARDPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "572",
+        "column": "78",
+        "severity": "warning",
+        "message": "Parameter validationReportPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "573",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter allowedTypesPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "573",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'allowedTypesPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "574",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "575",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'valid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "577",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'filename' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "584",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'siardValidation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "593",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'dbptkVersion' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "600",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "613",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "621",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "629",
+        "column": "53",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "629",
+        "column": "60",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "629",
+        "column": "74",
+        "severity": "warning",
+        "message": "Parameter passed should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "629",
+        "column": "81",
+        "severity": "warning",
+        "message": "Variable 'passed' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "629",
+        "column": "89",
+        "severity": "warning",
+        "message": "Parameter errors should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "629",
+        "column": "96",
+        "severity": "warning",
+        "message": "Variable 'errors' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "629",
+        "column": "104",
+        "severity": "warning",
+        "message": "Parameter warnings should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "629",
+        "column": "111",
+        "severity": "warning",
+        "message": "Variable 'warnings' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "630",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter skipped should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "630",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'skipped' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "635",
+        "column": "43",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "635",
+        "column": "50",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "635",
+        "column": "64",
+        "severity": "warning",
+        "message": "Parameter status should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "635",
+        "column": "96",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "642",
+        "column": "35",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "642",
+        "column": "42",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "645",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'database' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "647",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "652",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'reportPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "657",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "657",
+        "column": "7",
+        "severity": "warning",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "657",
+        "column": "131",
+        "severity": "warning",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "657",
+        "column": "132",
+        "severity": "warning",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "660",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'savedSearchFilter' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "675",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter siardPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "675",
+        "column": "53",
+        "severity": "warning",
+        "message": "Variable 'siardPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "675",
+        "column": "64",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "675",
+        "column": "71",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "676",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'path' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "680",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'file' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "682",
+        "column": "91",
+        "severity": "warning",
+        "message": "The String \")\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "690",
+        "column": "56",
+        "severity": "warning",
+        "message": "Parameter validatorReportPath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "690",
+        "column": "63",
+        "severity": "warning",
+        "message": "Variable 'validatorReportPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "690",
+        "column": "84",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "690",
+        "column": "91",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "692",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'path' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "697",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'file' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "706",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "709",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "709",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @param tag for 'databaseUUID'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "710",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "715",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'reporterPath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "727",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'factory' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "734",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "744",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter databaseMigration should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "744",
+        "column": "64",
+        "severity": "warning",
+        "message": "Variable 'databaseMigration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "745",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter tableAndColumnsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "745",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'tableAndColumnsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "745",
+        "column": "58",
+        "severity": "warning",
+        "message": "Parameter exportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "745",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'exportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "746",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter metadataExportOptionsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "746",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'metadataExportOptionsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "771",
+        "column": "71",
+        "severity": "warning",
+        "message": "Parameter moduleName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "771",
+        "column": "78",
+        "severity": "warning",
+        "message": "Variable 'moduleName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "772",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "778",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "786",
+        "column": "68",
+        "severity": "warning",
+        "message": "Parameter version should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "786",
+        "column": "75",
+        "severity": "warning",
+        "message": "Variable 'version' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "787",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "801",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "809",
+        "column": "71",
+        "severity": "warning",
+        "message": "Parameter moduleName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "809",
+        "column": "78",
+        "severity": "warning",
+        "message": "Variable 'moduleName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "810",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'databaseModuleFactories' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "816",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "824",
+        "column": "52",
+        "severity": "warning",
+        "message": "Parameter factory should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "824",
+        "column": "74",
+        "severity": "warning",
+        "message": "Variable 'factory' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "824",
+        "column": "83",
+        "severity": "warning",
+        "message": "Parameter dbptkModule should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "824",
+        "column": "95",
+        "severity": "warning",
+        "message": "Variable 'dbptkModule' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "846",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "851",
+        "column": "37",
+        "severity": "warning",
+        "message": "Parameter dbptkModule should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "851",
+        "column": "62",
+        "severity": "warning",
+        "message": "Parameter moduleName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "851",
+        "column": "69",
+        "severity": "warning",
+        "message": "Variable 'moduleName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "851",
+        "column": "81",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "851",
+        "column": "92",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "852",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "875",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'tmpDir' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "875",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"java.io.tmpdir\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "882",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'outputStream' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "888",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'writer' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "894",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "901",
+        "column": "73",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "901",
+        "column": "99",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "904",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'externalLobDBPTKParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "905",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'externalLobDBPTK' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "909",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'sb' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "909",
+        "column": "97",
+        "severity": "warning",
+        "message": "The String \"{\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "910",
+        "column": "39",
+        "severity": "warning",
+        "message": "The String \";\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "910",
+        "column": "45",
+        "severity": "warning",
+        "message": "The String \"}\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "919",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "919",
+        "column": "72",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "921",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'tf' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "936",
+        "column": "46",
+        "severity": "warning",
+        "message": "Parameter customViewsParameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "936",
+        "column": "68",
+        "severity": "warning",
+        "message": "Variable 'customViewsParameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "938",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'data' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "939",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'view' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "942",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'customViewInformation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "949",
+        "column": "10",
+        "severity": "warning",
+        "message": "Variable 'yaml' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "953",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'tmpDir' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "955",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'path' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "957",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'writer' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "963",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "970",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "976",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "981",
+        "column": "30",
+        "severity": "warning",
+        "message": "Parameter url should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "981",
+        "column": "34",
+        "severity": "warning",
+        "message": "Expected @param tag for 'url'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "981",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'url' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "981",
+        "column": "46",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "982",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'classLoader' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "983",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'clazz' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "986",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'method' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "991",
+        "column": "57",
+        "severity": "warning",
+        "message": "Parameter databaseMigration should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "991",
+        "column": "75",
+        "severity": "warning",
+        "message": "Variable 'databaseMigration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "992",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "992",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "996",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"ssh\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "996",
+        "column": "54",
+        "severity": "warning",
+        "message": "The String \"true\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "997",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"ssh-host\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "998",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"ssh-user\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "999",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"ssh-password\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1000",
+        "column": "47",
+        "severity": "warning",
+        "message": "The String \"ssh-port\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "1004",
+        "column": "57",
+        "severity": "warning",
+        "message": "Parameter databaseMigration should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "1004",
+        "column": "75",
+        "severity": "warning",
+        "message": "Variable 'databaseMigration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "1005",
+        "column": "5",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "1005",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "1017",
+        "column": "41",
+        "severity": "warning",
+        "message": "Parameter parameters should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "1017",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'parameters' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "1023",
+        "column": "43",
+        "severity": "warning",
+        "message": "Parameter databaseUUID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "1023",
+        "column": "50",
+        "severity": "warning",
+        "message": "Variable 'databaseUUID' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

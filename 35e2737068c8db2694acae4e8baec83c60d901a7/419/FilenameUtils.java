@@ -1,0 +1,40 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE file at the root of the source
+ * tree and available online at
+ *
+ * https://github.com/keeps/dbptk-ui
+ */
+package com.databasepreservation.common.utils;
+
+import com.databasepreservation.common.api.utils.HandlebarsUtils;
+import com.databasepreservation.common.client.ViewerConstants;
+import com.databasepreservation.common.client.models.status.collection.ColumnStatus;
+import com.databasepreservation.common.client.models.status.collection.TableStatus;
+import com.databasepreservation.common.client.models.structure.ViewerRow;
+import com.databasepreservation.common.client.tools.ViewerStringUtils;
+
+/**
+ * @author Miguel Guimarães <mguimaraes@keep.pt>
+ */
+public class FilenameUtils {
+
+  public static String sanitizeFilename(String name) {
+    return name.replaceAll("[:\\\\/*?|<>]", "_");
+  }
+
+  public static String getTemplateFilename(ViewerRow row, TableStatus configTable, ColumnStatus binaryColumn) {
+    String defaultValue = ViewerConstants.SIARD_RECORD_PREFIX + row.getUuid() + ViewerConstants.SIARD_LOB_FILE_EXTENSION;
+    return getTemplateFilename(row, configTable, binaryColumn, defaultValue);
+  }
+
+  public static String getTemplateFilename(ViewerRow row, TableStatus configTable, ColumnStatus binaryColumn, String defaultValue) {
+    String handlebarsFilename = HandlebarsUtils.applyExportTemplate(row, configTable,
+        binaryColumn.getColumnIndex());
+    if (ViewerStringUtils.isBlank(handlebarsFilename)) {
+      handlebarsFilename = defaultValue;
+    }
+
+    return FilenameUtils.sanitizeFilename(handlebarsFilename);
+  }
+}

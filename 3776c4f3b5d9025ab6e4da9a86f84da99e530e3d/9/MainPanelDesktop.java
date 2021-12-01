@@ -1,0 +1,208 @@
+package com.databasepreservation.main.desktop.client.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.databasepreservation.main.common.shared.ViewerStructure.ViewerDatabase;
+import com.databasepreservation.main.common.shared.ViewerStructure.ViewerSIARDBundle;
+import com.databasepreservation.main.common.shared.client.breadcrumb.BreadcrumbItem;
+import com.databasepreservation.main.common.shared.client.tools.HistoryManager;
+import com.databasepreservation.main.desktop.client.dbptk.HomePage;
+import com.databasepreservation.main.desktop.client.dbptk.Manage;
+import com.databasepreservation.main.desktop.client.dbptk.SIARDMainPage;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.MetadataPanel;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.MetadataPanelLoad;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.SIARDEditMetadataPage;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.information.MetadataInformation;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.schemas.routines.MetadataRoutinePanel;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.schemas.tables.MetadataTablePanel;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.schemas.views.MetadataViewPanel;
+import com.databasepreservation.main.desktop.client.dbptk.metadata.users.MetadataUsersPanel;
+import com.databasepreservation.main.desktop.client.dbptk.validator.ValidatorPage;
+import com.databasepreservation.main.desktop.client.dbptk.wizard.upload.CreateWizardManager;
+import com.databasepreservation.main.desktop.client.dbptk.wizard.download.SIARDWizardManager;
+import com.databasepreservation.main.desktop.client.dbptk.wizard.download.DBMSWizardManager;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.Widget;
+
+
+/**
+ * @author Miguel Guimarães <mguimaraes@keep.pt>
+ */
+public class MainPanelDesktop extends Composite {
+  interface MainPanelDesktopUiBinder extends UiBinder<Widget, MainPanelDesktop> {
+  }
+
+  private static MainPanelDesktopUiBinder binder = GWT.create(MainPanelDesktopUiBinder.class);
+
+  @UiField
+  SimplePanel  contentPanel;
+
+  MainPanelDesktop() {
+    initWidget(binder.createAndBindUi(this));
+  }
+
+  void onHistoryChanged(String token) {
+    List<String> currentHistoryPath = HistoryManager.getCurrentHistoryPath();
+    List<BreadcrumbItem> breadcrumbItemList = new ArrayList<>();
+
+    if (currentHistoryPath.isEmpty() || HistoryManager.ROUTE_HOME.equals(currentHistoryPath.get(0))) {
+      contentPanel.clear();
+      contentPanel.add(HomePage.getInstance());
+
+    } else if (HistoryManager.ROUTE_SIARD_INFO.equals(currentHistoryPath.get(0))) {
+      SIARDMainPage instance = SIARDMainPage.getInstance(currentHistoryPath.get(1));
+
+      contentPanel.clear();
+      contentPanel.add(instance);
+
+    } else if (HistoryManager.ROUTE_DATABASE.equals(currentHistoryPath.get(0))) {
+      Manage manage = Manage.getInstance();
+      contentPanel.clear();
+      contentPanel.add(manage);
+    } else if (HistoryManager.ROUTE_SEND_TO_LIVE_DBMS.equals(currentHistoryPath.get(0))) {
+      DBMSWizardManager instance = DBMSWizardManager.getInstance(currentHistoryPath.get(1));
+      contentPanel.clear();
+      if (currentHistoryPath.size() == 3) {
+        final String databaseName = currentHistoryPath.get(2);
+        instance.setBreadcrumbDatabaseName(databaseName);
+      }
+      if (currentHistoryPath.size() == 4) {
+        final String wizardPage = currentHistoryPath.get(2);
+        final String toSelect = currentHistoryPath.get(3);
+        instance.change(wizardPage, toSelect);
+      }
+      contentPanel.add(instance);
+    } else if (HistoryManager.ROUTE_MIGRATE_TO_SIARD.equals(currentHistoryPath.get(0))) {
+      SIARDWizardManager instance = SIARDWizardManager.getInstance(currentHistoryPath.get(1), currentHistoryPath.get(2));
+      contentPanel.clear();
+      if (currentHistoryPath.size() == 4) {
+        final String wizardPage = currentHistoryPath.get(2);
+        final String toSelect = currentHistoryPath.get(3);
+        instance.change(wizardPage, toSelect);
+      } else if (currentHistoryPath.size() == 5) {
+        final String wizardPage = currentHistoryPath.get(2);
+        final String toSelect = currentHistoryPath.get(3);
+        final String schemaUUID = currentHistoryPath.get(4);
+        instance.change(wizardPage, toSelect, schemaUUID);
+      } else if (currentHistoryPath.size() == 6) {
+        final String wizardPage = currentHistoryPath.get(2);
+        final String toSelect = currentHistoryPath.get(3);
+        final String schemaUUID = currentHistoryPath.get(4);
+        final String tableUUID = currentHistoryPath.get(5);
+        instance.change(wizardPage, toSelect, schemaUUID, tableUUID);
+      }
+      contentPanel.add(instance);
+    } else if (HistoryManager.ROUTE_CREATE_SIARD.equals(currentHistoryPath.get(0))) {
+      CreateWizardManager instance = CreateWizardManager.getInstance();
+      contentPanel.clear();
+      if (currentHistoryPath.size() == 3) {
+        instance.change(currentHistoryPath.get(1), currentHistoryPath.get(2));
+      } else if (currentHistoryPath.size() == 4) {
+        final String wizardPage = currentHistoryPath.get(1);
+        final String toSelect = currentHistoryPath.get(2);
+        final String schemaUUID = currentHistoryPath.get(3);
+        instance.change(wizardPage, toSelect, schemaUUID);
+      } else if (currentHistoryPath.size() == 5) {
+        final String wizardPage = currentHistoryPath.get(1);
+        final String toSelect = currentHistoryPath.get(2);
+        final String schemaUUID = currentHistoryPath.get(3);
+        final String tableUUID = currentHistoryPath.get(4);
+        instance.change(wizardPage, toSelect, schemaUUID, tableUUID);
+      }
+      contentPanel.add(instance);
+    }  else if (HistoryManager.ROUTE_SIARD_EDIT_METADATA.equals(currentHistoryPath.get(0))) {
+      String databaseUUID =  currentHistoryPath.get(1);
+      if (currentHistoryPath.size() == 2) {
+        setMetadataRightPanelContent(databaseUUID, databaseUUID, new MetadataPanelLoad() {
+          @Override
+          public MetadataPanel load(ViewerDatabase database, ViewerSIARDBundle SIARDbundle) {
+            return MetadataInformation.getInstance(database, SIARDbundle);
+          }
+        });
+      } else if (currentHistoryPath.size() == 3) {
+        final String user = currentHistoryPath.get(2);
+        setMetadataRightPanelContent(databaseUUID, user, new MetadataPanelLoad() {
+          @Override
+          public MetadataPanel load(ViewerDatabase database, ViewerSIARDBundle SIARDbundle) {
+            return MetadataUsersPanel.getInstance(database, SIARDbundle);
+          }
+        });
+      }
+    } else if (HistoryManager.ROUTE_TABLE.equals(currentHistoryPath.get(0))) {
+      if (currentHistoryPath.size() == 3) {
+        String databaseUUID = currentHistoryPath.get(1);
+        final String tableUUID = currentHistoryPath.get(2);
+
+        setMetadataRightPanelContent(databaseUUID, tableUUID, new MetadataPanelLoad() {
+          @Override
+
+          public MetadataPanel load(ViewerDatabase database, ViewerSIARDBundle SIARDbundle) {
+            return MetadataTablePanel.getInstance(database, SIARDbundle, tableUUID);
+          }
+        });
+      }
+    } else if (HistoryManager.ROUTE_VIEW.equals(currentHistoryPath.get(0))) {
+      if (currentHistoryPath.size() == 4) {
+        String databaseUUID = currentHistoryPath.get(1);
+        final String schemaUUID = currentHistoryPath.get(2);
+        final String viewUUID = currentHistoryPath.get(3);
+
+        setMetadataRightPanelContent(databaseUUID, viewUUID, new MetadataPanelLoad() {
+          @Override
+          public MetadataPanel load(ViewerDatabase database, ViewerSIARDBundle SIARDbundle) {
+            return MetadataViewPanel.getInstance(database, SIARDbundle, schemaUUID, viewUUID);
+          }
+        });
+      }
+    } else if (HistoryManager.ROUTE_ROUTINE.equals(currentHistoryPath.get(0))) {
+      if (currentHistoryPath.size() == 4) {
+        String databaseUUID = currentHistoryPath.get(1);
+        final String schemaUUID = currentHistoryPath.get(2);
+        final String routineUUID = currentHistoryPath.get(3);
+
+        setMetadataRightPanelContent(databaseUUID, routineUUID, new MetadataPanelLoad() {
+          @Override
+          public MetadataPanel load(ViewerDatabase database, ViewerSIARDBundle SIARDbundle) {
+            return MetadataRoutinePanel.getInstance(database, SIARDbundle, schemaUUID, routineUUID);
+          }
+        });
+      }
+    } else if(HistoryManager.ROUTE_SIARD_VALIDATOR.equals(currentHistoryPath.get(0))){
+      if (currentHistoryPath.size() == 3) {
+        final String databaseUUID = currentHistoryPath.get(1);
+        final String reporterPath = currentHistoryPath.get(2);
+        ValidatorPage instance = ValidatorPage.getInstance(databaseUUID, reporterPath);
+        contentPanel.clear();
+        contentPanel.add(instance);
+
+      } else if (currentHistoryPath.size() == 4) {
+        final String databaseUUID = currentHistoryPath.get(1);
+        final String reporterPath = currentHistoryPath.get(2);
+        final String udtPath = currentHistoryPath.get(3);
+
+        ValidatorPage instance = ValidatorPage.getInstance(databaseUUID, reporterPath, udtPath);
+        contentPanel.clear();
+        contentPanel.add(instance);
+      }
+    } else {
+      handleErrorPath(currentHistoryPath);
+    }
+  }
+
+  private void setMetadataRightPanelContent(String databaseUUID, String sidebarSelected,
+    MetadataPanelLoad rightPanelLoader) {
+    SIARDEditMetadataPage instance = SIARDEditMetadataPage.getInstance(databaseUUID);
+    contentPanel.clear();
+    contentPanel.add(instance);
+    instance.load(rightPanelLoader, sidebarSelected);
+  }
+
+  private void handleErrorPath(List<String> currentHistoryPath) {
+    HistoryManager.gotoHome();
+  }
+}
