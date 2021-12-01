@@ -1,0 +1,584 @@
+package com.java110.common.smo.impl;
+
+
+import com.java110.common.dao.IWorkflowServiceDao;
+import com.java110.core.base.smo.BaseServiceSMO;
+import com.java110.core.smo.common.IWorkflowInnerServiceSMO;
+import com.java110.core.smo.user.IUserInnerServiceSMO;
+import com.java110.dto.PageDto;
+import com.java110.dto.user.UserDto;
+import com.java110.dto.workflow.WorkflowAuditInfoDto;
+import com.java110.dto.workflow.WorkflowDto;
+import com.java110.dto.workflow.WorkflowStepDto;
+import com.java110.dto.workflow.WorkflowStepStaffDto;
+import com.java110.utils.util.Base64Convert;
+import com.java110.utils.util.BeanConvertUtil;
+import com.java110.utils.util.DateUtil;
+import com.java110.utils.util.StringUtil;
+import org.activiti.bpmn.BpmnAutoLayout;
+import org.activiti.bpmn.model.BpmnModel;
+import org.activiti.bpmn.model.EndEvent;
+import org.activiti.bpmn.model.ExclusiveGateway;
+import org.activiti.bpmn.model.FlowNode;
+import org.activiti.bpmn.model.ParallelGateway;
+import org.activiti.bpmn.model.Process;
+import org.activiti.bpmn.model.SequenceFlow;
+import org.activiti.bpmn.model.StartEvent;
+import org.activiti.bpmn.model.UserTask;
+import org.activiti.engine.HistoryService;
+import org.activiti.engine.ProcessEngine;
+import org.activiti.engine.ProcessEngines;
+import org.activiti.engine.RepositoryService;
+import org.activiti.engine.RuntimeService;
+import org.activiti.engine.TaskService;
+import org.activiti.engine.history.HistoricActivityInstance;
+import org.activiti.engine.history.HistoricActivityInstanceQuery;
+import org.activiti.engine.history.HistoricProcessInstance;
+import org.activiti.engine.impl.RepositoryServiceImpl;
+import org.activiti.engine.impl.persistence.entity.ProcessDefinitionEntity;
+import org.activiti.engine.repository.Deployment;
+import org.activiti.engine.task.Comment;
+import org.activiti.image.ProcessDiagramGenerator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ * @ClassName FloorInnerServiceSMOImpl
+ * @Description 工作流内部服务实现类
+ * @Author wuxw
+ * @Date 2019/4/24 9:20
+ * @Version 1.0
+ * add by wuxw 2019/4/24
+ **/
+@RestController
+public class WorkflowInnerServiceSMOImpl extends BaseServiceSMO implements IWorkflowInnerServiceSMO {
+    private static final Logger logger = LoggerFactory.getLogger(BaseServiceSMO.class);
+
+    @Autowired
+    private IWorkflowServiceDao workflowServiceDaoImpl;
+
+    @Autowired
+    private IUserInnerServiceSMO userInnerServiceSMOImpl;
+
+    @Autowired
+    private RuntimeService runtimeService;
+
+    @Autowired
+    private HistoryService historyService;
+
+    @Autowired
+    private RepositoryService repositoryService;
+
+    @Autowired
+    private TaskService taskService;
+
+    @Override
+    public List<WorkflowDto> queryWorkflows(@RequestBody WorkflowDto workflowDto) {
+
+        //校验是否传了 分页信息
+
+        int page = workflowDto.getPage();
+
+        if (page != PageDto.DEFAULT_PAGE) {
+            workflowDto.setPage((page - 1) * workflowDto.getRow());
+        }
+
+        List<WorkflowDto> workflows = BeanConvertUtil.covertBeanList(workflowServiceDaoImpl.getWorkflowInfo(BeanConvertUtil.beanCovertMap(workflowDto)), WorkflowDto.class);
+
+        if (workflows == null || workflows.size() == 0) {
+            return workflows;
+        }
+
+        String[] userIds = getUserIds(workflows);
+        //根据 userId 查询用户信息
+        List<UserDto> users = userInnerServiceSMOImpl.getUserInfo(userIds);
+
+        for (WorkflowDto workflow : workflows) {
+            refreshWorkflow(workflow, users);
+        }
+        return workflows;
+    }
+
+    /**
+     * 从用户列表中查询用户，将用户中的信息 刷新到 floor对象中
+     *
+     * @param workflow 小区工作流信息
+     * @param users    用户列表
+     */
+    private void refreshWorkflow(WorkflowDto workflow, List<UserDto> users) {
+        for (UserDto user : users) {
+            if (workflow.getFlowId().equals(user.getUserId())) {
+                BeanConvertUtil.covertBean(user, workflow);
+            }
+        }
+    }
+
+    /**
+     * 获取批量userId
+     *
+     * @param workflows 小区楼信息
+     * @return 批量userIds 信息
+     */
+    private String[] getUserIds(List<WorkflowDto> workflows) {
+        List<String> userIds = new ArrayList<String>();
+        for (WorkflowDto workflow : workflows) {
+            userIds.add(workflow.getFlowId());
+        }
+
+        return userIds.toArray(new String[userIds.size()]);
+    }
+
+    public String getRunWorkflowImage(@RequestBody String businessKey) {
+
+        String image = "";
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        try {
+            //  获取历史流程实例
+            HistoricProcessInstance historicProcessInstance = historyService.createHistoricProcessInstanceQuery()
+                    .processInstanceBusinessKey(businessKey).singleResult();
+
+            if (historicProcessInstance == null) {
+                //throw new BusinessException("获取流程实例ID[" + pProcessInstanceId + "]对应的历史流程实例失败！");
+            } else {
+                // 获取流程定义
+                ProcessDefinitionEntity processDefinition = (ProcessDefinitionEntity) ((RepositoryServiceImpl) repositoryService)
+                        .getDeployedProcessDefinition(historicProcessInstance.getProcessDefinitionId());
+
+                // 获取流程历史中已执行节点，并按照节点在流程中执行先后顺序排序
+                List<HistoricActivityInstance> historicActivityInstanceList = historyService.createHistoricActivityInstanceQuery()
+                        .processInstanceId(historicProcessInstance.getId()).orderByHistoricActivityInstanceId().asc().list();
+
+                // 已执行的节点ID集合
+                List<String> executedActivityIdList = new ArrayList<String>();
+                int index = 1;
+                //logger.info("获取已经执行的节点ID");
+                for (HistoricActivityInstance activityInstance : historicActivityInstanceList) {
+                    executedActivityIdList.add(activityInstance.getActivityId());
+
+                    //logger.info("第[" + index + "]个已执行节点=" + activityInstance.getActivityId() + " : " +activityInstance.getActivityName());
+                    index++;
+                }
+
+                BpmnModel bpmnModel = repositoryService.getBpmnModel(historicProcessInstance.getProcessDefinitionId());
+
+                // 已执行的线集合
+                List<String> flowIds = new ArrayList<String>();
+                // 获取流程走过的线 (getHighLightedFlows是下面的方法)
+                flowIds = getHighLightedFlows(bpmnModel, processDefinition, historicActivityInstanceList);
+
+
+                // 获取流程图图像字符流
+                ProcessDiagramGenerator pec = processEngine.getProcessEngineConfiguration().getProcessDiagramGenerator();
+                //配置字体
+                InputStream imageStream = pec.generateDiagram(bpmnModel, "png", executedActivityIdList, flowIds, "宋体", "微软雅黑", "黑体", null, 2.0);
+
+
+                image = Base64Convert.ioToBase64(imageStream);
+            }
+        } catch (Exception e) {
+            logger.error("读取图片失败", e);
+
+        }
+        return image;
+    }
+
+    public List<String> getHighLightedFlows(BpmnModel bpmnModel, ProcessDefinitionEntity processDefinitionEntity, List<HistoricActivityInstance> historicActivityInstances) {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //24小时制
+        List<String> highFlows = new ArrayList<String>();// 用以保存高亮的线flowId
+
+        for (int i = 0; i < historicActivityInstances.size() - 1; i++) {
+            // 对历史流程节点进行遍历
+            // 得到节点定义的详细信息
+            FlowNode activityImpl = (FlowNode) bpmnModel.getMainProcess().getFlowElement(historicActivityInstances.get(i).getActivityId());
+
+
+            List<FlowNode> sameStartTimeNodes = new ArrayList<FlowNode>();// 用以保存后续开始时间相同的节点
+            FlowNode sameActivityImpl1 = null;
+
+            HistoricActivityInstance activityImpl_ = historicActivityInstances.get(i);// 第一个节点
+            HistoricActivityInstance activityImp2_;
+
+            for (int k = i + 1; k <= historicActivityInstances.size() - 1; k++) {
+                activityImp2_ = historicActivityInstances.get(k);// 后续第1个节点
+
+                if (activityImpl_.getActivityType().equals("userTask") && activityImp2_.getActivityType().equals("userTask") &&
+                        df.format(activityImpl_.getStartTime()).equals(df.format(activityImp2_.getStartTime()))) //都是usertask，且主节点与后续节点的开始时间相同，说明不是真实的后继节点
+                {
+
+                } else {
+                    sameActivityImpl1 = (FlowNode) bpmnModel.getMainProcess().getFlowElement(historicActivityInstances.get(k).getActivityId());//找到紧跟在后面的一个节点
+                    break;
+                }
+
+            }
+            sameStartTimeNodes.add(sameActivityImpl1); // 将后面第一个节点放在时间相同节点的集合里
+            for (int j = i + 1; j < historicActivityInstances.size() - 1; j++) {
+                HistoricActivityInstance activityImpl1 = historicActivityInstances.get(j);// 后续第一个节点
+                HistoricActivityInstance activityImpl2 = historicActivityInstances.get(j + 1);// 后续第二个节点
+
+                if (df.format(activityImpl1.getStartTime()).equals(df.format(activityImpl2.getStartTime()))) {// 如果第一个节点和第二个节点开始时间相同保存
+                    FlowNode sameActivityImpl2 = (FlowNode) bpmnModel.getMainProcess().getFlowElement(activityImpl2.getActivityId());
+                    sameStartTimeNodes.add(sameActivityImpl2);
+                } else {// 有不相同跳出循环
+                    break;
+                }
+            }
+            List<SequenceFlow> pvmTransitions = activityImpl.getOutgoingFlows(); // 取出节点的所有出去的线
+
+            for (SequenceFlow pvmTransition : pvmTransitions) {// 对所有的线进行遍历
+                FlowNode pvmActivityImpl = (FlowNode) bpmnModel.getMainProcess().getFlowElement(pvmTransition.getTargetRef());// 如果取出的线的目标节点存在时间相同的节点里，保存该线的id，进行高亮显示
+                if (sameStartTimeNodes.contains(pvmActivityImpl)) {
+                    highFlows.add(pvmTransition.getId());
+                }
+            }
+
+        }
+        return highFlows;
+
+    }
+
+
+    public String getWorkflowImage(@RequestBody WorkflowDto workflowDto) {
+
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+        List<String> list = processEngine.getRepositoryService()//
+                .getDeploymentResourceNames(workflowDto.getProcessDefinitionKey());
+        String image = "";
+        String resourceName = "";
+        if (list != null && list.size() > 0) {
+            for (String name : list) {
+                if (name.indexOf(".png") >= 0) {
+                    resourceName = name;
+                }
+            }
+        }
+
+        InputStream in = processEngine.getRepositoryService()
+                .getResourceAsStream(workflowDto.getProcessDefinitionKey(), resourceName);
+        try {
+            image = Base64Convert.ioToBase64(in);
+        } catch (IOException e) {
+            logger.error("读取图片失败", e);
+        }
+        return image;
+    }
+
+    /**
+     * @Date：2017/11/24
+     * @Description：创建流程并部署
+     */
+    public WorkflowDto addFlowDeployment(@RequestBody WorkflowDto workflowDto) {
+
+        ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+//
+//        RepositoryService repositoryService  = processEngine.getRepositoryService();
+//        repositoryService.deleteDeployment("1");
+        try {
+            // 1. 建立模型
+            BpmnModel model = new BpmnModel();
+            Process process = new Process();
+            model.addProcess(process);
+            process.setId(WorkflowDto.DEFAULT_PROCESS + workflowDto.getFlowId());
+            process.setName(workflowDto.getFlowName());
+            process.setDocumentation(workflowDto.getDescrible());
+            //添加流程
+            //开始节点
+            process.addFlowElement(createStartEvent());
+            List<WorkflowStepDto> workflowStepDtos = workflowDto.getWorkflowSteps();
+            for (int i = 0; i < workflowStepDtos.size(); i++) {
+                WorkflowStepDto step = workflowStepDtos.get(i);
+                //判断是否会签
+                if (WorkflowStepDto.TYPE_COUNTERSIGN.equals(step.getType())) {
+                    //会签
+                    //加入并行网关-分支
+                    process.addFlowElement(createParallelGateway("parallelGateway-fork" + i, "parallelGateway-fork" + i));
+                    //获取角色下所有用户
+                    List<WorkflowStepStaffDto> userList = step.getWorkflowStepStaffs();
+                    for (int u = 0; u < userList.size(); u++) {
+                        //并行网关分支的审核节点
+                        process.addFlowElement(createUserTask("userTask" + i + u, userList.get(u).getStaffName(), userList.get(u).getStaffId()));
+                    }
+                    //并行网关-汇聚
+                    process.addFlowElement(createParallelGateway("parallelGateway-join" + i, "parallelGateway-join" + i));
+
+                    process.addFlowElement(createUserTask("repulse" + i, "提交者", "${startUserId}"));
+
+                } else {
+                    //普通流转
+                    //审核节点
+                    process.addFlowElement(createUserTask("task" + i, step.getWorkflowStepStaffs().get(0).getStaffName(), step.getWorkflowStepStaffs().get(0).getStaffId()));
+                    //回退节点
+                    process.addFlowElement(createUserTask("repulse" + i, "提交者", "${startUserId}"));
+                }
+            }
+            //结束节点
+            process.addFlowElement(createEndEvent());
+
+            //连线
+            for (int y = 0; y < workflowStepDtos.size(); y++) {
+                WorkflowStepDto step = workflowStepDtos.get(y);
+                //是否会签
+                if (WorkflowStepDto.TYPE_COUNTERSIGN.equals(step.getType())) {
+                    //会签
+                    //判断是否第一个节点
+                    if (y == 0) {
+                        //开始节点和并行网关-分支连线
+                        process.addFlowElement(createSequenceFlow("startEvent", "parallelGateway-fork" + y, "startEvent-parallelGateway-fork" + y, ""));
+                    } else {
+                        //审核节点或者并行网关-汇聚到并行网关-分支
+                        //判断上一个节点是否是会签
+                        if (WorkflowStepDto.TYPE_COUNTERSIGN.equals(workflowStepDtos.get(y - 1).getType())) {
+                            process.addFlowElement(createSequenceFlow("parallelGateway-join" + (y - 1), "parallelGateway-fork" + y, "parallelGateway-join-parallelGateway-fork-分支" + y, "${flag=='true'}"));
+                        } else {
+                            process.addFlowElement(createSequenceFlow("task" + (y - 1), "parallelGateway-fork" + y, "task-parallelGateway-fork" + y, "${flag=='true'}"));
+                        }
+                    }
+                    //并行网关-分支和会签用户连线，会签用户和并行网关-汇聚连线
+                    List<WorkflowStepStaffDto> userList = step.getWorkflowStepStaffs();
+                    for (int u = 0; u < userList.size(); u++) {
+                        process.addFlowElement(createSequenceFlow("parallelGateway-fork" + y, "userTask" + y + u, "parallelGateway-fork-userTask" + y + u, ""));
+                        process.addFlowElement(createSequenceFlow("userTask" + y + u, "parallelGateway-join" + y, "userTask-parallelGateway-join", ""));
+                        if (u == (userList.size() - 1)) {
+                            process.addFlowElement(createSequenceFlow("parallelGateway-join" + y, "repulse" + y, "parallelGateway-join-repulse", "${flag=='false'}"));
+                            process.addFlowElement(createSequenceFlow("repulse" + y, "task" + getNormal(workflowStepDtos, y), "repulse-task" + y, "${flag=='true'}"));
+                        }
+                    }
+                    //最后一个节点  并行网关-汇聚到结束节点
+                    if (y == (workflowStepDtos.size() - 1)) {
+                        process.addFlowElement(createSequenceFlow("repulse" + y, "endEvent", "parallelGateway-join-endEvent", "${flag=='false'}"));
+                    }
+                } else {
+                    //普通流转
+                    //第一个节点
+                    if (y == 0) {
+                        //开始节点和审核节点1
+                        process.addFlowElement(createSequenceFlow("startEvent", "task" + y, "startEvent-task" + y, ""));
+                    } else {
+                        //判断上一个节点是否会签
+                        if (WorkflowStepDto.TYPE_COUNTERSIGN.equals(workflowStepDtos.get(y - 1).getType())) {
+                            //会签
+                            //并行网关-汇聚到审核节点
+                            process.addFlowElement(createSequenceFlow("parallelGateway-join" + (y - 1), "task" + y, "parallelGateway-join-task" + y, "${flag=='true'}"));
+                        } else {
+                            //普通
+                            process.addFlowElement(createSequenceFlow("task" + (y - 1), "task" + y, "task" + (y - 1) + "task" + y, "${flag=='true'}"));
+                        }
+                    }
+                    //是否最后一个节点
+                    if (y == (workflowStepDtos.size() - 1)) {
+                        //审核节点到结束节点
+                        process.addFlowElement(createSequenceFlow("repulse" + y, "endEvent", "task" + y + "endEvent", "${flag=='false'}"));
+                        process.addFlowElement(createSequenceFlow("task" + y, "repulse" + y, "task-repulse" + y, "${flag=='false'}"));
+                    } else {
+                        //审核节点到回退节点
+                        process.addFlowElement(createSequenceFlow("task" + y, "repulse" + y, "task-repulse" + y, "${flag=='false'}"));
+                    }
+                    process.addFlowElement(createSequenceFlow("repulse" + y, "task" + y, "repulse-task" + y, "${flag=='true'}"));
+                }
+            }
+
+            // 2. 生成的图形信息
+            new BpmnAutoLayout(model).execute();
+
+            // 3. 部署流程
+            Deployment deployment = processEngine.getRepositoryService().createDeployment()
+                    .addBpmnModel(process.getId() + ".bpmn", model).name(process.getId() + "_deployment").deploy();
+            workflowDto.setProcessDefinitionKey(deployment.getId());
+            //        // 4. 启动一个流程实例
+//        ProcessInstance processInstance = processEngine.getRuntimeService().startProcessInstanceByKey(process.getId());
+//
+//        // 5. 获取流程任务
+//        List<Task> tasks = processEngine.getTaskService().createTaskQuery().processInstanceId(processInstance.getId()).list();
+//        try{
+//            // 6. 将流程图保存到本地文件
+//            InputStream processDiagram = processEngine.getRepositoryService().getProcessDiagram(processInstance.getProcessDefinitionId());
+//            FileUtils.copyInputStreamToFile(processDiagram, new File("/deployments/"+process.getId()+".png"));
+//
+//            // 7. 保存BPMN.xml到本地文件
+//            InputStream processBpmn = processEngine.getRepositoryService().getResourceAsStream(deployment.getId(), process.getId()+".bpmn");
+//            FileUtils.copyInputStreamToFile(processBpmn,new File("/deployments/"+process.getId()+".bpmn"));
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+        } catch (Exception e) {
+            logger.error("部署工作流失败", e);
+        }
+
+        logger.debug("工作流部署完成");
+        return workflowDto;
+    }
+
+    private int getNormal(List<WorkflowStepDto> workflowStepDtos, int y) {
+        for (int stepIndex = y; stepIndex > 0; stepIndex--) {
+            if (WorkflowStepDto.TYPE_NORMAL.equals(workflowStepDtos.get(stepIndex).getType())) {
+                return stepIndex;
+            }
+        }
+
+        return 0;
+    }
+
+
+    //任务节点-组
+    protected UserTask createGroupTask(String id, String name, String candidateGroup) {
+        List<String> candidateGroups = new ArrayList<String>();
+        candidateGroups.add(candidateGroup);
+        UserTask userTask = new UserTask();
+        userTask.setName(name);
+        userTask.setId(id);
+        userTask.setCandidateGroups(candidateGroups);
+        return userTask;
+    }
+
+    //任务节点-用户
+    protected UserTask createUserTask(String id, String name, String userPkno) {
+        List<String> candidateUsers = new ArrayList<String>();
+        candidateUsers.add(userPkno);
+        UserTask userTask = new UserTask();
+        userTask.setName(name);
+        userTask.setId(id);
+        userTask.setAssignee(userPkno);
+        //userTask.setCandidateUsers(candidateUsers);
+        return userTask;
+    }
+
+    //任务节点-锁定者
+    protected UserTask createAssigneeTask(String id, String name, String assignee) {
+        UserTask userTask = new UserTask();
+        userTask.setName(name);
+        userTask.setId(id);
+        userTask.setAssignee(assignee);
+        return userTask;
+    }
+
+    /*连线*/
+    protected SequenceFlow createSequenceFlow(String from, String to, String name, String conditionExpression) {
+        SequenceFlow flow = new SequenceFlow();
+        flow.setSourceRef(from);
+        flow.setTargetRef(to);
+        flow.setName(name);
+        if (!StringUtil.isEmpty(conditionExpression)) {
+            flow.setConditionExpression(conditionExpression);
+        }
+        return flow;
+    }
+
+    //排他网关
+    protected ExclusiveGateway createExclusiveGateway(String id, String name) {
+        ExclusiveGateway exclusiveGateway = new ExclusiveGateway();
+        exclusiveGateway.setId(id);
+        exclusiveGateway.setName(name);
+        return exclusiveGateway;
+    }
+
+    //并行网关
+    protected ParallelGateway createParallelGateway(String id, String name) {
+        ParallelGateway gateway = new ParallelGateway();
+        gateway.setId(id);
+        gateway.setName(name);
+        return gateway;
+    }
+
+    //开始节点
+    protected StartEvent createStartEvent() {
+        StartEvent startEvent = new StartEvent();
+        startEvent.setId("startEvent");
+        return startEvent;
+    }
+
+    /*结束节点*/
+    protected EndEvent createEndEvent() {
+        EndEvent endEvent = new EndEvent();
+        endEvent.setId("endEvent");
+        return endEvent;
+    }
+
+    @Override
+    public int queryWorkflowsCount(@RequestBody WorkflowDto workflowDto) {
+        return workflowServiceDaoImpl.queryWorkflowsCount(BeanConvertUtil.beanCovertMap(workflowDto));
+    }
+
+    /**
+     * 查询审核历史
+     * @param workflowAuditInfoDto
+     * @return
+     */
+    public List<WorkflowAuditInfoDto> queryWorkflowAuditHistory(@RequestBody WorkflowAuditInfoDto workflowAuditInfoDto) {
+        //List<TaskBo> taskBoList = new ArrayList<TaskBo>();
+        HistoricProcessInstance hisProcessInstance = (HistoricProcessInstance) historyService
+                .createHistoricProcessInstanceQuery()
+                .processInstanceBusinessKey(workflowAuditInfoDto.getBusinessKey()).singleResult();
+        // 该流程实例的所有节点审批记录
+        List<HistoricActivityInstance> hisActInstList = getHisUserTaskActivityInstanceList(hisProcessInstance
+                .getId());
+        List<WorkflowAuditInfoDto> workflowAuditInfoDtos = new ArrayList<>();
+        WorkflowAuditInfoDto tmpWorkflowAuditInfoDto = null;
+        for (Iterator iterator = hisActInstList.iterator(); iterator.hasNext(); ) {
+            // 需要转换成HistoricActivityInstance
+            HistoricActivityInstance activityInstance = (HistoricActivityInstance) iterator
+                    .next();
+            if (activityInstance.getEndTime() == null) {
+                continue;
+            }
+            //如果还没结束则不放里面
+            List<Comment> comments = taskService.getTaskComments(activityInstance.getTaskId());
+            if (comments == null || comments.size() < 1) {
+                continue;
+            }
+            for (Comment comment : comments) {
+                tmpWorkflowAuditInfoDto = new WorkflowAuditInfoDto();
+                tmpWorkflowAuditInfoDto.setAuditName(activityInstance.getActivityName());
+                tmpWorkflowAuditInfoDto.setAuditTime(DateUtil.getFormatTimeString(activityInstance.getEndTime(), DateUtil.DATE_FORMATE_STRING_A));
+                tmpWorkflowAuditInfoDto.setDuration(activityInstance.getDurationInMillis() + "");
+                tmpWorkflowAuditInfoDto.setUserId(comment.getUserId());
+                tmpWorkflowAuditInfoDto.setMessage(comment.getFullMessage());
+                workflowAuditInfoDtos.add(tmpWorkflowAuditInfoDto);
+            }
+        }
+        return workflowAuditInfoDtos;
+    }
+
+    /**
+     * @param processInstanceId
+     * @return
+     * @CreateUser:xxxx
+     * @ReturnType:List
+     * @CreateDate:2014-6-25下午5:03:13
+     * @UseFor :在 ACT_HI_ACTINST 表中找到对应流程实例的userTask节点 不包括startEvent
+     */
+    private List<HistoricActivityInstance> getHisUserTaskActivityInstanceList(
+            String processInstanceId) {
+        List<HistoricActivityInstance> hisActivityInstanceList = ((HistoricActivityInstanceQuery) historyService
+                .createHistoricActivityInstanceQuery()
+                .processInstanceId(processInstanceId).activityType("userTask")
+                .finished().orderByHistoricActivityInstanceEndTime().desc())
+                .list();
+        return hisActivityInstanceList;
+    }
+
+    public IWorkflowServiceDao getWorkflowServiceDaoImpl() {
+        return workflowServiceDaoImpl;
+    }
+
+    public void setWorkflowServiceDaoImpl(IWorkflowServiceDao workflowServiceDaoImpl) {
+        this.workflowServiceDaoImpl = workflowServiceDaoImpl;
+    }
+
+    public IUserInnerServiceSMO getUserInnerServiceSMOImpl() {
+        return userInnerServiceSMOImpl;
+    }
+
+    public void setUserInnerServiceSMOImpl(IUserInnerServiceSMO userInnerServiceSMOImpl) {
+        this.userInnerServiceSMOImpl = userInnerServiceSMOImpl;
+    }
+}
