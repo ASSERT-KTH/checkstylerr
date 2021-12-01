@@ -1,0 +1,1 @@
+# ververica/flink-training-exercises
