@@ -1,0 +1,581 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - mil.dod.th.ose.test.matchers.Matchers.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.ose.test.matchers.Matchers.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "Wrong order for 'com.google.common.base.Function' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "51",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "71",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "71",
+        "column": "61",
+        "severity": "warning",
+        "message": "Variable 'bundleFile' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "71",
+        "column": "80",
+        "severity": "warning",
+        "message": "Variable 'returnPageButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "72",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "82",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'importButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "87",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'installDialog' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "91",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'checkBoxDiv' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "92",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'startBundleCheckBox' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "96",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'fileUpload' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "121",
+        "column": "50",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "121",
+        "column": "65",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "121",
+        "column": "92",
+        "severity": "warning",
+        "message": "Variable 'returnPageButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "122",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "132",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'bundleRow' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "134",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'uninstall' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "139",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "139",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "140",
+        "column": "81",
+        "severity": "warning",
+        "message": "The String \"div[id*='uninstallDialog']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "141",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'uninstallDialog' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "144",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'uninstallButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "167",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "167",
+        "column": "54",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "167",
+        "column": "69",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "167",
+        "column": "97",
+        "severity": "warning",
+        "message": "Variable 'shouldBeFound' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "171",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "171",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "172",
+        "column": "81",
+        "severity": "warning",
+        "message": "The String \"input[id*='globalFilter']\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "173",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'searchBar' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "175",
+        "column": "76",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "179",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'rows' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "182",
+        "column": "57",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "189",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'bundleNameCell' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "191",
+        "column": "42",
+        "severity": "warning",
+        "message": "The String \"span\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "196",
+        "column": "53",
+        "severity": "warning",
+        "message": "The String \"(\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "196",
+        "column": "80",
+        "severity": "warning",
+        "message": "The String \")\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "205",
+        "column": "57",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "222",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "225",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "225",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "227",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'searchBar' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "234",
+        "column": "53",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "238",
+        "column": "53",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "250",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "250",
+        "column": "61",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "250",
+        "column": "88",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "258",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "258",
+        "column": "79",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "266",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "268",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'bundleTable' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "268",
+        "column": "76",
+        "severity": "warning",
+        "message": "The String \"tbody[id*='bundleTable_data']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "269",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'bundleState' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "269",
+        "column": "91",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "278",
+        "column": "55",
+        "severity": "warning",
+        "message": "The String \"Active\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "293",
+        "column": "37",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "293",
+        "column": "40",
+        "severity": "warning",
+        "message": "The String \"Waiting for bundle table to completely update\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "303",
+        "column": "45",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "303",
+        "column": "60",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "303",
+        "column": "87",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "311",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "311",
+        "column": "79",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "319",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "321",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'bundleTable' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "322",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'bundleState' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "322",
+        "column": "91",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "342",
+        "column": "37",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "352",
+        "column": "61",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "363",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "363",
+        "column": "66",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "364",
+        "column": "57",
+        "severity": "warning",
+        "message": "Expected @param tag for 'expectedCondition'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "366",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "366",
+        "column": "79",
+        "severity": "warning",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "378",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "380",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'bundles' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "382",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'bundleSymbolicNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "385",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'bundleRow' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "387",
+        "column": "42",
+        "severity": "warning",
+        "message": "Variable 'spans' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "399",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'filteredNames' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "402",
+        "column": "49",
+        "severity": "warning",
+        "message": "Variable 'input' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

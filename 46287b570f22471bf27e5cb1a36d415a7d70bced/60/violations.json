@@ -1,0 +1,716 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.junit.Assert.fail.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.remote.proto.AssetDirectoryServiceMessages.AssetDirectoryServiceNamespace.AssetDirectoryServiceMessageType' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.remote.proto.EventMessages.EventAdminNamespace.EventAdminMessageType' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.ose.remote.integration.MessageDualListener' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "70",
+        "severity": "warning",
+        "message": "Wrong order for 'com.google.common.base.Function' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "85",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 8 (max allowed is 7) classes [BasicMessageMatcher, ByteArrayOutputStream, EventMessageMatcher, Function, MessageDualListener, MessageListener, Observation, Version].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "85",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 36 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "96",
+        "column": "32",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "105",
+        "column": "35",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "105",
+        "column": "48",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "121",
+        "column": "54",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'UnknownHostException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "121",
+        "column": "76",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "121",
+        "column": "89",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "124",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "141",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'details' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "141",
+        "column": "65",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "159",
+        "column": "39",
+        "severity": "warning",
+        "message": "Variable 'regResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "165",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'unregisterRequestMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "33",
+        "severity": "warning",
+        "message": "'(' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "174",
+        "column": "103",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "178",
+        "column": "27",
+        "severity": "warning",
+        "message": "The String \"test-topic2\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "187",
+        "column": "104",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "193",
+        "column": "18",
+        "severity": "warning",
+        "message": "The String \"Log event notifications still being captured.\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "195",
+        "column": "9",
+        "severity": "warning",
+        "message": "'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "195",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "197",
+        "column": "43",
+        "severity": "warning",
+        "message": "The String \"Read timed out\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "205",
+        "column": "38",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'UnknownHostException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "205",
+        "column": "60",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "205",
+        "column": "73",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "207",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "220",
+        "column": "104",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "223",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'request' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "225",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'assetDirMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "233",
+        "column": "82",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "243",
+        "column": "94",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "257",
+        "column": "104",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "261",
+        "column": "9",
+        "severity": "warning",
+        "message": "'try' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "261",
+        "column": "12",
+        "severity": "warning",
+        "message": "'{' at column 12 should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "261",
+        "column": "12",
+        "severity": "warning",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "265",
+        "column": "9",
+        "severity": "warning",
+        "message": "'catch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "265",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "285",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSendEvent_NativeObservation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "285",
+        "column": "58",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "285",
+        "column": "71",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "288",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'regId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'assetUuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "294",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'obsUuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "296",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'observation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "299",
+        "column": "26",
+        "severity": "warning",
+        "message": "The String \"NAME\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "302",
+        "column": "25",
+        "severity": "warning",
+        "message": "'321' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "307",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'props' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "311",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'sendEvent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "315",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "323",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "324",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'namespace' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "325",
+        "column": "110",
+        "severity": "warning",
+        "message": "'1500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "329",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "332",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'responseProps' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "336",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'entry' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "357",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'testSendEvent_ObservationXml' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "357",
+        "column": "55",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'Exception'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "360",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'regId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "365",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'assetUuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "366",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'obsUuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "367",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'createTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "369",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'observation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "375",
+        "column": "25",
+        "severity": "warning",
+        "message": "'321' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "379",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'jaxbObservation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "385",
+        "column": "27",
+        "severity": "warning",
+        "message": "'321' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "390",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'props' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "394",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'sendEvent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "398",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "406",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "407",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'namespace' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "408",
+        "column": "110",
+        "severity": "warning",
+        "message": "'1500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "412",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "415",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'responseProps' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "419",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'entry' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "425",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'jc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "426",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'm' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "449",
+        "column": "51",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'UnknownHostException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "449",
+        "column": "73",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "449",
+        "column": "86",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "459",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'assetCreation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "460",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"event_Test_Asset\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "466",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "470",
+        "column": "27",
+        "severity": "warning",
+        "message": "The String \"(%s=%s)\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "485",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'dualListener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "490",
+        "column": "52",
+        "severity": "warning",
+        "message": "'9000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "497",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "503",
+        "column": "98",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "509",
+        "column": "42",
+        "severity": "warning",
+        "message": "'2000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "520",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "536",
+        "column": "49",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "538",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "542",
+        "column": "27",
+        "severity": "warning",
+        "message": "The String \"test-topic1\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "551",
+        "column": "65",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "568",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'origRegId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "579",
+        "column": "44",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "612",
+        "column": "9",
+        "severity": "warning",
+        "message": "'switch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "643",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'thMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

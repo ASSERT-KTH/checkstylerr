@@ -1,0 +1,552 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.is.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Wrong order for 'com.google.protobuf.ByteString' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "47",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.remote.proto.ConfigMessages.ConfigAdminNamespace.ConfigAdminMessageType' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "67",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 8 (max allowed is 7) classes [BigInteger, DSADigestSigner, ECDSASigner, ECPrivateKeyParameters, ECPublicKeyParameters, IvParameterSpec, SHA256Digest, SecretKeySpec].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "67",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 32 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "67",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "72",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "72",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @param tag for 'thMessage'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "72",
+        "column": "82",
+        "severity": "warning",
+        "message": "Variable 'thMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "73",
+        "column": "16",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IllegalBlockSizeException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "column": "43",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'BadPaddingException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "column": "64",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InvalidKeyException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "73",
+        "column": "85",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InvalidAlgorithmParameterException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "74",
+        "severity": "warning",
+        "message": "'NoSuchAlgorithmException' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "74",
+        "column": "9",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchAlgorithmException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "74",
+        "column": "35",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchProviderException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "74",
+        "column": "60",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchPaddingException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "77",
+        "column": "50",
+        "severity": "warning",
+        "message": "The String \"AES/GCM/NoPadding\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "77",
+        "column": "71",
+        "severity": "warning",
+        "message": "The String \"BC\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "80",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'builder' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "84",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'remoteSystemId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "85",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'localSystemId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "88",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'ephemeralKeyPair' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "89",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'ephemeralPublicKey' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "93",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'dsaSigner' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "96",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'ephemeralSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "99",
+        "column": "14",
+        "severity": "warning",
+        "message": "'byte' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "99",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'sharedKeyBytesEncrypt' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "102",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'key' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "102",
+        "column": "60",
+        "severity": "warning",
+        "message": "The String \"AES\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "105",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'ivBytes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "105",
+        "column": "35",
+        "severity": "warning",
+        "message": "'12' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "107",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'ivBytes_New' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "111",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'encrypt' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "114",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'encryptInfo' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "121",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'encryptedMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "130",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "130",
+        "column": "78",
+        "severity": "warning",
+        "message": "Expected @param tag for 'message'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "130",
+        "column": "78",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "130",
+        "column": "94",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchAlgorithmException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "131",
+        "severity": "warning",
+        "message": "'NoSuchProviderException' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "131",
+        "column": "9",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchProviderException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "131",
+        "column": "34",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'NoSuchPaddingException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "131",
+        "column": "58",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IllegalBlockSizeException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "131",
+        "column": "85",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'BadPaddingException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "'InvalidKeyException' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "132",
+        "column": "9",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InvalidKeyException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "132",
+        "column": "30",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InvalidAlgorithmParameterException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "132",
+        "column": "66",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InvalidProtocolBufferException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "138",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'payload' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "139",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'responseEncryptInfo' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "142",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'responseLocalSystemId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "143",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'responseRemoteSystemId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "146",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'responseIvBytes_New' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "151",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'dsaSigner1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "153",
+        "column": "14",
+        "severity": "warning",
+        "message": "'byte' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "153",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'ephemeralKeyTemp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "157",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'sigOK' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "161",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'qPoint' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "162",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'ephemeralPublicKeyParam' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "166",
+        "column": "14",
+        "severity": "warning",
+        "message": "'byte' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "166",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'sharedKeyBytesDecrypt' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "170",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'responsekey' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "174",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'decrypt' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "177",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'payloadDecrypt' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "189",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'privateStaticKeyBytes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "190",
+        "column": "96",
+        "severity": "warning",
+        "message": "'16' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "201",
+        "column": "94",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IllegalArgumentException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "203",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'remotePublicKeybytes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "204",
+        "column": "9",
+        "severity": "warning",
+        "message": "'switch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "236",
+        "column": "86",
+        "severity": "warning",
+        "message": "Variable 'encryptionMode' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "238",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'multitypeValue' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "240",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'prop' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "244",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'setPropRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "248",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'configNamespaceBuilder' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "252",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "270",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'namespaceMsg' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "277",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'thMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

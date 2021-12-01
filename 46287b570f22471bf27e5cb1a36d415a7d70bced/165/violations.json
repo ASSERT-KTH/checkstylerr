@@ -1,0 +1,590 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.is.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.notNullValue.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "44",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "68",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @param tag for 'driver'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "68",
+        "column": "73",
+        "severity": "warning",
+        "message": "Expected @param tag for 'assetTypeName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "68",
+        "column": "101",
+        "severity": "warning",
+        "message": "Expected @param tag for 'desiredName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "69",
+        "column": "20",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "79",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @param tag for 'driver'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "79",
+        "column": "73",
+        "severity": "warning",
+        "message": "Expected @param tag for 'assetTypeName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "79",
+        "column": "101",
+        "severity": "warning",
+        "message": "Expected @param tag for 'desiredName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "80",
+        "column": "34",
+        "severity": "warning",
+        "message": "Expected @param tag for 'props'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "80",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'props' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "81",
+        "column": "16",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "84",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "84",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "86",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "86",
+        "column": "79",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "103",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'desiredAssetTypeElement' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "110",
+        "column": "81",
+        "severity": "warning",
+        "message": "The String \"span[id*='factoryName']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "116",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'assetExampleName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "126",
+        "column": "32",
+        "severity": "warning",
+        "message": "The String \"tbody[id$='compositeConfigTable_data']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "142",
+        "column": "81",
+        "severity": "warning",
+        "message": "The String \"button[id$='newAssetCreate']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "145",
+        "column": "48",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "150",
+        "column": "22",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "153",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "156",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "168",
+        "column": "54",
+        "severity": "warning",
+        "message": "Expected @param tag for 'driver'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "168",
+        "column": "75",
+        "severity": "warning",
+        "message": "Expected @param tag for 'assetName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "168",
+        "column": "93",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "174",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'asset' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "180",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "180",
+        "column": "83",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "185",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "188",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "190",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'asset' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "191",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "191",
+        "column": "74",
+        "severity": "warning",
+        "message": "The String \"span[id*='assetActiveStatus']\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "200",
+        "column": "44",
+        "severity": "warning",
+        "message": "The String \"No asset found with name: \" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "206",
+        "column": "56",
+        "severity": "warning",
+        "message": "Expected @param tag for 'driver'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "206",
+        "column": "77",
+        "severity": "warning",
+        "message": "Expected @param tag for 'assetName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "206",
+        "column": "95",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "212",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'asset' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "218",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "218",
+        "column": "83",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "223",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "226",
+        "column": "48",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "228",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'asset' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "229",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "230",
+        "column": "53",
+        "severity": "warning",
+        "message": "The String \"DEACTIVATED\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "244",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @param tag for 'driver'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "244",
+        "column": "73",
+        "severity": "warning",
+        "message": "Expected @param tag for 'assetName'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "244",
+        "column": "91",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "246",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "246",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "251",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "251",
+        "column": "79",
+        "severity": "warning",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "259",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "279",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "298",
+        "column": "93",
+        "severity": "warning",
+        "message": "Variable 'repeatInterval' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "299",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "299",
+        "column": "16",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "311",
+        "column": "52",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "324",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "324",
+        "column": "16",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "328",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'assetPanel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "331",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'performBit' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "333",
+        "column": "48",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "350",
+        "column": "74",
+        "severity": "warning",
+        "message": "The String \"table[id$='assetTable']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "352",
+        "column": "50",
+        "severity": "warning",
+        "message": "The String \"span[id*='editPanel']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "383",
+        "column": "30",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "385",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "393",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'assetType' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "409",
+        "column": "71",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "415",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'assetNamesList' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "424",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'assetToRetrieve' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "480",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "480",
+        "column": "60",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "489",
+        "column": "61",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "510",
+        "column": "26",
+        "severity": "warning",
+        "message": "'500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "522",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "523",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "524",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    }
+]

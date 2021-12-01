@@ -1,0 +1,511 @@
+[
+    {
+        "line": "22",
+        "severity": "warning",
+        "message": "'mil.dod.th.core.asset.Asset' should be separated from previous imports.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.asset.commands.Response' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "77",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 31 (max allowed is 7) classes [AssetException, AudioMetadata, AudioRecorder, AudioSampleOfInterest, Camera, CommandExecutionException, Coordinates, Detection, DigitalMedia, ElevationDegrees, FrequencyKhz, HeadingDegrees, ImageCaptureReason, ImageMetadata, LatitudeWgsDegrees, LongitudeWgsDegrees, Observation, ObservationRef, OperatingStatus, Orientation, Relationship, RoadCondition, RoadConditionType, SensingModality, SpeedMetersPerSecond, Status, TemperatureCelsius, TrackElement, VideoMetadata, VoltageVolts, Weather].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "77",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 44 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "169",
+        "column": "46",
+        "severity": "warning",
+        "message": "'205.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "170",
+        "column": "70",
+        "severity": "warning",
+        "message": "'2003L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "171",
+        "column": "71",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "172",
+        "column": "35",
+        "severity": "warning",
+        "message": "The String \"example-target-id\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "182",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'e' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "207",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'observation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "207",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'ValidationFailedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "209",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefStatusChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "210",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "216",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefAudioChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "217",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObsAudio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "221",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"child uuid \" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "223",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefImageChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "224",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObsImage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "228",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"sub image\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "230",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefVideoChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "231",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObsVideo' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "238",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefDetectionChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "239",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObsDetection' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "245",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefOrientChild' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "246",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'childObsOrient' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "252",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefParent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "253",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'parentObs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "259",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'obsRefPeer' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "260",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'peerObs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "266",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'refNotFoundWithDesc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "270",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'refNotFoundNoDesc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "292",
+        "column": "58",
+        "severity": "warning",
+        "message": "Variable 'sensorId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "292",
+        "column": "91",
+        "severity": "warning",
+        "message": "Expected @param tag for 'observationType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "292",
+        "column": "91",
+        "severity": "warning",
+        "message": "Variable 'observationType' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'linkToObs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "57",
+        "severity": "warning",
+        "message": "Variable 'linkToObsRelationship' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "87",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'ValidationFailedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "298",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'relatedObsRef' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "305",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'assetLoc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "306",
+        "column": "66",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "307",
+        "column": "68",
+        "severity": "warning",
+        "message": "'70.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "308",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'pointLoc' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "308",
+        "column": "102",
+        "severity": "warning",
+        "message": "'88.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "309",
+        "column": "72",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "311",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'assetOrient' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "312",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "313",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'pltOrient' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "314",
+        "column": "47",
+        "severity": "warning",
+        "message": "'15.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "327",
+        "column": "40",
+        "severity": "warning",
+        "message": "Variable 'lat' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "327",
+        "column": "81",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "328",
+        "column": "41",
+        "severity": "warning",
+        "message": "Variable 'lng' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "328",
+        "column": "83",
+        "severity": "warning",
+        "message": "'70.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "329",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'coords' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "330",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'detection' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "336",
+        "column": "100",
+        "severity": "warning",
+        "message": "'205.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "337",
+        "column": "91",
+        "severity": "warning",
+        "message": "'2003L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "338",
+        "column": "79",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "345",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "345",
+        "column": "98",
+        "severity": "warning",
+        "message": "'3.4f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "350",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'weather' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "352",
+        "column": "77",
+        "severity": "warning",
+        "message": "'19.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "356",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'digitalAudio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "356",
+        "column": "113",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "357",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'audio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "358",
+        "column": "67",
+        "severity": "warning",
+        "message": "'3000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "358",
+        "column": "91",
+        "severity": "warning",
+        "message": "'52' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "365",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'digitalImage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "365",
+        "column": "114",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "366",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'image' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "372",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'digitalVideo' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "372",
+        "column": "113",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "373",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'videoData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "396",
+        "column": "46",
+        "severity": "warning",
+        "message": "Variable 'command' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

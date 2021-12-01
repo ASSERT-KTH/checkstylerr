@@ -1,0 +1,719 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.is.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.notNullValue.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "41",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "63",
+        "severity": "warning",
+        "message": "'throws' has incorrect indentation level 8, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "63",
+        "column": "16",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "63",
+        "column": "38",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'ExecutionException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "63",
+        "column": "58",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'TimeoutException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "65",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "column": "47",
+        "severity": "warning",
+        "message": "'(' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"
+    },
+    {
+        "line": "81",
+        "column": "79",
+        "severity": "warning",
+        "message": "Variable 'templatePath' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "81",
+        "column": "100",
+        "severity": "warning",
+        "message": "Variable 'expectedMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "87",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'installDialog' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "91",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'fileUpload' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "95",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'files' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "99",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'uploadButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "119",
+        "column": "91",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "125",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "128",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'testMission' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "133",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'selectMissionButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "137",
+        "column": "42",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "139",
+        "column": "28",
+        "severity": "warning",
+        "message": "The String \"span[class='ui-icon ui-icon-pencil']\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "143",
+        "column": "52",
+        "severity": "warning",
+        "message": "The String \"//button[contains(@id, 'missionWiz_next')]\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "146",
+        "column": "42",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "147",
+        "column": "73",
+        "severity": "warning",
+        "message": "The String \"//div[contains(@id, 'tChangerStart')]\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "150",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'currentTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "156",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'calendar' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "157",
+        "column": "43",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "161",
+        "column": "62",
+        "severity": "warning",
+        "message": "The String \"div[id='wizForm:tChangerStart']>div:nth-child(2)>span\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "164",
+        "column": "36",
+        "severity": "warning",
+        "message": "The String \"input[id='wizForm:timeChoose:startTimeSelect_input']\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "166",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'startTimeInput' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "176",
+        "column": "98",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "183",
+        "column": "62",
+        "severity": "warning",
+        "message": "The String \"div[id='wizForm:tChangerEnd']>div:nth-child(2)>span\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "186",
+        "column": "36",
+        "severity": "warning",
+        "message": "The String \"input[id='wizForm:timeChoose:stopTimeSelect_input']\" appears 4 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "188",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'stopTimeInput' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "193",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'calendar' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "194",
+        "column": "43",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "195",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'stopTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "201",
+        "column": "99",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "208",
+        "column": "32",
+        "severity": "warning",
+        "message": "The String \"span[class='ui-chkbox-icon ui-chkbox-icon ui-icon ui-icon-check']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "225",
+        "column": "40",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "225",
+        "column": "62",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'ExecutionException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "225",
+        "column": "82",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'TimeoutException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "227",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "227",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "230",
+        "column": "17",
+        "severity": "warning",
+        "message": "The String \"input[name='wizForm:programName_editableInput']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "232",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'programNameDropDown' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "239",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'loadMissionButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "244",
+        "column": "48",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "260",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "260",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "263",
+        "column": "69",
+        "severity": "warning",
+        "message": "The String \"div[id*='missionGrid_paginator_top']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "265",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'numPages' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "268",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'missionGrid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "269",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'desiredMission' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "278",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'pageButtons' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "280",
+        "column": "19",
+        "severity": "warning",
+        "message": "'++' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"
+    },
+    {
+        "line": "302",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'name' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "323",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'fwait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "323",
+        "column": "79",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "329",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'result' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "332",
+        "column": "44",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "334",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'activePage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "334",
+        "column": "108",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "356",
+        "column": "44",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "359",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "359",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "364",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'editButtons' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "367",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'acceptButtons' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "369",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'inputBoxes' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "378",
+        "column": "26",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "381",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'editButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "388",
+        "column": "13",
+        "severity": "warning",
+        "message": "'switch' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "394",
+        "column": "95",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "401",
+        "column": "98",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "408",
+        "column": "87",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "411",
+        "column": "22",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "412",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'dropDown' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "413",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'dropDownButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "417",
+        "column": "44",
+        "severity": "warning",
+        "message": "The String \"div[id*='variableDropDown_panel']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "418",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'dropDownValue' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "428",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'acceptButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "435",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'nextButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "448",
+        "column": "52",
+        "severity": "warning",
+        "message": "Variable 'driver' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "448",
+        "column": "65",
+        "severity": "warning",
+        "message": "Expected @param tag for 'startTimeMs'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "448",
+        "column": "65",
+        "severity": "warning",
+        "message": "Variable 'startTimeMs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "448",
+        "column": "83",
+        "severity": "warning",
+        "message": "Expected @param tag for 'stopTimeMs'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "448",
+        "column": "83",
+        "severity": "warning",
+        "message": "Variable 'stopTimeMs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "451",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'wait' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "451",
+        "column": "56",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "455",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'tChangerStartTimedButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "463",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'startTimeInput' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "469",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'startTimeStr' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "470",
+        "column": "75",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "472",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'startDoneButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "472",
+        "column": "72",
+        "severity": "warning",
+        "message": "The String \"button[class~='ui-datepicker-close']\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "475",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'tChangerStopTimedButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "483",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'stopTimeInput' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "488",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'stopTimeStr' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "489",
+        "column": "73",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "491",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'stopDoneButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "495",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'restartCheck' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "501",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'nextButton' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

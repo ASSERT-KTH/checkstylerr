@@ -1,0 +1,3593 @@
+[
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.observation.types.Power' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.types.spatial.BankDegrees' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "170",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 111 (max allowed is 7) classes [AcousticSignalInfo, AcousticSignature, AlarmState, AlgorithmStatus, AmbientStatus, AmbientType, AngleDegrees, AudioMetadata, AudioRecorder, AudioSampleOfInterest, BankDegrees, BatteryChargeLevel, Biological, BiologicalAgent, BiologicalCategory, BiologicalEntry, Camera, CameraScene, CbrneModality, CbrneTrigger, CbrneTriggerEntry, Chemical, ChemicalAgent, ChemicalCategory, ChemicalEntry, ColonyFormingUnits, ColorDescriptorType, ComponentStatus, ComponentType, Compression, ConcentrationGramsPerLiter, ConductivitySiemensPerMeter, ConfidenceFactor, Coordinates, CountsPerTime, DegreesPerSecond, Detection, DetectionProbability, DigitalMedia, Direction, DistanceMeters, ElevationDegrees, Ellipse, ExposureSettings, FrequencyDeltaKhz, FrequencyKhz, HOGDescriptorType, HaeMeters, HeadingDegrees, ImageCaptureReason, ImageGeoBoundingBox, ImageMetadata, ImagerSignature, ImagerWheelInfo, InternalArchiveStatus, LangelierSaturationIndex, LatitudeWgsDegrees, Lightning, LongitudeWgsDegrees, MagneticFluxDensityTeslas, MagneticSignature, MapEntry, Observation, ObservationRef, OperatingStatus, OpticalFlowType, Orientation, OrientationRate, PH, PhaseRadians, PixelCircle, PixelPosition, PixelRectangle, PixelRegion, PixelResolution, PlaqueFormingUnits, PowerWatts, Precipitation, PressureMillibars, PressurePascals, ProbabilityFactor, RadianceJoulesPerSqMeter, Relationship, RoadCondition, RoadConditionType, SNRdB, SPLdB, SalinityPsu, ScoringCriteria, SeismicSignalInfo, SeismicSignature, SensingModality, SkyCover, SpecificGravity, SpeedMetersPerSecond, SquareDegrees, Status, TargetClassification, TargetClassificationType, TemperatureCelsius, TrackElement, TurbidityNtu, Version, VideoMetadata, VideoSampleOfInterest, VoltageVolts, WaterQuality, Weather, WeatherCondition, WeatherPhenomena, WindMeasurement].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "170",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 120 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "170",
+        "column": "1",
+        "severity": "warning",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "182",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'resolution' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "182",
+        "column": "58",
+        "severity": "warning",
+        "message": "'200' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "182",
+        "column": "63",
+        "severity": "warning",
+        "message": "'300' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "184",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'samplesOfInterest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "185",
+        "column": "88",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "186",
+        "column": "49",
+        "severity": "warning",
+        "message": "The String \"test\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "188",
+        "column": "54",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "188",
+        "column": "57",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "188",
+        "column": "79",
+        "severity": "warning",
+        "message": "'8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "188",
+        "column": "82",
+        "severity": "warning",
+        "message": "'9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "189",
+        "column": "52",
+        "severity": "warning",
+        "message": "The String \"b\" appears 2 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "191",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'maskSamplesOfInterest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "196",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'camera' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "196",
+        "column": "36",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "197",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'exposureSettings' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "197",
+        "column": "102",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "197",
+        "column": "105",
+        "severity": "warning",
+        "message": "'0.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "198",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'motionDetectionWindow' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "198",
+        "column": "67",
+        "severity": "warning",
+        "message": "'0.5f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "198",
+        "column": "73",
+        "severity": "warning",
+        "message": "'2.3f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "198",
+        "column": "79",
+        "severity": "warning",
+        "message": "'2.9f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "199",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'imageCaptureReason' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "199",
+        "column": "103",
+        "severity": "warning",
+        "message": "The String \"something\" appears 3 times in the file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MultipleStringLiteralsCheck"
+    },
+    {
+        "line": "200",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'compressionRatio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "201",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'imageGeographicRegion' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "203",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'captureTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "203",
+        "column": "28",
+        "severity": "warning",
+        "message": "'20L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "204",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'pictureType' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "205",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'focus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "205",
+        "column": "23",
+        "severity": "warning",
+        "message": "'0.5f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "206",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'zoom' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "207",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'color' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "208",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'changedPixels' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "208",
+        "column": "32",
+        "severity": "warning",
+        "message": "'0.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "209",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'whiteBalance' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "210",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'imageMetaData' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "242",
+        "column": "44",
+        "severity": "warning",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "242",
+        "column": "55",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "256",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'coords' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "273",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'heading' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "273",
+        "column": "53",
+        "severity": "warning",
+        "message": "'80.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "274",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'elevation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "274",
+        "column": "59",
+        "severity": "warning",
+        "message": "'90.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "275",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'bank' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "275",
+        "column": "44",
+        "severity": "warning",
+        "message": "'45.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "276",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'orient' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "293",
+        "column": "62",
+        "severity": "warning",
+        "message": "Expected @param tag for 'variation'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "293",
+        "column": "62",
+        "severity": "warning",
+        "message": "Variable 'variation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "297",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'targetOrientation1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "297",
+        "column": "81",
+        "severity": "warning",
+        "message": "'80' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "297",
+        "column": "85",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "297",
+        "column": "89",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "298",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'targetOrientation2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "298",
+        "column": "81",
+        "severity": "warning",
+        "message": "'34' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "298",
+        "column": "85",
+        "severity": "warning",
+        "message": "'43' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "298",
+        "column": "89",
+        "severity": "warning",
+        "message": "'99.2' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "300",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetOrientation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "304",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'acousticSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "306",
+        "column": "86",
+        "severity": "warning",
+        "message": "'120.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "307",
+        "column": "71",
+        "severity": "warning",
+        "message": "'0.01' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "309",
+        "column": "42",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "310",
+        "column": "76",
+        "severity": "warning",
+        "message": "'500.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "311",
+        "column": "75",
+        "severity": "warning",
+        "message": "'4.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "313",
+        "column": "76",
+        "severity": "warning",
+        "message": "'3.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "314",
+        "column": "73",
+        "severity": "warning",
+        "message": "'550.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "315",
+        "column": "69",
+        "severity": "warning",
+        "message": "'3.14' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "316",
+        "column": "67",
+        "severity": "warning",
+        "message": "'0.001' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "317",
+        "column": "67",
+        "severity": "warning",
+        "message": "'0.01' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "318",
+        "column": "47",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "325",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "325",
+        "column": "85",
+        "severity": "warning",
+        "message": "'180' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "325",
+        "column": "90",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "325",
+        "column": "94",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "326",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "326",
+        "column": "85",
+        "severity": "warning",
+        "message": "'33' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "326",
+        "column": "89",
+        "severity": "warning",
+        "message": "'44' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "326",
+        "column": "93",
+        "severity": "warning",
+        "message": "'55' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "328",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'targetLob' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "332",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'seismicSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "334",
+        "column": "86",
+        "severity": "warning",
+        "message": "'120.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "335",
+        "column": "71",
+        "severity": "warning",
+        "message": "'0.01' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "337",
+        "column": "42",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "338",
+        "column": "76",
+        "severity": "warning",
+        "message": "'500.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "339",
+        "column": "80",
+        "severity": "warning",
+        "message": "'4.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "341",
+        "column": "81",
+        "severity": "warning",
+        "message": "'3.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "342",
+        "column": "73",
+        "severity": "warning",
+        "message": "'550.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "343",
+        "column": "69",
+        "severity": "warning",
+        "message": "'3.14' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "344",
+        "column": "67",
+        "severity": "warning",
+        "message": "'0.001' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "345",
+        "column": "47",
+        "severity": "warning",
+        "message": "'20L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "350",
+        "column": "31",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "352",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "352",
+        "column": "85",
+        "severity": "warning",
+        "message": "'180' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "352",
+        "column": "90",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "352",
+        "column": "94",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "353",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "353",
+        "column": "85",
+        "severity": "warning",
+        "message": "'33' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "353",
+        "column": "89",
+        "severity": "warning",
+        "message": "'44' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "353",
+        "column": "93",
+        "severity": "warning",
+        "message": "'55' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "355",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'targetLob' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "359",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'magneticSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "361",
+        "column": "86",
+        "severity": "warning",
+        "message": "'120.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "362",
+        "column": "71",
+        "severity": "warning",
+        "message": "'0.01' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "364",
+        "column": "42",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "365",
+        "column": "76",
+        "severity": "warning",
+        "message": "'500.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "366",
+        "column": "35",
+        "severity": "warning",
+        "message": "'0.002' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "367",
+        "column": "85",
+        "severity": "warning",
+        "message": "'4.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "368",
+        "column": "78",
+        "severity": "warning",
+        "message": "'3.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "369",
+        "column": "67",
+        "severity": "warning",
+        "message": "'0.001' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "370",
+        "column": "47",
+        "severity": "warning",
+        "message": "'30L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "375",
+        "column": "31",
+        "severity": "warning",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "377",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "377",
+        "column": "85",
+        "severity": "warning",
+        "message": "'180' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "377",
+        "column": "90",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "377",
+        "column": "94",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "378",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'targetLob2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "378",
+        "column": "85",
+        "severity": "warning",
+        "message": "'33' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "378",
+        "column": "89",
+        "severity": "warning",
+        "message": "'44' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "378",
+        "column": "93",
+        "severity": "warning",
+        "message": "'55' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "380",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'targetLob' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "384",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'imagerSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "385",
+        "column": "61",
+        "severity": "warning",
+        "message": "'8.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "389",
+        "column": "60",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "389",
+        "column": "63",
+        "severity": "warning",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "389",
+        "column": "66",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "391",
+        "column": "42",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "392",
+        "column": "46",
+        "severity": "warning",
+        "message": "'300' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "393",
+        "column": "45",
+        "severity": "warning",
+        "message": "'200' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "400",
+        "column": "51",
+        "severity": "warning",
+        "message": "'6' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "400",
+        "column": "54",
+        "severity": "warning",
+        "message": "'7' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "400",
+        "column": "57",
+        "severity": "warning",
+        "message": "'8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "400",
+        "column": "60",
+        "severity": "warning",
+        "message": "'9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "403",
+        "column": "46",
+        "severity": "warning",
+        "message": "'300' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "404",
+        "column": "45",
+        "severity": "warning",
+        "message": "'200' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "405",
+        "column": "50",
+        "severity": "warning",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "411",
+        "column": "46",
+        "severity": "warning",
+        "message": "'300' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "412",
+        "column": "45",
+        "severity": "warning",
+        "message": "'200' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "414",
+        "column": "65",
+        "severity": "warning",
+        "message": "'45.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "416",
+        "column": "50",
+        "severity": "warning",
+        "message": "'0.99' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "417",
+        "column": "84",
+        "severity": "warning",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "418",
+        "column": "75",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "429",
+        "column": "66",
+        "severity": "warning",
+        "message": "Variable 'uuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "429",
+        "column": "90",
+        "severity": "warning",
+        "message": "Variable 'targetOrientation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "430",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'targetLob' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "430",
+        "column": "66",
+        "severity": "warning",
+        "message": "Variable 'acousticSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "430",
+        "column": "102",
+        "severity": "warning",
+        "message": "Variable 'seismicSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "431",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'magneticSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "431",
+        "column": "66",
+        "severity": "warning",
+        "message": "Variable 'imagerSignature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "433",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'targetLocation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "435",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'listTarget' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "435",
+        "column": "46",
+        "severity": "warning",
+        "message": "'=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "436",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'listConfidence' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "437",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'listProbability' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "438",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'listScoreCriteria' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "439",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'sense' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "440",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'scoreCriteria' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "442",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'confidenceFactor' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "444",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'probFactor' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "446",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'targetClassifications' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "452",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'targetSpeed' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "453",
+        "column": "42",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "454",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'targetRange' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "455",
+        "column": "36",
+        "severity": "warning",
+        "message": "'1000.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "457",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'targetFrequency' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "458",
+        "column": "34",
+        "severity": "warning",
+        "message": "'20.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "459",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'listSensings' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "460",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'sensings' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "464",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'listTrackHistory' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "466",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'trackElement1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "467",
+        "column": "85",
+        "severity": "warning",
+        "message": "'600.1' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "467",
+        "column": "92",
+        "severity": "warning",
+        "message": "'0.44' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "467",
+        "column": "98",
+        "severity": "warning",
+        "message": "'0.02' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "467",
+        "column": "104",
+        "severity": "warning",
+        "message": "'0.55' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "467",
+        "column": "110",
+        "severity": "warning",
+        "message": "'0.12' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "468",
+        "column": "60",
+        "severity": "warning",
+        "message": "'32' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "468",
+        "column": "64",
+        "severity": "warning",
+        "message": "'38' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "468",
+        "column": "68",
+        "severity": "warning",
+        "message": "'102' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "468",
+        "column": "80",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "470",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'trackElement2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "471",
+        "column": "58",
+        "severity": "warning",
+        "message": "'25.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "471",
+        "column": "64",
+        "severity": "warning",
+        "message": "'35.4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "471",
+        "column": "70",
+        "severity": "warning",
+        "message": "'135.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "471",
+        "column": "78",
+        "severity": "warning",
+        "message": "'6L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "476",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'directionOfTravel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "477",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'detectionProbability' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "477",
+        "column": "90",
+        "severity": "warning",
+        "message": "'0.75' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "478",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'targetLobGlobal' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "478",
+        "column": "74",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "478",
+        "column": "78",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "478",
+        "column": "82",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "479",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'targetLobLocal' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "479",
+        "column": "85",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "479",
+        "column": "89",
+        "severity": "warning",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "479",
+        "column": "92",
+        "severity": "warning",
+        "message": "'60.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "480",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'detectionLength' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "480",
+        "column": "34",
+        "severity": "warning",
+        "message": "'1.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "481",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'targetAngularVelocity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "482",
+        "column": "63",
+        "severity": "warning",
+        "message": "'4.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "484",
+        "column": "65",
+        "severity": "warning",
+        "message": "'10.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "485",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'targetRadialVelocityNormalized' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "486",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'targetId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "487",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'targetName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "488",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'type' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "489",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'targetCount' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "490",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'algorithmId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "492",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'detect' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "521",
+        "column": "43",
+        "severity": "warning",
+        "message": "'90L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "536",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'status1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "538",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'status2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "541",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'componentStatuses' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "544",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'batteryChargeLevel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "546",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'sensorFov' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "546",
+        "column": "28",
+        "severity": "warning",
+        "message": "'300.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "547",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'batteryVoltage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "547",
+        "column": "68",
+        "severity": "warning",
+        "message": "'15.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "548",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'temperature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "548",
+        "column": "77",
+        "severity": "warning",
+        "message": "'10.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "549",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'powerConsumption' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "549",
+        "column": "66",
+        "severity": "warning",
+        "message": "'10.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "550",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'analogAnalogVoltage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "550",
+        "column": "73",
+        "severity": "warning",
+        "message": "'10.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "551",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'analogDigitalVoltage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "551",
+        "column": "74",
+        "severity": "warning",
+        "message": "'10.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "552",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'analogMagVoltage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "552",
+        "column": "70",
+        "severity": "warning",
+        "message": "'10.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "554",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'sensorRange' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "555",
+        "column": "36",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "556",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'assetOnTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "556",
+        "column": "27",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "558",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'internalArchiveStatus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "560",
+        "column": "55",
+        "severity": "warning",
+        "message": "'1000L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "561",
+        "column": "51",
+        "severity": "warning",
+        "message": "'3000L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "562",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'nextStatusDurationMs' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "562",
+        "column": "36",
+        "severity": "warning",
+        "message": "'12000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "564",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'ambientStatus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "569",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'algoStatus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "574",
+        "column": "67",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "575",
+        "column": "66",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "576",
+        "column": "38",
+        "severity": "warning",
+        "message": "'0.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "578",
+        "column": "30",
+        "severity": "warning",
+        "message": "'0.6' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "581",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "612",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'temperature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "613",
+        "column": "40",
+        "severity": "warning",
+        "message": "'30.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "614",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'pressure' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "615",
+        "column": "39",
+        "severity": "warning",
+        "message": "'1000.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "616",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'pressureAtSeaLevel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "617",
+        "column": "39",
+        "severity": "warning",
+        "message": "'1200' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "618",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'pressureAltitude' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "619",
+        "column": "36",
+        "severity": "warning",
+        "message": "'33' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "620",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'densityAltitude' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "621",
+        "column": "36",
+        "severity": "warning",
+        "message": "'45' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "622",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'visibility' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "623",
+        "column": "36",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "624",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'waterDepth' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "625",
+        "column": "36",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "626",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'ceilingHeight' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "627",
+        "column": "36",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "628",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'windAvgSpeed' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "629",
+        "column": "68",
+        "severity": "warning",
+        "message": "'45.06' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "630",
+        "column": "62",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "631",
+        "column": "25",
+        "severity": "warning",
+        "message": "'10d' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "632",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'windGustSpeed' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "633",
+        "column": "68",
+        "severity": "warning",
+        "message": "'45.10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "634",
+        "column": "62",
+        "severity": "warning",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "635",
+        "column": "25",
+        "severity": "warning",
+        "message": "'1.5d' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "636",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'waterAvgSpeed' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "637",
+        "column": "42",
+        "severity": "warning",
+        "message": "'100.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "638",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'waterTemperature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "638",
+        "column": "82",
+        "severity": "warning",
+        "message": "'90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "639",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'precipitation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "639",
+        "column": "57",
+        "severity": "warning",
+        "message": "'20.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "639",
+        "column": "63",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "640",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'roadCondition' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "642",
+        "column": "49",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "643",
+        "column": "101",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "644",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'solarRadiance' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "645",
+        "column": "46",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "647",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'weatherConditions' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "651",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'lightning' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "651",
+        "column": "76",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "651",
+        "column": "98",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "651",
+        "column": "101",
+        "severity": "warning",
+        "message": "'10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "652",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'skyCovers' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "653",
+        "column": "62",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "654",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'dewPoint' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "654",
+        "column": "74",
+        "severity": "warning",
+        "message": "'32' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "655",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'relativeHumidity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "655",
+        "column": "35",
+        "severity": "warning",
+        "message": "'.125' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "657",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'weather' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "692",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'listSamples' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "693",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'sampleOfInterest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "693",
+        "column": "76",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "693",
+        "column": "81",
+        "severity": "warning",
+        "message": "'100L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "696",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'recorder' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "698",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'sampleRateKHz' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "698",
+        "column": "32",
+        "severity": "warning",
+        "message": "'100.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "699",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "699",
+        "column": "26",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "700",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'endTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "700",
+        "column": "24",
+        "severity": "warning",
+        "message": "'200L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "701",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'triggerTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "701",
+        "column": "28",
+        "severity": "warning",
+        "message": "'100L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "703",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'audio' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "726",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'resolution' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "726",
+        "column": "58",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "726",
+        "column": "63",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "728",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'samplesOfInterest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "729",
+        "column": "98",
+        "severity": "warning",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "730",
+        "column": "58",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "730",
+        "column": "63",
+        "severity": "warning",
+        "message": "'100L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "732",
+        "column": "54",
+        "severity": "warning",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "732",
+        "column": "57",
+        "severity": "warning",
+        "message": "'5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "732",
+        "column": "79",
+        "severity": "warning",
+        "message": "'8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "732",
+        "column": "82",
+        "severity": "warning",
+        "message": "'9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "733",
+        "column": "58",
+        "severity": "warning",
+        "message": "'5L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "733",
+        "column": "62",
+        "severity": "warning",
+        "message": "'50L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "735",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'camera' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "735",
+        "column": "36",
+        "severity": "warning",
+        "message": "'7' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "737",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'framesPerSecond' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "737",
+        "column": "34",
+        "severity": "warning",
+        "message": "'100.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "738",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'zoom' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "738",
+        "column": "23",
+        "severity": "warning",
+        "message": "'100.00' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "739",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'color' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "740",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'startTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "740",
+        "column": "26",
+        "severity": "warning",
+        "message": "'10L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "741",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'endTime' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "741",
+        "column": "24",
+        "severity": "warning",
+        "message": "'300L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "743",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'video' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "760",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "762",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'entries' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "763",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'chemCat1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "764",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'chmAgent1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "765",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'scaledSignalLevel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "765",
+        "column": "36",
+        "severity": "warning",
+        "message": "'.125' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "766",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "766",
+        "column": "49",
+        "severity": "warning",
+        "message": "'.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "767",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'entry1' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "770",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'chemCat2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "771",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'chmAgent2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "772",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'counts2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "772",
+        "column": "63",
+        "severity": "warning",
+        "message": "'25.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "773",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "773",
+        "column": "51",
+        "severity": "warning",
+        "message": "'.10' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "774",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'entry2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "778",
+        "column": "26",
+        "severity": "warning",
+        "message": "Variable 'chemCat3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "779",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'chmAgent3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "780",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'concentration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "780",
+        "column": "95",
+        "severity": "warning",
+        "message": "'25.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "781",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "781",
+        "column": "51",
+        "severity": "warning",
+        "message": "'.60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "782",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'entry3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "794",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "796",
+        "column": "12",
+        "severity": "warning",
+        "message": "Variable 'ph' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "796",
+        "column": "36",
+        "severity": "warning",
+        "message": "'7.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "797",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'dissolvedOxygen' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "797",
+        "column": "97",
+        "severity": "warning",
+        "message": "'12.1' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "798",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'electricalConductivity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "798",
+        "column": "106",
+        "severity": "warning",
+        "message": "'11.1' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "799",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'oxydationReductionPotential' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "799",
+        "column": "81",
+        "severity": "warning",
+        "message": "'9.2' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "800",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'turbidity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "800",
+        "column": "63",
+        "severity": "warning",
+        "message": "'123.4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "801",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'temperature' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "801",
+        "column": "77",
+        "severity": "warning",
+        "message": "'33.3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "802",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'chlorine' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "802",
+        "column": "90",
+        "severity": "warning",
+        "message": "'123.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "803",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'totalDisolvedSolid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "803",
+        "column": "100",
+        "severity": "warning",
+        "message": "'3.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "804",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'salinity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "804",
+        "column": "60",
+        "severity": "warning",
+        "message": "'88.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "805",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'specificGravity' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "805",
+        "column": "75",
+        "severity": "warning",
+        "message": "'77.7' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "806",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'waterFlowPressure' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "806",
+        "column": "81",
+        "severity": "warning",
+        "message": "'90.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "807",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'langelierSaturationIndex' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "807",
+        "column": "102",
+        "severity": "warning",
+        "message": "'12.33' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "808",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'waterQuality' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "820",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "822",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'entries' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "823",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'modality' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "824",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'counts' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "824",
+        "column": "50",
+        "severity": "warning",
+        "message": "'312.1' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "824",
+        "column": "57",
+        "severity": "warning",
+        "message": "'150.9' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "825",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "825",
+        "column": "50",
+        "severity": "warning",
+        "message": "'.90' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "826",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'entry' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "829",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'modality2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "830",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'scaledSignalLevel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "830",
+        "column": "36",
+        "severity": "warning",
+        "message": "'.876' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "831",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "831",
+        "column": "51",
+        "severity": "warning",
+        "message": "'.70' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "832",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'entry2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "843",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "845",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'entries' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "847",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'category' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "848",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'agent' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "849",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'concentration' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "849",
+        "column": "95",
+        "severity": "warning",
+        "message": "'900.2' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "850",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "850",
+        "column": "49",
+        "severity": "warning",
+        "message": "'.787' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "851",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'assayResult' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "852",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'entry' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "856",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'category2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "857",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'agent2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "858",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'cfus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "858",
+        "column": "70",
+        "severity": "warning",
+        "message": "'88.1' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "859",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "859",
+        "column": "50",
+        "severity": "warning",
+        "message": "'.66' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "860",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'entry2' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "864",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'category3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "865",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'agent3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "866",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'pfus' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "866",
+        "column": "70",
+        "severity": "warning",
+        "message": "'78.6' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "867",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "867",
+        "column": "50",
+        "severity": "warning",
+        "message": "'.35' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "868",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'entry3' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "872",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'category4' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "873",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'agent4' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "874",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'counts' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "874",
+        "column": "55",
+        "severity": "warning",
+        "message": "'10.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "875",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm4' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "875",
+        "column": "50",
+        "severity": "warning",
+        "message": "'.01' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "876",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'entry4' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "880",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'category5' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "881",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'agent5' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "882",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'scaledSignalLevel' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "882",
+        "column": "36",
+        "severity": "warning",
+        "message": "'.99' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "883",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'alarm5' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "883",
+        "column": "51",
+        "severity": "warning",
+        "message": "'.04' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "884",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'assayResult5' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "885",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'entry5' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "908",
+        "severity": "warning",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "910",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'lng' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "911",
+        "column": "41",
+        "severity": "warning",
+        "message": "'70.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "912",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'lat' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "913",
+        "column": "40",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "913",
+        "column": "65",
+        "severity": "warning",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "914",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'hae' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "915",
+        "column": "31",
+        "severity": "warning",
+        "message": "'60.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "916",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'ellipse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "917",
+        "column": "36",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "918",
+        "column": "36",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "919",
+        "column": "36",
+        "severity": "warning",
+        "message": "'90.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "919",
+        "column": "42",
+        "severity": "warning",
+        "message": "'5.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "919",
+        "column": "47",
+        "severity": "warning",
+        "message": "'1.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "919",
+        "column": "52",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "919",
+        "column": "57",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "920",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'coords' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "934",
+        "column": "35",
+        "severity": "warning",
+        "message": "Variable 'relatedObservations' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "941",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'assetLocation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "942",
+        "column": "40",
+        "severity": "warning",
+        "message": "'20.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "943",
+        "column": "56",
+        "severity": "warning",
+        "message": "'10.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "944",
+        "column": "45",
+        "severity": "warning",
+        "message": "'60.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "945",
+        "column": "67",
+        "severity": "warning",
+        "message": "'100.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "946",
+        "column": "44",
+        "severity": "warning",
+        "message": "'50.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "947",
+        "column": "44",
+        "severity": "warning",
+        "message": "'90.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "947",
+        "column": "50",
+        "severity": "warning",
+        "message": "'5.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "947",
+        "column": "55",
+        "severity": "warning",
+        "message": "'1.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "947",
+        "column": "60",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "947",
+        "column": "65",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "948",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'assetOrientation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "948",
+        "column": "89",
+        "severity": "warning",
+        "message": "'40.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "949",
+        "column": "53",
+        "severity": "warning",
+        "message": "'75.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "950",
+        "column": "43",
+        "severity": "warning",
+        "message": "'170.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "951",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'platformOrientation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "952",
+        "column": "36",
+        "severity": "warning",
+        "message": "'20.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "953",
+        "column": "53",
+        "severity": "warning",
+        "message": "'64.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "954",
+        "column": "43",
+        "severity": "warning",
+        "message": "'88.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "955",
+        "column": "21",
+        "severity": "warning",
+        "message": "Variable 'pointingLocation' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "956",
+        "column": "40",
+        "severity": "warning",
+        "message": "'30.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "957",
+        "column": "56",
+        "severity": "warning",
+        "message": "'30.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "958",
+        "column": "45",
+        "severity": "warning",
+        "message": "'45.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "959",
+        "column": "67",
+        "severity": "warning",
+        "message": "'88.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "960",
+        "column": "44",
+        "severity": "warning",
+        "message": "'77.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "961",
+        "column": "44",
+        "severity": "warning",
+        "message": "'65.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "961",
+        "column": "50",
+        "severity": "warning",
+        "message": "'5.0' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "961",
+        "column": "55",
+        "severity": "warning",
+        "message": "'1.5' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "961",
+        "column": "60",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "961",
+        "column": "65",
+        "severity": "warning",
+        "message": "'0.8' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "963",
+        "column": "19",
+        "severity": "warning",
+        "message": "Variable 'detection' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "964",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'status' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "965",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'weather' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "966",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'digitalMedia' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "967",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'audioMetadata' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "968",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'imageMetadata' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "969",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'videoMetadata' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "970",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'channelMetadata' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "971",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'waterQuality' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "972",
+        "column": "22",
+        "severity": "warning",
+        "message": "Variable 'cbrneTrigger' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "973",
+        "column": "20",
+        "severity": "warning",
+        "message": "Variable 'biological' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "974",
+        "column": "18",
+        "severity": "warning",
+        "message": "Variable 'chemical' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "975",
+        "column": "15",
+        "severity": "warning",
+        "message": "Variable 'power' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "977",
+        "column": "24",
+        "severity": "warning",
+        "message": "Variable 'reserved' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "979",
+        "column": "45",
+        "severity": "warning",
+        "message": "'2.25' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "980",
+        "column": "46",
+        "severity": "warning",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "982",
+        "column": "43",
+        "severity": "warning",
+        "message": "'12345L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "983",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'uuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "984",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'observedTimestamp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "985",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'createdTimestamp' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "985",
+        "column": "33",
+        "severity": "warning",
+        "message": "'100L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "986",
+        "column": "14",
+        "severity": "warning",
+        "message": "Variable 'assetUuid' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "987",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'assetName' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "988",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'assetType' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "989",
+        "column": "16",
+        "severity": "warning",
+        "message": "Variable 'sensorId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "990",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'systemInTestMode' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "991",
+        "column": "17",
+        "severity": "warning",
+        "message": "Variable 'version' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "991",
+        "column": "40",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "992",
+        "column": "13",
+        "severity": "warning",
+        "message": "Variable 'systemId' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "992",
+        "column": "24",
+        "severity": "warning",
+        "message": "'0123' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "994",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'sensings' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

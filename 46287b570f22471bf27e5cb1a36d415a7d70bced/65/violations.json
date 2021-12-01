@@ -1,0 +1,702 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.is.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "17",
+        "severity": "warning",
+        "message": "Using a static member import should be avoided - org.hamcrest.Matchers.notNullValue.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.remote.proto.BaseMessages.BaseNamespace' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "55",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.core.remote.proto.BaseMessages.GenericErrorResponseData' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "58",
+        "severity": "warning",
+        "message": "Wrong order for 'mil.dod.th.ose.remote.integration.MessageListener' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "69",
+        "severity": "warning",
+        "message": "Wrong order for 'com.google.protobuf.Message' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "79",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 35 (max allowed is 30).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "81",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'pLinkUuid' must match pattern '^m_[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "82",
+        "column": "33",
+        "severity": "warning",
+        "message": "Name 'linkUuid' must match pattern '^m_[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "84",
+        "column": "20",
+        "severity": "warning",
+        "message": "Name 'socket' must match pattern '^m_[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'listenerTimeout' must match pattern '^m_[A-Z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "86",
+        "column": "35",
+        "severity": "warning",
+        "message": "'600' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "94",
+        "column": "32",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "94",
+        "column": "45",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "111",
+        "column": "35",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "111",
+        "column": "48",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "141",
+        "column": "46",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "141",
+        "column": "59",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "143",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "146",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'getPhysicalLinkRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "150",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "154",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "160",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "163",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "173",
+        "column": "42",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "173",
+        "column": "55",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "175",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "194",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "197",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "220",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'errorResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "223",
+        "column": "34",
+        "severity": "warning",
+        "message": "Variable 'genericErrorResponseTest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "232",
+        "column": "37",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "232",
+        "column": "50",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "234",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "237",
+        "column": "27",
+        "severity": "warning",
+        "message": "Variable 'getMtuRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "241",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "245",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "251",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "254",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "257",
+        "column": "46",
+        "severity": "warning",
+        "message": "'1000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "264",
+        "column": "42",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "264",
+        "column": "55",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "266",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "269",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'isActivatedRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "273",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "277",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "283",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "286",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "296",
+        "column": "39",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "296",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "299",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "306",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'isActivatedRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "310",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "314",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "320",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "323",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "336",
+        "column": "41",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "336",
+        "column": "54",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "344",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "348",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'isActivatedRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "352",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "356",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "362",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "365",
+        "column": "33",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "376",
+        "column": "40",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "376",
+        "column": "53",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "378",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "381",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'getStatusRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "385",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "389",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "395",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "398",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "409",
+        "column": "41",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "409",
+        "column": "54",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "411",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "414",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'getStatusRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "418",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "422",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "428",
+        "column": "28",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "431",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "442",
+        "column": "46",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "442",
+        "column": "59",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "444",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "447",
+        "column": "31",
+        "severity": "warning",
+        "message": "Variable 'getStatusRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "451",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "455",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "462",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "465",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'event' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "468",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'propertyMap' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "484",
+        "column": "52",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'IOException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "484",
+        "column": "65",
+        "severity": "warning",
+        "message": "Expected @throws tag for 'InterruptedException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "486",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'listener' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "488",
+        "column": "36",
+        "severity": "warning",
+        "message": "Variable 'linkLayerCapsRequest' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "491",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'message' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "491",
+        "column": "36",
+        "severity": "warning",
+        "message": "'=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "496",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'response' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "497",
+        "column": "65",
+        "severity": "warning",
+        "message": "'1500' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "500",
+        "column": "37",
+        "severity": "warning",
+        "message": "Variable 'dataResponse' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "528",
+        "column": "38",
+        "severity": "warning",
+        "message": "Variable 'commsMessageBuilder' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "532",
+        "column": "29",
+        "severity": "warning",
+        "message": "Variable 'thMessage' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]
