@@ -1,0 +1,26 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Line does not match expected header line of '^// Copyright (\\(C\\) )?\\d{4} Baidu Inc\\. All rights reserved\\.$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck"
+    },
+    {
+        "line": "7",
+        "severity": "error",
+        "message": "Wrong order for 'org.junit.Test' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "10",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.junit.Assert.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "10",
+        "severity": "error",
+        "message": "Wrong order for 'org.junit.Assert.*' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    }
+]
