@@ -1,0 +1,66 @@
+[
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.awt.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is missing an ending period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "42",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'no_minimize' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "43",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'no_backup' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "48",
+        "column": "20",
+        "severity": "warning",
+        "message": "Member name 'legacy_dot' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is missing an ending period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "74",
+        "severity": "warning",
+        "message": "Distance between variable 'ok' declaration and its first usage is 11, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "75",
+        "severity": "warning",
+        "message": "Distance between variable 'defaults' declaration and its first usage is 12, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "76",
+        "severity": "warning",
+        "message": "Distance between variable 'skelBrowse' declaration and its first usage is 13, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "82",
+        "column": "53",
+        "severity": "warning",
+        "message": "Consider using special escape sequence instead of octal value or Unicode escaped value.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.IllegalTokenTextCheck"
+    }
+]
