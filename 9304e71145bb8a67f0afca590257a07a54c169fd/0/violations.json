@@ -1,0 +1,33 @@
+[
+    {
+        "line": "5",
+        "severity": "warning",
+        "message": "Import statement for 'com.google.api.server.spi.config.ApiTransformer' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "severity": "warning",
+        "message": "Import statement for 'com.googlecode.objectify.annotation.*' is in the wrong order. Should be in the 'SPECIAL_IMPORTS' group, expecting group 'STANDARD_JAVA_PACKAGE' on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "6",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - com.googlecode.objectify.annotation.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "63",
+        "column": "40",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "64",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 6, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    }
+]
