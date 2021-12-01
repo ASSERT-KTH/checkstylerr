@@ -1,0 +1,16 @@
+[
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasUserDetailService' looks like designed for extension (can be subclassed), but the method 'loadUserDetails' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasUserDetailService' final or making the method 'loadUserDetails' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "26",
+        "column": "40",
+        "severity": "warning",
+        "message": "Parameter token should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

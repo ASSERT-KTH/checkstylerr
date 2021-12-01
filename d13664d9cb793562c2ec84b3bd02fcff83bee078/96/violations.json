@@ -1,0 +1,35 @@
+[
+    {
+        "line": "15",
+        "severity": "warning",
+        "message": "Annotation style must be 'COMPACT_NO_ARRAY'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck"
+    },
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "Uncommented main method found.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheck"
+    },
+    {
+        "line": "18",
+        "column": "29",
+        "severity": "warning",
+        "message": "Parameter args should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "22",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CymbalPortalApplication' looks like designed for extension (can be subclassed), but the method 'configure' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CymbalPortalApplication' final or making the method 'configure' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "23",
+        "column": "50",
+        "severity": "warning",
+        "message": "Parameter application should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

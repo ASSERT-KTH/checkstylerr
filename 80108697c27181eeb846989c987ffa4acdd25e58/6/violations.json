@@ -1,0 +1,72 @@
+[
+    {
+        "line": "31",
+        "column": "19",
+        "severity": "warning",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "33",
+        "column": "19",
+        "severity": "warning",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "44",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ConfigProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createConfigForNewRedisCluster' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConfigProcessServiceImpl' final or making the method 'createConfigForNewRedisCluster' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "74",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ConfigProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createConfigForImportedRedisCluster' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConfigProcessServiceImpl' final or making the method 'createConfigForImportedRedisCluster' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "80",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ConfigProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'effectConfigForScaledInstances' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConfigProcessServiceImpl' final or making the method 'effectConfigForScaledInstances' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "87",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ConfigProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'queryByUserName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConfigProcessServiceImpl' final or making the method 'queryByUserName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "88",
+        "column": "41",
+        "severity": "warning",
+        "message": "Parameter userName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "96",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ConfigProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'updateConfigName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConfigProcessServiceImpl' final or making the method 'updateConfigName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "97",
+        "column": "34",
+        "severity": "warning",
+        "message": "Parameter configId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "97",
+        "column": "52",
+        "severity": "warning",
+        "message": "Parameter newName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

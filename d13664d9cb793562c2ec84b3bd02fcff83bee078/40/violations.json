@@ -1,0 +1,29 @@
+[
+    {
+        "line": "8",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CASUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'getUserCnName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CASUserProcessServiceImpl' final or making the method 'getUserCnName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "18",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CASUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'queryAllUsers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CASUserProcessServiceImpl' final or making the method 'queryAllUsers' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CASUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createUser' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CASUserProcessServiceImpl' final or making the method 'createUser' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

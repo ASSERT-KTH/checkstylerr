@@ -1,0 +1,16 @@
+[
+    {
+        "line": "16",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'BaseController' looks like designed for extension (can be subclassed), but the method 'defaultExceptionHandler' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BaseController' final or making the method 'defaultExceptionHandler' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "24",
+        "column": "17",
+        "severity": "warning",
+        "message": "Name 'AccessDeniedExceptionHandler' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    }
+]

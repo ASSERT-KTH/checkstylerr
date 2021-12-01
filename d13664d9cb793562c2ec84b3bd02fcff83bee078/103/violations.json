@@ -1,0 +1,37 @@
+[
+    {
+        "line": "40",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'InstanceConverter' looks like designed for extension (can be subclassed), but the method 'boToDto' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'InstanceConverter' final or making the method 'boToDto' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "57",
+        "column": "18",
+        "severity": "warning",
+        "message": "Parameter instance should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "57",
+        "column": "37",
+        "severity": "warning",
+        "message": "Parameter instanceDTO should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "18",
+        "severity": "warning",
+        "message": "Parameter instanceDTO should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "43",
+        "severity": "warning",
+        "message": "Parameter instance should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

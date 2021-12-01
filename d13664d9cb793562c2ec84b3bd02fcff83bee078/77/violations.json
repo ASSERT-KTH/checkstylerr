@@ -1,0 +1,114 @@
+[
+    {
+        "line": "28",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 11 (max allowed is 10) classes [Cas20ServiceTicketValidator, CasAuthenticationEntryPoint, CasAuthenticationFilter, CasAuthenticationProvider, LogoutFilter, ProviderManager, SecurityContextLogoutHandler, ServiceProperties, SimpleUrlAuthenticationFailureHandler, SimpleUrlAuthenticationSuccessHandler, SingleSignOutFilter].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'serviceProperties' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'serviceProperties' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "43",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'authenticationManager' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'authenticationManager' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "44",
+        "column": "56",
+        "severity": "warning",
+        "message": "Parameter provider should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'casAuthenticationFilter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'casAuthenticationFilter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "51",
+        "column": "60",
+        "severity": "warning",
+        "message": "Parameter authenticationManager should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "52",
+        "column": "13",
+        "severity": "warning",
+        "message": "Parameter serviceProperties should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'casAuthenticationEntryPoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'casAuthenticationEntryPoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "68",
+        "column": "68",
+        "severity": "warning",
+        "message": "Parameter serviceProperties should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "75",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'cas20ServiceTicketValidator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'cas20ServiceTicketValidator' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "80",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'casAuthenticationProvider' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'casAuthenticationProvider' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "81",
+        "column": "64",
+        "severity": "warning",
+        "message": "Parameter casUserDetailService should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "82",
+        "column": "13",
+        "severity": "warning",
+        "message": "Parameter serviceProperties should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "82",
+        "column": "50",
+        "severity": "warning",
+        "message": "Parameter ticketValidator should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "91",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'logoutFilter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'logoutFilter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "100",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'CasConfiguration' looks like designed for extension (can be subclassed), but the method 'singleSignOutFilter' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CasConfiguration' final or making the method 'singleSignOutFilter' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

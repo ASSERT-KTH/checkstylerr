@@ -1,0 +1,77 @@
+[
+    {
+        "line": "12",
+        "column": "1",
+        "severity": "warning",
+        "message": "Redundant import from the same package - com.dangdang.cymbal.service.node.service.process.NodeProcessService.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "45",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 21 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createNodesFromExcel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'createNodesFromExcel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "135",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'saveAndInitNode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'saveAndInitNode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "151",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'initNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'initNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "153",
+        "column": "33",
+        "severity": "warning",
+        "message": "Parameter nodeIds should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "163",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'initNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'initNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "192",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'queryAvailableNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'queryAvailableNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "212",
+        "severity": "warning",
+        "message": "Comment matches to-do format 'TODO:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"
+    },
+    {
+        "line": "226",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'updateNode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'updateNode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "238",
+        "severity": "warning",
+        "message": "Overload methods should not be split. Previous overloaded method located at line '226'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheck"
+    }
+]

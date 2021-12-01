@@ -1,0 +1,30 @@
+[
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'DbUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'getUserCnName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUserProcessServiceImpl' final or making the method 'getUserCnName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "24",
+        "column": "33",
+        "severity": "warning",
+        "message": "Parameter userName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'DbUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'queryAllUsers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUserProcessServiceImpl' final or making the method 'queryAllUsers' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "33",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'DbUserProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createUser' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DbUserProcessServiceImpl' final or making the method 'createUser' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

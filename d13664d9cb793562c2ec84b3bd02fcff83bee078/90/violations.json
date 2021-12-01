@@ -1,0 +1,36 @@
+[
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "36",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'UserRoleController' looks like designed for extension (can be subclassed), but the method 'userRolesPage' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UserRoleController' final or making the method 'userRolesPage' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'UserRoleController' looks like designed for extension (can be subclassed), but the method 'queryAllUserRoles' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UserRoleController' final or making the method 'queryAllUserRoles' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "48",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'UserRoleController' looks like designed for extension (can be subclassed), but the method 'createUserRole' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UserRoleController' final or making the method 'createUserRole' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "35",
+        "severity": "warning",
+        "message": "Parameter userRoleDTO should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

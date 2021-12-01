@@ -1,0 +1,70 @@
+[
+    {
+        "line": "44",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 21 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'createNodesFromExcel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'createNodesFromExcel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "134",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'saveAndInitNode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'saveAndInitNode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "150",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'initNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'initNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "152",
+        "column": "33",
+        "severity": "warning",
+        "message": "Parameter nodeIds should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "162",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'initNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'initNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "191",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'queryAvailableNodes' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'queryAvailableNodes' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "211",
+        "severity": "warning",
+        "message": "Comment matches to-do format 'TODO:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"
+    },
+    {
+        "line": "225",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'NodeProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'updateNode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NodeProcessServiceImpl' final or making the method 'updateNode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "237",
+        "severity": "warning",
+        "message": "Overload methods should not be split. Previous overloaded method located at line '225'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheck"
+    }
+]

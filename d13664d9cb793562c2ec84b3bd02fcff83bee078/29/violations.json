@@ -1,0 +1,50 @@
+[
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "warning",
+        "message": "Static variable definition in wrong order.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"
+    },
+    {
+        "line": "38",
+        "column": "19",
+        "severity": "warning",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "40",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ApplicationFormProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'saveRedisApplicationForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ApplicationFormProcessServiceImpl' final or making the method 'saveRedisApplicationForm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "74",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ApplicationFormProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'denyRedisApplicationForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ApplicationFormProcessServiceImpl' final or making the method 'denyRedisApplicationForm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "88",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ApplicationFormProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'updateRedisApplicationForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ApplicationFormProcessServiceImpl' final or making the method 'updateRedisApplicationForm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "100",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'ApplicationFormProcessServiceImpl' looks like designed for extension (can be subclassed), but the method 'approveRedisApplicationForm' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ApplicationFormProcessServiceImpl' final or making the method 'approveRedisApplicationForm' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "103",
+        "severity": "warning",
+        "message": "Comment matches to-do format 'TODO:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"
+    }
+]

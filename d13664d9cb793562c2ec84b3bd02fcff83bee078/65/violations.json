@@ -1,0 +1,29 @@
+[
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "23",
+        "column": "19",
+        "severity": "warning",
+        "message": "'static' modifier out of order with the JLS suggestions.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"
+    },
+    {
+        "line": "28",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'RedisShellUtilityServiceImpl' looks like designed for extension (can be subclassed), but the method 'executeSentinelShellScript' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RedisShellUtilityServiceImpl' final or making the method 'executeSentinelShellScript' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "37",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'RedisShellUtilityServiceImpl' looks like designed for extension (can be subclassed), but the method 'executeRedisShellScript' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RedisShellUtilityServiceImpl' final or making the method 'executeRedisShellScript' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
