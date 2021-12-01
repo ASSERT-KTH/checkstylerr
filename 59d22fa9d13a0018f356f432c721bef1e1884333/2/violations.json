@@ -1,0 +1,30 @@
+[
+    {
+        "line": "3",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - ai.preferred.cerebro.index.common.VecDoubleHandler.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "11",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DoubleCosineHandler' looks like designed for extension (can be subclassed), but the method 'similarity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DoubleCosineHandler' final or making the method 'similarity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "12",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter a should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "12",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter b should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

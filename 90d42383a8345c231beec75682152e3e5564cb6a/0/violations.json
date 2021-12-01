@@ -1,0 +1,37 @@
+[
+    {
+        "line": "19",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'log' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "21",
+        "column": "43",
+        "severity": "error",
+        "message": "Name 'dateFormat' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'UpdateScheduler' looks like designed for extension (can be subclassed), but the method 'reportCurrentTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UpdateScheduler' final or making the method 'reportCurrentTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

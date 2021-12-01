@@ -1,0 +1,37 @@
+[
+    {
+        "line": "7",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "7",
+        "column": "12",
+        "severity": "error",
+        "message": "Variable 'text' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TextQuery' looks like designed for extension (can be subclassed), but the method 'getText' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TextQuery' final or making the method 'getText' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TextQuery' looks like designed for extension (can be subclassed), but the method 'setText' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TextQuery' final or making the method 'setText' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter text should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

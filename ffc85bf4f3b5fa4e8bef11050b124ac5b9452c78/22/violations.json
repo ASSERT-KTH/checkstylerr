@@ -1,0 +1,93 @@
+[
+    {
+        "line": "5",
+        "column": "55",
+        "severity": "error",
+        "message": "'>' is followed by an illegal character.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"
+    },
+    {
+        "line": "5",
+        "column": "56",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "6",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "6",
+        "column": "22",
+        "severity": "error",
+        "message": "Variable 'nodeId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "7",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "7",
+        "column": "25",
+        "severity": "error",
+        "message": "Variable 'distance' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "8",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "8",
+        "column": "30",
+        "severity": "error",
+        "message": "Variable 'distanceComparator' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "10",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter nodeId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "10",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter distance should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "10",
+        "column": "51",
+        "severity": "error",
+        "message": "Parameter distanceComparator should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "16",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'Candidate' looks like designed for extension (can be subclassed), but the method 'compareTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Candidate' final or making the method 'compareTo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter o should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

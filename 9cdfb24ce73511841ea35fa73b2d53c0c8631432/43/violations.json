@@ -1,0 +1,64 @@
+[
+    {
+        "line": "3",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - org.apache.lucene.search.ScoreDoc.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "5",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - preferred.ai.cerebro.core.entity.TopKItem.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "7",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.util.ArrayList.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "8",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - java.util.List.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "18",
+        "severity": "error",
+        "message": "Type Javadoc comment is missing @param <T> tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "19",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter rankedItemList should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "45",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "22",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'QueryResponse' looks like designed for extension (can be subclassed), but the method 'getRankedItemList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'QueryResponse' final or making the method 'getRankedItemList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    }
+]

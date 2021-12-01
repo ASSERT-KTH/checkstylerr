@@ -1,0 +1,72 @@
+[
+    {
+        "line": "7",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "7",
+        "column": "12",
+        "severity": "error",
+        "message": "Variable 'userId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "8",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "8",
+        "column": "12",
+        "severity": "error",
+        "message": "Variable 'itemId' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PairIds' looks like designed for extension (can be subclassed), but the method 'getUserId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PairIds' final or making the method 'getUserId' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PairIds' looks like designed for extension (can be subclassed), but the method 'setUserId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PairIds' final or making the method 'setUserId' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter userId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PairIds' looks like designed for extension (can be subclassed), but the method 'getItemId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PairIds' final or making the method 'getItemId' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'PairIds' looks like designed for extension (can be subclassed), but the method 'setItemId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PairIds' final or making the method 'setItemId' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter itemId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "line": "9",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "9",
+        "column": "18",
+        "severity": "error",
+        "message": "Variable 'ids' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "11",
+        "column": "19",
+        "severity": "error",
+        "message": "Parameter ids should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "15",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ListID' looks like designed for extension (can be subclassed), but the method 'getIds' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ListID' final or making the method 'getIds' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "19",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ListID' looks like designed for extension (can be subclassed), but the method 'setIds' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ListID' final or making the method 'setIds' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "19",
+        "column": "24",
+        "severity": "error",
+        "message": "Parameter ids should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

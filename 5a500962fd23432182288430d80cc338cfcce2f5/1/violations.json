@@ -1,0 +1,23 @@
+[
+    {
+        "line": "7",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'DoubleCosineHandler' looks like designed for extension (can be subclassed), but the method 'distance' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DoubleCosineHandler' final or making the method 'distance' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "8",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter a should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "8",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter b should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

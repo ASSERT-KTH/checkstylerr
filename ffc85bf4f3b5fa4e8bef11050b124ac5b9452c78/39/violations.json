@@ -1,0 +1,58 @@
+[
+    {
+        "line": "16",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter weight should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter td should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter docScorer should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'VectorScorer' looks like designed for extension (can be subclassed), but the method 'docID' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'VectorScorer' final or making the method 'docID' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "29",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'VectorScorer' looks like designed for extension (can be subclassed), but the method 'score' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'VectorScorer' final or making the method 'score' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'VectorScorer' looks like designed for extension (can be subclassed), but the method 'iterator' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'VectorScorer' final or making the method 'iterator' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
