@@ -1,0 +1,29 @@
+[
+    {
+        "line": "35",
+        "column": "37",
+        "severity": "warning",
+        "message": "Name 'log' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "41",
+        "column": "9",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"
+    },
+    {
+        "line": "309",
+        "severity": "warning",
+        "message": "Must include both @java.lang.Deprecated annotation and @deprecated Javadoc tag with description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck"
+    },
+    {
+        "line": "364",
+        "column": "9",
+        "severity": "warning",
+        "message": "Cyclomatic Complexity is 6 (max allowed is 5).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    }
+]
