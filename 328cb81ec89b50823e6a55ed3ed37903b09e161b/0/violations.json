@@ -1,0 +1,8 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Got an exception - com.puppycrawl.tools.checkstyle.api.CheckstyleException: MismatchedTokenException occurred while parsing file /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/US-CBP-GTAS/gtas-parent/gtas-job-scheduler-war/src/main/java/gov/gtas/job/scheduler/LoaderScheduler.java.\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:120)\n#x9;at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)\n#x9;at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:328)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:289)\n#x9;at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:221)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCheckstyle(Main.java:409)\n#x9;at com.puppycrawl.tools.checkstyle.Main.runCli(Main.java:332)\n#x9;at com.puppycrawl.tools.checkstyle.Main.execute(Main.java:191)\n#x9;at com.puppycrawl.tools.checkstyle.Main.main(Main.java:126)\nCaused by: /home/fernanda/mnt/fernanda/git-styler/workspace4checkstylerr/workspace4analyses/US-CBP-GTAS/gtas-parent/gtas-job-scheduler-war/src/main/java/gov/gtas/job/scheduler/LoaderScheduler.java:19:1: expecting EOF, found '<<'\n#x9;at antlr.Parser.match(Parser.java:211)\n#x9;at com.puppycrawl.tools.checkstyle.grammar.GeneratedJavaRecognizer.compilationUnit(GeneratedJavaRecognizer.java:221)\n#x9;at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:114)\n#x9;... 9 more\n",
+        "source": "com.puppycrawl.tools.checkstyle.Checker"
+    }
+]
