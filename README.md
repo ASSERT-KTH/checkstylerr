@@ -1,0 +1,1 @@
+# opaluchlukasz/junit2spock
