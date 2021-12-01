@@ -1,0 +1,53 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.common.nhinccommon.AssertionType' import. Should be before 'org.hl7.v3.SimplePatientCorrelationSecuredResponseType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.nhinclib.NhincConstants.GATEWAY_API_LEVEL' import. Should be before 'org.hl7.v3.SimplePatientCorrelationSecuredResponseType'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "column": "8",
+        "severity": "error",
+        "message": "Unused import - gov.hhs.fha.nhinc.nhinclib.NhincConstants.GATEWAY_API_LEVEL.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "39",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "39",
+        "column": "5",
+        "severity": "error",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    }
+]

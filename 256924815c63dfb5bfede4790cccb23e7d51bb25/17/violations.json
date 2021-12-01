@@ -1,0 +1,124 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "31",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.hl7.v3.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "31",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.hl7.v3.*' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - gov.hhs.fha.nhinc.mpilib.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.mpilib.*' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - gov.hhs.fha.nhinc.adaptermpimanager.HL7Parsers.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.adaptermpimanager.HL7Parsers.*' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.nhinclib.NullChecker' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.properties.PropertyAccessor' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.transform.subdisc.HL7AckTransforms' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.transform.subdisc.HL7Constants' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "column": "1",
+        "severity": "error",
+        "message": "Utility classes should not have a public or default constructor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"
+    },
+    {
+        "line": "49",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "49",
+        "column": "47",
+        "severity": "error",
+        "message": "Name 'SavePatient' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "53",
+        "column": "48",
+        "severity": "error",
+        "message": "Name 'SaveAnnouncePatient' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"
+    },
+    {
+        "line": "54",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'AllowSearchByDemographics' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "54",
+        "column": "52",
+        "severity": "error",
+        "message": "Name 'CreatePatientIfDoesNotExist' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "54",
+        "column": "89",
+        "severity": "error",
+        "message": "Name 'UpdateDemographicsIfNeeded' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "55",
+        "column": "17",
+        "severity": "error",
+        "message": "Name 'ConfirmDemographicMatchPriorToUpdatingCorrelation' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    }
+]

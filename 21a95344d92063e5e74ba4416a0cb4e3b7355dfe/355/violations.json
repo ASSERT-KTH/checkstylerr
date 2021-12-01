@@ -1,0 +1,33 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.common.nhinccommon.AssertionType' import. Should be before 'org.hl7.v3.PRPAIN201306UV02'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.patientdiscovery.PatientDiscoveryException' import. Should be before 'org.hl7.v3.PRPAIN201306UV02'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "47",
+        "severity": "error",
+        "message": "At-clause should have a non-empty description.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    },
+    {
+        "line": "50",
+        "column": "20",
+        "severity": "error",
+        "message": "Expected @throws tag for 'PatientDiscoveryException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

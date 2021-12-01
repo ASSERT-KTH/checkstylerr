@@ -1,0 +1,60 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "43",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.commons.validator.routines.EmailValidator' import. Should be before 'org.opensaml.xml.validation.ValidationException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "49",
+        "severity": "error",
+        "message": "'CLASS_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "55",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'invalidDomainNameChars' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "55",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "58",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'invalidUserNameChars' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "58",
+        "column": "57",
+        "severity": "error",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "105",
+        "severity": "error",
+        "message": "Unused Javadoc tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "108",
+        "severity": "error",
+        "message": "Overload methods should not be split. Previous overloaded method located at line '80'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheck"
+    }
+]

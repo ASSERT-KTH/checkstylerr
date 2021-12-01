@@ -1,0 +1,199 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'gov.hhs.fha.nhinc.nhinclib.NhincConstants' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'javax.naming.Name' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "34",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'javax.naming.ldap.LdapName' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.commons.lang.StringUtils' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.commons.validator.routines.EmailValidator' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.wss4j.common.ext.WSSecurityException' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.wss4j.common.saml.SamlAssertionWrapper' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "error",
+        "message": "Wrong lexicographical order for 'org.apache.wss4j.dom.validate.SamlAssertionValidator' import. Should be before 'org.opensaml.saml.common.SAMLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "58",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'invalidDomainNameChars' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "58",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "61",
+        "column": "33",
+        "severity": "error",
+        "message": "Name 'invalidUserNameChars' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "61",
+        "column": "57",
+        "severity": "error",
+        "message": "'{' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"
+    },
+    {
+        "line": "83",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "110",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "120",
+        "column": "8",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'ValidationException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "122",
+        "column": "63",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'WSSecurityException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "124",
+        "column": "61",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "134",
+        "severity": "error",
+        "message": "Unused Javadoc tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "135",
+        "column": "8",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'ValidationException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "137",
+        "severity": "error",
+        "message": "Overload methods should not be split. Previous overloaded method located at line '110'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.OverloadMethodsDeclarationOrderCheck"
+    },
+    {
+        "line": "137",
+        "column": "66",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'WSSecurityException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "139",
+        "column": "61",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "146",
+        "column": "61",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "157",
+        "column": "8",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'ValidationException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "159",
+        "column": "94",
+        "severity": "error",
+        "message": "Unable to get class information for @throws tag 'WSSecurityException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "163",
+        "column": "65",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "170",
+        "column": "65",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "176",
+        "severity": "error",
+        "message": "Line is longer than 120 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "176",
+        "column": "65",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    }
+]
