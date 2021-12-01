@@ -1,0 +1,226 @@
+/**
+ * Copyright (C) 2014 Couchbase, Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALING
+ * IN THE SOFTWARE.
+ */
+package com.couchbase.client.java.query;
+
+import com.couchbase.client.java.document.json.JsonArray;
+import com.couchbase.client.java.document.json.JsonObject;
+
+import java.io.Serializable;
+
+/**
+ * Contract to describe N1QL queries. Queries are formed of a mandatory {@link Statement}
+ * and optionally can have other components, as described in each implementation of this.
+ *
+ * Also exposes factory methods for different kinds of queries.
+ *
+ * @author Simon Baslé
+ * @since 2.1
+ */
+public abstract class N1qlQuery implements Serializable {
+
+    private static final long serialVersionUID = 3758119606237959729L;
+
+    /**
+     * Returns the {@link Statement} from this query. Note that this is the only mandatory
+     * part of a N1QL query.
+     *
+     * @return the statement that forms the base of this query
+     */
+    public abstract Statement statement();
+
+    /**
+     * Returns the {@link N1qlParams} representing customization of the N1QL query.
+     *
+     * Note that this is different from named or positional parameters (which relate to the statement).
+     *
+     * @return the {@link N1qlParams} for this query, null if none.
+     */
+    public abstract N1qlParams params();
+
+    /**
+     * Convert this query to a full N1QL query in Json form.
+     *
+     * @return the json representation of this query (including all relevant parameters)
+     */
+    public abstract JsonObject n1ql();
+
+    //== PRIVATE CLASS FOR RAW STATEMENT ==
+
+    /* package */ static class RawStatement implements SerializableStatement {
+
+        private static final long serialVersionUID = 107907431113912054L;
+
+        private final String rawStatement;
+
+        public RawStatement(String rawStatement) {
+            this.rawStatement = rawStatement;
+        }
+
+        @Override
+        public String toString() {
+            return rawStatement;
+        }
+    }
+
+    //========== FACTORY METHODS ==========
+    /**
+     * Create a new {@link N1qlQuery} with a plain un-parameterized {@link Statement}.
+     *
+     * @param statement the {@link Statement} to execute
+     */
+    public static SimpleN1qlQuery simple(Statement statement) {
+        return new SimpleN1qlQuery(statement, null);
+    }
+
+    /**
+     * Create a new {@link N1qlQuery} with a plain raw statement in String form.
+     *
+     * @param statement the raw statement string to execute (eg. "SELECT * FROM default").
+     */
+    public static SimpleN1qlQuery simple(String statement) {
+        return simple(new RawStatement(statement));
+    }
+
+    /**
+     * Create a new {@link N1qlQuery} with a plain un-parameterized {@link Statement} and
+     * custom query parameters.
+     *
+     * @param statement the {@link Statement} to execute
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static SimpleN1qlQuery simple(Statement statement, N1qlParams params) {
+        return new SimpleN1qlQuery(statement, params);
+    }
+
+    /**
+     * Create a new {@link N1qlQuery} with a plain raw statement in {@link String} form and
+     * custom query parameters.
+     *
+     * @param statement the raw statement string to execute (eg. "SELECT * FROM default").
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static SimpleN1qlQuery simple(String statement, N1qlParams params) {
+        return simple(new RawStatement(statement), params);
+    }
+
+    //== PARAMETERIZED with Statement ==
+    /**
+     * Create a new query with positionalParameters. Note that the {@link JsonArray}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the {@link Statement} to execute (containing positional placeholders)
+     * @param positionalParams the values for the positional placeholders in statement
+     */
+    public static ParameterizedN1qlQuery parameterized(Statement statement, JsonArray positionalParams) {
+        return new ParameterizedN1qlQuery(statement, positionalParams, null);
+    }
+
+    /**
+     * Create a new query with named parameters. Note that the {@link JsonObject}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the {@link Statement} to execute (containing named placeholders)
+     * @param namedParams the values for the named placeholders in statement
+     */
+    public static ParameterizedN1qlQuery parameterized(Statement statement, JsonObject namedParams) {
+        return new ParameterizedN1qlQuery(statement, namedParams, null);
+    }
+
+    /**
+     * Create a new query with positionalParameters. Note that the {@link JsonArray}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the {@link Statement} to execute (containing positional placeholders)
+     * @param positionalParams the values for the positional placeholders in statement
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static ParameterizedN1qlQuery parameterized(Statement statement, JsonArray positionalParams, N1qlParams params) {
+        return new ParameterizedN1qlQuery(statement, positionalParams, params);
+    }
+
+    /**
+     * Create a new query with named parameters. Note that the {@link JsonObject}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the {@link Statement} to execute (containing named placeholders)
+     * @param namedParams the values for the named placeholders in statement
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static ParameterizedN1qlQuery parameterized(Statement statement, JsonObject namedParams, N1qlParams params) {
+        return new ParameterizedN1qlQuery(statement, namedParams, params);
+    }
+
+    //== PARAMETERIZED with raw String ==
+    /**
+     * Create a new query with positionalParameters. Note that the {@link JsonArray}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the raw statement to execute (containing positional placeholders)
+     * @param positionalParams the values for the positional placeholders in statement
+     */
+    public static ParameterizedN1qlQuery parameterized(String statement, JsonArray positionalParams) {
+        return new ParameterizedN1qlQuery(new RawStatement(statement), positionalParams, null);
+    }
+
+    /**
+     * Create a new query with named parameters. Note that the {@link JsonObject}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the raw statement to execute (containing named placeholders)
+     * @param namedParams the values for the named placeholders in statement
+     */
+    public static ParameterizedN1qlQuery parameterized(String statement, JsonObject namedParams) {
+        return new ParameterizedN1qlQuery(new RawStatement(statement), namedParams, null);
+    }
+
+    /**
+     * Create a new query with positionalParameters. Note that the {@link JsonArray}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the raw statement to execute (containing positional placeholders)
+     * @param positionalParams the values for the positional placeholders in statement
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static ParameterizedN1qlQuery parameterized(String statement, JsonArray positionalParams, N1qlParams params) {
+        return new ParameterizedN1qlQuery(new RawStatement(statement), positionalParams, params);
+    }
+
+    /**
+     * Create a new query with named parameters. Note that the {@link JsonObject}
+     * should not be mutated until {@link #n1ql()} is called since it backs the
+     * creation of the query string.
+     *
+     * @param statement the raw statement to execute (containing named placeholders)
+     * @param namedParams the values for the named placeholders in statement
+     * @param params the {@link N1qlParams query parameters}.
+     */
+    public static ParameterizedN1qlQuery parameterized(String statement, JsonObject namedParams, N1qlParams params) {
+        return new ParameterizedN1qlQuery(new RawStatement(statement), namedParams, params);
+    }
+}

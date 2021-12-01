@@ -1,0 +1,46 @@
+[
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "Type Javadoc tag @author must match pattern '^[A-Za-z\\s]+$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "67",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "143",
+        "severity": "warning",
+        "message": "Distance between variable 'contextIdTruncatedExpected' declaration and its first usage is 10, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "252",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "269",
+        "severity": "warning",
+        "message": "'select' has incorrect indentation level 10, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "270",
+        "severity": "warning",
+        "message": "'WITH_CONSISTENCY' has incorrect indentation level 10, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "306",
+        "column": "21",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    }
+]

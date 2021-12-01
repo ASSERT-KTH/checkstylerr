@@ -1,0 +1,72 @@
+/**
+ * Copyright (C) 2015 Couchbase, Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALING
+ * IN THE SOFTWARE.
+ */
+package com.couchbase.client.java.query.dsl.path.index;
+
+import java.util.List;
+
+import com.couchbase.client.core.annotations.InterfaceAudience;
+import com.couchbase.client.core.annotations.InterfaceStability;
+import com.couchbase.client.java.query.Index;
+import com.couchbase.client.java.query.dsl.element.IndexNamesElement;
+import com.couchbase.client.java.query.dsl.path.AbstractPath;
+
+/**
+ * See {@link IndexNamesPath}.
+ *
+ * @author Simon Baslé
+ * @since 2.2
+ */
+@InterfaceStability.Experimental
+@InterfaceAudience.Private
+public class DefaultIndexNamesPath extends AbstractPath implements IndexNamesPath {
+
+    protected DefaultIndexNamesPath(AbstractPath parent) {
+        super(parent);
+    }
+
+    @Override
+    public UsingPath indexes(String indexName, String... indexNames) {
+        element(new IndexNamesElement(indexName, indexNames));
+        return new DefaultUsingPath(this);
+    }
+
+    @Override
+    public UsingPath indexes(List<String> indexNames) {
+        if (indexNames.isEmpty()) {
+            throw new IllegalArgumentException("indexNames must have at least one name");
+        }
+        String first = indexNames.get(0);
+        if (indexNames.size() > 1) {
+            String[] others = indexNames.subList(1, indexNames.size()).toArray(new String[indexNames.size() - 1]);
+            element(new IndexNamesElement(first, others));
+        } else {
+            element(new IndexNamesElement(first));
+        }
+        return new DefaultUsingPath(this);
+    }
+
+    @Override
+    public UsingPath primary() {
+        element(new IndexNamesElement(Index.PRIMARY_NAME));
+        return new DefaultUsingPath(this);
+    }
+}

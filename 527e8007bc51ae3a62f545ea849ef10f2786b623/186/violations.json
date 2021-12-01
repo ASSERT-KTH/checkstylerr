@@ -1,0 +1,27 @@
+[
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "'java.util.Arrays' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "warning",
+        "message": "Type Javadoc tag @author must match pattern '^[A-Za-z\\s]+$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"
+    },
+    {
+        "line": "59",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "132",
+        "severity": "warning",
+        "message": "Distance between variable 'contextIdTruncatedExpected' declaration and its first usage is 10, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]
