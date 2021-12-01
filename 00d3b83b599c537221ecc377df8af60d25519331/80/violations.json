@@ -1,0 +1,56 @@
+[
+    {
+        "line": "3",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "10",
+        "severity": "warning",
+        "message": "Javadoc comment at column 13 has parse error. Details: mismatched input ':' expecting <EOF> while parsing JAVADOC",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocParagraphCheck"
+    },
+    {
+        "line": "10",
+        "column": "6",
+        "severity": "warning",
+        "message": "Unused @param tag for 'A:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "11",
+        "column": "6",
+        "severity": "warning",
+        "message": "Unused @param tag for 'B:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "15",
+        "column": "25",
+        "severity": "warning",
+        "message": "Parameter name 'A' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "15",
+        "column": "25",
+        "severity": "warning",
+        "message": "Variable 'A' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    },
+    {
+        "line": "15",
+        "column": "32",
+        "severity": "warning",
+        "message": "Parameter name 'B' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "15",
+        "column": "32",
+        "severity": "warning",
+        "message": "Variable 'B' should be declared final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"
+    }
+]

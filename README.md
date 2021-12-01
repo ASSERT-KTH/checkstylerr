@@ -1,0 +1,1 @@
+# Rugal/algorithm
