@@ -1,0 +1,81 @@
+[
+    {
+        "line": "3",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "4",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "11",
+        "column": "23",
+        "severity": "warning",
+        "message": "Name 'SQL' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"
+    },
+    {
+        "line": "11",
+        "column": "23",
+        "severity": "warning",
+        "message": "Variable 'SQL' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "11",
+        "column": "44",
+        "severity": "warning",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "12",
+        "severity": "warning",
+        "message": "'STATIC_INIT' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "12",
+        "column": "5",
+        "severity": "warning",
+        "message": "Cyclomatic Complexity is 12 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "16",
+        "severity": "warning",
+        "message": "Distance between variable 'br' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "29",
+        "column": "29",
+        "severity": "warning",
+        "message": "Nested if-else depth is 2 (max allowed is 1).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck"
+    },
+    {
+        "line": "51",
+        "column": "11",
+        "severity": "warning",
+        "message": "Catching 'Exception' is not allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"
+    },
+    {
+        "line": "56",
+        "severity": "warning",
+        "message": "Uncommented main method found.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.UncommentedMainCheck"
+    },
+    {
+        "line": "56",
+        "column": "29",
+        "severity": "warning",
+        "message": "Parameter args should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "6",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.apache.shardingsphere.benchmark.db.shardingjdbc.ShardingConfigType.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "7",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - org.apache.shardingsphere.benchmark.db.shardingjdbc.ShardingJDBCDataSourceFactory.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "11",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - java.io.IOException.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "18",
+        "column": "30",
+        "severity": "warning",
+        "message": "Variable 'dataSource' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'JMeterJDBCFullRoutingShardingInsertUpdateDelete' looks like designed for extension (can be subclassed), but the method 'runTest' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JMeterJDBCFullRoutingShardingInsertUpdateDelete' final or making the method 'runTest' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "33",
+        "severity": "warning",
+        "message": "Parameter context should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "47",
+        "column": "11",
+        "severity": "warning",
+        "message": "Catching 'Exception' is not allowed.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"
+    }
+]
