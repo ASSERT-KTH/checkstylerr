@@ -1,0 +1,272 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'com.google.common.collect.ImmutableMap' import. Should be before 'java.util.concurrent.atomic.AtomicReference'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.metron.stellar.common.StellarPredicateProcessor' import. Should be before 'org.apache.metron.stellar.dsl.StellarFunctions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.metron.stellar.common.StellarProcessor' import. Should be before 'org.apache.metron.stellar.dsl.StellarFunctions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.metron.stellar.common.utils.ConversionUtils' import. Should be before 'org.apache.metron.stellar.dsl.StellarFunctions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.metron.common.utils.JSONUtils' import. Should be before 'org.apache.metron.stellar.dsl.StellarFunctions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.metron.enrichment.lookup.LookupKV' import. Should be before 'org.apache.metron.stellar.dsl.StellarFunctions'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.metron.dataloads.extractor.TransformFilterExtractorDecorator.ExtractorOptions.*' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - org.apache.metron.dataloads.extractor.TransformFilterExtractorDecorator.ExtractorOptions.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "74",
+        "column": "28",
+        "severity": "warning",
+        "message": "WhitespaceAround: '?' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "74",
+        "column": "29",
+        "severity": "warning",
+        "message": "WhitespaceAround: '?' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "74",
+        "column": "34",
+        "severity": "warning",
+        "message": "WhitespaceAround: ':' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "74",
+        "column": "35",
+        "severity": "warning",
+        "message": "WhitespaceAround: ':' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "91",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "124",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "146",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "148",
+        "column": "39",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "149",
+        "column": "39",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "150",
+        "column": "39",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "151",
+        "column": "39",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "159",
+        "column": "37",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "160",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "160",
+        "column": "29",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "160",
+        "column": "113",
+        "severity": "warning",
+        "message": "'}' at column 113 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "161",
+        "column": "29",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "162",
+        "column": "29",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "170",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "190",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "198",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "210",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "212",
+        "severity": "warning",
+        "message": "'object def rcurly' has incorrect indentation level 16, expected level should be one of the following: 10, 12, 14.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "251",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "252",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "256",
+        "severity": "warning",
+        "message": "Abbreviation in name 'updateLookupKV' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "260",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "275",
+        "column": "9",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "285",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "287",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "297",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "300",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

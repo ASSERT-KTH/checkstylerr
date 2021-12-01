@@ -1,0 +1,45 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.IOException' import. Should be before 'org.apache.metron.rest.model.pcap.Pdml'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.InputStream' import. Should be before 'org.apache.metron.rest.model.pcap.Pdml'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.OutputStream' import. Should be before 'org.apache.metron.rest.model.pcap.Pdml'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.apache.metron.rest.model.pcap.Pdml'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "35",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

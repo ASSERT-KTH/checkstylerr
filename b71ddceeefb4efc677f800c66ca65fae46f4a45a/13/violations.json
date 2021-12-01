@@ -1,0 +1,469 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.*' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.lang.invoke.MethodHandles' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.lang.reflect.InvocationTargetException' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "44",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.charset.StandardCharsets' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "45",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.file.Files' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.file.Path' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "47",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.nio.file.Paths' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "48",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Comparator' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "49",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Properties' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.regex.Pattern' import. Should be before 'org.slf4j.LoggerFactory'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "53",
+        "severity": "warning",
+        "message": "Import statement for 'org.junit.jupiter.api.Assertions.assertNotNull' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "87",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "94",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "98",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "98",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "134",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "134",
+        "column": "10",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'try' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "134",
+        "column": "113",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "138",
+        "column": "11",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "141",
+        "column": "7",
+        "severity": "warning",
+        "message": "'}' at column 7 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "142",
+        "column": "12",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "144",
+        "column": "7",
+        "severity": "warning",
+        "message": "'}' at column 7 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "145",
+        "column": "15",
+        "severity": "warning",
+        "message": "Empty finally block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"
+    },
+    {
+        "line": "149",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "154",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "173",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 10, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "175",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "176",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "177",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 10, expected level should be 8.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "178",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "178",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "179",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 14, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "180",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "180",
+        "column": "13",
+        "severity": "warning",
+        "message": "'}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "181",
+        "severity": "warning",
+        "message": "'else' has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "182",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 14, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "183",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 14, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "184",
+        "severity": "warning",
+        "message": "'else' child has incorrect indentation level 14, expected level should be 12.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "184",
+        "column": "83",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "185",
+        "column": "99",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "187",
+        "severity": "warning",
+        "message": "'else rcurly' has incorrect indentation level 12, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "188",
+        "column": "9",
+        "severity": "warning",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "189",
+        "column": "14",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "190",
+        "column": "13",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "192",
+        "column": "11",
+        "severity": "warning",
+        "message": "'}' at column 11 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "197",
+        "column": "7",
+        "severity": "warning",
+        "message": "'}' at column 7 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "198",
+        "column": "12",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "200",
+        "column": "7",
+        "severity": "warning",
+        "message": "'}' at column 7 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "226",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "228",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "231",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "232",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "238",
+        "column": "14",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "244",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 207).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "245",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "248",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 285).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "248",
+        "column": "285",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "257",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "258",
+        "column": "10",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'catch' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "261",
+        "severity": "warning",
+        "message": "Empty catch block.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"
+    },
+    {
+        "line": "267",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 136).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "271",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "271",
+        "column": "110",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "273",
+        "column": "12",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'for' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "275",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "279",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "282",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "282",
+        "column": "110",
+        "severity": "warning",
+        "message": "WhitespaceAround: '{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "284",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Collection' import. Should be before 'org.json.simple.JSONObject'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.List' import. Should be before 'org.json.simple.JSONObject'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.json.simple.JSONObject'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Import statement for 'java.nio.charset.StandardCharsets.UTF_8' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

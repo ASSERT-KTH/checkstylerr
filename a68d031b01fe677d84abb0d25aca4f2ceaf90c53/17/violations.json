@@ -1,0 +1,81 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "35",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.IOException' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.lang.invoke.MethodHandles' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.ArrayList' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.List' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'org.apache.commons.lang3.StringUtils' import. Should be before 'org.apache.metron.common.Constants'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "97",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "99",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "125",
+        "severity": "warning",
+        "message": "Distance between variable 'groupNames' declaration and its first usage is 4, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]

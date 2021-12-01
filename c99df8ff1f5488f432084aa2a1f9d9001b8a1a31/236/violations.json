@@ -1,0 +1,477 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.io.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "37",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.*' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "38",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.*' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.concurrent.ForkJoinPool' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.concurrent.atomic.AtomicInteger' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.function.Consumer' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "42",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.stream.Collectors' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "43",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.stream.Stream' import. Should be before 'org.apache.metron.hbase.HTableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "column": "26",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "55",
+        "column": "25",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "56",
+        "column": "25",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "61",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "61",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "61",
+        "column": "26",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "62",
+        "column": "25",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "63",
+        "column": "25",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "64",
+        "column": "25",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "70",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "71",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "81",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "83",
+        "column": "5",
+        "severity": "warning",
+        "message": "'}' at column 5 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "92",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "92",
+        "column": "33",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "93",
+        "column": "32",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "94",
+        "column": "32",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "95",
+        "column": "32",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "96",
+        "column": "32",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "97",
+        "column": "32",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "98",
+        "severity": "warning",
+        "message": "'method def rparen' has incorrect indentation level 31, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "100",
+        "column": "29",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "101",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 22, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "102",
+        "severity": "warning",
+        "message": "'if' has incorrect indentation level 22, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "102",
+        "column": "25",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "103",
+        "severity": "warning",
+        "message": "'if' child has incorrect indentation level 24, expected level should be one of the following: 14, 16, 18, 23.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "104",
+        "severity": "warning",
+        "message": "'if rcurly' has incorrect indentation level 22, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "105",
+        "severity": "warning",
+        "message": "'try' has incorrect indentation level 22, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "105",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "106",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 24, expected level should be one of the following: 14, 16, 18, 23.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "107",
+        "severity": "warning",
+        "message": "'try' child has incorrect indentation level 24, expected level should be one of the following: 14, 16, 18, 23.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "111",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "113",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "115",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 61, expected level should be one of the following: 26, 30.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "118",
+        "severity": "warning",
+        "message": "'try rcurly' has incorrect indentation level 29, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "119",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 31, expected level should be one of the following: 14, 16, 18, 23.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "120",
+        "severity": "warning",
+        "message": "'catch rcurly' has incorrect indentation level 29, expected level should be one of the following: 12, 14, 16, 21.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "121",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 34, expected level should be one of the following: 10, 12, 19.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "122",
+        "severity": "warning",
+        "message": "'method call rparen' has incorrect indentation level 19, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "125",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "125",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "125",
+        "column": "33",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "128",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 6, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "129",
+        "severity": "warning",
+        "message": "'method def' child has incorrect indentation level 6, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "130",
+        "column": "12",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'try' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "132",
+        "column": "46",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "133",
+        "column": "45",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "134",
+        "column": "45",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "135",
+        "column": "45",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "136",
+        "column": "45",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "138",
+        "severity": "warning",
+        "message": "'method call rparen' has incorrect indentation level 36, expected level should be 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "146",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "147",
+        "column": "22",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "148",
+        "column": "22",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "149",
+        "column": "22",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "150",
+        "column": "22",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "151",
+        "column": "22",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "152",
+        "severity": "warning",
+        "message": "'method def rparen' has incorrect indentation level 21, expected level should be 2.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "153",
+        "column": "3",
+        "severity": "warning",
+        "message": "'{' at column 3 should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    },
+    {
+        "line": "156",
+        "column": "8",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'for' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "160",
+        "column": "7",
+        "severity": "warning",
+        "message": "WhitespaceAround: 'if' is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "169",
+        "column": "24",
+        "severity": "warning",
+        "message": "WhitespaceAround: '=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "173",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

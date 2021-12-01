@@ -1,0 +1,46 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "21",
+        "severity": "warning",
+        "message": "'org.apache.metron.hbase.TableProvider' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "23",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.IOException' import. Should be before 'org.apache.metron.hbase.TableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.apache.metron.hbase.TableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "column": "3",
+        "severity": "warning",
+        "message": "',' should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.SeparatorWrapCheck"
+    },
+    {
+        "line": "28",
+        "column": "21",
+        "severity": "warning",
+        "message": "'(' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "36",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Arrays' import. Should be before 'org.springframework.core.env.Environment'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.metron.rest.MetronRestConstants.DOCKER_PROFILE' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "Import statement for 'org.apache.metron.rest.MetronRestConstants.TEST_PROFILE' is in the wrong order. Should be in the 'STATIC' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "40",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "41",
+        "severity": "warning",
+        "message": "Abbreviation in name 'stormCLIClientWrapper' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    }
+]

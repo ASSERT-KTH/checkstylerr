@@ -1,0 +1,78 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.io.Serializable' import. Should be before 'org.apache.metron.hbase.TableProvider'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "column": "18",
+        "severity": "warning",
+        "message": "Member name 'hBaseTable' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "29",
+        "severity": "warning",
+        "message": "Abbreviation in name 'hBaseCF' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "29",
+        "column": "18",
+        "severity": "warning",
+        "message": "Member name 'hBaseCF' must match pattern '^[a-z][a-z0-9][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "31",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "Abbreviation in name 'getHBaseCF' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "46",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "46",
+        "column": "50",
+        "severity": "warning",
+        "message": "Parameter name 'hBaseTable' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "51",
+        "severity": "warning",
+        "message": "Abbreviation in name 'withHBaseCF' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "52",
+        "column": "17",
+        "severity": "warning",
+        "message": "WhitespaceAround: '=' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    }
+]

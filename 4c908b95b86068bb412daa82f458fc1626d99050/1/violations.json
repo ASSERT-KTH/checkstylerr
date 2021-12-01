@@ -1,0 +1,58 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.HashMap' import. Should be before 'org.apache.metron.maas.queue.ZKQueue'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "25",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Map' import. Should be before 'org.apache.metron.maas.queue.ZKQueue'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "First sentence of Javadoc is incomplete (period is missing) or not present.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "33",
+        "severity": "warning",
+        "message": "'block' child has incorrect indentation level 4, expected level should be one of the following: 6, 8, 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "34",
+        "severity": "warning",
+        "message": "'block rcurly' has incorrect indentation level 2, expected level should be one of the following: 4, 6.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "34",
+        "column": "3",
+        "severity": "warning",
+        "message": "'}' at column 3 should be alone on a line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "70",
+        "severity": "warning",
+        "message": "'METHOD_DEF' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "70",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

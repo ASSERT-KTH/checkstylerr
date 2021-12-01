@@ -1,0 +1,28 @@
+[
+    {
+        "line": "18",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Wrong lexicographical order for 'java.util.Optional' import. Should be before 'org.apache.commons.cli.Option'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "26",
+        "column": "37",
+        "severity": "warning",
+        "message": "Class type name 'OPT_T' must match pattern '(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ClassTypeParameterNameCheck"
+    },
+    {
+        "line": "27",
+        "column": "1",
+        "severity": "warning",
+        "message": "'{' at column 1 should be on the previous line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"
+    }
+]
