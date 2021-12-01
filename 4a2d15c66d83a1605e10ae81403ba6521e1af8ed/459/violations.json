@@ -1,0 +1,42 @@
+[
+    {
+        "line": "7",
+        "severity": "warning",
+        "message": "Wrong order for 'android.app.AlarmManager' import.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"
+    },
+    {
+        "line": "11",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - android.content.IntentFilter.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "13",
+        "column": "8",
+        "severity": "warning",
+        "message": "Unused import - android.net.wifi.WifiManager.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "23",
+        "column": "31",
+        "severity": "warning",
+        "message": "Member name not following naming convention - Name 'alarm_sender' must match pattern '^(([a-z]{2})|([x-z][A-Z]))[a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"
+    },
+    {
+        "line": "35",
+        "column": "35",
+        "severity": "warning",
+        "message": "Local variable name not following naming convention - Name 'app_preferences' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "50",
+        "severity": "warning",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    }
+]
