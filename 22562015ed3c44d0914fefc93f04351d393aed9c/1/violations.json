@@ -1,0 +1,44 @@
+[
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BlobWriter' looks like designed for extension (can be subclassed), but the method 'write' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BlobWriter' final or making the method 'write' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "21",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter blob should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'BlobWriter' looks like designed for extension (can be subclassed), but the method 'write' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BlobWriter' final or making the method 'write' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter blob should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "25",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter type should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "52",
+        "column": "43",
+        "severity": "error",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    }
+]
