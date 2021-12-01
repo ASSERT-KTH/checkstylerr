@@ -1,0 +1,164 @@
+package com.bakdata.conquery.io.xodus;
+
+import java.io.File;
+import java.util.Collection;
+import java.util.List;
+
+import javax.validation.Validator;
+
+import com.bakdata.conquery.io.xodus.stores.IdentifiableStore;
+import com.bakdata.conquery.io.xodus.stores.KeyIncludingStore;
+import com.bakdata.conquery.io.xodus.stores.SingletonStore;
+import com.bakdata.conquery.models.concepts.Concept;
+import com.bakdata.conquery.models.config.StorageConfig;
+import com.bakdata.conquery.models.datasets.Import;
+import com.bakdata.conquery.models.events.Bucket;
+import com.bakdata.conquery.models.events.CBlock;
+import com.bakdata.conquery.models.exceptions.JSONException;
+import com.bakdata.conquery.models.identifiable.ids.specific.BucketId;
+import com.bakdata.conquery.models.identifiable.ids.specific.CBlockId;
+import com.bakdata.conquery.models.identifiable.ids.specific.ConceptId;
+import com.bakdata.conquery.models.identifiable.ids.specific.ImportId;
+import com.bakdata.conquery.models.identifiable.ids.specific.TableId;
+import com.bakdata.conquery.models.worker.WorkerInformation;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.ListMultimap;
+import com.google.common.collect.Multimap;
+import jetbrains.exodus.env.Environment;
+import lombok.Getter;
+import com.bakdata.conquery.util.functions.Collector;
+import lombok.SneakyThrows;
+
+public class WorkerStorageImpl extends NamespacedStorageImpl implements WorkerStorage {
+
+	private SingletonStore<WorkerInformation> worker;
+	private IdentifiableStore<Bucket> blocks;
+	private IdentifiableStore<CBlock> cBlocks;
+	
+	public WorkerStorageImpl(Validator validator, StorageConfig config, File directory) {
+		super(validator, config, directory);
+	}
+
+	@Override
+	protected void createStores(Multimap<Environment, KeyIncludingStore<?,?>> environmentToStores) {
+		super.createStores(environmentToStores);
+		worker = StoreInfo.WORKER.singleton(getConfig(), environment, getValidator());
+		blocks = StoreInfo.BUCKETS.identifiable(getConfig(), environment, getValidator(), getCentralRegistry());
+		cBlocks = StoreInfo.C_BLOCKS.identifiable(getConfig(), environment, getValidator(), getCentralRegistry());
+		
+		environmentToStores.putAll(environment, List.of(
+			worker, 
+			blocks, 
+			cBlocks
+			));
+	}
+	
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void addCBlock(CBlock cBlock) {
+		cBlocks.add(cBlock);
+	}
+
+	@Override
+	public CBlock getCBlock(CBlockId id) {
+		return cBlocks.get(id);
+	}
+
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void updateCBlock(CBlock cBlock) {
+		cBlocks.update(cBlock);
+	}
+
+	@Override
+	public void removeCBlock(CBlockId id) {
+		cBlocks.remove(id);
+	}
+	
+	@Override
+	public Collection<CBlock> getAllCBlocks() {
+		return cBlocks.getAll();
+	}
+	
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void addBucket(Bucket bucket) {
+		blocks.add(bucket);
+	}
+
+	@Override
+	public Bucket getBucket(BucketId id) {
+		return blocks.get(id);
+	}
+	
+	@Override
+	public void removeBucket(BucketId id) {
+		blocks.remove(id);
+	}
+	
+	@Override
+	public Collection<Bucket> getAllBuckets() {
+		return blocks.getAll();
+	}
+
+	@Override
+	public WorkerInformation getWorker() {
+		return worker.get();
+	}
+
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void setWorker(WorkerInformation worker) {
+		this.worker.add(worker);
+	}
+
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void updateWorker(WorkerInformation worker) {
+		this.worker.update(worker);
+	}
+	
+	//block manager overrides
+	@Override
+	@SneakyThrows(JSONException.class)
+	public void updateConcept(Concept<?> concept) {
+		concepts.update(concept);
+	}
+
+	@Override
+	public void removeConcept(ConceptId id) {
+		concepts.remove(id);
+	}
+
+
+	@Override
+	public void addImport(Import imp) throws JSONException {
+		super.addImport(imp);
+
+		registerTableImport(imp.getId());
+	}
+
+	@Override
+	public void updateImport(Import imp) throws JSONException {
+		super.updateImport(imp);
+	}
+
+	@Override
+	public void removeImport(ImportId id){
+		imports.remove(id);
+	}
+
+	public void registerTableImport(ImportId impId) {
+		tableImports.put(impId.getTable(),impId);
+	}
+
+	public void unregisterTableImport(ImportId impId) {
+		tableImports.remove(impId.getTable(), impId);
+	}
+
+	public Collection<ImportId> getTableImports(TableId tableId) {
+		return this.tableImports.get(tableId);
+	}
+
+}
