@@ -1,0 +1,30 @@
+[
+    {
+        "line": "118",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 33 (max allowed is 10) classes [AggregationDistinctProjectionSegment, AggregationProjectionSegment, BetweenExpression, BinaryOperationExpression, BooleanLiteralValue, CollectionValue, ColumnOrderByItemSegment, ColumnSegment, CommonExpressionSegment, DataTypeLengthSegment, DataTypeSegment, ExpressionOrderByItemSegment, ExpressionProjectionSegment, IdentifierValue, InExpression, IndexOrderByItemSegment, IndexSegment, Interval, KeywordValue, ListExpression, LiteralExpressionSegment, NotExpression, NumberLiteralValue, OrderBySegment, OtherLiteralValue, OwnerSegment, ParameterMarkerExpressionSegment, ParameterMarkerValue, SimpleTableSegment, StringLiteralValue, SubqueryExpressionSegment, SubquerySegment, TableNameSegment].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "118",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 87 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "473",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSubquery' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLVisitor' final or making the method 'visitSubquery' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "523",
+        "column": "5",
+        "severity": "warning",
+        "message": "NPath Complexity is 512 (max allowed is 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    }
+]

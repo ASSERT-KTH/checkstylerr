@@ -1,0 +1,351 @@
+[
+    {
+        "line": "192",
+        "severity": "warning",
+        "message": "Total number of methods is 103 (max allowed is 100).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.MethodCountCheck"
+    },
+    {
+        "line": "192",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 56 (max allowed is 10) classes [AggregationDistinctProjectionSegment, AggregationProjectionSegment, AliasSegment, AssignmentSegment, BetweenExpression, BinaryOperationExpression, BooleanLiteralValue, CollectionValue, ColumnOrderByItemSegment, ColumnProjectionSegment, ColumnSegment, CommonExpressionSegment, DataTypeLengthSegment, DataTypeSegment, DeleteMultiTableSegment, ExistsSubqueryExpression, ExpressionOrderByItemSegment, ExpressionProjectionSegment, GroupBySegment, IdentifierValue, InExpression, IndexOrderByItemSegment, IndexSegment, InsertColumnsSegment, InsertValuesSegment, Interval, JoinTableSegment, LimitSegment, ListExpression, LiteralExpressionSegment, LockSegment, MySQLDeleteStatement, MySQLInsertStatement, MySQLSelectStatement, MySQLUpdateStatement, NotExpression, NumberLiteralLimitValueSegment, NumberLiteralValue, OnDuplicateKeyColumnsSegment, OrderBySegment, OtherLiteralValue, OwnerSegment, ParameterMarkerExpressionSegment, ParameterMarkerLimitValueSegment, ParameterMarkerValue, ProjectionsSegment, SetAssignmentSegment, ShorthandProjectionSegment, SimpleTableSegment, StringLiteralValue, SubqueryExpressionSegment, SubqueryProjectionSegment, SubquerySegment, SubqueryTableSegment, TableNameSegment, WhereSegment].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "192",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 169 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "242",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTemporalLiterals' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitTemporalLiterals' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "311",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTableList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitTableList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "466",
+        "column": "5",
+        "severity": "warning",
+        "message": "Cyclomatic Complexity is 13 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "466",
+        "column": "5",
+        "severity": "warning",
+        "message": "NPath Complexity is 1,728 (max allowed is 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    },
+    {
+        "line": "509",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitColumnRef' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitColumnRef' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "525",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSubquery' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSubquery' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "530",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitQueryExpressionParens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitQueryExpressionParens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "543",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitLockClauseList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitLockClauseList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "554",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitQueryExpression' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitQueryExpression' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "571",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectWithInto' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSelectWithInto' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "583",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitQueryExpressionBody' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitQueryExpressionBody' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "591",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitQuerySpecification' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitQuerySpecification' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "656",
+        "column": "5",
+        "severity": "warning",
+        "message": "NPath Complexity is 512 (max allowed is 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    },
+    {
+        "line": "808",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitFieldLength' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitFieldLength' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "817",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitPrecision' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitPrecision' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "858",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsert' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitInsert' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "878",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertSelectClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitInsertSelectClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "899",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertValuesClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitInsertValuesClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "923",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitOnDuplicateKeyClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitOnDuplicateKeyClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "932",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitReplace' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitReplace' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "949",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitReplaceSelectClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitReplaceSelectClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "970",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitReplaceValuesClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitReplaceValuesClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1002",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1021",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSetAssignmentsClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSetAssignmentsClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1030",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAssignmentValues' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitAssignmentValues' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1039",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAssignment' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitAssignment' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1046",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAssignmentValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitAssignmentValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1060",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitBlobValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitBlobValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1065",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitDelete' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitDelete' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1086",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSingleTableClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSingleTableClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1095",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitMultipleTablesClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitMultipleTablesClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1112",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSelect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1139",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectSpecification' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitSelectSpecification' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1147",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitDuplicateSpecification' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitDuplicateSpecification' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1156",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitProjections' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitProjections' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1170",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitProjection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitProjection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1195",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAlias' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitAlias' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1240",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitFromClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitFromClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1245",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTableReferences' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitTableReferences' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1265",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitEscapedTableReference' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitEscapedTableReference' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1277",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTableReference' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitTableReference' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1289",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTableFactor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitTableFactor' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1338",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitWhereClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitWhereClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1344",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitGroupByClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitGroupByClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1353",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitLimitClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitLimitClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1370",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitLimitRowCount' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitLimitRowCount' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1378",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'MySQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitLimitOffset' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MySQLStatementSQLVisitor' final or making the method 'visitLimitOffset' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

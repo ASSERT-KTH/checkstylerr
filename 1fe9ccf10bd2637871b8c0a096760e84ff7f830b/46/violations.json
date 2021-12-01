@@ -1,0 +1,28 @@
+[
+    {
+        "line": "88",
+        "severity": "warning",
+        "message": "'import' has more than 1 empty lines before.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "88",
+        "severity": "warning",
+        "message": "'java.util.Collection' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "95",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 24 (max allowed is 10) classes [AddColumnDefinitionSegment, AlterFunctionStatement, AlterIndexStatement, AlterProcedureStatement, AlterTableStatement, CollectionValue, ColumnDefinitionSegment, ConstraintDefinitionSegment, CreateDatabaseStatement, CreateFunctionStatement, CreateIndexStatement, CreateProcedureStatement, CreateTableStatement, CreateViewStatement, DropColumnDefinitionSegment, DropDatabaseStatement, DropFunctionStatement, DropIndexStatement, DropProcedureStatement, DropTableStatement, DropViewStatement, ModifyColumnDefinitionSegment, RenameColumnSegment, TruncateStatement].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "95",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 67 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    }
+]

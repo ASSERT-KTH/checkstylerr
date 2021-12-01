@@ -1,0 +1,317 @@
+[
+    {
+        "line": "172",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Data Abstraction Coupling is 56 (max allowed is 10) classes [AggregationDistinctProjectionSegment, AggregationProjectionSegment, AliasSegment, AssignmentSegment, BetweenExpression, BinaryOperationExpression, BooleanLiteralValue, CollectionValue, ColumnOrderByItemSegment, ColumnProjectionSegment, ColumnSegment, CommonExpressionSegment, ConstraintSegment, DataTypeLengthSegment, DataTypeSegment, ExpressionOrderByItemSegment, ExpressionProjectionSegment, GroupBySegment, HavingSegment, IdentifierValue, InExpression, IndexOrderByItemSegment, IndexSegment, InsertColumnsSegment, InsertValuesSegment, Interval, JoinTableSegment, KeywordValue, LimitSegment, ListExpression, LiteralExpressionSegment, LockSegment, NumberLiteralLimitValueSegment, NumberLiteralValue, OrderBySegment, OwnerSegment, ParameterMarkerExpressionSegment, ParameterMarkerLimitValueSegment, ParameterMarkerValue, PostgreSQLDeleteStatement, PostgreSQLExecuteStatement, PostgreSQLInsertStatement, PostgreSQLSelectStatement, PostgreSQLUpdateStatement, ProjectionsSegment, SetAssignmentSegment, ShorthandProjectionSegment, SimpleTableSegment, StringLiteralValue, SubqueryExpressionSegment, SubqueryProjectionSegment, SubquerySegment, SubqueryTableSegment, TableNameSegment, WhereSegment, WindowSegment].",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassDataAbstractionCouplingCheck"
+    },
+    {
+        "line": "172",
+        "column": "1",
+        "severity": "warning",
+        "message": "Class Fan-Out Complexity is 141 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.ClassFanOutComplexityCheck"
+    },
+    {
+        "line": "255",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAExpr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitAExpr' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "298",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitCExpr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitCExpr' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "324",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitFuncExpr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitFuncExpr' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "350",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAexprConst' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitAexprConst' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "367",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitColumnref' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitColumnref' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "395",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitExprList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitExprList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "413",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitBExpr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitBExpr' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "438",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'generateProjectFromFuncExpr' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'generateProjectFromFuncExpr' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "545",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsert' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitInsert' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "555",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertTarget' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitInsertTarget' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "577",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertRest' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitInsertRest' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "594",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertColumnList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitInsertColumnList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "604",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitInsertColumnItem' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitInsertColumnItem' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "651",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSetClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSetClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "658",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSetTarget' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSetTarget' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "673",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitRelationExprOptAlias' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitRelationExprOptAlias' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "687",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "700",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSetClauseList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSetClauseList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "706",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitDelete' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitDelete' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "718",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitWhereOrCurrentClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitWhereOrCurrentClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "723",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "731",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectNoParens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectNoParens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "749",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitForLockingClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitForLockingClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "754",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectWithParens' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectWithParens' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "762",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectClauseN' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectClauseN' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "767",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSimpleSelect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSimpleSelect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "798",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitHavingClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitHavingClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "804",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitWindowClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitWindowClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "809",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitGroupClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitGroupClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "818",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitGroupByItem' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitGroupByItem' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "835",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTargetList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitTargetList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "847",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTargetEl' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitTargetEl' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "847",
+        "column": "5",
+        "severity": "warning",
+        "message": "Cyclomatic Complexity is 16 (max allowed is 10).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "847",
+        "column": "5",
+        "severity": "warning",
+        "message": "NPath Complexity is 1,920 (max allowed is 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    },
+    {
+        "line": "899",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitFromClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitFromClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "904",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitFromList' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitFromList' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "917",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitTableReference' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitTableReference' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "989",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitAliasClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitAliasClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1011",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitWhereClause' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitWhereClause' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1017",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectLimit' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectLimit' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1025",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectLimitValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectLimitValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1037",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitSelectOffsetValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitSelectOffsetValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "1078",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PostgreSQLStatementSQLVisitor' looks like designed for extension (can be subclassed), but the method 'visitExecuteStmt' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PostgreSQLStatementSQLVisitor' final or making the method 'visitExecuteStmt' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
