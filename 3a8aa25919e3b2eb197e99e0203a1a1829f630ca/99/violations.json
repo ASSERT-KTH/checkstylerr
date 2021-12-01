@@ -1,0 +1,2622 @@
+[
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "28",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getStartPos' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getStartPos' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setStartPos' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setStartPos' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter startPos should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "45",
+        "column": "38",
+        "severity": "error",
+        "message": "'startPos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "85",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "85",
+        "column": "34",
+        "severity": "error",
+        "message": "'player' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "85",
+        "column": "41",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "89",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "90",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "90",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "95",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getPlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getPlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "95",
+        "column": "30",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "99",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "99",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "103",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getDisplayName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getDisplayName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "103",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "107",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getDisplayName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getDisplayName' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "107",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter displayName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "107",
+        "column": "54",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "108",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "108",
+        "column": "24",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "110",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "110",
+        "column": "10",
+        "severity": "error",
+        "message": "'else' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "115",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getUUID' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getUUID' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "115",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "119",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getLocation' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getLocation' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "119",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "123",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter msg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "125",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "125",
+        "column": "36",
+        "severity": "error",
+        "message": "'32000' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "125",
+        "column": "42",
+        "severity": "error",
+        "message": "')' is preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"
+    },
+    {
+        "line": "125",
+        "column": "43",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "126",
+        "column": "55",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "127",
+        "column": "48",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "134",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'sendInfoMessage' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'sendInfoMessage' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "134",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter msg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'sendMessage' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'sendMessage' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "138",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter msg should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "138",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter type should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "140",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "155",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'storePlayerData' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'storePlayerData' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "155",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "164",
+        "column": "21",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "165",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "column": "98",
+        "severity": "error",
+        "message": "'+' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "170",
+        "column": "30",
+        "severity": "error",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "171",
+        "column": "29",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "183",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'restorePlayerData' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'restorePlayerData' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "183",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "190",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "190",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "190",
+        "column": "31",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "191",
+        "column": "30",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "192",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "195",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "195",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "197",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "198",
+        "column": "9",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "198",
+        "column": "13",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "202",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "202",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "219",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasStoredData' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasStoredData' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "219",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "223",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getAllowTeleport' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getAllowTeleport' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "223",
+        "column": "38",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "227",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setAllowTeleport' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setAllowTeleport' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "227",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter allowTP should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "227",
+        "column": "42",
+        "severity": "error",
+        "message": "'allowTP' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "227",
+        "column": "50",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "231",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getAllowGamemodeChange' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getAllowGamemodeChange' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "231",
+        "column": "44",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "235",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setAllowGamemodeChange' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setAllowGamemodeChange' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "235",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter allowGMChange should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "235",
+        "column": "48",
+        "severity": "error",
+        "message": "'allowGMChange' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "235",
+        "column": "62",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "239",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "239",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "243",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "243",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "243",
+        "column": "38",
+        "severity": "error",
+        "message": "'minigame' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "243",
+        "column": "47",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "247",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'removeMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'removeMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "247",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "251",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isInMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isInMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "251",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "255",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isRequiredQuit' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isRequiredQuit' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "259",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setRequiredQuit' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setRequiredQuit' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "259",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter requiredQuit should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "259",
+        "column": "41",
+        "severity": "error",
+        "message": "'requiredQuit' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "263",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getQuitPos' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getQuitPos' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "267",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setQuitPos' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setQuitPos' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "267",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter quitPos should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "267",
+        "column": "37",
+        "severity": "error",
+        "message": "'quitPos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "271",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getLoadout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getLoadout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "272",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "272",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "274",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "275",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 128).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "275",
+        "column": "14",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "275",
+        "column": "128",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "276",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "281",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setLoadout' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setLoadout' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "281",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter loadout should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "281",
+        "column": "45",
+        "severity": "error",
+        "message": "'loadout' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "282",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "282",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "283",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 143).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "283",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "283",
+        "column": "143",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "290",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getFlags' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getFlags' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "290",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "294",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addFlag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addFlag' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "294",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter flag should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "294",
+        "column": "40",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "295",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "295",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "302",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasFlag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasFlag' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "302",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter flagName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "302",
+        "column": "44",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "306",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setFlags' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setFlags' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "306",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter flags should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "306",
+        "column": "39",
+        "severity": "error",
+        "message": "'flags' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "306",
+        "column": "45",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "310",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'clearFlags' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'clearFlags' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "310",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "314",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "314",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "318",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "318",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "322",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "322",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter checkpoint should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "322",
+        "column": "40",
+        "severity": "error",
+        "message": "'checkpoint' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "322",
+        "column": "51",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "326",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'removeCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'removeCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "326",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "330",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getKills' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getKills' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "330",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "334",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addKill' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addKill' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "334",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "338",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetKills' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetKills' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "338",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "342",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getDeaths' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getDeaths' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "342",
+        "column": "27",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "346",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addDeath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addDeath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "346",
+        "column": "27",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "350",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetDeaths' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetDeaths' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "350",
+        "column": "30",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "354",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setDeaths' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setDeaths' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "354",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter deaths should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "354",
+        "column": "31",
+        "severity": "error",
+        "message": "'deaths' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "354",
+        "column": "38",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "358",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "358",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "362",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "362",
+        "column": "27",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "366",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "366",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter amount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "366",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "370",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "370",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "374",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'takeScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'takeScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "374",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "378",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "378",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter score should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "378",
+        "column": "30",
+        "severity": "error",
+        "message": "'score' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "378",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "382",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setStartTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setStartTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "382",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter ms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "382",
+        "column": "38",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "386",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setEndTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setEndTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "386",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter ms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "386",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "390",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getStartTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getStartTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "390",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "394",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getEndTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getEndTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "394",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "398",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "398",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "404",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setStoredTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setStoredTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "404",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter ms should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "404",
+        "column": "39",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "408",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getStoredTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getStoredTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "408",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "412",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setReverts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setReverts' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "412",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter count should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "412",
+        "column": "38",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "416",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addRevert' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addRevert' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "416",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "420",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getReverts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getReverts' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "420",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "424",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetReverts' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetReverts' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "424",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "428",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isFrozen' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isFrozen' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "432",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setFrozen' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setFrozen' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "432",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter isFrozen should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "432",
+        "column": "35",
+        "severity": "error",
+        "message": "'isFrozen' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "436",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'canPvP' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'canPvP' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "440",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setCanPvP' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setCanPvP' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "440",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter canPvP should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "440",
+        "column": "35",
+        "severity": "error",
+        "message": "'canPvP' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "444",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isInvincible' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isInvincible' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "448",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setInvincible' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setInvincible' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "448",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter isInvincible should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "448",
+        "column": "39",
+        "severity": "error",
+        "message": "'isInvincible' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "452",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'canInteract' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'canInteract' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "456",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setCanInteract' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setCanInteract' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "456",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter canInteract should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "456",
+        "column": "40",
+        "severity": "error",
+        "message": "'canInteract' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "460",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'canFly' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'canFly' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "460",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "464",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setCanFly' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setCanFly' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "464",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter bool should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "464",
+        "column": "40",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "469",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'resetAllStats' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'resetAllStats' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "469",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "484",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "484",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "489",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "489",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "495",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isLatejoining' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isLatejoining' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "499",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setLatejoining' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setLatejoining' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "499",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter isLatejoining should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "499",
+        "column": "40",
+        "severity": "error",
+        "message": "'isLatejoining' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "503",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getMenu' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getMenu' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "503",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "507",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setMenu' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setMenu' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "507",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter menu should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "507",
+        "column": "30",
+        "severity": "error",
+        "message": "'menu' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "507",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "511",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isInMenu' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isInMenu' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "511",
+        "column": "30",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "515",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setNoClose' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setNoClose' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "515",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "515",
+        "column": "42",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "519",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getNoClose' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getNoClose' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "519",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "523",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setManualEntry' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setManualEntry' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "523",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter item should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "523",
+        "column": "46",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "527",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getManualEntry' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getManualEntry' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "527",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "531",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addSelectionPoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addSelectionPoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "531",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter loc should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "531",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "532",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "532",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "536",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "537",
+        "column": "14",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "537",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "541",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "542",
+        "column": "14",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "542",
+        "column": "36",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "552",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasSelection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasSelection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "552",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "556",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getSelectionPoints' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getSelectionPoints' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "556",
+        "column": "43",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "563",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'clearSelection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'clearSelection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "563",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "569",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setSelection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setSelection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "569",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter point1 should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "569",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter point2 should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "569",
+        "column": "63",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "576",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'showSelection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'showSelection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "576",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter clear should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "576",
+        "column": "45",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "583",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "585",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "588",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 137).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "591",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 137).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "597",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getOfflineMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getOfflineMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "597",
+        "column": "60",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "601",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setOfflineMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setOfflineMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "601",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter oply should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "601",
+        "column": "64",
+        "severity": "error",
+        "message": "'oply' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "601",
+        "column": "69",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "605",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getStoredPlayerCheckpoints' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getStoredPlayerCheckpoints' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "609",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setGamemode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setGamemode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "609",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter gamemode should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "609",
+        "column": "47",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "615",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'teleport' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'teleport' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "615",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter location should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "615",
+        "column": "47",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "625",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'updateInventory' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'updateInventory' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "625",
+        "column": "34",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "629",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'isDead' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'isDead' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "633",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setTeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setTeam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "633",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter team should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "633",
+        "column": "30",
+        "severity": "error",
+        "message": "'team' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "633",
+        "column": "35",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "637",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getTeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getTeam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "637",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "641",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'removeTeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'removeTeam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "641",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "642",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "642",
+        "column": "25",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "648",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasClaimedReward' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasClaimedReward' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "648",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter reward should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "648",
+        "column": "51",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "652",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasTempClaimedReward' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasTempClaimedReward' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "652",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter reward should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "652",
+        "column": "55",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "656",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addTempClaimedReward' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addTempClaimedReward' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "656",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter reward should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "656",
+        "column": "52",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "660",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addClaimedReward' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addClaimedReward' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "660",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter reward should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "660",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "664",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'saveClaimedRewards' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'saveClaimedRewards' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "664",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "665",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "665",
+        "column": "38",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "673",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'loadClaimedRewards' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'loadClaimedRewards' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "673",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "674",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "675",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "675",
+        "column": "23",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "681",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addTempRewardItem' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addTempRewardItem' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "681",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter item should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "681",
+        "column": "50",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "685",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getTempRewardItems' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getTempRewardItems' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "685",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "689",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addRewardItem' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addRewardItem' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "689",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter item should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "689",
+        "column": "46",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "693",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getRewardItems' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getRewardItems' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "693",
+        "column": "44",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "697",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'hasClaimedScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'hasClaimedScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "697",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter loc should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "697",
+        "column": "49",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "702",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'applyResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'applyResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "702",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter pack should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "702",
+        "column": "56",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "703",
+        "column": "9",
+        "severity": "error",
+        "message": "'try' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "703",
+        "column": "12",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "704",
+        "column": "72",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "706",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "706",
+        "column": "10",
+        "severity": "error",
+        "message": "'catch' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "706",
+        "column": "44",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "712",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'addClaimedScore' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'addClaimedScore' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "712",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter loc should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "712",
+        "column": "46",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "717",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'claimTempRewardItems' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'claimTempRewardItems' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "717",
+        "column": "39",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "718",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "718",
+        "column": "22",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "721",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "721",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "722",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "722",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "724",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "724",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "725",
+        "column": "25",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "725",
+        "column": "54",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "726",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "734",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'claimRewards' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'claimRewards' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "734",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "735",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "735",
+        "column": "22",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "738",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "738",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "739",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "739",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "741",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "741",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "742",
+        "column": "25",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "742",
+        "column": "54",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "743",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "751",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'setLateJoinTimer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'setLateJoinTimer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "751",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter taskID should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "751",
+        "column": "45",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "755",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'get' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'get' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "756",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "780",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getKeys' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getKeys' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "782",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "785",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayer' looks like designed for extension (can be subclassed), but the method 'getAsString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayer' final or making the method 'getAsString' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

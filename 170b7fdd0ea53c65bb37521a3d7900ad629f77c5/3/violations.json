@@ -1,0 +1,57 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "14",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ResourcePackManager' looks like designed for extension (can be subclassed), but the method 'getResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ResourcePackManager' final or making the method 'getResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "14",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "14",
+        "column": "53",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "18",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ResourcePackManager' looks like designed for extension (can be subclassed), but the method 'addResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ResourcePackManager' final or making the method 'addResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "18",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter pack should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "18",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "19",
+        "column": "44",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    }
+]

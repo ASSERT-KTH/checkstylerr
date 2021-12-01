@@ -1,0 +1,37 @@
+[
+    {
+        "line": "9",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TimerExpireEvent' looks like designed for extension (can be subclassed), but the method 'getMinigameState' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TimerExpireEvent' final or making the method 'getMinigameState' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TimerExpireEvent' looks like designed for extension (can be subclassed), but the method 'isCancelled' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TimerExpireEvent' final or making the method 'isCancelled' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "22",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'TimerExpireEvent' looks like designed for extension (can be subclassed), but the method 'setCancelled' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'TimerExpireEvent' final or making the method 'setCancelled' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "23",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter b should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

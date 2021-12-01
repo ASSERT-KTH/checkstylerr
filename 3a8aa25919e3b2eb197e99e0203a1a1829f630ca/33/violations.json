@@ -1,0 +1,57 @@
+[
+    {
+        "line": "14",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "14",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter winners should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "14",
+        "column": "50",
+        "severity": "error",
+        "message": "'winners' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "14",
+        "column": "59",
+        "severity": "error",
+        "message": "Parameter losers should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "14",
+        "column": "80",
+        "severity": "error",
+        "message": "'losers' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "14",
+        "column": "88",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'EndMinigameEvent' looks like designed for extension (can be subclassed), but the method 'getWinners' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EndMinigameEvent' final or making the method 'getWinners' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'EndMinigameEvent' looks like designed for extension (can be subclassed), but the method 'getLosers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EndMinigameEvent' final or making the method 'getLosers' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

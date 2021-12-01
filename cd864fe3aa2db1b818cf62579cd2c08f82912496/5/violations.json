@@ -1,0 +1,2452 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "4",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.events.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "22",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.bukkit.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "44",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getApplyingPack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getApplyingPack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "50",
+        "column": "24",
+        "severity": "error",
+        "message": "Variable 'tpos' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "60",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'needsResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'needsResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "60",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "60",
+        "column": "57",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "63",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "63",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'joinMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'joinMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "63",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "63",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "63",
+        "column": "72",
+        "severity": "error",
+        "message": "Parameter isBetting should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "63",
+        "column": "91",
+        "severity": "error",
+        "message": "Parameter betAmount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "71",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "73",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "76",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "76",
+        "column": "42",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "77",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "77",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "81",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "85",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "86",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "87",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "88",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "92",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "93",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 126).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "95",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "110",
+        "column": "41",
+        "severity": "error",
+        "message": "'0.2f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "124",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "125",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "126",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "135",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "144",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "148",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "148",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "148",
+        "column": "71",
+        "severity": "error",
+        "message": "Parameter betAmount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "148",
+        "column": "88",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "150",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 144).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "150",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "150",
+        "column": "144",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "155",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "155",
+        "column": "25",
+        "severity": "error",
+        "message": "'&&' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "156",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "156",
+        "column": "148",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "157",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "157",
+        "column": "125",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "159",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "159",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "161",
+        "column": "13",
+        "severity": "error",
+        "message": "'}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "162",
+        "column": "13",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "162",
+        "column": "17",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "167",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "168",
+        "column": "14",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "168",
+        "column": "66",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "169",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "171",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "172",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 201).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "173",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "174",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "174",
+        "column": "14",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "174",
+        "column": "110",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "175",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "176",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "177",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "178",
+        "column": "9",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "178",
+        "column": "13",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "179",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "180",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 155).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "184",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'spectateMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'spectateMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "184",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "184",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "188",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "188",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "190",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "190",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "192",
+        "column": "13",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "192",
+        "column": "17",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "193",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "196",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "196",
+        "column": "21",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "197",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "206",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "206",
+        "column": "42",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "209",
+        "column": "13",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "209",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "215",
+        "column": "13",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "215",
+        "column": "83",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "218",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "218",
+        "column": "120",
+        "severity": "error",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "220",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 167).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "223",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'startMPMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'startMPMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "223",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "223",
+        "column": "51",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "228",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'startMPMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'startMPMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "228",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "228",
+        "column": "52",
+        "severity": "error",
+        "message": "Parameter teleport should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "228",
+        "column": "69",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "230",
+        "column": "9",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "231",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "232",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "233",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "234",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "239",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "264",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "268",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'balanceGame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'balanceGame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "268",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "281",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'teleportToStart' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'teleportToStart' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "281",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "284",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "284",
+        "column": "42",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "288",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "289",
+        "column": "44",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "298",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "298",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "298",
+        "column": "55",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "300",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "301",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "304",
+        "column": "13",
+        "severity": "error",
+        "message": "'}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "312",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'clearResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'clearResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "312",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "322",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getStartLocations' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getStartLocations' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "322",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter players should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "322",
+        "column": "65",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "323",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "325",
+        "column": "13",
+        "severity": "error",
+        "message": "'pos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "326",
+        "column": "28",
+        "severity": "error",
+        "message": "'tpos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "336",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "354",
+        "column": "9",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "372",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "381",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "389",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "394",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "404",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'revertToCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'revertToCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "404",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "409",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "409",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "419",
+        "column": "32",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "420",
+        "column": "33",
+        "severity": "error",
+        "message": "'20f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "426",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'quitMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'quitMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "426",
+        "column": "5",
+        "severity": "error",
+        "message": "Method length is 196 lines (max allowed is 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"
+    },
+    {
+        "line": "426",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "426",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter forced should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "426",
+        "column": "68",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "430",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "430",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "435",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "435",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "436",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "436",
+        "column": "46",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "437",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "437",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "440",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "440",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "442",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "445",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "445",
+        "column": "30",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "446",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "446",
+        "column": "78",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "469",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "469",
+        "column": "60",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "479",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "479",
+        "column": "87",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "484",
+        "column": "53",
+        "severity": "error",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "486",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "486",
+        "column": "101",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "489",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "489",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "492",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "498",
+        "column": "25",
+        "severity": "error",
+        "message": "Empty statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"
+    },
+    {
+        "line": "503",
+        "column": "17",
+        "severity": "error",
+        "message": "'}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "504",
+        "column": "17",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "504",
+        "column": "21",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "505",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "505",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "507",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "514",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "514",
+        "column": "29",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "520",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "520",
+        "column": "54",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "521",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "521",
+        "column": "60",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "526",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "526",
+        "column": "63",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "533",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "533",
+        "column": "62",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "539",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "539",
+        "column": "54",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "545",
+        "column": "21",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "545",
+        "column": "53",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "555",
+        "column": "21",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "555",
+        "column": "88",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "563",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "563",
+        "column": "66",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "567",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "567",
+        "column": "84",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "572",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "572",
+        "column": "28",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "573",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 182).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "577",
+        "column": "13",
+        "severity": "error",
+        "message": "'}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"
+    },
+    {
+        "line": "578",
+        "column": "13",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "578",
+        "column": "17",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "579",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "579",
+        "column": "60",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "584",
+        "column": "53",
+        "severity": "error",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "586",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "586",
+        "column": "87",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "589",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "592",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "592",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "600",
+        "column": "17",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "600",
+        "column": "63",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "604",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "605",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 192).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "607",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "607",
+        "column": "75",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "608",
+        "column": "17",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "608",
+        "column": "99",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "609",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 112).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "609",
+        "column": "87",
+        "severity": "error",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "610",
+        "column": "17",
+        "severity": "error",
+        "message": "'}' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "610",
+        "column": "18",
+        "severity": "error",
+        "message": "'else' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "610",
+        "column": "18",
+        "severity": "error",
+        "message": "'else' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "610",
+        "column": "22",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "614",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "614",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "623",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'endMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'endMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "623",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "623",
+        "column": "51",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "631",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "631",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'endMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'endMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "631",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "631",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter winners should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "631",
+        "column": "78",
+        "severity": "error",
+        "message": "Parameter losers should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "631",
+        "column": "106",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "632",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "646",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "674",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "690",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 137).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "700",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "706",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 142).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "713",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "719",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "720",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "746",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'broadcastEndGame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'broadcastEndGame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "746",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter winners should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "746",
+        "column": "64",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "749",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "751",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "753",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "754",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "763",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "766",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "769",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "772",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "777",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "778",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "779",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 225).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "793",
+        "column": "72",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "796",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 168).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "798",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "805",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'playerInMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'playerInMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "806",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "806",
+        "column": "51",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "810",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'playersInMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'playersInMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "811",
+        "column": "44",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "813",
+        "column": "9",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "813",
+        "column": "67",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "814",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "814",
+        "column": "56",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "821",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'addMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'addMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "821",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "821",
+        "column": "49",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "825",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'removeMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'removeMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "825",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "825",
+        "column": "52",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "829",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "830",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "830",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "831",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "831",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "832",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "836",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "836",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter uuid should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "836",
+        "column": "55",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "837",
+        "column": "9",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "837",
+        "column": "57",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "838",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "838",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "844",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "844",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "844",
+        "column": "59",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "848",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getAllMinigamePlayers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getAllMinigamePlayers' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "848",
+        "column": "62",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "852",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'hasMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'hasMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "852",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "852",
+        "column": "50",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "856",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'hasMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'hasMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "856",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter uuid should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "856",
+        "column": "48",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "857",
+        "column": "9",
+        "severity": "error",
+        "message": "'for' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "857",
+        "column": "57",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "858",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "858",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "864",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'checkRequiredFlags' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'checkRequiredFlags' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "864",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "864",
+        "column": "67",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "864",
+        "column": "83",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "865",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "868",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "868",
+        "column": "31",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "875",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'onPartyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'onPartyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "875",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "879",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'setPartyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'setPartyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "879",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter mode should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "879",
+        "column": "43",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "883",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'partyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'partyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "883",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "883",
+        "column": "49",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "884",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "884",
+        "column": "26",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "886",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "891",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "891",
+        "column": "31",
+        "severity": "error",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "891",
+        "column": "38",
+        "severity": "error",
+        "message": "'50' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "891",
+        "column": "41",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "895",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "895",
+        "column": "54",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "895",
+        "column": "75",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "895",
+        "column": "96",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "897",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "904",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'partyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'partyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "904",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "904",
+        "column": "50",
+        "severity": "error",
+        "message": "Parameter amount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "904",
+        "column": "62",
+        "severity": "error",
+        "message": "Parameter delay should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "904",
+        "column": "73",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "905",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "905",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "910",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "910",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "912",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "912",
+        "column": "32",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "919",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "923",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'setDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'setDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "923",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter deniedCommands should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "923",
+        "column": "48",
+        "severity": "error",
+        "message": "'deniedCommands' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "927",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'addDeniedCommand' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'addDeniedCommand' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "927",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter command should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "927",
+        "column": "49",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "931",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'removeDeniedCommand' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'removeDeniedCommand' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "931",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter command should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "931",
+        "column": "52",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "935",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'saveDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'saveDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "935",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "940",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'loadDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'loadDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "940",
+        "column": "37",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "945",
+        "column": "18",
+        "severity": "error",
+        "message": "Variable 'location' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "946",
+        "column": "17",
+        "severity": "error",
+        "message": "Variable 'position' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "948",
+        "column": "9",
+        "severity": "error",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "948",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter pos should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "948",
+        "column": "35",
+        "severity": "error",
+        "message": "'pos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

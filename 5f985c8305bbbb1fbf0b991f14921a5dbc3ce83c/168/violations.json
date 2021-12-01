@@ -1,0 +1,1341 @@
+[
+    {
+        "line": "3",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "4",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.events.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "22",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.bukkit.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "36",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "42",
+        "column": "36",
+        "severity": "error",
+        "message": "Name 'plugin' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "43",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "43",
+        "column": "24",
+        "severity": "error",
+        "message": "Variable 'tpos' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "53",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getApplyingPack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getApplyingPack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "57",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'needsResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'needsResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "57",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'joinMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'joinMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "72",
+        "severity": "error",
+        "message": "Parameter isBetting should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "91",
+        "severity": "error",
+        "message": "Parameter betAmount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "71",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "75",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "79",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "83",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "84",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 132).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "85",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "86",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "90",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "91",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 126).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "93",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "108",
+        "column": "41",
+        "severity": "error",
+        "message": "'0.2f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "122",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "123",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "124",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "133",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "142",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 129).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "146",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "146",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "146",
+        "column": "71",
+        "severity": "error",
+        "message": "Parameter betAmount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "148",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "column": "26",
+        "severity": "error",
+        "message": "'&&' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "154",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "154",
+        "column": "148",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "155",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 126).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "167",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "168",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 201).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "169",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "170",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "171",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 200).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "173",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "174",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 155).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "178",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'spectateMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'spectateMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "178",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "178",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "184",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "187",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "191",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "212",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "212",
+        "column": "120",
+        "severity": "error",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "214",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 167).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "218",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'startMPMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'startMPMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "218",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "223",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'startMPMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'startMPMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "223",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "223",
+        "column": "52",
+        "severity": "error",
+        "message": "Parameter teleport should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "226",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "227",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "228",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "229",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "234",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "259",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "263",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'balanceGame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'balanceGame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "263",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "276",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'teleportToStart' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'teleportToStart' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "276",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "293",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "293",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "296",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "306",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'clearResourcePack' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'clearResourcePack' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "306",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "316",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getStartLocations' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getStartLocations' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "316",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter players should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "316",
+        "column": "65",
+        "severity": "error",
+        "message": "Parameter game should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "317",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "319",
+        "column": "13",
+        "severity": "error",
+        "message": "'pos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "320",
+        "column": "28",
+        "severity": "error",
+        "message": "'tpos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "330",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "366",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "375",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "383",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "388",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 118).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "398",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'revertToCheckpoint' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'revertToCheckpoint' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "398",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "413",
+        "column": "32",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "414",
+        "column": "33",
+        "severity": "error",
+        "message": "'20f' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "420",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'quitMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'quitMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "420",
+        "column": "5",
+        "severity": "error",
+        "message": "Method length is 193 lines (max allowed is 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"
+    },
+    {
+        "line": "420",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "420",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter forced should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "424",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "431",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "434",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "436",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "478",
+        "column": "53",
+        "severity": "error",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "480",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "497",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "499",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "565",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 182).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "575",
+        "column": "53",
+        "severity": "error",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "580",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "595",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "596",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 192).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "599",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "600",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "605",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "614",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'endMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'endMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "614",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "622",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 107).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "622",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'endMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'endMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "622",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "622",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter winners should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "622",
+        "column": "78",
+        "severity": "error",
+        "message": "Parameter losers should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "623",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "665",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "681",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 133).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "691",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "697",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 138).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "704",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "710",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "711",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "737",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'broadcastEndGame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'broadcastEndGame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "737",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter winners should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "737",
+        "column": "64",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "740",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "742",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "744",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "745",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "754",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "757",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 156).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "760",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 147).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "763",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "768",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "769",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "770",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 225).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "784",
+        "column": "58",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "787",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 168).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "789",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 149).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "796",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'playerInMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'playerInMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "797",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "801",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'playersInMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'playersInMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "812",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'addMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'addMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "812",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "816",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'removeMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'removeMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "816",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "820",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "821",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "822",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "822",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "823",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "827",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "827",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter uuid should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "829",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "835",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "835",
+        "column": "45",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "839",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getAllMinigamePlayers' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getAllMinigamePlayers' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "843",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'hasMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'hasMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "843",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter name should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "847",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'hasMinigamePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'hasMinigamePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "847",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter uuid should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "849",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "855",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'checkRequiredFlags' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'checkRequiredFlags' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "855",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "855",
+        "column": "67",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "866",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'onPartyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'onPartyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "870",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'setPartyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'setPartyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "870",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter mode should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "874",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'partyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'partyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "874",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "877",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "882",
+        "column": "32",
+        "severity": "error",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "882",
+        "column": "39",
+        "severity": "error",
+        "message": "'50' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "886",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "886",
+        "column": "54",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "886",
+        "column": "75",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "886",
+        "column": "96",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "888",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 153).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "895",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'partyMode' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'partyMode' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "895",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "895",
+        "column": "50",
+        "severity": "error",
+        "message": "Parameter amount should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "895",
+        "column": "62",
+        "severity": "error",
+        "message": "Parameter delay should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "896",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "901",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "910",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'getDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'getDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "914",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'setDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'setDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "914",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter deniedCommands should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "914",
+        "column": "48",
+        "severity": "error",
+        "message": "'deniedCommands' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "918",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'addDeniedCommand' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'addDeniedCommand' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "918",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter command should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "922",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'removeDeniedCommand' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'removeDeniedCommand' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "922",
+        "column": "37",
+        "severity": "error",
+        "message": "Parameter command should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "926",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'saveDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'saveDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "931",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigamePlayerManager' looks like designed for extension (can be subclassed), but the method 'loadDeniedCommands' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigamePlayerManager' final or making the method 'loadDeniedCommands' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "936",
+        "column": "24",
+        "severity": "error",
+        "message": "Variable 'location' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "937",
+        "column": "23",
+        "severity": "error",
+        "message": "Variable 'position' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "939",
+        "column": "9",
+        "severity": "error",
+        "message": "Redundant 'public' modifier.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"
+    },
+    {
+        "line": "939",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter pos should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "939",
+        "column": "35",
+        "severity": "error",
+        "message": "'pos' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

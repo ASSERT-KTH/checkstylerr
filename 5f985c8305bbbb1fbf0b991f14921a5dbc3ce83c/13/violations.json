@@ -1,0 +1,248 @@
+[
+    {
+        "line": "19",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter connection should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "41",
+        "severity": "error",
+        "message": "'connection' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'lease' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'lease' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "35",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'getConnection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'getConnection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "39",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "51",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'executeQuery' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'executeQuery' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "51",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "51",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter arguments should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "57",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "57",
+        "column": "32",
+        "severity": "error",
+        "message": "'100' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "61",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'executeUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'executeUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "61",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "61",
+        "column": "48",
+        "severity": "error",
+        "message": "Parameter arguments should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "70",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'batchUpdate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'batchUpdate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "70",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter arguments should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "79",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'executeBatch' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'executeBatch' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "79",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "87",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "87",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'executeUpdateWithResults' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'executeUpdateWithResults' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "87",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter key should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "87",
+        "column": "65",
+        "severity": "error",
+        "message": "Parameter arguments should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "88",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 108).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "99",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "99",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter statement should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "99",
+        "column": "62",
+        "severity": "error",
+        "message": "Parameter arguments should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "105",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'release' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'release' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "109",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'isInUse' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'isInUse' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "113",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'getOpenTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'getOpenTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "117",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'getCloseTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'getCloseTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "121",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'closeConnection' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'closeConnection' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "133",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'beginTransaction' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'beginTransaction' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "141",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'endTransaction' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'endTransaction' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "143",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "144",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "150",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionHandler' looks like designed for extension (can be subclassed), but the method 'endTransactionFail' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionHandler' final or making the method 'endTransactionFail' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

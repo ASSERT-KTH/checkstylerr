@@ -1,0 +1,99 @@
+[
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigameTypeBase' looks like designed for extension (can be subclassed), but the method 'getType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigameTypeBase' final or making the method 'getType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigameTypeBase' looks like designed for extension (can be subclassed), but the method 'setType' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigameTypeBase' final or making the method 'setType' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "25",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter type should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "25",
+        "column": "38",
+        "severity": "error",
+        "message": "'type' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "40",
+        "severity": "error",
+        "message": "Expected @return tag.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "44",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MinigameTypeBase' looks like designed for extension (can be subclassed), but the method 'callGeneralQuit' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MinigameTypeBase' final or making the method 'callGeneralQuit' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "46",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "56",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "48",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 191).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "49",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 192).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "Comment matches to-do format 'TODO:'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"
+    },
+    {
+        "line": "69",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 104).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "77",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 181).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

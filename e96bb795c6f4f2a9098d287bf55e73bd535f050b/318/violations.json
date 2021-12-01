@@ -1,0 +1,618 @@
+[
+    {
+        "line": "5",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.backend.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "10",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.stats.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "18",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - java.util.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "39",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter logger should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "39",
+        "column": "33",
+        "severity": "error",
+        "message": "'logger' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "45",
+        "column": "9",
+        "severity": "error",
+        "message": "'}' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "45",
+        "column": "10",
+        "severity": "error",
+        "message": "'catch' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "45",
+        "column": "40",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'setDatabase' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'setDatabase' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter dbbath should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "50",
+        "column": "41",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'initialize' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'initialize' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "56",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter config should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "56",
+        "column": "60",
+        "severity": "error",
+        "message": "Parameter debug should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "56",
+        "column": "68",
+        "severity": "error",
+        "message": "'debug' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "63",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "63",
+        "column": "33",
+        "severity": "error",
+        "message": "'{' is not preceded with whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "67",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "67",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "69",
+        "column": "38",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "70",
+        "column": "38",
+        "severity": "error",
+        "message": "',' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "71",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "71",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "71",
+        "column": "49",
+        "severity": "error",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "73",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "73",
+        "column": "13",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "73",
+        "column": "43",
+        "severity": "error",
+        "message": "'+' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"
+    },
+    {
+        "line": "83",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "86",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "92",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'shutdown' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'shutdown' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "97",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'clean' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'clean' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "102",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter statement should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "102",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter tableName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "102",
+        "column": "75",
+        "severity": "error",
+        "message": "Parameter columnName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "110",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "117",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "123",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter connection should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "129",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 140).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "130",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "137",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "138",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 119).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "145",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 383).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "153",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "157",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "165",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "169",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 134).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "176",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 248).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "182",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "185",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 130).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "186",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "189",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'getPool' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'getPool' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "193",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'saveGameStatus' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'saveGameStatus' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "194",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter stats should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "198",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'loadStats' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'loadStats' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "199",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 122).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "199",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "199",
+        "column": "58",
+        "severity": "error",
+        "message": "Parameter stat should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "199",
+        "column": "77",
+        "severity": "error",
+        "message": "Parameter field should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "199",
+        "column": "99",
+        "severity": "error",
+        "message": "Parameter order should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "203",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'loadStats' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'loadStats' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "204",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 146).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "204",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "204",
+        "column": "58",
+        "severity": "error",
+        "message": "Parameter stat should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "204",
+        "column": "77",
+        "severity": "error",
+        "message": "Parameter field should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "204",
+        "column": "99",
+        "severity": "error",
+        "message": "Parameter order should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "204",
+        "column": "122",
+        "severity": "error",
+        "message": "Parameter offset should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "204",
+        "column": "134",
+        "severity": "error",
+        "message": "Parameter length should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "208",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'getStat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'getStat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "209",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "209",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter playerId should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "209",
+        "column": "59",
+        "severity": "error",
+        "message": "Parameter stat should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "209",
+        "column": "78",
+        "severity": "error",
+        "message": "Parameter field should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "213",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'getMinigameId' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'getMinigameId' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "213",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter handler should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "213",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "235",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'updatePlayer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'updatePlayer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "235",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter handler should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "235",
+        "column": "57",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "236",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "239",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'loadStatSettings' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'loadStatSettings' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "240",
+        "column": "61",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "290",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'saveStatSettings' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'saveStatSettings' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "291",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "291",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter settings should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "299",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 163).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "314",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'getImportCallback' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'getImportCallback' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "319",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'exportTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'exportTo' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "320",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter other should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "320",
+        "column": "41",
+        "severity": "error",
+        "message": "Parameter notifier should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "326",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'SQLiteBackend' looks like designed for extension (can be subclassed), but the method 'doConversion' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SQLiteBackend' final or making the method 'doConversion' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "327",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter notifier should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "329",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 144).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

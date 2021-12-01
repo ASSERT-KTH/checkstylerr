@@ -1,0 +1,119 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "File does not end with a newline.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"
+    },
+    {
+        "line": "24",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter connectionString should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "24",
+        "column": "34",
+        "severity": "error",
+        "message": "'connectionString' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "24",
+        "column": "52",
+        "severity": "error",
+        "message": "Parameter username should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "24",
+        "column": "69",
+        "severity": "error",
+        "message": "Parameter password should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "49",
+        "severity": "error",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "34",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter connectionString should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "34",
+        "column": "34",
+        "severity": "error",
+        "message": "'connectionString' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "34",
+        "column": "52",
+        "severity": "error",
+        "message": "Parameter properties should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "38",
+        "column": "49",
+        "severity": "error",
+        "message": "'30' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionPool' looks like designed for extension (can be subclassed), but the method 'getMaxIdleTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionPool' final or making the method 'getMaxIdleTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionPool' looks like designed for extension (can be subclassed), but the method 'setMaxIdleTime' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionPool' final or making the method 'setMaxIdleTime' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter maxTime should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "49",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionPool' looks like designed for extension (can be subclassed), but the method 'removeExpired' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionPool' final or making the method 'removeExpired' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "72",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 123).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "74",
+        "column": "53",
+        "severity": "error",
+        "message": "Expected @throws tag for 'SQLException'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "114",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ConnectionPool' looks like designed for extension (can be subclassed), but the method 'closeConnections' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ConnectionPool' final or making the method 'closeConnections' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

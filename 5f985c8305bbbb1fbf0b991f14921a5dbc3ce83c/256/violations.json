@@ -1,0 +1,360 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "7",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - org.bukkit.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "23",
+        "column": "31",
+        "severity": "error",
+        "message": "'60' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "28",
+        "column": "20",
+        "severity": "error",
+        "message": "Parameter spawn should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "28",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter team should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "28",
+        "column": "41",
+        "severity": "error",
+        "message": "'team' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "28",
+        "column": "47",
+        "severity": "error",
+        "message": "Parameter carrier should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "28",
+        "column": "63",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "28",
+        "column": "72",
+        "severity": "error",
+        "message": "'minigame' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'getSpawnLocation' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'getSpawnLocation' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "42",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'setSpawnLocation' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'setSpawnLocation' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "42",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter spawnLocation should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "42",
+        "column": "43",
+        "severity": "error",
+        "message": "'spawnLocation' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'getCurrentLocation' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'getCurrentLocation' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'setCurrentLocation' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'setCurrentLocation' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "50",
+        "column": "36",
+        "severity": "error",
+        "message": "Parameter currentLocation should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "50",
+        "column": "45",
+        "severity": "error",
+        "message": "'currentLocation' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "54",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'isAtHome' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'isAtHome' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "58",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'setAtHome' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'setAtHome' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "58",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter atHome should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "58",
+        "column": "35",
+        "severity": "error",
+        "message": "'atHome' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "62",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'getTeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'getTeam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "66",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'setTeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'setTeam' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "66",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter team should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "66",
+        "column": "30",
+        "severity": "error",
+        "message": "'team' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "70",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'spawnFlag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'spawnFlag' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "70",
+        "column": "31",
+        "severity": "error",
+        "message": "Parameter location should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "85",
+        "column": "41",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "94",
+        "column": "65",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "95",
+        "column": "71",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "96",
+        "column": "67",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "97",
+        "column": "75",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "98",
+        "column": "66",
+        "severity": "error",
+        "message": "'||' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "117",
+        "column": "33",
+        "severity": "error",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "127",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'removeFlag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'removeFlag' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "145",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'respawnFlag' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'respawnFlag' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "154",
+        "column": "29",
+        "severity": "error",
+        "message": "'4' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "160",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'stopTimer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'stopTimer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "166",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'getMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'getMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "170",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'setMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'setMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "170",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "170",
+        "column": "38",
+        "severity": "error",
+        "message": "'minigame' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "174",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'startReturnTimer' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'startReturnTimer' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "185",
+        "severity": "error",
+        "message": "'if' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "186",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 165).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "187",
+        "severity": "error",
+        "message": "'else' construct must use '{}'s.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"
+    },
+    {
+        "line": "191",
+        "column": "26",
+        "severity": "error",
+        "message": "'20' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "194",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'startCarrierParticleEffect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'startCarrierParticleEffect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "195",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 190).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "195",
+        "column": "181",
+        "severity": "error",
+        "message": "'15L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "195",
+        "column": "186",
+        "severity": "error",
+        "message": "'15L' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "198",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'CTFFlag' looks like designed for extension (can be subclassed), but the method 'stopCarrierParticleEffect' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CTFFlag' final or making the method 'stopCarrierParticleEffect' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

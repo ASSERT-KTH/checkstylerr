@@ -1,0 +1,585 @@
+[
+    {
+        "line": "6",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.menu.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "7",
+        "severity": "error",
+        "message": "Using the '.*' form of import should be avoided - au.com.mineauz.minigames.stats.*.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"
+    },
+    {
+        "line": "29",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "29",
+        "column": "29",
+        "severity": "error",
+        "message": "Name 'defaultWidth' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "30",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "30",
+        "column": "29",
+        "severity": "error",
+        "message": "Name 'defaultHeight' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "46",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "46",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "39",
+        "severity": "error",
+        "message": "'minigame' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "49",
+        "severity": "error",
+        "message": "Parameter width should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "53",
+        "severity": "error",
+        "message": "'width' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "60",
+        "severity": "error",
+        "message": "Parameter height should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "64",
+        "severity": "error",
+        "message": "'height' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "72",
+        "severity": "error",
+        "message": "Parameter rootBlock should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "81",
+        "severity": "error",
+        "message": "'rootBlock' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "92",
+        "severity": "error",
+        "message": "Parameter facing should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "46",
+        "column": "102",
+        "severity": "error",
+        "message": "'facing' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "62",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter minigame should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "62",
+        "column": "61",
+        "severity": "error",
+        "message": "Parameter section should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "65",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "73",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "85",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getRoot' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getRoot' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "89",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getStat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getStat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "93",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getField' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getField' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "97",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'setStat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'setStat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "97",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter stat should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "97",
+        "column": "38",
+        "severity": "error",
+        "message": "'stat' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "97",
+        "column": "44",
+        "severity": "error",
+        "message": "Parameter field should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "97",
+        "column": "59",
+        "severity": "error",
+        "message": "'field' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "102",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getOrder' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getOrder' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "106",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'setOrder' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'setOrder' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "106",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter order should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "106",
+        "column": "42",
+        "severity": "error",
+        "message": "'order' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "112",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getWidth' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getWidth' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "116",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getHeight' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getHeight' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "120",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getMinigame' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getMinigame' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "124",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'getFacing' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'getFacing' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "128",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'needsLoad' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'needsLoad' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "132",
+        "column": "39",
+        "severity": "error",
+        "message": "Parameter onlySigns should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "166",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "178",
+        "severity": "error",
+        "message": "First sentence should end with a period.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "200",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter block should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "200",
+        "column": "42",
+        "severity": "error",
+        "message": "Parameter place should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "200",
+        "column": "53",
+        "severity": "error",
+        "message": "Parameter stats should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "200",
+        "column": "67",
+        "severity": "error",
+        "message": "'stats' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "204",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 160).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "204",
+        "column": "156",
+        "severity": "error",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "205",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 131).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "205",
+        "column": "127",
+        "severity": "error",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "209",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 164).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "209",
+        "column": "160",
+        "severity": "error",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "210",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "210",
+        "column": "26",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "210",
+        "column": "131",
+        "severity": "error",
+        "message": "'15' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "213",
+        "column": "26",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "219",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'displayMenu' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'displayMenu' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "219",
+        "column": "29",
+        "severity": "error",
+        "message": "Parameter player should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "222",
+        "column": "22",
+        "severity": "error",
+        "message": "'settings' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "223",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 103).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "224",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 111).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "230",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 105).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "237",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "240",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 125).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "259",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 114).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "270",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 135).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "277",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "279",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 110).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "294",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 109).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "300",
+        "column": "34",
+        "severity": "error",
+        "message": "Parameter value should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "306",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 139).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "310",
+        "column": "28",
+        "severity": "error",
+        "message": "Parameter block should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "315",
+        "column": "22",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "319",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'deleteSigns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'deleteSigns' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "327",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'placeSigns' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'placeSigns' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "338",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'save' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'save' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "338",
+        "column": "22",
+        "severity": "error",
+        "message": "Parameter section should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "348",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'placeRootSign' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'placeRootSign' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "363",
+        "column": "30",
+        "severity": "error",
+        "message": "'3' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "366",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "367",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 102).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "369",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "372",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 113).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "376",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'ScoreboardDisplay' looks like designed for extension (can be subclassed), but the method 'reload' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ScoreboardDisplay' final or making the method 'reload' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "378",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 150).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "382",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "386",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter result should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "393",
+        "column": "35",
+        "severity": "error",
+        "message": "Parameter t should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]

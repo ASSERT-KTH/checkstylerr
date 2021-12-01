@@ -1,0 +1,51 @@
+[
+    {
+        "line": "12",
+        "column": "23",
+        "severity": "error",
+        "message": "Parameter rewards should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "12",
+        "column": "31",
+        "severity": "error",
+        "message": "'rewards' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "16",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'RewardType' looks like designed for extension (can be subclassed), but the method 'getRarity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RewardType' final or making the method 'getRarity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'RewardType' looks like designed for extension (can be subclassed), but the method 'setRarity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RewardType' final or making the method 'setRarity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "20",
+        "column": "27",
+        "severity": "error",
+        "message": "Parameter rarity should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "20",
+        "column": "40",
+        "severity": "error",
+        "message": "'rarity' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'RewardType' looks like designed for extension (can be subclassed), but the method 'getRewards' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RewardType' final or making the method 'getRewards' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
