@@ -1,0 +1,245 @@
+/*
+ * Copyright 2004-2018 H2 Group. Multiple-Licensed under the MPL 2.0,
+ * and the EPL 1.0 (http://h2database.com/html/license.html).
+ * Initial Developer: H2 Group
+ */
+package org.h2.util;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import org.h2.message.DbException;
+import org.h2.mvstore.DataUtils;
+import org.h2.value.Value;
+import org.h2.value.ValueNull;
+
+/**
+ * This hash map supports keys of type Value.
+ * <p>
+ * ValueHashMap is a very simple implementation without allocation of additional
+ * objects for entries. It's very fast with good distribution of hashes, but if
+ * hashes have a lot of collisions this implementation tends to be very slow.
+ * <p>
+ * HashMap in archaic versions of Java have some overhead for allocation of
+ * entries, but slightly better behaviour with limited number of collisions,
+ * because collisions have no impact on non-colliding entries. HashMap in modern
+ * versions of Java also have the same overhead, but it builds a trees of keys
+ * with colliding hashes, that's why even if the all keys have exactly the same
+ * hash code it still offers a good performance similar to TreeMap. So
+ * ValueHashMap is faster in typical cases, but may behave really bad in some
+ * cases. HashMap is slower in typical cases, but its performance does not
+ * degrade too much even in the worst possible case (if keys are comparable).
+ *
+ * @param <V> the value type
+ */
+public class ValueHashMap<V> extends HashBase {
+
+    private Value[] keys;
+    private V[] values;
+
+    /**
+     * Create a new value hash map.
+     *
+     * @return the object
+     */
+    public static <T> ValueHashMap<T> newInstance() {
+        return new ValueHashMap<>();
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    protected void reset(int newLevel) {
+        super.reset(newLevel);
+        keys = new Value[len];
+        values = (V[]) new Object[len];
+    }
+
+    @Override
+    protected void rehash(int newLevel) {
+        Value[] oldKeys = keys;
+        V[] oldValues = values;
+        reset(newLevel);
+        int len = oldKeys.length;
+        for (int i = 0; i < len; i++) {
+            Value k = oldKeys[i];
+            if (k != null && k != ValueNull.DELETED) {
+                // skip the checkSizePut so we don't end up
+                // accidentally recursing
+                internalPut(k, oldValues[i]);
+            }
+        }
+    }
+
+    private int getIndex(Value key) {
+        int h = key.hashCode();
+        /*
+         * Add some protection against hashes with the same less significant bits
+         * (ValueDouble with integer values, for example).
+         */
+        return (h ^ h >>> 16) & mask;
+    }
+
+    /**
+     * Add or update a key value pair.
+     *
+     * @param key the key
+     * @param value the new value
+     */
+    public void put(Value key, V value) {
+        checkSizePut();
+        internalPut(key, value);
+    }
+
+    private void internalPut(Value key, V value) {
+        int index = getIndex(key);
+        int plus = 1;
+        int deleted = -1;
+        do {
+            Value k = keys[index];
+            if (k == null) {
+                // found an empty record
+                if (deleted >= 0) {
+                    index = deleted;
+                    deletedCount--;
+                }
+                size++;
+                keys[index] = key;
+                values[index] = value;
+                return;
+            } else if (k == ValueNull.DELETED) {
+                // found a deleted record
+                if (deleted < 0) {
+                    deleted = index;
+                }
+            } else if (k.equals(key)) {
+                // update existing
+                values[index] = value;
+                return;
+            }
+            index = (index + plus++) & mask;
+        } while (plus <= len);
+        // no space
+        DbException.throwInternalError("hashmap is full");
+    }
+
+    /**
+     * Remove a key value pair.
+     *
+     * @param key the key
+     */
+    public void remove(Value key) {
+        checkSizeRemove();
+        int index = getIndex(key);
+        int plus = 1;
+        do {
+            Value k = keys[index];
+            if (k == null) {
+                // found an empty record
+                return;
+            } else if (k == ValueNull.DELETED) {
+                // found a deleted record
+            } else if (k.equals(key)) {
+                // found the record
+                keys[index] = ValueNull.DELETED;
+                values[index] = null;
+                deletedCount++;
+                size--;
+                return;
+            }
+            index = (index + plus++) & mask;
+        } while (plus <= len);
+        // not found
+    }
+
+    /**
+     * Get the value for this key. This method returns null if the key was not
+     * found.
+     *
+     * @param key the key
+     * @return the value for the given key
+     */
+    public V get(Value key) {
+        int index = getIndex(key);
+        int plus = 1;
+        do {
+            Value k = keys[index];
+            if (k == null) {
+                // found an empty record
+                return null;
+            } else if (k == ValueNull.DELETED) {
+                // found a deleted record
+            } else if (k.equals(key)) {
+                // found it
+                return values[index];
+            }
+            index = (index + plus++) & mask;
+        } while (plus <= len);
+        return null;
+    }
+
+    /**
+     * Get the list of keys.
+     *
+     * @return all keys
+     */
+    public ArrayList<Value> keys() {
+        ArrayList<Value> list = new ArrayList<>(size);
+        for (Value k : keys) {
+            if (k != null && k != ValueNull.DELETED) {
+                list.add(k);
+            }
+        }
+        return list;
+    }
+    
+    public Iterable<Map.Entry<Value, V>> entries() {
+        return new EntryIterable();
+    }
+    
+    private final class EntryIterable implements Iterable<Map.Entry<Value, V>> {
+        @Override
+        public Iterator<Map.Entry<Value, V>> iterator() {
+            return new EntryIterator();
+        }
+    }
+
+    private final class EntryIterator implements Iterator<Map.Entry<Value, V>> {
+        int keysIndex = -1;
+
+        @Override
+        public boolean hasNext() {
+            if (keysIndex >= keys.length)
+                return false;
+            do {
+                keysIndex++;
+                if (keysIndex >= keys.length)
+                    return false;
+                if (keys[keysIndex] != null && keys[keysIndex] != ValueNull.DELETED)
+                    return true;
+            } while (true);
+        }
+
+        @Override
+        public Map.Entry<Value, V> next() {
+            return new DataUtils.MapEntry<Value, V>(keys[keysIndex], values[keysIndex]);
+        }
+    }
+
+    /**
+     * Get the list of values.
+     *
+     * @return all values
+     */
+    public ArrayList<V> values() {
+        ArrayList<V> list = new ArrayList<>(size);
+        int len = keys.length;
+        for (int i = 0; i < len; i++) {
+            Value k = keys[i];
+            if (k != null && k != ValueNull.DELETED) {
+                list.add(values[i]);
+            }
+        }
+        return list;
+    }
+
+}
