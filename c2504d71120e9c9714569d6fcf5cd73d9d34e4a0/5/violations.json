@@ -1,0 +1,65 @@
+[
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "21",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "26",
+        "column": "22",
+        "severity": "error",
+        "message": "Variable 'initialSize' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "31",
+        "column": "26",
+        "severity": "error",
+        "message": "Variable 'shutdownHook' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "33",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "35",
+        "column": "25",
+        "severity": "error",
+        "message": "Parameter props should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "102",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGPoolConfig' looks like designed for extension (can be subclassed), but the method 'getWarmupConfig' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGPoolConfig' final or making the method 'getWarmupConfig' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "106",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGPoolConfig' looks like designed for extension (can be subclassed), but the method 'setWarmupConfig' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGPoolConfig' final or making the method 'setWarmupConfig' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "106",
+        "column": "52",
+        "severity": "error",
+        "message": "'warmupConfig' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    }
+]

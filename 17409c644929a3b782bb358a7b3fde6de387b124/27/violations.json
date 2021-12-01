@@ -1,0 +1,30 @@
+[
+    {
+        "line": "19",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "25",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGBQRHandler' looks like designed for extension (can be subclassed), but the method 'handleResponse' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGBQRHandler' final or making the method 'handleResponse' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "26",
+        "column": "32",
+        "severity": "error",
+        "message": "Parameter method should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "41",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGBQRHandler' looks like designed for extension (can be subclassed), but the method 'getResult' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGBQRHandler' final or making the method 'getResult' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

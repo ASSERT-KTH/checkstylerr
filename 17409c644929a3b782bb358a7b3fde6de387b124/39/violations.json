@@ -1,0 +1,65 @@
+[
+    {
+        "line": "17",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "19",
+        "column": "26",
+        "severity": "error",
+        "message": "Parameter graph should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "19",
+        "column": "34",
+        "severity": "error",
+        "message": "'graph' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "23",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGTransactionHandler' looks like designed for extension (can be subclassed), but the method 'abort' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGTransactionHandler' final or making the method 'abort' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "34",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGTransactionHandler' looks like designed for extension (can be subclassed), but the method 'begin' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGTransactionHandler' final or making the method 'begin' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "45",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGTransactionHandler' looks like designed for extension (can be subclassed), but the method 'commit' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGTransactionHandler' final or making the method 'commit' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "56",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGTransactionHandler' looks like designed for extension (can be subclassed), but the method 'executeInTransaction' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGTransactionHandler' final or making the method 'executeInTransaction' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "57",
+        "column": "40",
+        "severity": "error",
+        "message": "Parameter c should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "71",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGTransactionHandler' looks like designed for extension (can be subclassed), but the method 'transactionsSupported' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGTransactionHandler' final or making the method 'transactionsSupported' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

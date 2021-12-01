@@ -1,0 +1,72 @@
+[
+    {
+        "line": "12",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "12",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'namespace' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "13",
+        "column": "5",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "13",
+        "column": "28",
+        "severity": "error",
+        "message": "Variable 'format' must be private and have accessor methods.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"
+    },
+    {
+        "line": "15",
+        "column": "33",
+        "severity": "error",
+        "message": "Parameter namespace should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "15",
+        "column": "40",
+        "severity": "error",
+        "message": "'namespace' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "15",
+        "column": "51",
+        "severity": "error",
+        "message": "Parameter format should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "15",
+        "column": "58",
+        "severity": "error",
+        "message": "'format' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "20",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGFormattedNamespace' looks like designed for extension (can be subclassed), but the method 'getNamespace' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGFormattedNamespace' final or making the method 'getNamespace' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "24",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'AGFormattedNamespace' looks like designed for extension (can be subclassed), but the method 'getFormat' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AGFormattedNamespace' final or making the method 'getFormat' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
