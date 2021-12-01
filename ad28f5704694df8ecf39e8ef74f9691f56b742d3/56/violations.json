@@ -1,0 +1,48 @@
+[
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "33",
+        "column": "24",
+        "severity": "warning",
+        "message": "'}' at column 24 should be alone on a line.",
+        "source": "RightCurlyAlone"
+    },
+    {
+        "line": "74",
+        "severity": "warning",
+        "message": "Abbreviation in name 'verifyIPSegment' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "76",
+        "column": "17",
+        "severity": "warning",
+        "message": "Local variable name 'IPsegment' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "89",
+        "severity": "warning",
+        "message": "Distance between variable 'ipAddressBinary' declaration and its first usage is 6, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "93",
+        "column": "17",
+        "severity": "warning",
+        "message": "Local variable name 'IPsplit' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "101",
+        "column": "17",
+        "severity": "warning",
+        "message": "Local variable name 'IPsplit' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    }
+]

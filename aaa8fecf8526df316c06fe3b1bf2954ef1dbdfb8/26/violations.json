@@ -1,0 +1,65 @@
+[
+    {
+        "line": "19",
+        "severity": "warning",
+        "message": "'package' should be separated from previous statement.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"
+    },
+    {
+        "line": "71",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "92",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 116).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "104",
+        "severity": "warning",
+        "message": "Distance between variable 'start' declaration and its first usage is 8, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "113",
+        "column": "49",
+        "severity": "warning",
+        "message": "Local variable name 'iWritableMemChunkEntry' must match pattern '^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "279",
+        "severity": "warning",
+        "message": "'catch' child has incorrect indentation level 18, expected level should be one of the following: 10, 12, 14.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"
+    },
+    {
+        "line": "292",
+        "severity": "warning",
+        "message": "Distance between variable 'starTime' declaration and its first usage is 6, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    },
+    {
+        "line": "377",
+        "column": "16",
+        "severity": "warning",
+        "message": "'}' at column 16 should be alone on a line.",
+        "source": "RightCurlyAlone"
+    },
+    {
+        "line": "382",
+        "column": "28",
+        "severity": "warning",
+        "message": "'}' at column 28 should be alone on a line.",
+        "source": "RightCurlyAlone"
+    },
+    {
+        "line": "385",
+        "severity": "warning",
+        "message": "Abbreviation in name 'StartFlushGroupIOTask' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    }
+]
