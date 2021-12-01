@@ -1,0 +1,27 @@
+[
+    {
+        "line": "24",
+        "severity": "warning",
+        "message": "Summary javadoc is missing.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"
+    },
+    {
+        "line": "65",
+        "severity": "warning",
+        "message": "Line is longer than 120 characters (found 172).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "65",
+        "column": "124",
+        "severity": "warning",
+        "message": "\u53c2\u6570\u540d'page_size' \u5fc5\u987b\u5339\u914d\u6a21\u5f0f\uff1a'^[a-z]([a-z0-9][a-zA-Z0-9]*)?$'\u3002",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"
+    },
+    {
+        "line": "73",
+        "severity": "warning",
+        "message": "Distance between variable 'url' declaration and its first usage is 7, but allowed 3.  Consider making that variable final if you still need to store its value in advance (before method calls that might have side effects on the original value).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck"
+    }
+]
