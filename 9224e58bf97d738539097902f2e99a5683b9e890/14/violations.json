@@ -1,0 +1,56 @@
+[
+    {
+        "line": "1",
+        "severity": "warning",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "15",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PersistenceRuleUtil' looks like designed for extension (can be subclassed), but the method 'getIdentifierProperty' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PersistenceRuleUtil' final or making the method 'getIdentifierProperty' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "15",
+        "column": "44",
+        "severity": "warning",
+        "message": "Parameter entity should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "Line is longer than 100 characters (found 120).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "27",
+        "column": "5",
+        "severity": "warning",
+        "message": "Class 'PersistenceRuleUtil' looks like designed for extension (can be subclassed), but the method 'getClassesAnnotated' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'PersistenceRuleUtil' final or making the method 'getClassesAnnotated' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "47",
+        "severity": "warning",
+        "message": "Parameter dw should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "27",
+        "column": "64",
+        "severity": "warning",
+        "message": "Parameter annotationName should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "32",
+        "column": "39",
+        "severity": "warning",
+        "message": "'typecast' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    }
+]
