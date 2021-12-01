@@ -1,0 +1,44 @@
+[
+    {
+        "line": "33",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MyColorIsIntentHandler' looks like designed for extension (can be subclassed), but the method 'canHandle' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MyColorIsIntentHandler' final or making the method 'canHandle' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "34",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter input should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "38",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'MyColorIsIntentHandler' looks like designed for extension (can be subclassed), but the method 'handle' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MyColorIsIntentHandler' final or making the method 'handle' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "39",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter input should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "50",
+        "column": "9",
+        "severity": "error",
+        "message": "'if' is not followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"
+    },
+    {
+        "line": "65",
+        "column": "121",
+        "severity": "error",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    }
+]

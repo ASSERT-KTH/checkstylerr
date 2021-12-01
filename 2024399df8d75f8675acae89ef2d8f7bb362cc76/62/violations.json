@@ -1,0 +1,30 @@
+[
+    {
+        "line": "26",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HelloWorldIntentHandler' looks like designed for extension (can be subclassed), but the method 'canHandle' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HelloWorldIntentHandler' final or making the method 'canHandle' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "27",
+        "column": "30",
+        "severity": "error",
+        "message": "Parameter input should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    },
+    {
+        "line": "31",
+        "column": "5",
+        "severity": "error",
+        "message": "Class 'HelloWorldIntentHandler' looks like designed for extension (can be subclassed), but the method 'handle' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'HelloWorldIntentHandler' final or making the method 'handle' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "32",
+        "column": "38",
+        "severity": "error",
+        "message": "Parameter input should be final.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"
+    }
+]
