@@ -1,0 +1,217 @@
+/*-
+ * #%L
+ * MATSim Episim
+ * %%
+ * Copyright (C) 2020 matsim-org
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * #L%
+ */
+package org.matsim.episim;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.math3.random.BitsStreamGenerator;
+import org.apache.commons.math3.util.FastMath;
+import org.matsim.core.config.Config;
+import org.matsim.core.config.ConfigGroup;
+import org.matsim.core.config.ConfigUtils;
+import org.matsim.episim.policy.FixedPolicy;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneOffset;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.SplittableRandom;
+
+/**
+ * Common utility class for episim.
+ */
+public final class EpisimUtils {
+
+	private EpisimUtils() {
+	}
+
+	/**
+	 * Calculates the relative time based on iteration. Only used internally because start offset
+	 * has to be added too.
+	 */
+	private static double getCorrectedTime(double time, long iteration) {
+		return Math.min(time, 3600. * 24) + iteration * 24. * 3600;
+	}
+
+	/**
+	 * Calculates the time based on the current iteration and start day.
+	 *
+	 * @param startDate offset of the start date
+	 * @param time      time relative to start of day
+	 * @see #getStartOffset(LocalDate)
+	 */
+	public static double getCorrectedTime(long startDate, double time, long iteration) {
+		// start date refers to iteration 1, therefore 1 has to be subtracted
+		// TODO: not yet working return startDate + getCorrectedTime(time, iteration - 1);
+
+		return getCorrectedTime(time, iteration);
+	}
+
+	/**
+	 * Calculates the start offset in seconds of simulation start.
+	 */
+	public static long getStartOffset(LocalDate startDate) {
+		return startDate.atTime(LocalTime.MIDNIGHT).atZone(ZoneOffset.UTC).toEpochSecond();
+	}
+
+
+	/**
+	 * Creates an output directory, with a name based on current config and contact intensity..
+	 */
+	public static void setOutputDirectory(Config config) {
+		StringBuilder outdir = new StringBuilder("output");
+		EpisimConfigGroup episimConfig = ConfigUtils.addOrGetModule(config, EpisimConfigGroup.class);
+
+		for (EpisimConfigGroup.InfectionParams infectionParams : episimConfig.getInfectionParams()) {
+			outdir.append("-");
+			outdir.append(infectionParams.getContainerName());
+			if (infectionParams.getContactIntensity() != 1.) {
+				outdir.append("ci").append(infectionParams.getContactIntensity());
+			}
+		}
+		config.controler().setOutputDirectory(outdir.toString());
+	}
+
+	/**
+	 * Draw a gaussian distributed random number (mean=0, var=1)
+	 *
+	 * @param rnd splittable random instance
+	 * @see BitsStreamGenerator#nextGaussian()
+	 */
+	public static double nextGaussian(SplittableRandom rnd) {
+		// Normally this allows to generate two numbers, but one is thrown away because this function is stateless
+		// generate a new pair of gaussian numbers
+		final double x = rnd.nextDouble();
+		final double y = rnd.nextDouble();
+		final double alpha = 2 * FastMath.PI * x;
+		final double r = FastMath.sqrt(-2 * FastMath.log(y));
+		return r * FastMath.cos(alpha);
+		// nextGaussian = r * FastMath.sin(alpha);
+	}
+
+	/**
+	 * Draws a log normal distributed random number according to X=e^{\mu+\sigma Z}, where Z is a standard normal distribution.
+	 *
+	 * @param rnd splittable random instance
+	 * @param mu mu ( median exp mu)
+	 * @param sigma sigma
+	 */
+	public static double nextLogNormal(SplittableRandom rnd, double mu, double sigma) {
+		if (sigma == 0)
+			return Math.exp(mu);
+
+		return Math.exp(sigma * nextGaussian(rnd) + mu);
+	}
+	
+	/**
+	 * Creates restrictions from csv from Senozon data. 
+	 * Restrictions at educational facilites are created manually.
+	 * Weekends and bank holidays in 2020 are interpolated.
+	 * 
+	 */
+	public static FixedPolicy.ConfigBuilder createRestrictionsFromCSV(EpisimConfigGroup episimConfig, double alpha ) throws IOException {
+		
+		HashSet<String> activities = new HashSet<String>();
+		
+		HashSet<String> bankHolidays = new HashSet<String>();
+		bankHolidays.add("2020-04-10"); //Karfreitag
+		bankHolidays.add("2020-04-13"); //Ostermontag
+		bankHolidays.add("2020-05-01"); //Tag der Arbeit
+		bankHolidays.add("2020-05-08"); //Tag der Befreiung
+		bankHolidays.add("2020-05-21"); //Himmelfahrt
+		bankHolidays.add("2020-05-22"); //Brueckentag
+		bankHolidays.add("2020-06-01"); //Pfingsten
+		
+		for ( ConfigGroup a : episimConfig.getParameterSets().get("infectionParams")) {
+			activities.add(a.getParams().get("activityType"));
+		}
+		
+		FixedPolicy.ConfigBuilder builder = FixedPolicy.config();
+
+		Reader in = new FileReader( "../shared-svn/projects/episim/matsim-files/snz/BerlinV2/episim-input/BerlinSnzData_daily_until20200517.csv" );
+		Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().withDelimiter( '\t' ).parse( in );
+		
+		HashMap<String, Double> lastRestrictions = new HashMap<String, Double>();
+		boolean didRestriction = true;
+		boolean doInterpolation = false;
+		String lastDate = null;
+		for( CSVRecord record : records ){
+			
+			String date = record.get("date");
+			String y = date.substring(0, 4);
+			String m = date.substring(4, 6);
+			String d = date.substring(6, 8);
+			String corrDate = y + "-" + m + "-" + d;
+			
+			doInterpolation = false;
+			
+			if (!didRestriction && LocalDate.parse(corrDate).getDayOfWeek().getValue() <= 5 && !bankHolidays.contains(corrDate)) {
+				doInterpolation = true;	
+			}
+			
+			didRestriction = false;
+			
+			for (String activity : activities) {
+				if (record.toMap().keySet().contains(activity)) {
+
+					double remainingFraction = 1. + (Integer.parseInt(record.get(activity)) / 100.); 
+					
+					if (remainingFraction > 1) remainingFraction = 1;
+					
+					if (!activity.contains("home")) {
+						if (LocalDate.parse(corrDate).getDayOfWeek().getValue() <= 5 && !bankHolidays.contains(corrDate)) {
+							builder.restrict(corrDate, remainingFraction * alpha, activity);
+							
+							if (doInterpolation) {
+								int ii = LocalDate.parse(lastDate).until(LocalDate.parse(corrDate)).getDays();
+								for (int jj = 1; jj<ii; jj++ ) {
+									builder.restrict(LocalDate.parse(lastDate).plusDays(jj), (lastRestrictions.get(activity) + (remainingFraction - lastRestrictions.get(activity)) * (1.0 * jj / (1.0 * ii))) * alpha, activity);
+									LocalDate.parse(lastDate).plusDays(jj);
+								}
+							}
+							
+							lastRestrictions.putIfAbsent(activity, remainingFraction);
+							lastRestrictions.replace(activity, remainingFraction);
+							didRestriction = true;
+							
+						}
+						
+					}
+					
+				}
+				
+			}
+			
+			if (didRestriction) lastDate = corrDate;
+			
+		}
+		
+		builder.restrict("2020-03-14", 0.1 * alpha, "educ_primary", "educ_kiga") 
+		.restrict("2020-03-14", 0., "educ_secondary", "educ_higher", "educ_tertiary", "educ_other");
+		
+		return builder;
+	}
+
+}
