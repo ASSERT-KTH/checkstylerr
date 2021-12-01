@@ -1,0 +1,62 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "33",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "39",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "39",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "46",
+        "column": "37",
+        "severity": "error",
+        "message": "Name 'objectMapper' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"
+    },
+    {
+        "line": "49",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'StringOrderedListConverter' looks like designed for extension (can be subclassed), but the method 'convertToDatabaseColumn' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'StringOrderedListConverter' final or making the method 'convertToDatabaseColumn' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "49",
+        "column": "3",
+        "severity": "error",
+        "message": "NPath Complexity is 36 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    },
+    {
+        "line": "79",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'StringOrderedListConverter' looks like designed for extension (can be subclassed), but the method 'convertToEntityAttribute' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'StringOrderedListConverter' final or making the method 'convertToEntityAttribute' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "79",
+        "column": "3",
+        "severity": "error",
+        "message": "NPath Complexity is 36 (max allowed is 20).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.NPathComplexityCheck"
+    }
+]

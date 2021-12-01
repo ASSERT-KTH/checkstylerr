@@ -1,0 +1,40 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "22",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "27",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "30",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'JsonNodesOpener' looks like designed for extension (can be subclassed), but the method 'process' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'JsonNodesOpener' final or making the method 'process' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Don't use trailing comments.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"
+    },
+    {
+        "line": "32",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 101).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    }
+]

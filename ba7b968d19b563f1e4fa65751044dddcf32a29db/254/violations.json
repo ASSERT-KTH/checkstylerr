@@ -1,0 +1,36 @@
+[
+    {
+        "line": "28",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "59",
+        "column": "41",
+        "severity": "error",
+        "message": "'1024' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "62",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 115).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "85",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'ServerConfig' looks like designed for extension (can be subclassed), but the method 'getPort' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ServerConfig' final or making the method 'getPort' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "89",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'ServerConfig' looks like designed for extension (can be subclassed), but the method 'getHost' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ServerConfig' final or making the method 'getHost' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

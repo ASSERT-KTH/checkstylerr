@@ -1,0 +1,56 @@
+[
+    {
+        "line": "1",
+        "severity": "error",
+        "message": "Missing package-info.java file.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"
+    },
+    {
+        "line": "26",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "34",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "40",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RecordAwareJsonEncoder' looks like designed for extension (can be subclassed), but the method 'startRecord' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RecordAwareJsonEncoder' final or making the method 'startRecord' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "47",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RecordAwareJsonEncoder' looks like designed for extension (can be subclassed), but the method 'endRecord' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RecordAwareJsonEncoder' final or making the method 'endRecord' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "53",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RecordAwareJsonEncoder' looks like designed for extension (can be subclassed), but the method 'startEntity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RecordAwareJsonEncoder' final or making the method 'startEntity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "58",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RecordAwareJsonEncoder' looks like designed for extension (can be subclassed), but the method 'endEntity' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RecordAwareJsonEncoder' final or making the method 'endEntity' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "63",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'RecordAwareJsonEncoder' looks like designed for extension (can be subclassed), but the method 'literal' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'RecordAwareJsonEncoder' final or making the method 'literal' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

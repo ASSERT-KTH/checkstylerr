@@ -1,0 +1,42 @@
+[
+    {
+        "line": "28",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 106).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "37",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "37",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "44",
+        "column": "69",
+        "severity": "error",
+        "message": "'255' is a magic number.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"
+    },
+    {
+        "line": "71",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'AdvancedDMPJPAObject' looks like designed for extension (can be subclassed), but the method 'getUri' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AdvancedDMPJPAObject' final or making the method 'getUri' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "76",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'AdvancedDMPJPAObject' looks like designed for extension (can be subclassed), but the method 'completeEquals' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'AdvancedDMPJPAObject' final or making the method 'completeEquals' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

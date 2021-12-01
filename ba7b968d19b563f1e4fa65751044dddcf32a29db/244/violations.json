@@ -1,0 +1,42 @@
+[
+    {
+        "line": "23",
+        "severity": "error",
+        "message": "Line has trailing spaces.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"
+    },
+    {
+        "line": "28",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "45",
+        "severity": "error",
+        "message": "Line is longer than 100 characters (found 117).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"
+    },
+    {
+        "line": "45",
+        "column": "71",
+        "severity": "error",
+        "message": "Expected @param tag for 'updateFormat'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "45",
+        "column": "99",
+        "severity": "error",
+        "message": "Expected @param tag for 'enableVersioning'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    },
+    {
+        "line": "72",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'DataModelEvent' looks like designed for extension (can be subclassed), but the method 'isEnableVersioning' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DataModelEvent' final or making the method 'isEnableVersioning' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

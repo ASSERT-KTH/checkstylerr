@@ -1,0 +1,50 @@
+[
+    {
+        "line": "23",
+        "severity": "error",
+        "message": "Javadoc has empty description section.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"
+    },
+    {
+        "line": "28",
+        "column": "1",
+        "severity": "error",
+        "message": "File contains tab characters (this is the first instance).",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"
+    },
+    {
+        "line": "31",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'CSVJSONWriter' looks like designed for extension (can be subclassed), but the method 'process' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CSVJSONWriter' final or making the method 'process' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "32",
+        "column": "38",
+        "severity": "error",
+        "message": "'json' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "65",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'CSVJSONWriter' looks like designed for extension (can be subclassed), but the method 'resetStream' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CSVJSONWriter' final or making the method 'resetStream' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "71",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'CSVJSONWriter' looks like designed for extension (can be subclassed), but the method 'closeStream' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CSVJSONWriter' final or making the method 'closeStream' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "77",
+        "column": "3",
+        "severity": "error",
+        "message": "Class 'CSVJSONWriter' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'CSVJSONWriter' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
