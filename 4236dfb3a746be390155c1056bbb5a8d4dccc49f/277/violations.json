@@ -1,0 +1,44 @@
+[
+    {
+        "line": "39",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "40",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "42",
+        "column": "70",
+        "severity": "error",
+        "message": "'requiredInteractionModel' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "42",
+        "column": "118",
+        "severity": "error",
+        "message": "'supportedInteractionModels' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "48",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'UnsupportedInteractionModelException' looks like designed for extension (can be subclassed), but the method 'getRequiredInteractionModel' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UnsupportedInteractionModelException' final or making the method 'getRequiredInteractionModel' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "52",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'UnsupportedInteractionModelException' looks like designed for extension (can be subclassed), but the method 'getSupportedInteractionModels' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'UnsupportedInteractionModelException' final or making the method 'getSupportedInteractionModels' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

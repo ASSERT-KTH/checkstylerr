@@ -1,0 +1,23 @@
+[
+    {
+        "line": "43",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "45",
+        "column": "79",
+        "severity": "error",
+        "message": "'supportedCharsets' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "66",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'NotAcceptableException' looks like designed for extension (can be subclassed), but the method 'supportedCharsets' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'NotAcceptableException' final or making the method 'supportedCharsets' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "line": "35",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "36",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "38",
+        "column": "50",
+        "severity": "error",
+        "message": "'value' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "38",
+        "column": "61",
+        "severity": "error",
+        "message": "'datatype' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "42",
+        "column": "50",
+        "severity": "error",
+        "message": "'value' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "42",
+        "column": "61",
+        "severity": "error",
+        "message": "'datatype' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "48",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'DatatypeCohercionException' looks like designed for extension (can be subclassed), but the method 'getValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DatatypeCohercionException' final or making the method 'getValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "52",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'DatatypeCohercionException' looks like designed for extension (can be subclassed), but the method 'getDatatype' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DatatypeCohercionException' final or making the method 'getDatatype' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]

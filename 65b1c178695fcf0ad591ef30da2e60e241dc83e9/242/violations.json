@@ -1,0 +1,72 @@
+[
+    {
+        "line": "32",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - org.ldp4j.application.kernel.template.ContainerTemplate.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "33",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - org.ldp4j.application.kernel.template.ResourceTemplate.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "34",
+        "column": "1",
+        "severity": "error",
+        "message": "Redundant import from the same package - org.ldp4j.application.kernel.template.TemplateVisitor.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"
+    },
+    {
+        "line": "41",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "42",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "48",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'MutableContainerTemplate' looks like designed for extension (can be subclassed), but the method 'setMemberTemplate' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MutableContainerTemplate' final or making the method 'setMemberTemplate' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "48",
+        "column": "49",
+        "severity": "error",
+        "message": "'memberTemplate' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "52",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'MutableContainerTemplate' looks like designed for extension (can be subclassed), but the method 'setMemberPath' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'MutableContainerTemplate' final or making the method 'setMemberPath' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    },
+    {
+        "line": "52",
+        "column": "35",
+        "severity": "error",
+        "message": "'memberPath' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "99",
+        "column": "90",
+        "severity": "error",
+        "message": "'&&' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    }
+]

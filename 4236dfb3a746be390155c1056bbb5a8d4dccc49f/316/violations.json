@@ -1,0 +1,37 @@
+[
+    {
+        "line": "35",
+        "column": "9",
+        "severity": "error",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"
+    },
+    {
+        "line": "37",
+        "column": "98",
+        "severity": "error",
+        "message": "'rawValue' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "42",
+        "column": "82",
+        "severity": "error",
+        "message": "'rawValue' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "46",
+        "column": "81",
+        "severity": "error",
+        "message": "'rawValue' hides a field.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"
+    },
+    {
+        "line": "50",
+        "column": "9",
+        "severity": "error",
+        "message": "Class 'ObjectParseException' looks like designed for extension (can be subclassed), but the method 'getRawValue' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'ObjectParseException' final or making the method 'getRawValue' static/final/abstract/empty, or adding allowed annotation for the method.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"
+    }
+]
