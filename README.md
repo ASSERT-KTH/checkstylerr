@@ -1,0 +1,1 @@
+# quarkus-qe/beefy-scenarios
