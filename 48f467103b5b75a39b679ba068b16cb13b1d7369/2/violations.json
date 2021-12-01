@@ -1,0 +1,50 @@
+[
+    {
+        "line": "1",
+        "severity": "info",
+        "message": "La ligne correspond au motif ill\u00e9gal 'more than one blank line'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheck"
+    },
+    {
+        "line": "4",
+        "column": "8",
+        "severity": "error",
+        "message": "Import inutilis\u00e9 - org.apache.logging.log4j.LogManager.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "5",
+        "column": "8",
+        "severity": "error",
+        "message": "Import inutilis\u00e9 - org.apache.logging.log4j.Logger.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "7",
+        "column": "8",
+        "severity": "error",
+        "message": "Import inutilis\u00e9 - com.google.common.base.Objects.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "12",
+        "column": "8",
+        "severity": "error",
+        "message": "Import inutilis\u00e9 - com.synaptix.toast.core.event.TestProgressMessage.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "warning",
+        "message": "La complexit\u00e9 cyclomatique de la classe est de 13 alors que le maximum autoris\u00e9 est de 10.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.metrics.CyclomaticComplexityCheck"
+    },
+    {
+        "line": "55",
+        "column": "5",
+        "severity": "error",
+        "message": "La m\u00e9thode contient 43 lignes alors que le maximum autoris\u00e9 est de 20.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.sizes.MethodLengthCheck"
+    }
+]
