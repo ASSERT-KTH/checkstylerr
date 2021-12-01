@@ -1,0 +1,58 @@
+[
+    {
+        "line": "19",
+        "severity": "error",
+        "message": "'org.apache.beam.runners.dataflow.DataflowRunner' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "38",
+        "severity": "error",
+        "message": "Import statement for 'com.google.cloud.bigtable.beam.CloudBigtableIO' is in the wrong order. Should be in the 'SAME_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "39",
+        "severity": "error",
+        "message": "Import statement for 'com.google.cloud.bigtable.beam.CloudBigtableTableConfiguration' is in the wrong order. Should be in the 'SAME_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "62",
+        "severity": "error",
+        "message": "Javadoc comment at column 22 has parse error. Missed HTML close tag 'STAGING_LOCATION_IN_CLOUD_STORAGE'. Sometimes it means that close tag missed for one of previous tags.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck"
+    },
+    {
+        "line": "136",
+        "severity": "error",
+        "message": "Line continuation have incorrect indentation level, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+    },
+    {
+        "line": "137",
+        "severity": "error",
+        "message": "Line continuation have incorrect indentation level, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+    },
+    {
+        "line": "138",
+        "severity": "error",
+        "message": "Line continuation have incorrect indentation level, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+    },
+    {
+        "line": "174",
+        "column": "31",
+        "severity": "error",
+        "message": "GenericWhitespace '>' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"
+    },
+    {
+        "line": "176",
+        "column": "30",
+        "severity": "error",
+        "message": "GenericWhitespace '>' is followed by whitespace.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"
+    }
+]

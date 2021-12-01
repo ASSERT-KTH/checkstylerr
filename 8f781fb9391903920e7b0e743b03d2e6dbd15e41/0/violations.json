@@ -1,0 +1,71 @@
+[
+    {
+        "line": "27",
+        "severity": "error",
+        "message": "Import statement for 'com.google.cloud.bigtable.beam.CloudBigtableIO' is in the wrong order. Should be in the 'SAME_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "error",
+        "message": "Import statement for 'com.google.cloud.bigtable.beam.CloudBigtableTableConfiguration' is in the wrong order. Should be in the 'SAME_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "54",
+        "severity": "error",
+        "message": "Javadoc comment at column 22 has parse error. Missed HTML close tag 'STAGING_LOCATION_IN_CLOUD_STORAGE'. Sometimes it means that close tag missed for one of previous tags.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck"
+    },
+    {
+        "line": "89",
+        "severity": "error",
+        "message": "Line continuation have incorrect indentation level, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+    },
+    {
+        "line": "90",
+        "severity": "error",
+        "message": "Line continuation have incorrect indentation level, expected level should be 4.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagContinuationIndentationCheck"
+    },
+    {
+        "line": "104",
+        "severity": "error",
+        "message": "Abbreviation in name 'PROJECT_ID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "104",
+        "column": "12",
+        "severity": "error",
+        "message": "Local variable name 'PROJECT_ID' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "105",
+        "severity": "error",
+        "message": "Abbreviation in name 'INSTANCE_ID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "105",
+        "column": "12",
+        "severity": "error",
+        "message": "Local variable name 'INSTANCE_ID' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    },
+    {
+        "line": "106",
+        "severity": "error",
+        "message": "Abbreviation in name 'TABLE_ID' must contain no more than '2' consecutive capital letters.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"
+    },
+    {
+        "line": "106",
+        "column": "12",
+        "severity": "error",
+        "message": "Local variable name 'TABLE_ID' must match pattern '^[a-z][a-zA-Z0-9]*$'.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"
+    }
+]
