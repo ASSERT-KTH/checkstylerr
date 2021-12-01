@@ -1,0 +1,33 @@
+[
+    {
+        "line": "27",
+        "severity": "warning",
+        "message": "'io.grpc.ManagedChannelBuilder' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "28",
+        "severity": "warning",
+        "message": "'java.io.IOException' should be separated from previous import group by one line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "30",
+        "severity": "warning",
+        "message": "Import statement for 'org.joda.time.Duration' is in the wrong order. Should be in the 'THIRD_PARTY_PACKAGE' group, expecting not assigned imports on this line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"
+    },
+    {
+        "line": "58",
+        "severity": "warning",
+        "message": "Javadoc comment at column 26 has parse error. Details: no viable alternative at input '<pre>\\n *  Publisher publisher =\\n *       Publisher.Builder.newBuilder(MY_TOPIC)\\n *           .setMaxBundleDuration(new Duration(10 * 1000))\\n *           .build();\\n *  List<ListenableFuture<' while parsing HTML_TAG",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    },
+    {
+        "line": "221",
+        "column": "5",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]

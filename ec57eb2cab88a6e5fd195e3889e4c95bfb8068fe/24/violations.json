@@ -1,0 +1,8 @@
+[
+    {
+        "line": "59",
+        "severity": "warning",
+        "message": "Javadoc comment at column 3 has parse error. Details: no viable alternative at input ' {@code\\n   * Query<Entity> query = Query.entityQueryBuilder()\\n   *     .kind(\"Person\")\\n   *     .filter(PropertyFilter.eq(\"favoriteFood\", \"pizza\"))\\n   *     .build();\\n   * QueryResults<Entity> results = datastore.run(query);\\n   * // Consume some results (using results.next()) and do any other actions as necessary.\\n   * query = query.toBuilder().startCursor(results.cursorAfter()).build();\\n   * results = datastore.run(query); // now we will iterate over all entities not yet consumed\\n   * </pre>\\n=======\\n   * Returns the Cursor for the point after the value returned in the last {@link #next} call.\\n   * Currently, {@code cursorAfter} returns null in all cases but the last result.\\n>>>>>>> upstream/master\\n   ' while parsing HTML_TAG",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    }
+]

@@ -1,0 +1,120 @@
+/*
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.google.gcloud.spi;
+
+import com.google.api.services.cloudresourcemanager.model.Policy;
+import com.google.api.services.cloudresourcemanager.model.Project;
+import com.google.gcloud.resourcemanager.ResourceManagerException;
+
+import java.util.List;
+import java.util.Map;
+
+public interface ResourceManagerRpc {
+
+  enum Option {
+    FILTER("filter"),
+    PAGE_SIZE("maxResults"),
+    PAGE_TOKEN("pageToken");
+
+    private final String value;
+
+    Option(String value) {
+      this.value = value;
+    }
+
+    public String value() {
+      return value;
+    }
+
+    @SuppressWarnings("unchecked")
+    <T> T get(Map<Option, ?> options) {
+      return (T) options.get(this);
+    }
+
+    String getString(Map<Option, ?> options) {
+      return get(options);
+    }
+
+    Long getInt(Map<Option, ?> options) {
+      return get(options);
+    }
+  }
+
+  public enum Permission {
+    CREATE("resourcemanager.projects.create"),
+    DELETE("resourcemanager.projects.delete"),
+    GET("resourcemanager.projects.get"),
+    LIST("resourcemanager.projects.list"),
+    REPLACE("resourcemanager.projects.replace"),
+    UNDELETE("resourcemanager.projects.undelete"),
+    GET_IAM_POLICY("resourcemanager.projects.getIamPolicy"),
+    REPLACE_IAM_POLICY("resourcemanager.projects.setIamPolicy");
+
+    String permissionPb;
+
+    Permission(String permissionPb) {
+      this.permissionPb = permissionPb;
+    }
+
+    String toPb() {
+      return permissionPb;
+    }
+  }
+
+  class Tuple<X, Y> {
+    private final X x;
+    private final Y y;
+
+    private Tuple(X x, Y y) {
+      this.x = x;
+      this.y = y;
+    }
+
+    public static <X, Y> Tuple<X, Y> of(X x, Y y) {
+      return new Tuple<>(x, y);
+    }
+
+    public X x() {
+      return x;
+    }
+
+    public Y y() {
+      return y;
+    }
+  }
+
+  Project create(Project project) throws ResourceManagerException;
+
+  void delete(String projectId) throws ResourceManagerException;
+
+  Project get(String projectId) throws ResourceManagerException;
+
+  Tuple<String, Iterable<Project>> list(Map<Option, ?> options) throws ResourceManagerException;
+
+  void undelete(String projectId) throws ResourceManagerException;
+
+  Project replace(Project project) throws ResourceManagerException;
+
+  Policy getIamPolicy(String projectId) throws ResourceManagerException;
+
+  Policy replaceIamPolicy(String projectId, Policy policy) throws ResourceManagerException;
+
+  List<Boolean> hasPermissions(String projectId, List<Permission> permissions)
+      throws ResourceManagerException;
+
+  // TODO(ajaykannan): implement "Organization" functionality when available (issue #319)
+}

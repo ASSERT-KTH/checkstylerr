@@ -1,0 +1,29 @@
+[
+    {
+        "line": "60",
+        "severity": "warning",
+        "message": "Javadoc comment at column 1 has parse error. Details: no viable alternative at input '<ol>\\n * <li>login using gcloud SDK - {@code gcloud auth login}.</li>\\n * <li>compile using maven - {@code mvn compile}</li>\\n * <li>run using maven - {@code mvn exec:java\\n * -Dexec.mainClass=\"com.google.gcloud.examples.dns.DnsExample\"\\n * -Dexec.args=\"[<project_id>]\\n * create <zone_name> <dns_name> <description> |\\n * get <zone_name> |\\n * delete <zone_name> |\\n * list [<zone_name> [changes [descending | ascending] | records]] |\\n * add-record <zone_name> <record_name> <ip> <ttl> |\\n * delete-record <zone_name> <record_name> <ip> [<ttl>] |\\n * quota</li>\\n * </ol>\\n *\\n * <p>The first parameter is an optional {@code project_id} (logged-in project will be used if not\\n * supplied). Second parameter is a DNS operation (list, delete, create,...) and can be used to\\n * demonstrate the usage. The remaining arguments are specific to the operation. See each action's\\n * run method for the specific interaction.\\n ' while parsing HTML_TAG",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.NonEmptyAtclauseDescriptionCheck"
+    },
+    {
+        "line": "216",
+        "column": "94",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "270",
+        "column": "92",
+        "severity": "warning",
+        "message": "'+' should be on a new line.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"
+    },
+    {
+        "line": "471",
+        "column": "3",
+        "severity": "warning",
+        "message": "Missing a Javadoc comment.",
+        "source": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"
+    }
+]
